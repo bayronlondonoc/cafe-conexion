@@ -23,7 +23,7 @@ window.CC_MENU = {
             { "nombre": "Espresso", "descripcion": "Shot concentrado de café, extraído a presión.", "precio": 5000 },
             { "nombre": "Americano", "descripcion": "Espresso con agua caliente: una taza ligera y fluida.", "precio": 5000 },
             { "nombre": "Latte", "descripcion": "Espresso con leche vaporizada, suave y equilibrado.", "precio": 6500 },
-            { "nombre": "Capuchino", "descripcion": "Espresso con espuma de leche densa y sedosa.", "precio": 7500, "desde": true, "destacado": true, "foto": null },
+            { "nombre": "Capuchino", "descripcion": "Espresso con espuma de leche densa y sedosa.", "precio": 7500, "desde": true, "destacado": true, "foto": "assets/img/capuchino.webp" },
             { "nombre": "Moccachino", "descripcion": "Café con chocolate oscuro fundido en leche cremosa.", "precio": 9000 },
             { "nombre": "Café con leche de almendras", "descripcion": "Café con bebida vegetal de almendras.", "precio": 11000 }
           ]
@@ -32,11 +32,11 @@ window.CC_MENU = {
           "nombre": "Métodos manuales",
           "nota": "Para 2 tazas",
           "items": [
-            { "nombre": "Prensa francesa", "descripcion": "Inmersión: cuerpo intenso, textura sedosa y los aceites naturales del café.", "precio": 15800 },
-            { "nombre": "V60", "descripcion": "Vertido circular: aromas vivos, notas dulces y acidez equilibrada.", "precio": 15800 },
-            { "nombre": "Sifón japonés", "descripcion": "Una taza limpia y brillante.", "precio": 15800 },
-            { "nombre": "Origami", "descripcion": "Taza limpia y luminosa, de perfil delicado.", "precio": 15800 },
-            { "nombre": "Chemex", "descripcion": "Filtrado lento: taza limpia y suave, con notas florales y acidez brillante.", "precio": 15800 }
+            { "nombre": "Prensa francesa", "descripcion": "Inmersión: cuerpo intenso, textura sedosa y los aceites naturales del café.", "precio": 15800, "foto": "assets/img/prensa-francesa.webp" },
+            { "nombre": "V60", "descripcion": "Vertido circular: aromas vivos, notas dulces y acidez equilibrada.", "precio": 15800, "foto": "assets/img/v60.webp" },
+            { "nombre": "Sifón japonés", "descripcion": "Una taza limpia y brillante.", "precio": 15800, "foto": "assets/img/sifon-japones.webp" },
+            { "nombre": "Origami", "descripcion": "Taza limpia y luminosa, de perfil delicado.", "precio": 15800, "foto": "assets/img/origami.webp" },
+            { "nombre": "Chemex", "descripcion": "Filtrado lento: taza limpia y suave, con notas florales y acidez brillante.", "precio": 15800, "foto": "assets/img/chemex.webp" }
           ]
         }
       ]
@@ -82,7 +82,7 @@ window.CC_MENU = {
         {
           "nombre": "Té y matcha",
           "items": [
-            { "nombre": "Latte matcha", "descripcion": "Matcha ceremonial con leche vaporizada.", "precio": 15800, "desde": true, "destacado": true, "foto": null },
+            { "nombre": "Latte matcha", "descripcion": "Matcha ceremonial con leche vaporizada.", "precio": 15800, "desde": true, "destacado": true, "foto": "assets/img/latte-de-matcha.webp" },
             { "nombre": "Té de leche dorada", "descripcion": "Leche con cúrcuma, jengibre y pimienta negra.", "precio": 13800 },
             { "nombre": "Té pu-erh", "descripcion": "Mezcla de té verde y rojo con jengibre y cola de caballo.", "precio": 9800 },
             { "nombre": "Té herbal", "descripcion": "Té rojo y té verde.", "precio": 7000 },
@@ -99,7 +99,7 @@ window.CC_MENU = {
         {
           "nombre": "Brunch",
           "items": [
-            { "nombre": "Wafles", "descripcion": "Queso crema, tocineta crujiente y miel de maple.", "precio": 26000, "desde": true, "destacado": true, "foto": null },
+            { "nombre": "Wafles", "descripcion": "Queso crema, tocineta crujiente y miel de maple.", "precio": 26000, "desde": true, "destacado": true, "foto": "assets/img/waffles-con-tocineta.webp" },
             { "nombre": "Croissant", "descripcion": "Jamón de pavo, jamón ahumado de cerdo, queso búfala, tomate asado, aguacate y reducción de balsámico.", "precio": 22000 },
             { "nombre": "Croissant relleno", "descripcion": "Pollo o vegetales, lechuga, tocineta, salsa de pimientos y mozzarella.", "precio": 26000 },
             { "nombre": "Huevos al gusto", "descripcion": "Con 2 toppings (sofrito, maicitos, mozzarella, jamón, tocineta o brócoli) y arepa o tostada de masa madre.", "precio": 15900 },
@@ -107,7 +107,7 @@ window.CC_MENU = {
             { "nombre": "Bowl de yogur", "descripcion": "Yogur griego o kéfir, granola, arándanos, fresa y miel.", "precio": 18000 },
             { "nombre": "Tostada de masa madre", "descripcion": "Tomate asado o cherry, huevos revueltos, queso búfala y pesto.", "precio": 20000 },
             { "nombre": "Bowl salad", "descripcion": "Mix de lechugas, balsámico, tomate cherry, champiñones, mango, puerro caramelizado, lentejas crocantes y pollo teriyaki.", "precio": 36000 },
-            { "nombre": "Ensalada César", "descripcion": "Lechugas frescas, pechuga de pollo, parmesano, aderezo César, tomate cherry y crotones a las finas hierbas.", "precio": 26000, "desde": true, "destacado": true, "foto": null }
+            { "nombre": "Ensalada César", "descripcion": "Lechugas frescas, pechuga de pollo, parmesano, aderezo César, tomate cherry y crotones a las finas hierbas.", "precio": 26000, "desde": true, "destacado": true, "foto": "assets/img/ensalada-cesar.webp" }
           ]
         }
       ]
@@ -119,7 +119,7 @@ window.CC_MENU = {
         {
           "nombre": "Entradas",
           "items": [
-            { "nombre": "Pan de masa madre", "descripcion": "Rebanadas de masa madre o tostadas con finas hierbas, queso crema, tomate asado, albahaca, reducción de balsámico y sal marina. 5 porciones.", "precio": 12000, "desde": true, "destacado": true, "foto": null },
+            { "nombre": "Pan de masa madre", "descripcion": "Rebanadas de masa madre o tostadas con finas hierbas, queso crema, tomate asado, albahaca, reducción de balsámico y sal marina. 5 porciones.", "precio": 12000, "desde": true, "destacado": true, "foto": "assets/img/pan-de-masa-madre.webp" },
             { "nombre": "Patacones", "descripcion": "Patacón crocante con guacamole fresco y hogao. 5 porciones.", "precio": 15000 },
             { "nombre": "Nachos", "descripcion": "400 g con guacamole, salsa agria, cebolla encurtida, frijol refrito y salsa picante tatemada.", "precio": 18000 }
           ]
@@ -147,8 +147,8 @@ window.CC_MENU = {
         {
           "nombre": "Pastas y más",
           "items": [
-            { "nombre": "Ensalada tipo sushi", "descripcion": "Salmón marinado, surimi, aguacate y pepino sobre arroz avinagrado, alga nori, reducción de teriyaki con café y semillas de sésamo.", "precio": 40000, "desde": true, "destacado": true, "foto": null },
-            { "nombre": "Pasta a tu gusto", "descripcion": "Spaghetti o penne, 2 proteínas. Salsa: napolitana casera, Alfredo o pesto de albahaca. Proteína: pollo a la plancha o salmón. Incluye ensalada de lechuga y tomate cherry.", "precio": 25000, "desde": true, "destacado": true, "foto": null },
+            { "nombre": "Ensalada tipo sushi", "descripcion": "Salmón marinado, surimi, aguacate y pepino sobre arroz avinagrado, alga nori, reducción de teriyaki con café y semillas de sésamo.", "precio": 40000, "desde": true, "destacado": true, "foto": "assets/img/ensalada-de-salmon-estilo-sushi.webp" },
+            { "nombre": "Pasta a tu gusto", "descripcion": "Spaghetti o penne, 2 proteínas. Salsa: napolitana casera, Alfredo o pesto de albahaca. Proteína: pollo a la plancha o salmón. Incluye ensalada de lechuga y tomate cherry.", "precio": 25000, "desde": true, "destacado": true, "foto": "assets/img/pasta-a-tu-gusto.jpg" },
             { "nombre": "Sándwich vegano", "descripcion": "Croissant con lechuga, tomates asados, cebolla caramelizada, brócoli y champiñones.", "precio": 20000 }
           ]
         },

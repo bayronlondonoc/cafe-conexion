@@ -68,6 +68,68 @@
         CC.track('click_como_llegar', { ubicacion: a.getAttribute('data-ubicacion') || '' });
       });
     });
+    // «Ver menú»: la carta vive en su propia página y se abre en otra pestaña.
+    $$('[data-menu]').forEach(function (a) {
+      if (!N.menu_url) return;
+      a.href = N.menu_url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.addEventListener('click', function () {
+        CC.track('click_ver_menu', { ubicacion: a.getAttribute('data-ubicacion') || '' });
+      });
+    });
+  }
+
+  /* ---------- Formularios que abren WhatsApp con el mensaje listo ---------- */
+  function plantilla(texto, valores) {
+    return String(texto || '').replace(/\{(\w+)\}/g, function (_, k) { return valores[k] || ''; })
+      .replace(/\.\./g, '.') // «7:30 p. m.» + «.» de la plantilla
+      .replace(/\s+/g, ' ').trim();
+  }
+  function valoresDe(form) {
+    var v = {};
+    new FormData(form).forEach(function (valor, clave) { v[clave] = String(valor).trim(); });
+    return v;
+  }
+  function abrirWhatsApp(mensaje, ubicacion) {
+    var num = N.whatsapp && N.whatsapp.numero;
+    if (!num) return;
+    CC.track('click_whatsapp', { ubicacion: ubicacion });
+    w.open('https://wa.me/' + num + '?text=' + encodeURIComponent(mensaje), '_blank', 'noopener');
+  }
+  function hoyEnBogota() {
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Bogota', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  }
+  function fechaLarga(iso) {
+    var p = String(iso).split('-');
+    if (p.length !== 3) return iso;
+    return new Intl.DateTimeFormat('es-CO', { weekday: 'long', day: 'numeric', month: 'long' })
+      .format(new Date(+p[0], +p[1] - 1, +p[2])).replace(',', '');
+  }
+
+  function formularios() {
+    var mensajes = N.mensajes_whatsapp || {};
+    $$('[data-reserva]').forEach(function (form) {
+      var fecha = form.querySelector('[name="fecha"]');
+      if (fecha) fecha.min = hoyEnBogota();
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var v = valoresDe(form);
+        abrirWhatsApp(plantilla(mensajes.reserva, {
+          personas: v.personas,
+          fecha: fechaLarga(v.fecha),
+          hora: v.hora ? hora(minutos(v.hora)) : '',
+          nombre: v.nombre,
+          nota: v.nota ? 'Nota: ' + v.nota : ''
+        }), 'reserva_' + (form.getAttribute('data-ubicacion') || ''));
+      });
+    });
+    $$('[data-contacto]').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        abrirWhatsApp(plantilla(mensajes.contacto, valoresDe(form)), 'contacto_formulario');
+      });
+    });
   }
 
   function datos() {
@@ -206,7 +268,7 @@
 
   /* ---------- Nosotros y Reseñas: se publican cuando hay contenido real ---------- */
   function nosotros() {
-    var s = (SITE.secciones || {}).nosotros || {}, sec = $('#nosotros'), cont = $('#nosotros-contenido');
+    var s = (SITE.secciones || {}).nosotros || {}, sec = $('#historia'), cont = $('#nosotros-contenido');
     if (!sec || !cont || !s.publicar || !s.capitulos || !s.capitulos.length) return;
     var foto = s.foto
       ? '<figure class="nosotros__foto"><img src="' + esc(s.foto) + '" alt="' + esc(s.foto_alt || 'La dueña y el equipo de Café Conexión') + '" width="800" height="1000" loading="lazy" decoding="async"></figure>'
@@ -242,6 +304,48 @@
         '</p></li>';
     }).join('');
     listo(sec);
+  }
+
+  /* ---------- Eventos, preguntas frecuentes y créditos ---------- */
+  var ESTADO_EVENTO = { proximo: 'Próximo', agotado: 'Agotado', finalizado: 'Finalizado' };
+
+  function eventos() {
+    var s = (SITE.secciones || {}).eventos || {}, items = s.items || [], ul = $('#eventos-lista');
+    if (!s.publicar || !items.length) return; // sin agenda: todo sigue solo en vista previa
+    if (ul) {
+      ul.innerHTML = items.map(function (ev) {
+        return '<li class="evento">' +
+          (ev.cover ? '<img class="evento__cover" src="' + esc(ev.cover) + '" alt="' + esc(ev.titulo) + '" width="800" height="1000" loading="lazy" decoding="async">' : '') +
+          '<div class="evento__cuerpo"><p class="evento__fecha">' + esc(ev.fecha || '') + (ev.hora ? ' · ' + esc(ev.hora) : '') + '</p>' +
+          '<h3 class="evento__titulo">' + esc(ev.titulo) + '</h3>' +
+          (ev.detalle ? '<p class="evento__detalle">' + esc(ev.detalle) + '</p>' : '') +
+          (ESTADO_EVENTO[ev.estado] ? '<span class="evento__estado evento__estado--' + esc(ev.estado) + '">' + ESTADO_EVENTO[ev.estado] + '</span>' : '') +
+          '</div></li>';
+      }).join('');
+      listo(ul);
+    }
+    $$('[data-enlace-eventos], [data-seccion-eventos]').forEach(function (el) { el.classList.remove('solo-preview'); });
+  }
+
+  function preguntas() {
+    var cont = $('#preguntas-lista'), s = (SITE.secciones || {}).preguntas || {}, items = s.items || [];
+    if (!cont || !items.length) return;
+    cont.innerHTML = items.map(function (q) {
+      return '<details class="pregunta"><summary>' + esc(q.p) + '</summary>' +
+        (q.r ? '<p>' + esc(q.r) + '</p>' : '<p class="pendiente" data-pendiente="respuesta de la dueña"></p>') +
+        '</details>';
+    }).join('');
+    if (s.publicar && items.every(function (q) { return q.r; })) listo($('#preguntas'));
+  }
+
+  function creditos() {
+    var ol = $('#creditos-lista'), lista = w.CC_CREDITOS || [];
+    if (!ol) return;
+    if (!lista.length) { ol.closest('details').hidden = true; return; }
+    ol.innerHTML = lista.map(function (c) {
+      return '<li><span class="creditos__obra">«' + esc(c.obra) + '»</span>, ' + esc(c.autor) + ' · ' + esc(c.licencia) +
+        ' · <a href="' + esc(c.origen) + '" target="_blank" rel="noopener">fuente<span class="visually-hidden"> de «' + esc(c.obra) + '»</span></a></li>';
+    }).join('');
   }
 
   /* ---------- Mapa: Google Maps solo se carga al hacer clic ---------- */
@@ -361,7 +465,7 @@
         addressCountry: N.pais
       },
       servesCuisine: s.servesCuisine,
-      hasMenu: (s.url || w.location.href.split('#')[0]) + '#menu',
+      hasMenu: N.menu_url,
       priceRange: s.priceRange,
       geo: c.lat != null && c.lng != null ? { '@type': 'GeoCoordinates', latitude: c.lat, longitude: c.lng } : null,
       openingHoursSpecification: horariosListos(h)
@@ -459,12 +563,16 @@
     revelar();
     datos();
     enlaces();
+    formularios();
     redes();
     credito();
     horarios();
     practicos();
     nosotros();
     resenas();
+    eventos();
+    preguntas();
+    creditos();
     mapa();
     cabecera();
     menuMovil();

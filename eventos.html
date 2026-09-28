@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es-CO" data-mode="produccion">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eventos | Café Conexión</title>
+<meta name="description" content="Planes, brindis y encuentros en Café Conexión, sector Estadio, Medellín.">
+<!-- Vista previa: la página no se indexa. Al pasar a producción se borra esta línea (README.md). -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FCF6F0">
+
+<meta property="og:locale" content="es_CO">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Café Conexión">
+<meta property="og:title" content="Eventos | Café Conexión">
+<meta property="og:description" content="Planes, brindis y encuentros en Café Conexión, sector Estadio, Medellín.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<script>
+document.documentElement.classList.add('js');
+</script>
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="data/site.js" defer></script>
+<script src="data/creditos.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body data-pagina="eventos">
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-camara" viewBox="0 0 24 24"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.3l1.4-2.2h7.6L17.2 7h2.3A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.6"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3.8 20.2l1.3-4.4a8.4 8.4 0 1 1 3.1 3.2z"/><path fill="currentColor" stroke="none" d="M9.1 7.6c.3-.1.6 0 .7.3l.8 1.8c.1.2 0 .5-.1.7l-.6.7c-.1.1-.1.3 0 .5a6.6 6.6 0 0 0 2.9 2.7c.2.1.4 0 .5-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.4.3.7-.2.9-1 1.6-1.9 1.6-3.3-.2-6.2-3.1-6.4-6.4 0-.9.6-1.8 1.4-2.1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-carta" viewBox="0 0 24 24"><path d="M6.5 3.5h11a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 16 16"><path d="M2.5 8h11M9.5 4l4 4-4 4"/></symbol>
+  <symbol id="i-externo" viewBox="0 0 16 16"><path d="M5 11l6-6M6.5 5H11v4.5"/></symbol>
+</svg>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <div class="cabecera__inner contenedor">
+    <a class="marca" href="index.html">Café Conexión</a>
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="espacio.html">El espacio</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li class="solo-preview" data-enlace-eventos><a href="eventos.html" aria-current="page">Eventos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="boton boton--primario cabecera__menu" href="index.html#favoritos" data-menu data-ubicacion="header">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+    <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-movil">
+      <span class="visually-hidden">Abrir menú</span>
+      <span class="hamburguesa__lineas" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-movil" id="menu-movil" hidden>
+  <nav aria-label="Menú del sitio">
+    <ul class="menu-movil__lista">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="espacio.html">El espacio</a></li>
+      <li><a href="reservas.html">Reservas</a></li>
+      <li class="solo-preview" data-enlace-eventos><a href="eventos.html" aria-current="page">Eventos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="menu-movil__botones">
+      <a class="boton boton--primario boton--ancho" href="index.html#favoritos" data-menu data-ubicacion="header">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+      <a class="boton boton--secundario boton--ancho" href="contacto.html" data-wa="general" data-ubicacion="header"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos por WhatsApp</a>
+    </div>
+  </nav>
+</div>
+
+<main id="contenido" tabindex="-1">
+<section class="pagina-cabeza" aria-labelledby="pagina-titulo">
+    <div class="contenedor pagina-cabeza__grid">
+      <div class="pagina-cabeza__texto">
+        <p class="sobretitulo">Eventos</p>
+        <h1 id="pagina-titulo">Planes para ir acompañado.</h1>
+        <p class="pagina-cabeza__intro">Encuentros, brindis y planes en Conexión.</p>
+        
+      </div>
+      <figure class="pagina-cabeza__foto">
+        <img src="assets/img/mimosa.webp" alt="Copas de mimosa listas para brindar" width="760" height="570" fetchpriority="high" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <section class="seccion" data-seccion-eventos aria-labelledby="agenda-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza">
+        <p class="sobretitulo">Agenda</p>
+        <h2 id="agenda-titulo">Lo que viene.</h2>
+      </header>
+      <ul class="eventos pendiente" id="eventos-lista" data-pendiente="agenda: un formato fijo de eventos que la dueña pueda sostener" role="list"></ul>
+    </div>
+  </section>
+
+  <section class="seccion seccion--alterna pendiente" aria-labelledby="celebra-titulo" data-pendiente="celebraciones privadas: confirmar si se reciben">
+    <div class="contenedor">
+      <p class="sobretitulo">Celebraciones</p>
+      <h2 id="celebra-titulo">Cumpleaños y reuniones en Conexión.</h2>
+      <p class="seccion__intro">Cuéntanos qué quieres celebrar y cuántas personas vienen.</p>
+      <a class="boton boton--primario" href="contacto.html" data-wa="general" data-ubicacion="eventos"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos</a>
+    </div>
+  </section>
+
+  
+  <section class="seccion seccion--superficie cta-final" id="contacto" aria-labelledby="cierre-titulo">
+    <div class="contenedor" data-reveal>
+      <h2 id="cierre-titulo">¿Nos vemos en Conexión?</h2>
+      <p class="cta-final__texto">Escríbenos por WhatsApp. Te esperamos.</p>
+      <div class="cta-final__botones">
+        <a class="boton boton--primario boton--grande" href="contacto.html" data-wa="general" data-ubicacion="cta_final"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escribir por WhatsApp</a>
+        <a class="boton boton--primario boton--grande boton--claro" href="index.html#favoritos" data-menu data-ubicacion="cta_final">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div class="pie__marca-bloque">
+      <p class="pie__marca">Café Conexión</p>
+      <p class="pie__frase">Hecho para encontrarnos.</p>
+    </div>
+    <nav class="pie__bloque" aria-label="Explorar">
+      <p class="pie__titulo">Explorar</p>
+      <ul class="pie__nav" role="list">
+        <li><a class="pie__enlace" href="index.html">Inicio</a></li>
+        <li><a class="pie__enlace" href="nosotros.html">Nosotros</a></li>
+        <li><a class="pie__enlace" href="espacio.html">El espacio</a></li>
+        <li><a class="pie__enlace" href="index.html#favoritos" data-menu data-ubicacion="footer">Menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a></li>
+        <li><a class="pie__enlace" href="reservas.html">Reservas</a></li>
+        <li class="solo-preview" data-enlace-eventos><a class="pie__enlace" href="eventos.html">Eventos</a></li>
+        <li><a class="pie__enlace" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="pie__bloque">
+      <p class="pie__titulo">Visítanos</p>
+      <p data-dato="direccion-completa"></p>
+      <a class="pie__enlace" href="espacio.html" data-maps data-ubicacion="footer"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
+    </div>
+    <div class="pie__bloque">
+      <p class="pie__titulo">Escríbenos</p>
+      <a class="pie__enlace" href="contacto.html" data-wa="general" data-ubicacion="footer"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-dato="whatsapp-visible">WhatsApp</span></a>
+      <ul class="pie__redes pendiente" data-redes data-pendiente="redes: Instagram y TikTok del relanzamiento" role="list"></ul>
+    </div>
+  </div>
+  <div class="contenedor pie__legal">
+    <p>© 2026 Café Conexión</p>
+    <p class="pie__credito pendiente" data-credito data-pendiente="crédito de desarrollo (opcional)"></p>
+  </div>
+  <div class="contenedor">
+    <details class="creditos">
+      <summary>Créditos de las imágenes</summary>
+      <p class="creditos__nota">Fotos provisionales de bancos libres: no son del local y se reemplazan por fotos propias. Se recortaron y comprimieron para la web.</p>
+      <ol class="creditos__lista" id="creditos-lista"></ol>
+    </details>
+  </div>
+</footer>
+
+<nav class="barra-movil" aria-label="Acciones rápidas">
+  <a class="barra-movil__accion barra-movil__accion--wa" href="contacto.html" data-wa="general" data-ubicacion="barra_movil"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+  <a class="barra-movil__accion" href="index.html#favoritos" data-menu data-ubicacion="barra_movil"><svg class="icono" aria-hidden="true"><use href="#i-carta"/></svg>Menú<span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+  <a class="barra-movil__accion" href="espacio.html" data-maps data-ubicacion="barra_movil"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
+</nav>
+
+<a class="wa-flotante" href="contacto.html" data-wa="general" data-ubicacion="flotante" aria-label="Escríbenos por WhatsApp"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* Café Conexión · créditos de las imágenes
+   Fotos provisionales de bancos libres: no son del local y se reemplazan por fotos propias.
+   Todas permiten uso comercial; las CC BY y CC BY-SA exigen dar crédito al autor mientras estén
+   publicadas. Se recortaron y comprimieron para la web. Esta lista se muestra en el footer. */
+
+window.CC_CREDITOS = [
+  {"archivo":"capuchino-con-licor.webp","obra":"A person holds a cup of cappuccino featuring intricate latte art, sitting at a café table","autor":"Shixart1985","licencia":"CC BY 2.0","origen":"https://commons.wikimedia.org/wiki/File%3AA%20person%20holds%20a%20cup%20of%20cappuccino%20featuring%20intricate%20latte%20art%2C%20sitting%20at%20a%20caf%C3%A9%20table.jpg"},
+  {"archivo":"capuchino.webp","obra":"Free cappuccino cups cinnamon stick","autor":"Desconocido","licencia":"Dominio público / CC0","origen":"https://www.rawpixel.com/image/5915197/image-public-domain-coffee-chocolate"},
+  {"archivo":"cerveza-premium-nacional.webp","obra":"Woman hand with glass of beer","autor":"Artem Beliaikin","licencia":"Dominio público / CC0","origen":"https://www.flickr.com/photos/157635012@N07/48943369497"},
+  {"archivo":"chemex.webp","obra":"Assembly Chemex brew at Modern Society, Shoreditch (34409263363)","autor":"Bex Walton from London, England","licencia":"CC BY 2.0","origen":"https://commons.wikimedia.org/wiki/File%3AAssembly%20Chemex%20brew%20at%20Modern%20Society%2C%20Shoreditch%20(34409263363).jpg"},
+  {"archivo":"combo-americano-croissant.webp","obra":"Coffee, croissants, and jam on a plate with cookies on a table during breakfast time in a cozy setting","autor":"Shixart1985","licencia":"CC BY 2.0","origen":"https://commons.wikimedia.org/wiki/File%3ACoffee%2C%20croissants%2C%20and%20jam%20on%20a%20plate%20with%20cookies%20on%20a%20table%20during%20breakfast%20time%20in%20a%20cozy%20setting.jpg"},
+  {"archivo":"combo-vino-papas.webp","obra":"Glass of red wine at Clarion Hotel Helsinki Christmas buffet 2024","autor":"JIP","licencia":"CC BY-SA 4.0","origen":"https://commons.wikimedia.org/wiki/File%3AGlass%20of%20red%20wine%20at%20Clarion%20Hotel%20Helsinki%20Christmas%20buffet%202024.jpg"},
+  {"archivo":"copa-de-vino.webp","obra":"Wine Glass with Red Wine","autor":"Image Catalog","licencia":"Dominio público / CC0","origen":"https://www.flickr.com/photos/132795455@N08/21911441615"},
+  {"archivo":"ensalada-cesar.webp","obra":"Caesar Salad on a white wooden table in the beach cafe, Bali island.","autor":"Artem Beliaikin","licencia":"Dominio público / CC0","origen":"https://www.flickr.com/photos/157635012@N07/31299830267"},
+  {"archivo":"ensalada-de-salmon-estilo-sushi.webp","obra":"Christmas Day Starter Smoked salmon & smoked salmon pate with buttered brown bread (16166589435)","autor":"CharmaineZoe's Marvelous Melange from England","licencia":"CC BY 2.0","origen":"https://commons.wikimedia.org/wiki/File%3AChristmas%20Day%20Starter%20Smoked%20salmon%20%26%20smoked%20salmon%20pate%20with%20buttered%20brown%20bread%20(16166589435).jpg"},
+  {"archivo":"espacio.webp","obra":"Bar stools counter blinded windows","autor":"Desconocido","licencia":"Dominio público / CC0","origen":"https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister"},
+  {"archivo":"espresso-martini.webp","obra":"Espresso Martini, cocktail with coffee and vodka","autor":"Wine Dharma","licencia":"Dominio público / CC0","origen":"https://www.flickr.com/photos/31027007@N08/35207943440"},
+  {"archivo":"inicio-manos-cafe.jpg","obra":"Dos manos con tazas de café sobre una mesa","autor":"rawpixel","licencia":"Dominio público / CC0","origen":"https://www.rawpixel.com/image/5963426/free-public-domain-cc0-photo"},
+  {"archivo":"latte-de-matcha.webp","obra":"Matcha Latte - Matcha Green Tea Latte and Green Tea Ice Cream Set - Cocoro Cafe, QVM AUD8 set","autor":"avlxyz","licencia":"CC BY-SA","origen":"https://www.flickr.com/photos/10559879@N00/3122544172"},
+  {"archivo":"mimosa.webp","obra":"Mimosa at Noyo Harbor Inn - August 2022 - Sarah Stierch 01","autor":"Missvain","licencia":"CC BY 4.0","origen":"https://commons.wikimedia.org/wiki/File%3AMimosa%20at%20Noyo%20Harbor%20Inn%20-%20August%202022%20-%20Sarah%20Stierch%2001.jpg"},
+  {"archivo":"mojito.webp","obra":"Fresh Mojito Premium","autor":"Rjcastillo","licencia":"CC BY-SA 4.0","origen":"https://commons.wikimedia.org/wiki/File%3AFresh%20Mojito%20Premium.jpg"},
+  {"archivo":"origami.webp","obra":"Tasty Coffee pourover V60 bloom 2025","autor":"Indigo.udm","licencia":"CC BY 4.0","origen":"https://commons.wikimedia.org/w/index.php?curid=174791765"},
+  {"archivo":"pan-de-masa-madre.webp","obra":"2009/365/105 Greatest Thing Since Sliced (Homemade) Bread","autor":"cogdogblog","licencia":"Dominio público / CC0","origen":"https://www.flickr.com/photos/37996646802@N01/3446051727"},
+  {"archivo":"pasta-a-tu-gusto.jpg","obra":"Roasted Chicken Penne Asiago","autor":"Geoff Peters 604","licencia":"CC BY 2.0","origen":"https://www.flickr.com/photos/54359128@N00/3374729757"},
+  {"archivo":"prensa-francesa.webp","obra":"French Press coffee making 12","autor":"Infrogmation","licencia":"CC BY-SA 2.0","origen":"https://commons.wikimedia.org/wiki/File%3AFrench%20Press%20coffee%20making%2012.jpg"},
+  {"archivo":"sifon-japones.webp","obra":"Rocanini, Siphon Coffee (5910298498)","autor":"Kenny Louie from Vancouver, Canada","licencia":"CC BY 2.0","origen":"https://commons.wikimedia.org/w/index.php?curid=24335830"},
+  {"archivo":"v60.webp","obra":"Coffee pour over using Hario cone 2","autor":"User:GorillaWarfare","licencia":"CC BY-SA 1.0","origen":"https://commons.wikimedia.org/wiki/File%3ACoffee%20pour%20over%20using%20Hario%20cone%202.jpg"},
+  {"archivo":"waffles-con-tocineta.webp","obra":"Belgian Waffle Breakfast (33960865713)","autor":"Theo Crazzolara","licencia":"CC BY 2.0","origen":"https://commons.wikimedia.org/wiki/File%3ABelgian%20Waffle%20Breakfast%20(33960865713).jpg"}
+];
