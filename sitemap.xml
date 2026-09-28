@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Dominio provisional: cafeconexion.online es el dominio actual del café.
+     Si la web nueva vive en otro dominio, se cambia aquí y en robots.txt (PENDIENTES.md). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://cafeconexion.online/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+</urlset>

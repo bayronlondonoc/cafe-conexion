@@ -1,0 +1,11 @@
+# Vista previa: mientras index.html tenga data-mode="preview", la web no se indexa.
+# Al pasar a producción, este archivo se reemplaza por:
+#
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://cafeconexion.online/sitemap.xml
+#
+# (con el dominio definitivo si no es cafeconexion.online). Ver README.md.
+
+User-agent: *
+Disallow: /

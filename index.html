@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="es-CO" data-mode="produccion">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Café Conexión | Café y brunch en Laureles–Estadio, Medellín</title>
+<meta name="description" content="Café de especialidad, cinco métodos manuales, brunch, hamburguesas, pizzas y cócteles en la Cl. 49 #78A-21, sector Estadio, Medellín.">
+<!-- Vista previa: la página no se indexa. Al pasar a producción se borra esta línea (README.md). -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FCF6F0">
+
+<meta property="og:locale" content="es_CO">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Café Conexión">
+<meta property="og:title" content="Café Conexión | Café y brunch en Laureles–Estadio, Medellín">
+<meta property="og:description" content="Café de especialidad, cinco métodos manuales, brunch, hamburguesas, pizzas y cócteles en la Cl. 49 #78A-21, sector Estadio, Medellín.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<script>
+/* Antes de pintar: marca que hay JavaScript y decide si la intro se muestra
+   (una vez por sesión y nunca con movimiento reducido). */
+(function (h) {
+  h.classList.add('js');
+  try {
+    var quieto = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!quieto && !sessionStorage.getItem('cc_intro_vista')) {
+      h.classList.add('intro');
+      sessionStorage.setItem('cc_intro_vista', '1');
+    }
+  } catch (e) {}
+})(document.documentElement);
+</script>
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="data/site.js" defer></script>
+<script src="data/menu.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/menu.js" defer></script>
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-camara" viewBox="0 0 24 24"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.3l1.4-2.2h7.6L17.2 7h2.3A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.6"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3.8 20.2l1.3-4.4a8.4 8.4 0 1 1 3.1 3.2z"/><path fill="currentColor" stroke="none" d="M9.1 7.6c.3-.1.6 0 .7.3l.8 1.8c.1.2 0 .5-.1.7l-.6.7c-.1.1-.1.3 0 .5a6.6 6.6 0 0 0 2.9 2.7c.2.1.4 0 .5-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.4.3.7-.2.9-1 1.6-1.9 1.6-3.3-.2-6.2-3.1-6.4-6.4 0-.9.6-1.8 1.4-2.1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-carta" viewBox="0 0 24 24"><path d="M6.5 3.5h11a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 16 16"><path d="M2.5 8h11M9.5 4l4 4-4 4"/></symbol>
+</svg>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- Intro «Conexión»: dos puntos se encuentran, aparece el nombre y la pantalla se abre.
+     Solo existe si el script del head agregó la clase .intro; sin JavaScript no aparece. -->
+<div class="capa-intro" aria-hidden="true">
+  <svg class="intro__lineas" viewBox="0 0 1000 2" preserveAspectRatio="none">
+    <path class="intro__linea" d="M0 1H500" pathLength="1"/>
+    <path class="intro__linea" d="M1000 1H500" pathLength="1"/>
+  </svg>
+  <span class="intro__punto intro__punto--izq"></span>
+  <span class="intro__punto intro__punto--der"></span>
+  <span class="intro__anillo"></span>
+  <p class="intro__marca">Café Conexión</p>
+</div>
+
+<header class="cabecera" id="cabecera">
+  <div class="cabecera__inner contenedor">
+    <a class="marca" href="#inicio">Café Conexión</a>
+
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#favoritos">Favoritos</a></li>
+        <li data-enlace-nosotros hidden><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+
+    <a class="boton boton--primario boton--chico cabecera__wa" href="#contacto" data-wa="general" data-ubicacion="header">
+      <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos
+    </a>
+
+    <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-movil">
+      <span class="visually-hidden">Abrir menú</span>
+      <span class="hamburguesa__lineas" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-movil" id="menu-movil" hidden>
+  <nav aria-label="Menú del sitio">
+    <ul class="menu-movil__lista">
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#favoritos">Favoritos</a></li>
+      <li data-enlace-nosotros hidden><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#visitanos">Visítanos</a></li>
+    </ul>
+    <a class="boton boton--primario boton--ancho" href="#contacto" data-wa="general" data-ubicacion="header">
+      <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos por WhatsApp
+    </a>
+  </nav>
+</div>
+
+<main id="contenido" tabindex="-1">
+
+  <!-- 1 · Inicio -->
+  <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+    <div class="hero__media">
+      <figure class="ph ph--hero pendiente" data-pendiente="foto del inicio (16:9 en escritorio y 4:5 en móvil)">
+        <svg class="ph__icono" aria-hidden="true"><use href="#i-camara"/></svg>
+        <figcaption>2-3 personas en una mesa del café, una taza pasando de mano en mano, luz cálida lateral</figcaption>
+      </figure>
+    </div>
+    <div class="hero__velo" aria-hidden="true"></div>
+
+    <div class="hero__contenido contenedor">
+      <p class="estado estado--hero pendiente" data-estado data-pendiente="horarios (aviso «Abierto ahora / Cerrado»)"></p>
+      <div class="hero__seq">
+        <p class="sobretitulo">Medellín · Sector Estadio</p>
+        <h1 class="hero__titulo" id="hero-titulo">Ven por el café. Quédate por la conexión.</h1>
+        <p class="hero__sub">Café de especialidad, cocina para compartir y una barra para brindar, en la Calle 49 del sector Estadio.</p>
+        <div class="hero__ctas">
+          <a class="boton boton--primario" href="#menu">Ver el menú<svg class="flecha" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          <a class="boton boton--secundario" href="#contacto" data-wa="general" data-ubicacion="hero">
+            <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Lo que hay -->
+  <section class="seccion seccion--superficie" id="lo-que-hay" aria-labelledby="lqh-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Lo que hay</p>
+        <h2 id="lqh-titulo">Todo pasa alrededor de una mesa.</h2>
+        <p class="seccion__intro">Del primer café al último brindis, aquí la gente se encuentra.</p>
+      </header>
+
+      <ul class="pilares carrusel" role="list">
+        <li class="pilar" data-reveal>
+          <svg class="pilar__icono icono-cafe" viewBox="0 0 48 48" aria-hidden="true">
+            <g class="vapor"><path d="M18 14c-1.6-2 1.6-3.6 0-6"/><path d="M24 14c-1.6-2 1.6-3.6 0-6"/><path d="M30 14c-1.6-2 1.6-3.6 0-6"/></g>
+            <path d="M11 19h26v7a11 11 0 0 1-11 11h-4a11 11 0 0 1-11-11z"/><path d="M37 21.5h2a4.5 4.5 0 0 1 0 9h-3"/><path d="M8 41.5h32"/>
+          </svg>
+          <h3 class="pilar__titulo"><a href="#menu-cafe">El café</a></h3>
+          <p class="pilar__texto">Espresso y cinco métodos manuales: V60, Chemex, Origami, prensa francesa y sifón japonés.</p>
+          <svg class="pilar__ir flecha" aria-hidden="true"><use href="#i-flecha"/></svg>
+        </li>
+        <li class="pilar" data-reveal>
+          <svg class="pilar__icono icono-cocina" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="25" r="11"/><circle cx="24" cy="25" r="6.5"/>
+            <g class="cubiertos"><path d="M7 9v7a2.2 2.2 0 0 0 4.4 0V9M9.2 16v24"/><path d="M41 9c-2.4 1.8-3.6 5.4-3.6 10.2H41V40"/></g>
+          </svg>
+          <h3 class="pilar__titulo"><a href="#menu-cocina">La cocina</a></h3>
+          <p class="pilar__texto">Brunch, hamburguesas, pizzas personales, pastas y entradas para compartir.</p>
+          <svg class="pilar__ir flecha" aria-hidden="true"><use href="#i-flecha"/></svg>
+        </li>
+        <li class="pilar" data-reveal>
+          <svg class="pilar__icono icono-horno" viewBox="0 0 48 48" aria-hidden="true">
+            <g class="pan"><path d="M9 34c0-10 6.7-17 15-17s15 7 15 17v3H9z"/><path d="M17 25.5l3 4.5M23.5 23l3 4.5M30 25.5l3 4.5"/></g>
+            <path d="M6 40.5h36"/>
+          </svg>
+          <h3 class="pilar__titulo"><a href="#menu-horno">El horno</a></h3>
+          <p class="pilar__texto">Empanadas, pasteles, tortas y rollos de canela.</p>
+          <svg class="pilar__ir flecha" aria-hidden="true"><use href="#i-flecha"/></svg>
+        </li>
+        <li class="pilar" data-reveal>
+          <svg class="pilar__icono icono-barra" viewBox="0 0 48 48" aria-hidden="true">
+            <g class="copa copa--izq"><path d="M11 10h10l-1.2 9.5a3.9 3.9 0 0 1-7.6 0z"/><path d="M16 23.5V37M11.5 37.5h9"/></g>
+            <g class="copa copa--der"><path d="M27 10h10l-1.2 9.5a3.9 3.9 0 0 1-7.6 0z"/><path d="M32 23.5V37M27.5 37.5h9"/></g>
+            <path class="chispa" d="M24 3.5v3M20.5 5l1.3 1.9M27.5 5l-1.3 1.9"/>
+          </svg>
+          <h3 class="pilar__titulo"><a href="#menu-bar">La barra</a></h3>
+          <p class="pilar__texto">Cócteles, café con licor, vino, sangría y cerveza.</p>
+          <svg class="pilar__ir flecha" aria-hidden="true"><use href="#i-flecha"/></svg>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3 · Favoritos: se arman solos desde los platos con "destacado": true en data/menu.js -->
+  <section class="seccion" id="favoritos" aria-labelledby="fav-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Favoritos de la casa</p>
+        <h2 id="fav-titulo">Para pedir la primera vez.</h2>
+        <p class="seccion__intro">Lo que la casa recomienda si es tu primera visita.</p>
+      </header>
+      <ul class="favoritos carrusel" id="favoritos-lista" role="list"></ul>
+    </div>
+  </section>
+
+  <!-- 4 · Menú: pestañas y platos desde data/menu.js -->
+  <section class="seccion seccion--alterna" id="menu" aria-labelledby="menu-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Menú</p>
+        <h2 id="menu-titulo">Una carta para quedarse.</h2>
+        <p class="seccion__nota" id="menu-nota"></p>
+      </header>
+
+      <div class="carta">
+        <div class="carta__barra">
+          <div class="carta__pestanas" id="carta-pestanas" role="tablist" aria-label="Grupos del menú"></div>
+        </div>
+        <div class="carta__paneles" id="carta-paneles"></div>
+      </div>
+
+      <div class="carta__pregunta" data-reveal>
+        <p>¿Tienes una pregunta sobre la carta?</p>
+        <a class="boton boton--secundario" href="#contacto" data-wa="menu" data-ubicacion="menu">
+          <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Pregúntanos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Nosotros: sin publicar hasta tener la historia real de la dueña -->
+  <section class="seccion nosotros pendiente" id="nosotros" aria-labelledby="nos-titulo" data-pendiente="sección sin publicar: historia real de la dueña">
+    <div class="contenedor">
+      <h2 class="sobretitulo" id="nos-titulo">Nosotros</h2>
+      <div class="nosotros__grid" id="nosotros-contenido">
+        <figure class="ph ph--retrato pendiente" data-pendiente="foto de la dueña y el equipo">
+          <svg class="ph__icono" aria-hidden="true"><use href="#i-camara"/></svg>
+          <figcaption>La dueña y el equipo</figcaption>
+        </figure>
+        <div class="nosotros__historia">
+          <ol class="capitulos">
+            <li class="capitulo pendiente" data-pendiente="capítulo 1: quién"></li>
+            <li class="capitulo pendiente" data-pendiente="capítulo 2: por qué"></li>
+            <li class="capitulo pendiente" data-pendiente="capítulo 3: qué se vive hoy"></li>
+          </ol>
+          <blockquote class="cita pendiente" data-pendiente="una cita de la dueña"></blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Reseñas: se publica con mínimo 3 reseñas reales de Google -->
+  <section class="seccion seccion--alterna resenas pendiente" id="resenas" aria-labelledby="res-titulo" data-pendiente="sección sin publicar: mínimo 3 reseñas reales de Google con su enlace">
+    <div class="contenedor">
+      <header class="seccion__cabeza">
+        <p class="sobretitulo">Reseñas</p>
+        <h2 id="res-titulo">Lo que cuentan quienes ya vinieron.</h2>
+      </header>
+      <ul class="resenas__lista" id="resenas-lista" role="list"></ul>
+      <a class="boton boton--secundario pendiente" data-resena data-pendiente="enlace para reseñar en Google">Déjanos tu reseña en Google</a>
+    </div>
+  </section>
+
+  <!-- 7 · Visítanos -->
+  <section class="seccion" id="visitanos" aria-labelledby="vis-titulo">
+    <div class="contenedor visitanos">
+      <div class="visitanos__info" data-reveal>
+        <p class="sobretitulo">Visítanos</p>
+        <h2 id="vis-titulo">Te esperamos en la Calle 49.</h2>
+        <p class="visitanos__direccion"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg><span data-dato="direccion-completa"></span></p>
+
+        <p class="estado pendiente" data-estado data-pendiente="horarios (aviso «Abierto ahora / Cerrado»)"></p>
+        <div class="horario pendiente" id="horario" data-pendiente="horario por día y festivos"></div>
+
+        <div class="visitanos__botones">
+          <a class="boton boton--primario" href="#visitanos" data-maps data-ubicacion="visitanos">
+            <svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar
+          </a>
+          <a class="boton boton--secundario" href="#contacto" data-wa="general" data-ubicacion="visitanos">
+            <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos
+          </a>
+        </div>
+
+        <ul class="practicos pendiente" data-practicos data-pendiente="datos prácticos: parqueadero, mascotas y medios de pago" role="list"></ul>
+      </div>
+
+      <div class="mapa" data-reveal>
+        <button class="mapa__fachada" type="button" data-mapa>
+          <svg class="mapa__pin" aria-hidden="true"><use href="#i-pin"/></svg>
+          <span class="mapa__texto">Ver el mapa</span>
+          <span class="mapa__nota">Se carga Google Maps al hacer clic</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · Contacto -->
+  <section class="seccion seccion--superficie cta-final" id="contacto" aria-labelledby="con-titulo">
+    <div class="contenedor" data-reveal>
+      <h2 id="con-titulo">¿Nos vemos en Conexión?</h2>
+      <p class="cta-final__texto">Escríbenos por WhatsApp. Te esperamos.</p>
+      <a class="boton boton--primario boton--grande" href="#contacto" data-wa="general" data-ubicacion="cta_final">
+        <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escribir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div class="pie__marca-bloque">
+      <p class="pie__marca">Café Conexión</p>
+      <p class="pie__frase">Hecho para encontrarnos.</p>
+    </div>
+    <div class="pie__bloque">
+      <p data-dato="direccion-completa"></p>
+      <a class="pie__enlace" href="#visitanos" data-maps data-ubicacion="footer">Cómo llegar</a>
+    </div>
+    <div class="pie__bloque">
+      <a class="pie__enlace" href="#contacto" data-wa="general" data-ubicacion="footer">
+        <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-dato="whatsapp-visible">WhatsApp</span>
+      </a>
+      <ul class="pie__redes pendiente" data-redes data-pendiente="redes: Instagram y TikTok del relanzamiento" role="list"></ul>
+    </div>
+    <nav class="pie__bloque" aria-label="Pie de página">
+      <ul class="pie__nav" role="list">
+        <li><a class="pie__enlace" href="#menu">Menú</a></li>
+        <li><a class="pie__enlace" href="#visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="contenedor pie__legal">
+    <p>© 2026 Café Conexión</p>
+    <p class="pie__credito pendiente" data-credito data-pendiente="crédito de desarrollo (opcional)"></p>
+  </div>
+</footer>
+
+<nav class="barra-movil" aria-label="Acciones rápidas">
+  <a class="barra-movil__accion barra-movil__accion--wa" href="#contacto" data-wa="general" data-ubicacion="barra_movil">
+    <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp
+  </a>
+  <a class="barra-movil__accion" href="#menu">
+    <svg class="icono" aria-hidden="true"><use href="#i-carta"/></svg>Menú
+  </a>
+  <a class="barra-movil__accion" href="#visitanos" data-maps data-ubicacion="barra_movil">
+    <svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar
+  </a>
+</nav>
+
+<a class="wa-flotante" href="#contacto" data-wa="general" data-ubicacion="flotante" aria-label="Escríbenos por WhatsApp">
+  <svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+</a>
+
+</body>
+</html>

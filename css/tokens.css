@@ -1,0 +1,123 @@
+/* Café Conexión · tokens de marca
+   Cambiar la marca = editar este archivo. styles.css solo usa estos nombres.
+   Paleta: decisión del 28-sep-2026 (README.md → Decisiones).
+   Fuentes: Fraunces (titulares y nombres de platos) + Figtree (texto, botones y precios). */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT@9..144,400..700,0..100&display=swap');
+
+:root {
+  /* ---------- Paleta ---------- */
+  --crema: #FCF6F0;
+  --piedra: #E6E6DD;
+  --arena: #E4DBCD;
+  --tarjeta: #FCFAF6;
+  --musgo: #424A3D;
+  --musgo-hondo: #353C31;
+  --pizarra: #45556B;
+  --tinta: #2A2829;
+  --gris: #5E5C59;
+  --filete: #DDD6CE;
+
+  /* Canales RGB para transparencias: rgb(var(--tinta-rgb) / .15) */
+  --tinta-rgb: 42 40 41;
+  --musgo-rgb: 66 74 61;
+  --crema-rgb: 252 246 240;
+
+  /* ---------- Papel de cada color en la web ---------- */
+  --fondo: var(--crema);               /* fondo base */
+  --fondo-alterno: var(--piedra);      /* secciones alternas: Menú, Reseñas */
+  --superficie: var(--arena);          /* bloques grandes: intro, Lo que hay, cierre, menú del celular */
+  --tarjeta-fondo: var(--tarjeta);
+  --texto: var(--tinta);
+  --texto-2: var(--gris);              /* descripciones y notas */
+  --primario: var(--musgo);            /* titulares y botón principal */
+  --primario-hover: var(--musgo-hondo);
+  --primario-texto: var(--crema);      /* texto sobre el primario */
+  --enlace: var(--musgo);              /* enlaces, íconos y anillo de foco */
+  --acento: var(--pizarra);            /* sobretítulos, etiqueta «Favorito», detalles: 5 % o menos */
+  --borde: var(--filete);
+  --linea: rgb(var(--tinta-rgb) / .13);     /* filetes entre platos y filas */
+  --hover: rgb(var(--musgo-rgb) / .08);     /* fondo suave al pasar el mouse */
+  --placeholder: var(--piedra);        /* recuadros de foto pendiente */
+  --hero-fondo: var(--musgo);          /* se ve mientras no haya foto en el inicio */
+  --pie-fondo: var(--musgo);
+  --pie-texto: var(--crema);
+  --marca-pendiente: #97502F;          /* solo vista previa: marco y etiqueta PENDIENTE */
+
+  /* ---------- Tipografía ---------- */
+  --fuente-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --fuente-texto: 'Figtree', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --display-ajustes: 'SOFT' 100, 'WONK' 0;
+
+  --h1: clamp(2.5rem, 1.4rem + 4.6vw, 5rem);
+  --h1-alto: 1.02;
+  --h1-tracking: -0.02em;
+  --h1-peso: 560;
+  --h2: clamp(2rem, 1.3rem + 2.6vw, 3.5rem);
+  --h2-alto: 1.08;
+  --h2-tracking: -0.015em;
+  --h2-peso: 540;
+  --h3: clamp(1.35rem, 1.1rem + 0.8vw, 1.75rem);
+  --h3-alto: 1.2;
+  --h3-peso: 520;
+  --sobre: 0.78rem;
+  --sobre-peso: 600;
+  --sobre-tracking: 0.16em;
+  --cuerpo: 1.0625rem;
+  --cuerpo-alto: 1.65;
+  --pequeno: 0.875rem;
+  --pequeno-alto: 1.5;
+  --boton: 0.95rem;
+  --boton-peso: 600;
+  --boton-tracking: 0.01em;
+  --precio-peso: 600;
+
+  /* ---------- Formas y sombras ---------- */
+  --radio-sm: 10px;
+  --radio-md: 18px;
+  --radio-lg: 28px;
+  --pildora: 999px;
+  --sombra-suave: 0 1px 2px rgb(var(--tinta-rgb) / .06);
+  --sombra-hover: 0 18px 40px -24px rgb(var(--musgo-rgb) / .35);
+
+  /* ---------- Layout ---------- */
+  --contenedor: 1200px;
+  --margen: 20px;                      /* 32px en tablet y 48px en escritorio, abajo */
+  --pad-seccion: clamp(72px, 9vw, 128px);
+  --alto-cabecera: 64px;
+  --alto-barra-movil: 70px;
+
+  /* ---------- Movimiento ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-micro: 160ms;
+  --t-ui: 320ms;
+  --t-reveal: 640ms;
+  --t-zoom: 16s;
+  --escalon: 70ms;                     /* retraso entre elementos que entran juntos */
+  --subida: 16px;                      /* recorrido del fundido hacia arriba */
+}
+
+/* Breakpoints: 640px (sm), 1024px (md), 1280px (lg). */
+@media (min-width: 640px) {
+  :root { --margen: 32px; }
+}
+@media (min-width: 1024px) {
+  :root { --margen: 48px; --alto-cabecera: 76px; --alto-barra-movil: 0px; }
+}
+
+/* ---------- Paletas alternativas ----------
+   Para cambiar de paleta entera se reemplaza el bloque «Papel de cada color» por uno de estos.
+
+   Paleta del JSON (marca_provisional):
+     --fondo: #F4EEE4; --fondo-alterno: #E9DFCF; --superficie: #9DB6A0; --tarjeta-fondo: #FFFDF9;
+     --texto: #23211E; --texto-2: #6B665E; --primario: #2F4436; --primario-hover: #243529;
+     --primario-texto: #F4EEE4; --enlace: #4A6653; --acento: #97502F; --borde: rgb(35 33 30 / .12);
+     --placeholder: #E3ECE4; --hero-fondo: #2F4436; --pie-fondo: #2F4436; --pie-texto: #F4EEE4;
+
+   Paleta del manual de marca (brand-CafeConexion.json):
+     --fondo: #FAF7F1; --fondo-alterno: #E7DCC9; --superficie: #9DB6A0; --tarjeta-fondo: #FAF7F1;
+     --texto: #2E332C; --texto-2: rgb(46 51 44 / .7); --primario: #4E6353; --primario-hover: #3E5043;
+     --primario-texto: #FAF7F1; --enlace: #4E6353; --acento: #B0552F; --borde: #E7DCC9;
+     --placeholder: #E7DCC9; --hero-fondo: #4E6353; --pie-fondo: #4E6353; --pie-texto: #FAF7F1;
+     (con el manual, las fuentes son Lora + Nunito Sans) */
