@@ -369,9 +369,10 @@
   }
 
   /* ---------- Header ----------
-     Transparente sobre el inicio, sólido después. Se esconde al bajar y vuelve al subir. */
+     Transparente sobre la portada con foto ([data-hero]: inicio y café), sólido después.
+     Se esconde al bajar y vuelve al subir. */
   function cabecera() {
-    var cab = $('#cabecera'), hero = $('#inicio');
+    var cab = $('#cabecera'), hero = $('[data-hero]') || $('#inicio');
     if (!cab) return;
     if (hero && 'IntersectionObserver' in w) {
       cab.classList.add('cabecera--transparente');

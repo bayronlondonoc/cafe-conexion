@@ -23,6 +23,7 @@ window.CC_SITE = {
     "mensajes_whatsapp": {
       "general": "Hola, Café Conexión. Vi su página web y quiero más información.",
       "menu": "Hola, Café Conexión. Tengo una pregunta sobre el menú.",
+      "cafe": "Hola, Café Conexión. Tengo una pregunta sobre sus cafés.",
       "reserva": "Hola, Café Conexión. Quiero reservar para {personas} el {fecha} a las {hora}. Mi nombre es {nombre}. {nota}",
       "contacto": "Hola, Café Conexión. Soy {nombre}. {mensaje}"
     },

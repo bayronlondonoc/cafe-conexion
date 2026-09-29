@@ -41,6 +41,7 @@ document.documentElement.classList.add('js');
   <symbol id="i-carta" viewBox="0 0 24 24"><path d="M6.5 3.5h11a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></symbol>
   <symbol id="i-flecha" viewBox="0 0 16 16"><path d="M2.5 8h11M9.5 4l4 4-4 4"/></symbol>
   <symbol id="i-externo" viewBox="0 0 16 16"><path d="M5 11l6-6M6.5 5H11v4.5"/></symbol>
+  <symbol id="i-grano" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6.4" ry="9.2" transform="rotate(35 12 12)"/><path d="M7.4 18.5C9 16.4 11.3 16 11.8 12.4S14.9 7.8 16.6 5.5"/></symbol>
 </svg>
 
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -50,6 +51,7 @@ document.documentElement.classList.add('js');
     <a class="marca" href="index.html">Café Conexión</a>
     <nav class="nav" aria-label="Principal">
       <ul class="nav__lista">
+        <li class="nav__cafe"><a href="cafe.html"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="espacio.html" aria-current="page">El espacio</a></li>
         <li class="solo-preview" data-enlace-eventos><a href="eventos.html">Eventos</a></li>
@@ -68,6 +70,7 @@ document.documentElement.classList.add('js');
   <nav aria-label="Menú del sitio">
     <ul class="menu-movil__lista">
       <li><a href="index.html">Inicio</a></li>
+      <li class="menu-movil__cafe"><a href="cafe.html"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
       <li><a href="nosotros.html">Nosotros</a></li>
       <li><a href="espacio.html" aria-current="page">El espacio</a></li>
       <li class="solo-preview" data-enlace-eventos><a href="eventos.html">Eventos</a></li>
@@ -164,6 +167,7 @@ document.documentElement.classList.add('js');
       <p class="pie__titulo">Explorar</p>
       <ul class="pie__nav" role="list">
         <li><a class="pie__enlace" href="index.html">Inicio</a></li>
+        <li><a class="pie__enlace" href="cafe.html">Café</a></li>
         <li><a class="pie__enlace" href="nosotros.html">Nosotros</a></li>
         <li><a class="pie__enlace" href="espacio.html">El espacio</a></li>
         <li><a class="pie__enlace" href="index.html#favoritos" data-menu data-ubicacion="footer">Menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a></li>

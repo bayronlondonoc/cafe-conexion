@@ -43,6 +43,7 @@
   --pie-fondo: var(--musgo);
   --pie-texto: var(--crema);
   --marca-pendiente: #97502F;          /* solo vista previa: marco y etiqueta PENDIENTE */
+  --barra-fondo: rgb(var(--crema-rgb) / .96);   /* barra inferior del celular */
 
   /* ---------- Tipografía ---------- */
   --fuente-display: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -96,6 +97,54 @@
   --t-zoom: 16s;
   --escalon: 70ms;                     /* retraso entre elementos que entran juntos */
   --subida: 16px;                      /* recorrido del fundido hacia arriba */
+}
+
+/* ---------- Tema de la página del café (cafe.html: <html data-tema="cafe">) ----------
+   Tostado oscuro, crema de leche y caramelo. Solo cambia los papeles: el resto del sitio
+   sigue con la paleta de arriba. */
+[data-tema="cafe"] {
+  --espresso: #15100D;
+  --tostado: #1E1612;
+  --grano: #2A1F19;
+  --tarjeta-cafe: #221913;
+  --crema-leche: #F2E6D8;
+  --cafe-con-leche: #C4B19E;
+  --caramelo: #E3A55A;
+  --caramelo-claro: #F0BE7E;
+  --cobre: #DE8052;
+  --cafe-rgb: 21 16 13;
+  --caramelo-rgb: 227 165 90;
+  --leche-rgb: 242 230 216;
+
+  --fondo: var(--espresso);
+  --fondo-alterno: var(--tostado);
+  --superficie: var(--grano);
+  --tarjeta-fondo: var(--tarjeta-cafe);
+  --texto: var(--crema-leche);
+  --texto-2: var(--cafe-con-leche);
+  --primario: var(--caramelo);
+  --primario-hover: var(--caramelo-claro);
+  --primario-texto: var(--espresso);
+  --enlace: var(--caramelo);
+  --acento: var(--cobre);
+  --borde: rgb(var(--leche-rgb) / .12);
+  --linea: rgb(var(--leche-rgb) / .12);
+  --hover: rgb(var(--caramelo-rgb) / .12);
+  --placeholder: var(--grano);
+  --hero-fondo: #0E0A08;
+  --pie-fondo: #0E0A08;
+  --pie-texto: var(--crema-leche);
+  --barra-fondo: rgb(var(--cafe-rgb) / .96);
+
+  /* Capas de las tazas dibujadas */
+  --capa-espresso: #4A2B1C;
+  --capa-agua: #7A5540;
+  --capa-leche: #D8C0A2;
+  --capa-espuma: #F4E9DA;
+  --capa-chocolate: #2E1810;
+  --capa-almendras: #E6D5BC;
+
+  color-scheme: dark;
 }
 
 /* Breakpoints: 640px (sm), 1024px (md), 1280px (lg). */

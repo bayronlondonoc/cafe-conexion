@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="es-CO" data-mode="produccion" data-tema="cafe">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Café de especialidad | Café Conexión</title>
+<meta name="description" content="Los cafés de Café Conexión: dos cafés colombianos, cinco métodos manuales (V60, Chemex, Origami, prensa francesa y sifón japonés), espresso, café frío y café con licor. Sector Estadio, Medellín.">
+<!-- Vista previa: la página no se indexa. Al pasar a producción se borra esta línea (README.md). -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#15100D">
+
+<meta property="og:locale" content="es_CO">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Café Conexión">
+<meta property="og:title" content="Café de especialidad | Café Conexión">
+<meta property="og:description" content="Los cafés de Café Conexión: dos cafés colombianos, cinco métodos manuales (V60, Chemex, Origami, prensa francesa y sifón japonés), espresso, café frío y café con licor. Sector Estadio, Medellín.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<script>
+document.documentElement.classList.add('js');
+</script>
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="data/site.js" defer></script>
+<script src="data/menu.js" defer></script>
+<script src="data/cafe.js" defer></script>
+<script src="data/creditos.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/cafe.js" defer></script>
+</head>
+<body data-pagina="cafe">
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-camara" viewBox="0 0 24 24"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.3l1.4-2.2h7.6L17.2 7h2.3A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.6"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3.8 20.2l1.3-4.4a8.4 8.4 0 1 1 3.1 3.2z"/><path fill="currentColor" stroke="none" d="M9.1 7.6c.3-.1.6 0 .7.3l.8 1.8c.1.2 0 .5-.1.7l-.6.7c-.1.1-.1.3 0 .5a6.6 6.6 0 0 0 2.9 2.7c.2.1.4 0 .5-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.4.3.7-.2.9-1 1.6-1.9 1.6-3.3-.2-6.2-3.1-6.4-6.4 0-.9.6-1.8 1.4-2.1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-carta" viewBox="0 0 24 24"><path d="M6.5 3.5h11a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 16 16"><path d="M2.5 8h11M9.5 4l4 4-4 4"/></symbol>
+  <symbol id="i-externo" viewBox="0 0 16 16"><path d="M5 11l6-6M6.5 5H11v4.5"/></symbol>
+  <symbol id="i-grano" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6.4" ry="9.2" transform="rotate(35 12 12)"/><path d="M7.4 18.5C9 16.4 11.3 16 11.8 12.4S14.9 7.8 16.6 5.5"/></symbol>
+</svg>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <div class="cabecera__inner contenedor">
+    <a class="marca" href="index.html">Café Conexión</a>
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li class="nav__cafe"><a href="cafe.html" aria-current="page"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="espacio.html">El espacio</a></li>
+        <li class="solo-preview" data-enlace-eventos><a href="eventos.html">Eventos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="boton boton--primario cabecera__menu" href="index.html#favoritos" data-menu data-ubicacion="header">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+    <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-movil">
+      <span class="visually-hidden">Abrir menú</span>
+      <span class="hamburguesa__lineas" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-movil" id="menu-movil" hidden>
+  <nav aria-label="Menú del sitio">
+    <ul class="menu-movil__lista">
+      <li><a href="index.html">Inicio</a></li>
+      <li class="menu-movil__cafe"><a href="cafe.html" aria-current="page"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="espacio.html">El espacio</a></li>
+      <li class="solo-preview" data-enlace-eventos><a href="eventos.html">Eventos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="menu-movil__botones">
+      <a class="boton boton--primario boton--ancho" href="index.html#favoritos" data-menu data-ubicacion="header">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+      <a class="boton boton--secundario boton--ancho" href="contacto.html" data-wa="general" data-ubicacion="header"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos por WhatsApp</a>
+    </div>
+  </nav>
+</div>
+
+<main id="contenido" tabindex="-1">
+<!-- Portada: foto de granos. Si data/cafe.js trae videos.portada, el video va encima. -->
+  <section class="hero hero--cafe" id="portada" data-hero aria-labelledby="hero-titulo">
+    <div class="hero__media">
+      <img src="assets/img/cafe-granos.jpg" alt="Granos de café tostado, de cerca" width="1280" height="960" fetchpriority="high" decoding="async">
+      <div class="video-ranura" data-video="portada"></div>
+    </div>
+    <div class="hero__velo" aria-hidden="true"></div>
+
+    <div class="hero__contenido contenedor">
+      <div class="hero__seq">
+        <p class="sobretitulo">Café de especialidad</p>
+        <h1 class="hero__titulo" id="hero-titulo">Todo empieza con un café.</h1>
+        <p class="hero__sub">Dos cafés colombianos, cinco métodos manuales y un espresso para cada gusto. Aquí te contamos de dónde viene y cómo lo preparamos.</p>
+        <div class="hero__ctas">
+          <a class="boton boton--primario boton--grande" href="index.html#favoritos" data-menu data-ubicacion="hero_cafe">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+          <a class="boton boton--secundario boton--grande" href="#metodos">Conoce los métodos<svg class="flecha" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+        </div>
+        <ul class="cifras" id="cafe-cifras" role="list"></ul>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cafe-nav" aria-label="En esta página">
+    <div class="contenedor">
+      <ul role="list">
+        <li><a href="#cafes">Nuestros cafés</a></li>
+        <li><a href="#metodos">Métodos</a></li>
+        <li><a href="#espresso">Espresso</a></li>
+        <li><a href="#frio">Café frío</a></li>
+        <li><a href="#licor">Con licor</a></li>
+        <li><a href="#origen">Del grano a la taza</a></li>
+        <li><a href="#cata">Cómo probarlo</a></li>
+        <li><a href="#regiones">Regiones</a></li>
+        <li><a href="#glosario">Glosario</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Nuestros cafés: data/cafe.js → cafes -->
+  <section class="seccion" id="cafes" aria-labelledby="cafes-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Nuestros cafés</p>
+        <h2 id="cafes-titulo">Dos cafés, dos maneras de tomarlo.</h2>
+        <p class="seccion__intro">Uno para el espresso y las bebidas con leche; otro para los métodos manuales. Los dos son colombianos y cada uno tiene su ficha.</p>
+      </header>
+      <div class="cafes-grid" id="cafes-lista"></div>
+      <p class="consejo" data-reveal><strong>¿No sabes cuál pedir?</strong> Pide un espresso con el café de la casa y un V60 con el de origen, y pruébalos lado a lado.</p>
+    </div>
+  </section>
+
+  <!-- Métodos: nombre, foto y precio salen de data/menu.js; la guía, de data/cafe.js → guia_metodos -->
+  <section class="seccion seccion--alterna" id="metodos" aria-labelledby="metodos-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Métodos manuales</p>
+        <h2 id="metodos-titulo">Cinco métodos, cinco tazas distintas.</h2>
+        <p class="seccion__intro">El mismo café sabe distinto según cómo se prepare. Cada método sale para 2 tazas: para compartir o para repetir.</p>
+      </header>
+      <div class="metodos-cafe">
+        <div class="contenidos" id="metodos-cafe"></div>
+        <div class="mapa-card" data-reveal>
+          <h3>¿Cuerpo o acidez?</h3>
+          <p>Así se ubican los cinco métodos. Si te gusta el café con cuerpo, mira a la derecha; si lo prefieres frutal y brillante, mira hacia arriba.</p>
+          <div class="mapa-sabor__marco">
+            <ul class="mapa-sabor" id="mapa-sabor" role="list" aria-label="Los cinco métodos según su cuerpo y su acidez"></ul>
+            <p class="mapa-sabor__eje mapa-sabor__eje--x" aria-hidden="true">Más cuerpo →</p>
+            <p class="mapa-sabor__eje mapa-sabor__eje--y" aria-hidden="true">Más acidez →</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banda: foto de un filtrado. Si data/cafe.js trae videos.metodos, el video va encima. -->
+  <section class="banda" aria-labelledby="banda-titulo">
+    <div class="banda__media">
+      <img src="assets/img/cafe-filtrado.jpg" alt="Un barista sirve agua caliente con una tetera de cobre sobre un filtro de vidrio" width="960" height="640" loading="lazy" decoding="async">
+      <div class="video-ranura" data-video="metodos"></div>
+    </div>
+    <div class="contenedor banda__contenido" data-reveal>
+      <p class="sobretitulo">Así se hace un V60</p>
+      <h2 class="banda__titulo" id="banda-titulo">Agua a 92 °C, café recién molido y tres minutos.</h2>
+      <ol class="banda__pasos" role="list">
+        <li><span aria-hidden="true">1</span>Se moja el filtro con agua caliente para quitarle el sabor a papel.</li>
+        <li><span aria-hidden="true">2</span>Se echa un poco de agua sobre el café y se espera 30 segundos: el café se infla y suelta el gas.</li>
+        <li><span aria-hidden="true">3</span>Se sirve el resto en círculos, despacio, hasta completar la jarra.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Espresso y con leche: data/menu.js; las capas de cada taza, de data/cafe.js → tazas -->
+  <section class="seccion" id="espresso" aria-labelledby="espresso-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza seccion__cabeza--foto" data-reveal>
+        <div>
+          <p class="sobretitulo">Espresso y con leche</p>
+          <h2 id="espresso-titulo">Un espresso, seis maneras de pedirlo.</h2>
+          <p class="seccion__intro">Todo empieza con un shot de espresso. Lo que cambia es cuánta agua, leche o espuma lleva encima. Así se arma cada taza.</p>
+        </div>
+        <figure class="cabeza-foto">
+          <img src="assets/img/cafe-latte-arte.jpg" alt="Una mano sostiene un latte con un cisne dibujado en la espuma, junto a la máquina de espresso" width="960" height="640" loading="lazy" decoding="async">
+        </figure>
+      </header>
+      <div class="bebidas" id="espresso-lista"></div>
+    </div>
+  </section>
+
+  <!-- Café frío: data/menu.js -->
+  <section class="seccion seccion--alterna" id="frio" aria-labelledby="frio-titulo">
+    <div class="contenedor barra-grid">
+      <div class="barra__fotos" data-reveal>
+        <img src="assets/img/cold-brew.webp" alt="Vaso de café frío con hielo" width="760" height="570" loading="lazy" decoding="async">
+        <img src="assets/img/affogato.webp" alt="Affogato: helado de vainilla con un shot de espresso" width="760" height="570" loading="lazy" decoding="async">
+      </div>
+      <div class="barra__texto">
+        <header class="seccion__cabeza" data-reveal>
+          <p class="sobretitulo">Café frío</p>
+          <h2 id="frio-titulo">Para cuando hace calor.</h2>
+          <p class="seccion__intro">El cold brew pasa 24 horas en agua fría: sale suave y naturalmente dulce. Y si quieres algo de postre, está el affogato.</p>
+        </header>
+        <ul class="platos" id="frio-lista" role="list"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Café con licor: data/menu.js, sin los platos de data/cafe.js → licor_sin_cafe -->
+  <section class="seccion" id="licor" aria-labelledby="licor-titulo">
+    <div class="contenedor barra-grid barra-grid--inversa">
+      <div class="barra__fotos" data-reveal>
+        <img src="assets/img/cafe-irlandes.webp" alt="Café irlandés en copa de vidrio, con crema encima" width="760" height="570" loading="lazy" decoding="async">
+        <img src="assets/img/capuchino-con-licor.webp" alt="Una persona sostiene un capuchino con arte latte" width="760" height="570" loading="lazy" decoding="async">
+      </div>
+      <div class="barra__texto">
+        <header class="seccion__cabeza" data-reveal>
+          <p class="sobretitulo">Café con licor</p>
+          <h2 id="licor-titulo">Para la sobremesa.</h2>
+          <p class="seccion__intro">Con whisky, brandy, aguardiente, Amaretto o Baileys. Y un café bombón, con leche condensada, para los que lo prefieren dulce.</p>
+        </header>
+        <ul class="platos" id="licor-lista" role="list"></ul>
+        <div class="legal" id="licor-legal"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Del grano a la taza -->
+  <section class="seccion seccion--alterna" id="origen" aria-labelledby="origen-titulo">
+    <div class="contenedor recorrido-grid">
+      <div class="recorrido__fotos" data-reveal>
+        <img src="assets/img/cafe-cerezas-racimo.jpg" alt="Racimo de cerezas de café, verdes y rojas, entre hojas" width="640" height="850" loading="lazy" decoding="async">
+        <img src="assets/img/cafe-cerezas.jpg" alt="Cerezas de café maduras y verdes en la rama" width="1200" height="690" loading="lazy" decoding="async">
+        <img src="assets/img/cafe-tueste.jpg" alt="Granos de café recién tostados en la bandeja de la tostadora" width="1024" height="628" loading="lazy" decoding="async">
+      </div>
+      <div>
+        <header class="seccion__cabeza" data-reveal>
+          <p class="sobretitulo">Del grano a la taza</p>
+          <h2 id="origen-titulo">Antes de llegar a tu mesa, un café pasa por muchas manos.</h2>
+        </header>
+        <ol class="recorrido" role="list">
+          <li class="paso" data-reveal>
+            <h3 class="paso__titulo">Cultivo</h3>
+            <p>En Colombia, el café crece en las montañas, entre 1.200 y 2.200 metros de altura. Una planta tarda unos tres años en dar su primera cosecha.</p>
+          </li>
+          <li class="paso" data-reveal>
+            <h3 class="paso__titulo">Cosecha</h3>
+            <p>Las cerezas no maduran todas al tiempo, así que se recogen a mano, una por una, cuando están rojas.</p>
+          </li>
+          <li class="paso" data-reveal>
+            <h3 class="paso__titulo">Beneficio</h3>
+            <p>Se separa el grano de la pulpa. Según el proceso (lavado, honey o natural), la taza sale más limpia, más dulce o más frutal.</p>
+          </li>
+          <li class="paso" data-reveal>
+            <h3 class="paso__titulo">Secado</h3>
+            <p>El grano se seca al sol o en secadores hasta bajar su humedad, para que se conserve. Después se trilla: se le quita la cascarilla y queda el café verde.</p>
+          </li>
+          <li class="paso" data-reveal>
+            <h3 class="paso__titulo">Tueste</h3>
+            <p>En la tostadora, el grano verde cambia de color, de aroma y de sabor. Un tueste medio saca el dulzor sin tapar el origen.</p>
+          </li>
+          <li class="paso" data-reveal>
+            <h3 class="paso__titulo">Molienda</h3>
+            <p>Lo ideal es molerlo justo antes de prepararlo: molido, pierde aroma rápido. Cada método pide su propia molienda.</p>
+          </li>
+          <li class="paso" data-reveal>
+            <h3 class="paso__titulo">Preparación</h3>
+            <p>Agua, temperatura y tiempo. Con el mismo café, un V60 y una prensa francesa dan dos tazas muy distintas.</p>
+          </li>
+          <li class="paso" data-reveal>
+            <h3 class="paso__titulo">La taza</h3>
+            <p>Llega a tu mesa. Pruébalo primero sin azúcar: puede que no la necesites.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo probarlo -->
+  <section class="seccion" id="cata" aria-labelledby="cata-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Cómo probarlo</p>
+        <h2 id="cata-titulo">Cinco cosas para fijarte en tu taza.</h2>
+        <p class="seccion__intro">No hace falta ser catador. Con estas cinco pistas ya puedes decir qué café te gusta más y por qué.</p>
+      </header>
+      <ol class="cata" role="list">
+        <li data-reveal><h3>Aroma</h3><p>Acerca la taza antes del primer sorbo. ¿Huele a chocolate, a fruta, a panela?</p></li>
+        <li data-reveal><h3>Acidez</h3><p>La chispa que se siente a los lados de la lengua, como en una fruta. No es amargor: es brillo.</p></li>
+        <li data-reveal><h3>Cuerpo</h3><p>El peso del café en la boca. Ligero como un té o denso como una leche entera.</p></li>
+        <li data-reveal><h3>Dulzor</h3><p>Un buen café tiene dulzor propio, sin azúcar. Pruébalo primero solo.</p></li>
+        <li data-reveal><h3>Final</h3><p>Lo que queda después de tragar. Si es largo y agradable, es buena señal.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Regiones: js/cafe.js marca las regiones de donde vienen nuestros cafés (data/cafe.js → origen) -->
+  <section class="seccion seccion--alterna" id="regiones" aria-labelledby="regiones-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Colombia en la taza</p>
+        <h2 id="regiones-titulo">Cada región sabe distinto.</h2>
+        <p class="seccion__intro">El suelo, la altura y la lluvia cambian el sabor. Estas son algunas de las regiones cafeteras más conocidas del país.</p>
+      </header>
+      <ul class="regiones" id="regiones-lista" role="list">
+        <li data-region="Huila" data-reveal><h3>Huila</h3><p>Dulce y equilibrado, con acidez brillante y notas de fruta y panela. Es de las regiones con más premios de calidad del país.</p></li>
+        <li data-region="Nariño" data-reveal><h3>Nariño</h3><p>Cafés de mucha altura, cerca de la línea ecuatorial: acidez alta, cuerpo ligero y notas cítricas y florales.</p></li>
+        <li data-region="Cauca" data-reveal><h3>Cauca</h3><p>Entre volcanes y montañas: tazas dulces y florales, de acidez media a alta.</p></li>
+        <li data-region="Tolima" data-reveal><h3>Tolima</h3><p>Tazas balanceadas, con notas de frutos rojos, caramelo y chocolate.</p></li>
+        <li data-region="Antioquia" data-reveal><h3>Antioquia</h3><p>Nuestra tierra. Cafés de cuerpo medio y dulces, con notas de chocolate y nuez.</p></li>
+        <li data-region="Sierra Nevada" data-reveal><h3>Sierra Nevada</h3><p>Café de sombra en la Sierra Nevada de Santa Marta: suave, de cuerpo medio, con notas de nuez y cacao.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Glosario -->
+  <section class="seccion" id="glosario" aria-labelledby="glosario-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Glosario</p>
+        <h2 id="glosario-titulo">Palabras de barra.</h2>
+        <p class="seccion__intro">Lo que significan las palabras que vas a ver en la carta y en las fichas de nuestros cafés.</p>
+      </header>
+      <dl class="glosario">
+        <div data-reveal><dt>Café de especialidad</dt><dd>Café que saca 80 puntos o más sobre 100 en la evaluación de la SCA (Specialty Coffee Association): sin defectos y con sabores propios de su origen.</dd></div>
+        <div data-reveal><dt>Espresso</dt><dd>Café concentrado que se hace pasando agua caliente a presión por café molido fino, en unos 25 a 30 segundos.</dd></div>
+        <div data-reveal><dt>Crema</dt><dd>La capa dorada que cubre un espresso recién hecho. Se forma con los aceites y el gas del café.</dd></div>
+        <div data-reveal><dt>Tueste</dt><dd>Hasta dónde se tuesta el grano. Un tueste claro deja ver la fruta; uno oscuro, el cacao y el amargor.</dd></div>
+        <div data-reveal><dt>Molienda</dt><dd>Qué tan fino se muele el café. Fina para el espresso, media fina para el V60, gruesa para la prensa francesa.</dd></div>
+        <div data-reveal><dt>Lavado</dt><dd>Proceso en el que se quita la pulpa y se lava el grano antes de secarlo. Da tazas limpias y de acidez clara.</dd></div>
+        <div data-reveal><dt>Honey</dt><dd>Proceso en el que el grano se seca con parte del mucílago, la capa dulce de la cereza. Da tazas más dulces y con más cuerpo.</dd></div>
+        <div data-reveal><dt>Natural</dt><dd>Proceso en el que la cereza se seca entera, con el grano adentro. Da tazas frutales e intensas.</dd></div>
+        <div data-reveal><dt>Variedad</dt><dd>El tipo de planta de café, como Caturra, Castillo o Geisha. Cada una cambia el sabor de la taza.</dd></div>
+        <div data-reveal><dt>m s. n. m.</dt><dd>Metros sobre el nivel del mar. Entre más alto se cultiva, más despacio madura la cereza y más acidez y dulzor tiene el café.</dd></div>
+        <div data-reveal><dt>Cold brew</dt><dd>Café preparado con agua fría durante muchas horas. Sale suave, dulce y con poca acidez.</dd></div>
+        <div data-reveal><dt>Extracción</dt><dd>Lo que el agua saca del café molido. Si es poca, la taza sale ácida y aguada; si es demasiada, sale amarga.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Cierre -->
+  <section class="banda banda--cierre" aria-labelledby="cierre-titulo">
+    <div class="banda__media">
+      <img src="assets/img/cafe-taza-manos.jpg" alt="Dos manos sostienen una taza de café con arte latte" width="960" height="640" loading="lazy" decoding="async">
+    </div>
+    <div class="contenedor banda__contenido" data-reveal>
+      <h2 class="banda__titulo" id="cierre-titulo">¿Qué café te preparamos hoy?</h2>
+      <p class="banda__texto">Mira la carta completa o escríbenos: te ayudamos a escoger.</p>
+      <div class="cta-final__botones">
+        <a class="boton boton--primario boton--grande" href="index.html#favoritos" data-menu data-ubicacion="cta_cafe">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+        <a class="boton boton--secundario boton--grande" href="contacto.html" data-wa="cafe" data-ubicacion="cta_cafe"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div class="pie__marca-bloque">
+      <p class="pie__marca">Café Conexión</p>
+      <p class="pie__frase">Hecho para encontrarnos.</p>
+    </div>
+    <nav class="pie__bloque" aria-label="Explorar">
+      <p class="pie__titulo">Explorar</p>
+      <ul class="pie__nav" role="list">
+        <li><a class="pie__enlace" href="index.html">Inicio</a></li>
+        <li><a class="pie__enlace" href="cafe.html">Café</a></li>
+        <li><a class="pie__enlace" href="nosotros.html">Nosotros</a></li>
+        <li><a class="pie__enlace" href="espacio.html">El espacio</a></li>
+        <li><a class="pie__enlace" href="index.html#favoritos" data-menu data-ubicacion="footer">Menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a></li>
+        <li class="solo-preview" data-enlace-eventos><a class="pie__enlace" href="eventos.html">Eventos</a></li>
+        <li><a class="pie__enlace" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="pie__bloque">
+      <p class="pie__titulo">Visítanos</p>
+      <p data-dato="direccion-completa"></p>
+      <a class="pie__enlace" href="espacio.html" data-maps data-ubicacion="footer"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
+    </div>
+    <div class="pie__bloque">
+      <p class="pie__titulo">Escríbenos</p>
+      <a class="pie__enlace" href="contacto.html" data-wa="general" data-ubicacion="footer"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-dato="whatsapp-visible">WhatsApp</span></a>
+      <ul class="pie__redes pendiente" data-redes data-pendiente="redes: Instagram y TikTok del relanzamiento" role="list"></ul>
+    </div>
+  </div>
+  <div class="contenedor pie__legal">
+    <p>© 2026 Café Conexión</p>
+    <p class="pie__credito pendiente" data-credito data-pendiente="crédito de desarrollo (opcional)"></p>
+  </div>
+  <div class="contenedor">
+    <details class="creditos">
+      <summary>Créditos de las imágenes</summary>
+      <p class="creditos__nota">Fotos provisionales de bancos libres: no son del local y se reemplazan por fotos propias. Se recortaron y comprimieron para la web.</p>
+      <ol class="creditos__lista" id="creditos-lista"></ol>
+    </details>
+  </div>
+</footer>
+
+<nav class="barra-movil" aria-label="Acciones rápidas">
+  <a class="barra-movil__accion barra-movil__accion--wa" href="contacto.html" data-wa="general" data-ubicacion="barra_movil"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+  <a class="barra-movil__accion" href="index.html#favoritos" data-menu data-ubicacion="barra_movil"><svg class="icono" aria-hidden="true"><use href="#i-carta"/></svg>Menú<span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+  <a class="barra-movil__accion" href="espacio.html" data-maps data-ubicacion="barra_movil"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
+</nav>
+
+<a class="wa-flotante" href="contacto.html" data-wa="general" data-ubicacion="flotante" aria-label="Escríbenos por WhatsApp"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+
+</body>
+</html>

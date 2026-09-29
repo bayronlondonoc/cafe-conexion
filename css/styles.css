@@ -620,7 +620,7 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
   position: fixed; inset: auto 0 0; z-index: 40;
   display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 8px;
   padding: 10px var(--margen) calc(10px + env(safe-area-inset-bottom));
-  background: rgb(var(--crema-rgb) / .96);
+  background: var(--barra-fondo);
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border-top: 1px solid var(--borde);
   transform: translateY(110%);
@@ -652,6 +652,309 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
   }
   .wa-flotante:hover { transform: translateY(-3px); background: var(--primario-hover); }
   .wa-flotante .icono { width: 28px; height: 28px; stroke-width: 1.5; }
+}
+
+/* ---------- Página del café (cafe.html) ----------
+   Usa el tema oscuro de tokens.css ([data-tema="cafe"]): tostado, crema de leche y caramelo. */
+
+[data-tema="cafe"] { scroll-padding-top: calc(var(--alto-cabecera) + 84px); }
+
+/* Grano fino sobre toda la página, como papel de bolsa de café. Solo en escritorio. */
+@media (min-width: 1024px) and (hover: hover) {
+  [data-tema="cafe"] body::after {
+    content: ""; position: fixed; inset: 0; z-index: 90; pointer-events: none;
+    opacity: .08; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23r)'/%3E%3C/svg%3E");
+  }
+}
+
+/* «Café» en el menú de todas las páginas: con un grano y, en escritorio, como botón de borde. */
+.icono--grano { width: 1em; height: 1em; }
+.nav__cafe a { display: inline-flex; align-items: center; gap: 7px; }
+.menu-movil__cafe a { display: flex; align-items: center; gap: 12px; }
+.menu-movil__cafe .icono--grano { width: .8em; height: .8em; color: var(--acento); }
+@media (min-width: 1024px) {
+  .nav__lista { align-items: center; }
+  .nav__lista .nav__cafe a {
+    padding: 8px 16px; border: 1px solid currentColor; border-radius: var(--pildora); background: none;
+    transition: background-color var(--t-micro), color var(--t-micro), border-color var(--t-micro);
+  }
+  .nav__lista .nav__cafe a:hover { background: var(--hover); }
+  .nav__lista .nav__cafe a[aria-current="page"] { background: var(--primario); border-color: var(--primario); color: var(--primario-texto); }
+}
+
+.video-ranura { position: absolute; inset: 0; }
+.video-ranura video { width: 100%; height: 100%; object-fit: cover; }
+
+/* Portada */
+.hero--cafe .hero__velo { background: linear-gradient(to bottom, rgb(var(--cafe-rgb) / .45), rgb(var(--cafe-rgb) / .55) 45%, rgb(var(--cafe-rgb) / .96)); }
+.hero--cafe .hero__titulo { font-size: clamp(3rem, 1.4rem + 6.4vw, 6.6rem); line-height: .96; letter-spacing: -.03em; }
+.hero--cafe .sobretitulo { color: var(--caramelo); }
+.hero--cafe .boton--primario { background: var(--caramelo); color: var(--espresso); }
+.hero--cafe .boton--primario:hover { background: var(--caramelo-claro); }
+.cifras { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 44px; margin: 30px 0 0; padding: 22px 0 0; list-style: none; border-top: 1px solid rgb(var(--leche-rgb) / .2); }
+.cifras li { display: grid; gap: 4px; text-align: left; }
+.cifra__numero { font-family: var(--fuente-display); font-variation-settings: var(--display-ajustes); font-size: clamp(2.2rem, 1.5rem + 2.6vw, 3.4rem); line-height: 1; color: var(--caramelo); }
+.cifra__texto { font-size: var(--pequeno); color: var(--texto-2); }
+@media (min-width: 1024px) { .cifras { justify-content: flex-start; } }
+
+/* Navegación dentro de la página */
+.cafe-nav {
+  position: sticky; top: var(--alto-cabecera); z-index: 30;
+  background: rgb(var(--cafe-rgb) / .9);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--linea);
+  transition: top var(--t-ui) var(--ease-out);
+}
+.cabecera-oculta .cafe-nav { top: 0; }
+.cafe-nav ul { position: relative; display: flex; gap: 8px; margin: 0; padding: 12px 0; overflow-x: auto; list-style: none; scrollbar-width: none; }
+.cafe-nav ul::-webkit-scrollbar { display: none; }
+.cafe-nav a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px;
+  border: 1px solid var(--linea); border-radius: var(--pildora);
+  font-weight: 600; font-size: .92rem; text-decoration: none; white-space: nowrap;
+  transition: border-color var(--t-micro), color var(--t-micro);
+}
+.cafe-nav a:hover { border-color: var(--caramelo); color: var(--caramelo); }
+.cafe-nav a[aria-current] { background: var(--caramelo); border-color: var(--caramelo); color: var(--espresso); }
+.js .hero__seq > :nth-child(5) { --d: 480ms; }
+
+.consejo {
+  margin-top: 28px; padding: 18px 22px; max-width: 70ch;
+  border-left: 3px solid var(--caramelo); border-radius: 0 var(--radio-sm) var(--radio-sm) 0;
+  background: rgb(var(--caramelo-rgb) / .08); color: var(--texto-2);
+}
+.consejo strong { color: var(--texto); }
+
+/* Bandas de foto a todo el ancho: el filtrado (con video si hay) y el cierre. */
+.banda {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: flex; align-items: flex-end;
+  min-height: clamp(480px, 80vh, 780px);
+  padding-block: var(--pad-seccion);
+  background: var(--hero-fondo); color: var(--texto);
+}
+.banda__media { position: absolute; inset: 0; z-index: -2; }
+.banda__media img { width: 100%; height: 100%; object-fit: cover; }
+.banda::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(to top, rgb(var(--cafe-rgb) / .94), rgb(var(--cafe-rgb) / .45) 62%, rgb(var(--cafe-rgb) / .2));
+}
+.banda__contenido { display: grid; gap: 16px; justify-items: start; }
+.banda .sobretitulo { margin: 0; color: var(--caramelo); }
+.banda__titulo { max-width: 17ch; color: var(--texto); font-size: clamp(2.2rem, 1.3rem + 3.4vw, 4.2rem); }
+.banda__texto { color: var(--texto-2); font-size: 1.15rem; }
+.banda__pasos { display: grid; gap: 12px; max-width: 580px; margin: 8px 0 0; padding: 0; }
+.banda__pasos li { display: flex; gap: 14px; align-items: baseline; color: var(--texto); }
+.banda__pasos span {
+  flex: none; display: inline-grid; place-items: center; width: 28px; height: 28px;
+  border: 1px solid var(--caramelo); border-radius: 50%; color: var(--caramelo); font-size: .85rem; font-weight: 700;
+}
+.banda--cierre { align-items: center; text-align: center; }
+.banda--cierre::after { background: rgb(var(--cafe-rgb) / .74); }
+.banda--cierre .banda__contenido { justify-items: center; }
+.banda--cierre .banda__titulo { max-width: 14ch; }
+
+/* Encabezado de sección con foto al lado */
+.seccion__cabeza--foto { display: grid; gap: 28px; max-width: none; }
+@media (min-width: 1024px) { .seccion__cabeza--foto { grid-template-columns: 7fr 5fr; align-items: end; gap: 64px; } }
+.cabeza-foto { position: relative; overflow: hidden; border-radius: var(--radio-lg); aspect-ratio: 16 / 10; }
+.cabeza-foto img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Los dos cafés, como etiquetas de bolsa */
+.cafes-grid { display: grid; gap: 24px; }
+@media (min-width: 900px) { .cafes-grid { grid-template-columns: 1fr 1fr; } }
+.etiqueta-cafe {
+  position: relative; display: grid; gap: 20px; align-content: start; overflow: hidden;
+  padding: clamp(24px, 3vw, 40px);
+  border: 1px solid var(--borde); border-radius: var(--radio-lg);
+  background: linear-gradient(160deg, rgb(var(--caramelo-rgb) / .12), transparent 45%), var(--tarjeta-fondo);
+}
+.etiqueta-cafe::after {
+  content: ""; position: absolute; right: -70px; top: -70px; width: 220px; height: 220px; pointer-events: none;
+  border-radius: 50%; border: 1px solid rgb(var(--caramelo-rgb) / .28);
+  box-shadow: 0 0 0 20px rgb(var(--caramelo-rgb) / .05), 0 0 0 44px rgb(var(--caramelo-rgb) / .03);
+}
+.etiqueta-cafe__cabeza { display: flex; align-items: flex-start; gap: 16px; }
+.etiqueta-cafe__numero { font-family: var(--fuente-display); font-size: 2.6rem; line-height: 1; color: var(--caramelo); }
+.etiqueta-cafe__uso { font-size: var(--pequeno); color: var(--texto-2); }
+.etiqueta-cafe__nombre { font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.5rem); color: var(--texto); }
+.etiqueta-cafe__desc { font-size: 1.05rem; color: var(--texto-2); }
+.etiqueta-cafe__datos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; margin: 0; }
+.etiqueta-cafe__datos div { padding-top: 10px; border-top: 1px solid var(--linea); }
+.etiqueta-cafe__datos dt, .ficha dt, .perfil dt, .etiqueta-cafe__subtitulo {
+  font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--texto-2);
+}
+.etiqueta-cafe__datos dd, .ficha dd { margin: 3px 0 0; font-weight: 600; }
+.etiqueta-cafe__subtitulo { margin-bottom: -8px; }
+.ejemplo { display: none; }
+/* Solo en la vista previa: etiqueta colgada del borde de arriba de la tarjeta. */
+[data-mode="preview"] .ejemplo {
+  display: block; position: absolute; top: 0; right: 24px; padding: 3px 10px; border-radius: 0 0 6px 6px; white-space: nowrap;
+  background: var(--marca-pendiente); color: #fff; font: 600 .72rem/1.3 var(--fuente-texto);
+}
+
+.tueste { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border-radius: var(--radio-sm); background: rgb(var(--leche-rgb) / .05); }
+.tueste__escala { display: flex; gap: 6px; }
+.tueste__escala span { width: 24px; height: 10px; border-radius: var(--pildora); background: rgb(var(--leche-rgb) / .14); }
+.tueste__escala .lleno:nth-child(1) { background: #E8C58C; }
+.tueste__escala .lleno:nth-child(2) { background: #D39B5A; }
+.tueste__escala .lleno:nth-child(3) { background: #B06F38; }
+.tueste__escala .lleno:nth-child(4) { background: #7F4A26; }
+.tueste__escala .lleno:nth-child(5) { background: #4F2B16; }
+
+.notas { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.notas li { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border: 1px solid var(--borde); border-radius: var(--pildora); font-size: .9rem; font-weight: 600; }
+.notas__punto { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+
+.perfil { display: grid; gap: 10px; margin: 0; }
+.perfil div { display: grid; grid-template-columns: 72px 1fr; align-items: center; gap: 12px; }
+.perfil dd { margin: 0; }
+.medidor { position: relative; display: block; height: 6px; overflow: hidden; border-radius: var(--pildora); background: rgb(var(--leche-rgb) / .12); }
+.medidor::after { content: ""; position: absolute; inset: 0 auto 0 0; width: calc(var(--v) / 5 * 100%); border-radius: inherit; background: linear-gradient(90deg, var(--cobre), var(--caramelo)); }
+
+/* Métodos con su guía y el mapa de sabor */
+.metodos-cafe { display: grid; gap: 20px; }
+@media (min-width: 700px) { .metodos-cafe { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .metodos-cafe { grid-template-columns: repeat(3, 1fr); } }
+.contenidos { display: contents; }
+.metodo-cafe {
+  display: flex; flex-direction: column; overflow: hidden;
+  border: 1px solid var(--borde); border-radius: var(--radio-lg); background: var(--tarjeta-fondo);
+  transition: transform var(--t-ui) var(--ease-out), border-color var(--t-ui) var(--ease-out);
+}
+.metodo-cafe:hover { transform: translateY(-4px); border-color: rgb(var(--caramelo-rgb) / .5); }
+.metodo-cafe__foto { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.metodo-cafe__cuerpo { display: grid; gap: 12px; padding: 22px; }
+.metodo-cafe__cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.metodo-cafe__cab h3 { color: var(--texto); }
+.metodo-cafe__precio { color: var(--caramelo); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.metodo-cafe__desc { color: var(--texto-2); }
+.metodo-cafe__para { font-family: var(--fuente-display); font-size: 1.12rem; line-height: 1.35; color: var(--caramelo-claro); }
+.ficha { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0; padding: 12px 0; border-block: 1px solid var(--linea); }
+
+.mapa-card {
+  display: grid; gap: 12px; align-content: start; margin: 0; padding: 24px;
+  border: 1px dashed rgb(var(--caramelo-rgb) / .45); border-radius: var(--radio-lg);
+  background: rgb(var(--caramelo-rgb) / .05);
+}
+.mapa-card h3 { color: var(--texto); }
+.mapa-card > p { color: var(--texto-2); }
+.mapa-sabor__marco { position: relative; padding: 8px 8px 30px 30px; }
+.mapa-sabor {
+  position: relative; aspect-ratio: 1; margin: 0; padding: 0; list-style: none;
+  border-left: 1px solid rgb(var(--leche-rgb) / .35); border-bottom: 1px solid rgb(var(--leche-rgb) / .35);
+  background-image: linear-gradient(var(--linea) 1px, transparent 1px), linear-gradient(90deg, var(--linea) 1px, transparent 1px);
+  background-size: 25% 25%;
+}
+.mapa-sabor__punto {
+  position: absolute; left: calc(var(--x) * 76% + 12%); bottom: calc(var(--y) * 76% + 12%);
+  display: grid; justify-items: center; gap: 4px; transform: translate(-50%, 50%);
+  font-size: .76rem; font-weight: 700; white-space: nowrap;
+}
+.mapa-sabor__punto::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--caramelo); box-shadow: 0 0 0 5px rgb(var(--caramelo-rgb) / .22); }
+.mapa-sabor__eje { position: absolute; margin: 0; font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--texto-2); }
+.mapa-sabor__eje--x { right: 8px; bottom: 4px; }
+.mapa-sabor__eje--y { left: 0; top: 8px; writing-mode: vertical-rl; transform: rotate(180deg); }
+
+/* Espresso y con leche: tazas dibujadas */
+.bebidas { display: grid; gap: 16px; }
+@media (min-width: 700px) { .bebidas { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .bebidas { grid-template-columns: repeat(3, 1fr); } }
+.bebida { display: grid; grid-template-columns: 92px 1fr; gap: 18px; align-items: start; padding: 22px; border: 1px solid var(--borde); border-radius: var(--radio-lg); background: var(--tarjeta-fondo); }
+.bebida__cuerpo { display: grid; gap: 8px; }
+.bebida__cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.bebida__cab h3 { font-size: 1.3rem; color: var(--texto); }
+.bebida__precio { color: var(--caramelo); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bebida__desc { color: var(--texto-2); font-size: .95rem; }
+.taza { position: relative; width: 88px; height: 104px; margin-top: 4px; }
+.taza__vaso {
+  position: absolute; left: 0; top: 0; width: 70px; height: 84px;
+  display: flex; flex-direction: column-reverse; overflow: hidden;
+  border: 2px solid rgb(var(--leche-rgb) / .6); border-top: 0; border-radius: 4px 4px 30px 30px;
+  background: rgb(var(--leche-rgb) / .04);
+}
+.capa { display: block; flex: none; height: var(--h); }
+.taza__asa { position: absolute; left: 66px; top: 16px; width: 20px; height: 32px; border: 2px solid rgb(var(--leche-rgb) / .6); border-left: 0; border-radius: 0 16px 16px 0; }
+.taza__plato { position: absolute; left: -9px; top: 90px; width: 88px; height: 6px; border-radius: var(--pildora); background: rgb(var(--leche-rgb) / .35); }
+.capa--espresso { background: var(--capa-espresso); }
+.capa--agua { background: var(--capa-agua); }
+.capa--leche { background: var(--capa-leche); }
+.capa--espuma { background: var(--capa-espuma); }
+.capa--chocolate { background: var(--capa-chocolate); }
+.capa--almendras { background: var(--capa-almendras); }
+/* En el celular la taza se achica y el precio puede bajar debajo del nombre. */
+@media (max-width: 699px) {
+  .bebidas { grid-template-columns: minmax(0, 1fr); }
+  .bebida { grid-template-columns: 70px minmax(0, 1fr); gap: 14px; padding: 18px; }
+  .bebida__cab { flex-wrap: wrap; row-gap: 2px; }
+  .taza { width: 70px; height: 84px; }
+  .taza__vaso { width: 56px; height: 68px; border-radius: 4px 4px 24px 24px; }
+  .taza__asa { left: 53px; top: 13px; width: 16px; height: 26px; border-radius: 0 13px 13px 0; }
+  .taza__plato { left: -7px; top: 73px; width: 70px; height: 5px; }
+}
+.js .taza .capa { transform: scaleY(0); transform-origin: bottom; transition: transform .7s var(--ease-out); }
+.js .taza .capa:nth-child(2) { transition-delay: .15s; }
+.js .taza .capa:nth-child(3) { transition-delay: .3s; }
+.js .taza .capa:nth-child(4) { transition-delay: .45s; }
+.js .taza.llena .capa { transform: none; }
+.leyenda { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 4px 0 0; padding: 0; list-style: none; font-size: .8rem; color: var(--texto-2); }
+.leyenda li { display: inline-flex; align-items: center; gap: 6px; }
+.leyenda__muestra { width: 10px; height: 10px; border-radius: 3px; box-shadow: inset 0 0 0 1px rgb(var(--leche-rgb) / .25); }
+
+/* Café con licor: las fotos a la derecha en escritorio */
+@media (min-width: 1024px) {
+  .barra-grid--inversa { grid-template-columns: 7fr 5fr; }
+  .barra-grid--inversa .barra__fotos { order: 2; }
+}
+
+/* Del grano a la taza */
+.recorrido-grid { display: grid; gap: 40px; }
+.recorrido__fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.recorrido__fotos img { width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radio-md); }
+.recorrido__fotos img:first-child { grid-row: span 2; aspect-ratio: auto; }
+@media (min-width: 1024px) {
+  .recorrido-grid { grid-template-columns: 5fr 7fr; align-items: start; gap: 72px; }
+  .recorrido__fotos { position: sticky; top: calc(var(--alto-cabecera) + 100px); }
+}
+.recorrido { position: relative; display: grid; gap: 30px; margin: 0; padding: 0 0 0 36px; list-style: none; counter-reset: paso; }
+.recorrido::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(var(--caramelo), rgb(var(--caramelo-rgb) / .12)); }
+.paso { position: relative; counter-increment: paso; }
+.paso::before { content: ""; position: absolute; left: -36px; top: 1px; width: 16px; height: 16px; border-radius: 50%; background: var(--fondo-alterno); border: 2px solid var(--caramelo); }
+.paso__titulo { font-size: 1.5rem; color: var(--texto); }
+.paso__titulo::before { content: counter(paso, decimal-leading-zero); display: block; margin-bottom: 6px; font: 600 var(--pequeno)/1.2 var(--fuente-texto); letter-spacing: .12em; color: var(--cobre); }
+.paso p { max-width: 58ch; margin-top: 8px; color: var(--texto-2); }
+
+/* Cómo se prueba, regiones y glosario */
+.cata { display: grid; gap: 16px; margin: 0; padding: 0; list-style: none; counter-reset: cata; }
+@media (min-width: 700px) { .cata { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .cata { grid-template-columns: repeat(5, 1fr); } }
+.cata li { counter-increment: cata; padding: 24px 22px; border: 1px solid var(--borde); border-radius: var(--radio-md); background: var(--tarjeta-fondo); }
+.cata li::before { content: counter(cata); display: block; margin-bottom: 14px; font-family: var(--fuente-display); font-size: 2.4rem; line-height: 1; color: rgb(var(--caramelo-rgb) / .45); }
+.cata h3 { margin-bottom: 8px; font-size: 1.3rem; color: var(--caramelo); }
+.cata p { color: var(--texto-2); font-size: .95rem; }
+
+.regiones { display: grid; gap: 1px; margin: 0; padding: 0; overflow: hidden; list-style: none; border: 1px solid var(--linea); border-radius: var(--radio-lg); background: var(--linea); }
+@media (min-width: 700px) { .regiones { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .regiones { grid-template-columns: repeat(3, 1fr); } }
+.regiones li { padding: 26px 24px; background: var(--fondo); }
+.regiones h3 { margin-bottom: 6px; color: var(--texto); }
+.regiones p { color: var(--texto-2); }
+.regiones .es-nuestra { background: linear-gradient(160deg, rgb(var(--caramelo-rgb) / .16), transparent 60%), var(--fondo); }
+.region__tag {
+  display: inline-block; margin-top: 14px; padding: 4px 12px; border-radius: var(--pildora);
+  background: rgb(var(--caramelo-rgb) / .16); color: var(--caramelo); font-size: .8rem; font-weight: 700;
+}
+
+.glosario { display: grid; gap: 0 56px; margin: 0; }
+@media (min-width: 900px) { .glosario { grid-template-columns: repeat(2, 1fr); } }
+.glosario div { padding: 18px 0; border-bottom: 1px solid var(--linea); }
+.glosario dt { font-family: var(--fuente-display); font-variation-settings: var(--display-ajustes); font-size: 1.3rem; color: var(--caramelo); }
+.glosario dd { margin: 6px 0 0; color: var(--texto-2); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .taza .capa { transform: none; transition: none; }
+  .metodo-cafe:hover { transform: none; }
 }
 
 /* ---------- Recuadros de foto pendiente ---------- */
