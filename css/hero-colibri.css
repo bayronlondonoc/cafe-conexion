@@ -1,0 +1,172 @@
+/* Café Conexión · colibrí de la portada (solo index.html)
+   Capas, de atrás hacia adelante: el cafetal desenfocado → el velo → «Café Conexión» gigante →
+   el colibrí (canvas) → los textos, los botones y las tarjetas. Los botones y los textos son los
+   de siempre (styles.css); acá solo se acomodan alrededor del colibrí.
+
+   Sin JavaScript, con «reducir movimiento» o con la animación en pausa, el colibrí es una imagen
+   fija y todo se ve completo. Clases en <html>: .hc-motion (el head decidió que entra volando),
+   .hc-listo (js/hero-colibri.js cargó) y .hc-seguro (no cargó a tiempo: se muestra todo). */
+
+.hero--colibri {
+  --colibri-x: 52%;
+  --colibri-y: 29%;
+  --colibri-ancho: clamp(320px, 36vw, 640px);
+  --nombre-y: 31%;
+  --nombre-tam: clamp(3.4rem, 9.2vw, 10.5rem);
+}
+/* En escritorio el titular también se ajusta a la altura, para que quepa debajo del colibrí. */
+@media (min-width: 1024px) {
+  .hero--colibri .hero__titulo { font-size: min(var(--h1), 7.4vh); }
+}
+@media (min-width: 1024px) and (max-height: 780px) {
+  .hero--colibri {
+    --colibri-y: 27%;
+    --nombre-y: 28%;
+    --colibri-ancho: clamp(300px, 34vw, 560px);
+    --nombre-tam: clamp(3rem, 8.4vw, 9rem);
+  }
+}
+
+/* ---------- Fondo y velo ---------- */
+
+.hero--colibri .hero__media { overflow: hidden; }
+.hero--colibri .colibri__fondo { position: absolute; inset: 0; transform: scale(1.05); will-change: transform; }
+.hero--colibri .colibri__fondo img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Arriba, un velo para que el header se lea sobre el sol; abajo, el de los textos. */
+.hero--colibri .hero__velo {
+  background:
+    linear-gradient(to bottom, rgb(var(--tinta-rgb) / .5), rgb(var(--tinta-rgb) / 0) 26%),
+    linear-gradient(to top, rgb(var(--tinta-rgb) / .88), rgb(var(--tinta-rgb) / .58) 32%, rgb(var(--tinta-rgb) / 0) 62%);
+}
+
+/* ---------- Escena: nombre gigante y colibrí ---------- */
+
+.colibri__escena { position: absolute; inset: 0; z-index: 0; pointer-events: none; user-select: none; }
+.hero--colibri .hero__contenido { position: relative; z-index: 2; }
+
+.colibri__nombre {
+  position: absolute; left: 0; right: 0; top: var(--nombre-y);
+  margin: 0; transform: translateY(-50%);
+  text-align: center; white-space: nowrap;
+  font-family: var(--fuente-display);
+  font-variation-settings: var(--display-ajustes);
+  font-optical-sizing: auto;
+  font-size: var(--nombre-tam); font-weight: 520; line-height: .9; letter-spacing: -.03em;
+  text-transform: uppercase;
+}
+.colibri__nombre-in { display: inline-block; will-change: transform; }
+
+/* Crema que se desvanece hacia abajo, como en las referencias. */
+.colibri__palabra,
+.colibri__letra {
+  background: linear-gradient(to bottom, rgb(var(--crema-rgb) / .94) 22%, rgb(var(--crema-rgb) / .5) 64%, rgb(var(--crema-rgb) / .05) 100%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+.colibri__nombre.partido .colibri__palabra { background: none; }
+/* Cada letra tiene espacio arriba para la tilde (É, Ó). */
+.colibri__letra { display: inline-block; padding-top: .22em; margin-top: -.22em; }
+
+.colibri__ave { position: absolute; inset: 0; }
+.colibri__poster {
+  position: absolute; left: var(--colibri-x); top: var(--colibri-y);
+  width: var(--colibri-ancho); max-width: none; height: auto;
+  translate: -50% -50%;
+}
+.colibri__lienzo { position: absolute; left: 0; top: 0; visibility: hidden; transform-origin: 50% 50%; will-change: transform; }
+.hero--colibri.en-vuelo .colibri__lienzo { visibility: visible; }
+.hc-motion .colibri__poster,
+.hero--colibri.en-vuelo .colibri__poster { visibility: hidden; }
+
+/* ---------- Tarjetas con cifras (escritorio grande) ---------- */
+
+.colibri__tarjetas { display: none; }
+
+.colibri__tarjeta {
+  width: 184px; padding: 10px 10px 14px;
+  border: 1px solid rgb(var(--crema-rgb) / .28); border-radius: var(--radio-md);
+  background: rgb(var(--crema-rgb) / .14);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2); backdrop-filter: blur(16px) saturate(1.2);
+  color: var(--crema);
+  box-shadow: 0 24px 48px -28px rgb(var(--tinta-rgb) / .7);
+}
+.colibri__tarjeta + .colibri__tarjeta { margin-bottom: 38px; } /* escalonadas */
+.colibri__etiqueta {
+  display: block; width: fit-content; margin: 0 0 8px auto; padding: 3px 10px;
+  border-radius: var(--pildora); background: rgb(var(--crema-rgb) / .16);
+  font: 600 .68rem/1.4 var(--fuente-texto); letter-spacing: .1em; text-transform: uppercase;
+}
+.colibri__foto { position: relative; margin: 0; aspect-ratio: 4 / 3.3; overflow: hidden; border-radius: var(--radio-sm); }
+.colibri__foto img { width: 100%; height: 100%; object-fit: cover; }
+.colibri__foto::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, rgb(var(--tinta-rgb) / .7)); }
+.colibri__foto figcaption {
+  position: absolute; left: 10px; right: 10px; bottom: 8px; z-index: 1;
+  font: 600 .74rem/1.3 var(--fuente-texto);
+}
+.colibri__cifra {
+  margin-top: 12px;
+  font-family: var(--fuente-display); font-variation-settings: var(--display-ajustes);
+  font-size: 2.7rem; font-weight: 420; line-height: 1;
+}
+.colibri__cifra-texto { margin-top: 4px; font-size: .8rem; line-height: 1.35; color: rgb(var(--crema-rgb) / .82); }
+
+@media (min-width: 1280px) and (min-height: 720px) {
+  .colibri__tarjetas {
+    position: absolute; z-index: 2;
+    right: max(var(--margen), (100% - var(--contenedor)) / 2);
+    bottom: clamp(56px, 9vh, 104px);
+    display: flex; align-items: flex-end; gap: 14px;
+  }
+  /* Los textos no se meten debajo de las tarjetas. */
+  .hero--colibri .hero__seq { max-width: min(920px, 100% - 430px); }
+}
+
+/* ---------- Pausa ---------- */
+
+.colibri__pausa {
+  position: absolute; z-index: 3;
+  top: calc(var(--alto-cabecera) + 14px);
+  right: max(var(--margen), (100% - var(--contenedor)) / 2);
+  display: grid; place-items: center;
+  width: 44px; height: 44px;
+  border: 1px solid rgb(var(--crema-rgb) / .45); border-radius: 50%;
+  background: rgb(var(--tinta-rgb) / .3); color: var(--crema);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  transition: background-color var(--t-micro);
+}
+.colibri__pausa:hover { background: rgb(var(--tinta-rgb) / .55); }
+.colibri__pausa svg { width: 14px; height: 14px; fill: currentColor; }
+.colibri__pausa .colibri__icono-seguir,
+.colibri__pausa[aria-pressed="true"] .colibri__icono-pausa { display: none; }
+.colibri__pausa[aria-pressed="true"] .colibri__icono-seguir { display: block; }
+
+/* ---------- Celular y tablet: colibrí arriba, textos centrados abajo ---------- */
+
+@media (max-width: 1023px) {
+  .hero--colibri {
+    --colibri-x: 50%;
+    --colibri-y: 22%;
+    --colibri-ancho: min(76vw, 500px);
+    --nombre-y: 28%;
+    --nombre-tam: clamp(3rem, 15.5vw, 7.5rem);
+  }
+  .colibri__palabra { display: block; }
+}
+@media (max-width: 1023px) and (max-height: 700px) {
+  .hero--colibri { --colibri-y: 22%; --nombre-y: 27%; --colibri-ancho: min(62vw, 400px); --nombre-tam: clamp(2.6rem, 12.5vw, 6rem); }
+}
+
+/* ---------- Entrada ----------
+   Con .hc-motion, los textos, las tarjetas y el nombre esperan al colibrí (los muestra
+   js/hero-colibri.js). Si el script no carga, el seguro del head (.hc-seguro) los muestra. */
+
+.hc-motion .hero--colibri .hero__seq > * { animation: none; opacity: 0; transform: translateY(var(--subida)); }
+.hc-motion .hero--colibri [data-colibri-tarjeta] { opacity: 0; transform: translateY(24px); }
+.hc-motion .hero--colibri .colibri__nombre { opacity: 0; }
+
+.hc-seguro .hero--colibri .hero__seq > *,
+.hc-seguro .hero--colibri [data-colibri-tarjeta],
+.hc-seguro .hero--colibri .colibri__nombre { opacity: 1 !important; transform: none !important; }
+.hc-seguro .hero--colibri .colibri__nombre { transform: translateY(-50%) !important; }
+.hc-seguro .hero--colibri:not(.en-vuelo) .colibri__poster { visibility: visible; }
