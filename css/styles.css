@@ -745,6 +745,32 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
 .video-ranura { position: absolute; inset: 0; }
 .video-ranura video { width: 100%; height: 100%; object-fit: cover; }
 
+/* Video «Del cafetal a tu taza»: el reel solo, sin textos encima. En pantallas altas va vertical. */
+.video-marco {
+  position: relative; overflow: hidden;
+  margin: 0; aspect-ratio: 16 / 9;
+  border-radius: var(--radio-lg);
+  background: var(--superficie);
+}
+.video-marco img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-aspect-ratio: 1/1) {
+  .video-marco { aspect-ratio: 9 / 16; width: min(100%, 82svh * 9 / 16); margin-inline: auto; }
+}
+.video-pausa {
+  position: absolute; top: 14px; right: 14px;
+  display: grid; place-items: center;
+  width: 44px; height: 44px;
+  border: 1px solid rgb(var(--leche-rgb) / .45); border-radius: 50%;
+  background: rgb(var(--cafe-rgb) / .45); color: var(--crema-leche);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  transition: background-color var(--t-micro);
+}
+.video-pausa:hover { background: rgb(var(--cafe-rgb) / .7); }
+.video-pausa svg { width: 14px; height: 14px; fill: currentColor; }
+.video-pausa__seguir,
+.video-pausa[aria-pressed="true"] .video-pausa__pausa { display: none; }
+.video-pausa[aria-pressed="true"] .video-pausa__seguir { display: block; }
+
 /* Portada */
 .hero--cafe .hero__velo { background: linear-gradient(to bottom, rgb(var(--cafe-rgb) / .45), rgb(var(--cafe-rgb) / .55) 45%, rgb(var(--cafe-rgb) / .96)); }
 .hero--cafe .hero__titulo { font-size: clamp(3rem, 1.4rem + 6.4vw, 6.6rem); line-height: .96; letter-spacing: -.03em; }

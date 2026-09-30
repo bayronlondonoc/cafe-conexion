@@ -133,6 +133,24 @@ document.documentElement.classList.add('js');
     </div>
   </nav>
 
+  <!-- Del cafetal a tu taza: el reel de la marca, solo y sin textos encima (data/cafe.js → videos.recorrido).
+       Al final, «Café Conexión» se queda quieto 5 s y el video vuelve a empezar. -->
+  <section class="seccion seccion--alterna video-seccion" id="video" aria-labelledby="video-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">En video</p>
+        <h2 id="video-titulo">Del cafetal a tu taza.</h2>
+      </header>
+      <figure class="video-marco">
+        <picture>
+          <source media="(max-aspect-ratio: 1/1)" srcset="assets/video/cafe-recorrido-vertical.webp" width="720" height="1280">
+          <img src="assets/video/cafe-recorrido.webp" alt="Cierre del video: un colibrí de vapor entre granos de café y el nombre Café Conexión, con la frase «Ven por el café. Quédate por la conexión.»" width="1280" height="720" loading="lazy" decoding="async">
+        </picture>
+        <div class="video-ranura" data-video="recorrido" data-video-pausa></div>
+      </figure>
+    </div>
+  </section>
+
   <!-- Nuestros cafés: data/cafe.js → cafes -->
   <section class="seccion" id="cafes" aria-labelledby="cafes-titulo">
     <div class="contenedor">
