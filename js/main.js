@@ -540,6 +540,44 @@
     if (meta && color) meta.setAttribute('content', color);
   }
 
+  /* ---------- Volver arriba ----------
+     Un colibrí que sube: aparece cuando ya se bajó más de una pantalla y lleva al principio.
+     El foco pasa a la marca del header, para que el teclado también quede arriba. */
+  function subir() {
+    var boton = d.createElement('button');
+    boton.type = 'button';
+    boton.className = 'subir';
+    boton.setAttribute('aria-label', 'Volver arriba');
+    boton.innerHTML =
+      '<svg class="subir__colibri" viewBox="0 0 32 32" aria-hidden="true"><g transform="rotate(-40 16 16)">' +
+      '<circle cx="20.6" cy="11.6" r="3"/><path d="M23.3 10.6 31.6 8.4 23.5 12.3z"/>' +
+      '<path d="M18.4 10.2C14.8 11.4 11.2 14.6 9 19.4l-.6 1.4c4.2-.2 8.4-1.8 11.6-4.8 1.4-1.4 2.3-2.4 2.6-3.4z"/>' +
+      '<path d="M16.6 12.4C14.6 8.2 11 4.4 6.2 1.8c.2 4.4 3.4 9.4 8.2 13.2z"/>' +
+      '<path d="M9.8 18.8 3.4 22.2l4.2.2-1.8 4.8 5.4-6z"/></g></svg>';
+    d.body.appendChild(boton);
+
+    var visible = false, esperando = false;
+    function revisar() {
+      esperando = false;
+      var abajo = w.scrollY > w.innerHeight * 1.2;
+      if (abajo === visible) return;
+      visible = abajo;
+      boton.classList.toggle('subir--visible', abajo);
+    }
+    w.addEventListener('scroll', function () {
+      if (esperando) return;
+      esperando = true;
+      w.requestAnimationFrame(revisar);
+    }, { passive: true });
+    revisar();
+
+    boton.addEventListener('click', function () {
+      w.scrollTo({ top: 0, behavior: CC.reduce ? 'auto' : 'smooth' });
+      var marca = $('.marca');
+      if (marca) marca.focus({ preventScroll: true });
+    });
+  }
+
   function iniciar() {
     html.classList.add('js-ok'); // desde acá manda este archivo: se apagan los seguros de CSS
     intro();
@@ -560,6 +598,7 @@
     menuMovil();
     jsonLd();
     colorNavegador();
+    subir();
   }
 
   // js/menu.js corre después de este archivo: se espera a que termine de armar la carta.
