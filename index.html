@@ -35,15 +35,30 @@
   } catch (e) {}
 })(document.documentElement);
 </script>
+<script>
+/* Colibrí de la portada: antes de pintar, decide si entra volando (nunca con movimiento reducido
+   ni si la persona lo dejó en pausa). Si js/hero-colibri.js no carga en 5 s, se muestra todo quieto. */
+(function (h) {
+  try {
+    var quieto = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!quieto && localStorage.getItem('cc_colibri_pausa') !== '1') h.classList.add('hc-motion');
+  } catch (e) {}
+  setTimeout(function () { if (!h.classList.contains('hc-listo')) h.classList.add('hc-seguro'); }, 5000);
+})(document.documentElement);
+</script>
 
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/hero-colibri.css">
 
 <script src="data/site.js" defer></script>
 <script src="data/menu.js" defer></script>
 <script src="data/creditos.js" defer></script>
 <script src="js/main.js" defer></script>
 <script src="js/menu.js" defer></script>
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/hero-colibri.js" defer></script>
 </head>
 <body data-pagina="inicio">
 
@@ -118,11 +133,27 @@
 
 <main id="contenido" tabindex="-1">
 <!-- 1 · Inicio -->
-  <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+  <section class="hero hero--colibri" id="inicio" aria-labelledby="hero-titulo" data-colibri>
+    <!-- Colibrí de la portada: el cafetal, «Café Conexión» gigante y el colibrí que entra volando.
+         Estilos en css/hero-colibri.css y movimiento en js/hero-colibri.js (README.md). -->
     <div class="hero__media">
-      <img src="assets/img/inicio-manos-cafe.jpg" alt="Dos manos acercan dos tazas de café sobre una mesa de madera clara" width="1024" height="683" fetchpriority="high" decoding="async">
+      <div class="colibri__fondo" data-colibri-fondo>
+        <picture>
+          <source media="(max-width: 1023px) and (max-aspect-ratio: 1/1)" srcset="assets/colibri/fondo-9x16.webp" width="1080" height="1920">
+          <img src="assets/colibri/fondo-16x9.webp" alt="" width="2400" height="1356" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
     </div>
     <div class="hero__velo" aria-hidden="true"></div>
+    <div class="colibri__escena" aria-hidden="true">
+      <p class="colibri__nombre" data-colibri-nombre><span class="colibri__nombre-in" data-colibri-nombre-in><span class="colibri__palabra">Café</span> <span class="colibri__palabra">Conexión</span></span></p>
+      <div class="colibri__ave" data-colibri-ave>
+        <picture>
+          <source media="(max-width: 599px)" srcset="assets/colibri/poster-m.webp" width="480" height="294">
+          <img class="colibri__poster" src="assets/colibri/poster.webp" alt="" width="800" height="490" fetchpriority="high" decoding="async" data-colibri-poster>
+        </picture>
+      </div>
+    </div>
 
     <div class="hero__contenido contenedor">
       <p class="estado estado--hero pendiente" data-estado data-pendiente="horarios (aviso «Abierto ahora / Cerrado»)"></p>
@@ -136,6 +167,33 @@
         </div>
       </div>
     </div>
+
+    <!-- Cifras: los números salen de data/menu.js (js/hero-colibri.js); estos son los de hoy. -->
+    <aside class="colibri__tarjetas" aria-label="El café en cifras" data-colibri-tarjetas>
+      <div class="colibri__tarjeta" data-colibri-tarjeta>
+        <span class="colibri__etiqueta">El café</span>
+        <figure class="colibri__foto">
+          <img src="assets/colibri/tarjeta-cerezas.webp" alt="" width="480" height="600" loading="lazy" decoding="async">
+          <figcaption>Cada método sale para 2 tazas</figcaption>
+        </figure>
+        <p class="colibri__cifra" data-colibri-cifra="Métodos manuales">5</p>
+        <p class="colibri__cifra-texto">métodos manuales</p>
+      </div>
+      <div class="colibri__tarjeta" data-colibri-tarjeta>
+        <span class="colibri__etiqueta">Espresso</span>
+        <figure class="colibri__foto">
+          <img src="assets/colibri/tarjeta-flores.webp" alt="" width="480" height="600" loading="lazy" decoding="async">
+          <figcaption>Del americano al moccachino</figcaption>
+        </figure>
+        <p class="colibri__cifra" data-colibri-cifra="Espresso y con leche">6</p>
+        <p class="colibri__cifra-texto">maneras de pedir un espresso</p>
+      </div>
+    </aside>
+
+    <button class="colibri__pausa" type="button" aria-pressed="false" aria-label="Pausar la animación del colibrí" data-colibri-pausa hidden>
+      <svg class="colibri__icono-pausa" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5h2.6v11H4zM9.4 2.5H12v11H9.4z"/></svg>
+      <svg class="colibri__icono-seguir" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.2 13 8l-8.5 5.8z"/></svg>
+    </button>
   </section>
 
   <!-- 2 · Lo que hay -->

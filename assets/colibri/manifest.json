@@ -1,0 +1,29 @@
+{
+  "fps": 24,
+  "count": 48,
+  "anchor": [
+    0.5003,
+    0.502
+  ],
+  "sourceFacing": 1,
+  "loop": {
+    "start": 48,
+    "end": 96
+  },
+  "desktop": {
+    "dir": "d/",
+    "width": 800,
+    "height": 490,
+    "count": 48,
+    "bytes": 1340368,
+    "poster": "poster.webp"
+  },
+  "mobile": {
+    "dir": "m/",
+    "width": 480,
+    "height": 294,
+    "count": 48,
+    "bytes": 681260,
+    "poster": "poster-m.webp"
+  }
+}
