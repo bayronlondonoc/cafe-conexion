@@ -24,6 +24,7 @@ window.CC_SITE = {
       "general": "Hola, Café Conexión. Vi su página web y quiero más información.",
       "menu": "Hola, Café Conexión. Tengo una pregunta sobre el menú.",
       "cafe": "Hola, Café Conexión. Tengo una pregunta sobre sus cafés.",
+      "fit": "Hola, Café Conexión. Quiero pedir de la línea Fit.",
       "reserva": "Hola, Café Conexión. Quiero reservar para {personas} el {fecha} a las {hora}. Mi nombre es {nombre}. {nota}",
       "contacto": "Hola, Café Conexión. Soy {nombre}. {mensaje}"
     },

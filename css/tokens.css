@@ -147,6 +147,45 @@
   color-scheme: dark;
 }
 
+/* ---------- Tema de la página Fit (fit.html: <html data-tema="fit">) ----------
+   Claro y fresco, como el volante de la línea: menta, verde azulado y lila, con la salvia de
+   la dueña en los detalles. */
+[data-tema="fit"] {
+  --menta: #F3F8F5;
+  --menta-2: #E6F1EC;
+  --menta-3: #DDEDE5;
+  --verde-azulado: #2E7268;
+  --verde-azulado-hondo: #235A52;
+  --lila: #7A5BA6;
+  --lila-claro: #EDE6F6;
+  --salvia: #9DB6A0;
+  --tinta-fit: #1E2B28;
+  --gris-fit: #55625E;
+  --fit-rgb: 46 114 104;
+  --tinta-fit-rgb: 30 43 40;
+
+  --fondo: var(--menta);
+  --fondo-alterno: var(--menta-2);
+  --superficie: var(--menta-3);
+  --tarjeta-fondo: #FFFFFF;
+  --texto: var(--tinta-fit);
+  --texto-2: var(--gris-fit);
+  --primario: var(--verde-azulado);
+  --primario-hover: var(--verde-azulado-hondo);
+  --primario-texto: #FFFFFF;
+  --enlace: var(--verde-azulado);
+  --acento: var(--lila);
+  --borde: #D3E4DB;
+  --linea: rgb(var(--tinta-fit-rgb) / .12);
+  --hover: rgb(var(--fit-rgb) / .08);
+  --placeholder: var(--menta-2);
+  --hero-fondo: var(--verde-azulado);
+  --pie-fondo: #1F4F48;
+  --pie-texto: var(--menta);
+  --barra-fondo: rgb(243 248 245 / .96);
+  --sombra-hover: 0 18px 40px -24px rgb(var(--fit-rgb) / .45);
+}
+
 /* Breakpoints: 640px (sm), 1024px (md), 1280px (lg). */
 @media (min-width: 640px) {
   :root { --margen: 32px; }

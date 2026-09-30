@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="es-CO" data-mode="produccion">
+<html lang="es-CO" data-mode="produccion" data-tema="fit">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eventos | Café Conexión</title>
-<meta name="description" content="Planes, brindis y encuentros en Café Conexión, sector Estadio, Medellín.">
+<title>Fit | Café Conexión</title>
+<meta name="description" content="Línea Fit de Café Conexión: malteadas proteicas sin azúcar y sin lácteos, waffles dulces sin azúcar, waffle bono, sodas y combos. Sector Estadio, Medellín.">
 <!-- Vista previa: la página no se indexa. Al pasar a producción se borra esta línea (README.md). -->
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#FCF6F0">
+<meta name="theme-color" content="#F3F8F5">
 
 <meta property="og:locale" content="es_CO">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Café Conexión">
-<meta property="og:title" content="Eventos | Café Conexión">
-<meta property="og:description" content="Planes, brindis y encuentros en Café Conexión, sector Estadio, Medellín.">
+<meta property="og:title" content="Fit | Café Conexión">
+<meta property="og:description" content="Línea Fit de Café Conexión: malteadas proteicas sin azúcar y sin lácteos, waffles dulces sin azúcar, waffle bono, sodas y combos. Sector Estadio, Medellín.">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
@@ -29,10 +29,12 @@ document.documentElement.classList.add('js');
 <link rel="stylesheet" href="css/styles.css">
 
 <script src="data/site.js" defer></script>
+<script src="data/fit.js" defer></script>
 <script src="data/creditos.js" defer></script>
 <script src="js/main.js" defer></script>
+<script src="js/fit.js" defer></script>
 </head>
-<body data-pagina="eventos">
+<body data-pagina="fit">
 
 <svg class="sprite" aria-hidden="true" focusable="false">
   <symbol id="i-camara" viewBox="0 0 24 24"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.3l1.4-2.2h7.6L17.2 7h2.3A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.6"/></symbol>
@@ -57,10 +59,10 @@ document.documentElement.classList.add('js');
     <nav class="nav" aria-label="Principal">
       <ul class="nav__lista">
         <li class="nav__cafe"><a href="cafe.html"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
-        <li><a href="fit.html">Fit</a></li>
+        <li><a href="fit.html" aria-current="page">Fit</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="espacio.html">El espacio</a></li>
-        <li class="solo-preview" data-enlace-eventos><a href="eventos.html" aria-current="page">Eventos</a></li>
+        <li class="solo-preview" data-enlace-eventos><a href="eventos.html">Eventos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
@@ -77,10 +79,10 @@ document.documentElement.classList.add('js');
     <ul class="menu-movil__lista">
       <li><a href="index.html">Inicio</a></li>
       <li class="menu-movil__cafe"><a href="cafe.html"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
-      <li><a href="fit.html">Fit</a></li>
+      <li><a href="fit.html" aria-current="page">Fit</a></li>
       <li><a href="nosotros.html">Nosotros</a></li>
       <li><a href="espacio.html">El espacio</a></li>
-      <li class="solo-preview" data-enlace-eventos><a href="eventos.html" aria-current="page">Eventos</a></li>
+      <li class="solo-preview" data-enlace-eventos><a href="eventos.html">Eventos</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
     <div class="menu-movil__botones">
@@ -91,47 +93,69 @@ document.documentElement.classList.add('js');
 </div>
 
 <main id="contenido" tabindex="-1">
-<section class="pagina-cabeza" aria-labelledby="pagina-titulo">
+<section class="pagina-cabeza fit-cabeza" aria-labelledby="pagina-titulo">
     <div class="contenedor pagina-cabeza__grid">
       <div class="pagina-cabeza__texto">
-        <p class="sobretitulo">Eventos</p>
-        <h1 id="pagina-titulo">Planes para ir acompañado.</h1>
-        <p class="pagina-cabeza__intro">Encuentros, brindis y planes en Conexión.</p>
-        
+        <p class="sobretitulo">Línea Fit</p>
+        <h1 id="pagina-titulo">Malteadas con proteína y waffles sin azúcar.</h1>
+        <p class="pagina-cabeza__intro">Para la tarde: malteadas proteicas, waffles dulces y de bono, sodas y combos para compartir.</p>
+        <ul class="sellos" role="list">
+          <li><svg class="icono" aria-hidden="true"><use href="#i-hoja"/></svg><span>Sin azúcar<small>Malteadas y waffles dulces</small></span></li>
+          <li><svg class="icono" aria-hidden="true"><use href="#i-gota"/></svg><span>Sin lácteos<small>Malteadas</small></span></li>
+          <li><svg class="icono" aria-hidden="true"><use href="#i-pesa"/></svg><span>Con proteína<small>18 g en malteadas, 15 g en waffles dulces</small></span></li>
+        </ul>
+        <div class="fit-cabeza__botones">
+          <a class="boton boton--primario boton--grande" href="#combos">Ver los combos<svg class="flecha" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          <a class="boton boton--secundario boton--grande" href="contacto.html" data-wa="fit" data-ubicacion="fit_portada"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Pide por WhatsApp</a>
+        </div>
       </div>
       <figure class="pagina-cabeza__foto">
-        <img src="assets/img/mimosa.webp" alt="Copas de mimosa listas para brindar" width="760" height="570" fetchpriority="high" decoding="async">
+        <img src="assets/img/fit-portada.jpg" alt="Malteada rosada en un vaso de vidrio, con bolitas de frutos secos y ramitas de lavanda" width="1200" height="900" fetchpriority="high" decoding="async">
       </figure>
     </div>
   </section>
 
-  <section class="seccion" data-seccion-eventos aria-labelledby="agenda-titulo">
+  <!-- Para tomar: data/fit.js → productos con "grupo": "tomar" -->
+  <section class="seccion" id="tomar" aria-labelledby="tomar-titulo">
     <div class="contenedor">
-      <header class="seccion__cabeza">
-        <p class="sobretitulo">Agenda</p>
-        <h2 id="agenda-titulo">Lo que viene.</h2>
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Para tomar</p>
+        <h2 id="tomar-titulo">Malteadas proteicas y sodas.</h2>
       </header>
-      <ul class="eventos pendiente" id="eventos-lista" data-pendiente="agenda: un formato fijo de eventos que la dueña pueda sostener" role="list"></ul>
+      <div class="fit-productos" id="fit-tomar"></div>
     </div>
   </section>
 
-  <section class="seccion seccion--alterna pendiente" aria-labelledby="celebra-titulo" data-pendiente="celebraciones privadas: confirmar si se reciben">
+  <!-- Para comer: data/fit.js → productos con "grupo": "comer" -->
+  <section class="seccion seccion--alterna" id="comer" aria-labelledby="comer-titulo">
     <div class="contenedor">
-      <p class="sobretitulo">Celebraciones</p>
-      <h2 id="celebra-titulo">Cumpleaños y reuniones en Conexión.</h2>
-      <p class="seccion__intro">Cuéntanos qué quieres celebrar y cuántas personas vienen.</p>
-      <a class="boton boton--primario" href="contacto.html" data-wa="general" data-ubicacion="eventos"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos</a>
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Para comer</p>
+        <h2 id="comer-titulo">Waffles dulces y waffle bono.</h2>
+      </header>
+      <div class="fit-productos fit-productos--tres" id="fit-comer"></div>
     </div>
   </section>
 
-  
-  <section class="seccion seccion--superficie cta-final" id="contacto" aria-labelledby="cierre-titulo">
+  <!-- Combos: data/fit.js → combos -->
+  <section class="seccion" id="combos" aria-labelledby="combos-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Combos</p>
+        <h2 id="combos-titulo">Una bebida y un waffle, por menos.</h2>
+        <p class="seccion__intro">Cada combo sale más barato que pedir las dos cosas por separado.</p>
+      </header>
+      <ul class="combos" id="fit-combos" role="list"></ul>
+    </div>
+  </section>
+
+  <section class="seccion seccion--superficie cta-final" aria-labelledby="cierre-titulo">
     <div class="contenedor" data-reveal>
-      <h2 id="cierre-titulo">¿Nos vemos en Conexión?</h2>
-      <p class="cta-final__texto">Escríbenos por WhatsApp. Te esperamos.</p>
+      <h2 id="cierre-titulo">¿Se te antojó algo?</h2>
+      <p class="cta-final__texto">Escríbenos por WhatsApp para pedir o preguntar.</p>
       <div class="cta-final__botones">
-        <a class="boton boton--primario boton--grande" href="contacto.html" data-wa="general" data-ubicacion="cta_final"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escribir por WhatsApp</a>
-        <a class="boton boton--primario boton--grande boton--claro" href="index.html#favoritos" data-menu data-ubicacion="cta_final">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+        <a class="boton boton--primario boton--grande" href="contacto.html" data-wa="fit" data-ubicacion="fit_cierre"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escribir por WhatsApp</a>
+        <a class="boton boton--secundario boton--grande" href="espacio.html" data-maps data-ubicacion="fit_cierre"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
       </div>
     </div>
   </section>
