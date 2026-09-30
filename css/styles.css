@@ -177,6 +177,15 @@ main:focus { outline: none; }
 .menu-abierto .hamburguesa__lineas::before { transform: translateY(7px) rotate(45deg); }
 .menu-abierto .hamburguesa__lineas::after { transform: translateY(-7px) rotate(-45deg); }
 
+/* Pantallas angostas (hasta 379 px): el header se compacta para que el botón ☰ nunca se salga.
+   Si aun así no cabe, el nombre baja a dos líneas. */
+.marca { min-width: 0; }
+@media (max-width: 379px) {
+  .cabecera__inner { gap: 8px; }
+  .marca { font-size: 1.05rem; white-space: normal; }
+  .cabecera__menu { padding: .45em .75em; font-size: .85rem; gap: .3em; }
+}
+
 @media (min-width: 1024px) {
   .nav { display: block; }
   .nav__lista { display: flex; gap: 32px; margin: 0; padding: 0; list-style: none; }
