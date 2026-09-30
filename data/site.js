@@ -15,9 +15,9 @@ window.CC_SITE = {
     "maps_url": "https://maps.google.com/?q=Cl.+49+%2378a-21,+La+Floresta,+Medell%C3%ADn,+Laureles,+Antioquia",
     "coordenadas": { "lat": null, "lng": null },
 
-    // La carta vive en su propia página y se abre en otra pestaña.
-    // Cuando se compre el dominio: "https://cafeconexion.com/menu/"
-    "menu_url": "https://carta-cafe-conexion.vercel.app/",
+    // La carta vive en la carpeta menu/ de esta misma web y se abre en otra pestaña.
+    // Con el dominio queda en https://cafeconexion.com/menu/ sin cambiar esta línea.
+    "menu_url": "menu/",
 
     "whatsapp": { "numero": "573186545916", "visible": "318 654 5916" },
     "mensajes_whatsapp": {

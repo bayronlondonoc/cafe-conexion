@@ -448,7 +448,7 @@
         addressCountry: N.pais
       },
       servesCuisine: s.servesCuisine,
-      hasMenu: N.menu_url,
+      hasMenu: N.menu_url ? new URL(N.menu_url, location.href).href : null,
       priceRange: s.priceRange,
       geo: c.lat != null && c.lng != null ? { '@type': 'GeoCoordinates', latitude: c.lat, longitude: c.lng } : null,
       openingHoursSpecification: horariosListos(h)

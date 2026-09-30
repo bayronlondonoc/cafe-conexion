@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carta · Café Conexión</title>
+<meta name="description" content="La carta de Café Conexión. Café de especialidad con cocina en el sector del Estadio, Medellín. Pídela en la mesa.">
+<meta name="theme-color" content="#120E0B">
+<meta name="color-scheme" content="dark">
+<!-- Provisional: fotos prestadas, precios sin confirmar y horario pendiente.
+     Hasta que eso se resuelva la carta no se indexa. Se quita cuando se publique de verdad. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://cafeconexion.com/menu/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Carta · Café Conexión">
+<meta property="og:description" content="Café de especialidad con cocina en el sector del Estadio, Medellín.">
+<meta property="og:locale" content="es_CO">
+
+<link rel="preload" href="data/menu.json" as="fetch" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ?v= cambia con cada diseño nuevo: así nadie ve el HTML nuevo con el estilo viejo guardado. -->
+<link rel="stylesheet" href="assets/css/carta.css?v=2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:wght@400;600;700&display=swap"></noscript>
+</head>
+<body>
+
+<!-- Los símbolos de las marcas (vegano, vegetariano, sin gluten, picante, de la
+     casa). Están una sola vez acá y cada plato los llama con <use>: así no se
+     repite el dibujo 86 veces ni se pide un archivo más. -->
+<svg class="simbolos" aria-hidden="true" focusable="false">
+  <symbol id="i-vegano" viewBox="0 0 24 24">
+    <path d="M12 21v-7.2"/>
+    <path d="M12 13.8C12 10.3 9.2 7.5 5.7 7.5c0 3.5 2.8 6.3 6.3 6.3z"/>
+    <path d="M12 13.8c0-4.3 3.5-7.8 7.8-7.8 0 4.3-3.5 7.8-7.8 7.8z"/>
+  </symbol>
+  <symbol id="i-vegetariano" viewBox="0 0 24 24">
+    <path d="M4.5 19.5C3.6 11.8 9 5.6 19.5 4.5c1 8.6-4.2 14.3-12 14.6H4.5z"/>
+    <path d="M4.8 19.2c2.2-4.6 5.5-7.5 9.9-9.6"/>
+  </symbol>
+  <symbol id="i-sin-gluten" viewBox="0 0 24 24">
+    <path d="M12 20.5v-9"/>
+    <path d="M12 14.5c-3 0-4.3-1.8-4.3-4.3 3 0 4.3 1.8 4.3 4.3z"/>
+    <path d="M12 14.5c3 0 4.3-1.8 4.3-4.3-3 0-4.3 1.8-4.3 4.3z"/>
+    <path d="M12 9.8C9 9.8 7.7 8 7.7 5.5c3 0 4.3 1.8 4.3 4.3z"/>
+    <path d="M12 9.8c3 0 4.3-1.8 4.3-4.3-3 0-4.3 1.8-4.3 4.3z"/>
+    <path d="M4.2 20.3 19.8 4.2"/>
+  </symbol>
+  <symbol id="i-picante" viewBox="0 0 24 24">
+    <path d="M12.4 3c4.1 3.5 6.6 6.7 6.6 10a7 7 0 0 1-14 0c0-1.8.8-3.5 2.4-5 .2 1.5.9 2.4 1.9 2.8.3-3.2 1.3-5.8 3.1-7.8z"/>
+  </symbol>
+  <symbol id="i-casa" viewBox="0 0 24 24">
+    <path d="M12 3.6l2.4 5.2 5.6.7-4.1 3.9 1.1 5.5L12 16.2l-5 2.7 1.1-5.5L4 9.5l5.6-.7z"/>
+  </symbol>
+</svg>
+
+<a class="skip" href="#contenido" data-t="saltar">Ir a la carta</a>
+
+<header class="hero">
+  <img class="hero__foto" src="assets/img/espacio.webp" alt="" fetchpriority="high" decoding="async">
+  <div class="hero__inner">
+    <div class="hero__acciones">
+      <button class="btn-min" id="btn-espacio" type="button" data-t="verEspacio">El espacio</button>
+      <button class="btn-min" id="btn-idioma" type="button" aria-label="Switch to English">EN</button>
+    </div>
+    <img class="hero__colibri" src="assets/img/colibri.png" alt="" width="64" height="64" decoding="async">
+    <p class="hero__lugar" data-t="heroLugar">Sector Estadio · Medellín</p>
+    <h1 class="hero__nombre">Café Conexión</h1>
+    <p class="hero__tag" id="tagline">Ven por el café y quédate por la conexión</p>
+  </div>
+</header>
+
+<div class="barra" id="barra">
+  <div class="buscador">
+    <label class="skip" for="q" data-t="buscarLabel">Buscar en la carta</label>
+    <input id="q" type="search" autocomplete="off" enterkeyhint="search"
+           data-t-attr="placeholder:buscarPh" placeholder="Buscar un plato o un ingrediente">
+  </div>
+
+  <nav class="chips" id="chips" aria-label="Categorías"></nav>
+</div>
+
+<main id="contenido">
+  <div id="destacados"></div>
+  <div id="catalogo"></div>
+  <p class="vacio" id="vacio" hidden data-t="sinResultados">No encontramos nada con eso. Prueba con otra palabra.</p>
+</main>
+
+<section class="espacio" id="espacio" aria-labelledby="espacio-h">
+  <div class="envoltura" id="espacio-cont"></div>
+</section>
+
+<p class="pie">
+  <span data-t="pieCarta">Carta actualizada el</span> <span id="pie-fecha"></span> ·
+  <a href="https://instagram.com/cafeconexion8" rel="noopener" target="_blank">@cafeconexion8</a>
+</p>
+<button class="arriba" id="btn-arriba" type="button" data-t-attr="aria-label:arriba"
+        aria-label="Volver arriba">&#8593;</button>
+
+<dialog id="modal">
+  <button class="modal__cerrar" id="modal-cerrar" type="button" aria-label="Cerrar">×</button>
+  <div class="modal__cuerpo" id="modal-cuerpo"></div>
+</dialog>
+
+<script src="assets/js/carta.js?v=2" defer></script>
+</body>
+</html>
