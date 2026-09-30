@@ -63,8 +63,10 @@ window.CC_CAFE = {
 
   // Videos (por ejemplo, hechos con Higgsfield). Mientras estén en null, se ve la foto.
   // Formato y dónde guardarlos: README.md → «Videos». Prompts sugeridos: PENDIENTES.md → 6.
+  // «_vertical» es opcional: se usa en pantallas más altas que anchas (celular).
   "videos": {
-    "portada": null,
+    "portada": "assets/video/cafe-portada.mp4",
+    "portada_vertical": "assets/video/cafe-portada-vertical.mp4",
     "metodos": null
   }
 };

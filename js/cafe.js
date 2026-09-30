@@ -178,10 +178,13 @@
     Object.keys(porId).forEach(function (id) { var s = $(id); if (s) leer.observe(s); });
   }
 
-  /* Videos: se prenden solos cuando data/cafe.js trae la ruta. Sin movimiento reducido ni ahorro de datos. */
+  /* Videos: se prenden solos cuando data/cafe.js trae la ruta. Sin movimiento reducido ni ahorro de datos.
+     Si hay versión «_vertical», se usa en pantallas más altas que anchas. */
   var ahorro = w.navigator.connection && w.navigator.connection.saveData;
+  var alta = w.matchMedia && w.matchMedia('(max-aspect-ratio: 1/1)').matches;
   Array.prototype.forEach.call(d.querySelectorAll('[data-video]'), function (ranura) {
-    var src = (C.videos || {})[ranura.getAttribute('data-video')];
+    var videos = C.videos || {}, nombre = ranura.getAttribute('data-video');
+    var src = (alta && videos[nombre + '_vertical']) || videos[nombre];
     if (!src || CC.reduce || ahorro) return;
     var v = d.createElement('video');
     v.muted = true; v.loop = true; v.playsInline = true; v.autoplay = true;
