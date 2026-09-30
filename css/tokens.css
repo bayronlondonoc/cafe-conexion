@@ -186,6 +186,42 @@
   --sombra-hover: 0 18px 40px -24px rgb(var(--fit-rgb) / .45);
 }
 
+/* ---------- Tema de la página de talleres (talleres.html: <html data-tema="talleres">) ----------
+   Lino, oliva y malva, como los afiches de los talleres del café. */
+[data-tema="talleres"] {
+  --lino: #F6EFE6;
+  --lino-2: #EEE3D4;
+  --lino-3: #E6D8C4;
+  --oliva: #5B6638;
+  --oliva-honda: #47502B;
+  --malva: #8E5A67;
+  --cacao: #3B2E28;
+  --cacao-2: #6A5A50;
+  --oliva-rgb: 91 102 56;
+  --cacao-rgb: 59 46 40;
+
+  --fondo: var(--lino);
+  --fondo-alterno: var(--lino-2);
+  --superficie: var(--lino-3);
+  --tarjeta-fondo: #FFFBF6;
+  --texto: var(--cacao);
+  --texto-2: var(--cacao-2);
+  --primario: var(--oliva);
+  --primario-hover: var(--oliva-honda);
+  --primario-texto: #FFFBF6;
+  --enlace: var(--oliva);
+  --acento: var(--malva);
+  --borde: #E2D3C0;
+  --linea: rgb(var(--cacao-rgb) / .13);
+  --hover: rgb(var(--oliva-rgb) / .08);
+  --placeholder: var(--lino-2);
+  --hero-fondo: var(--oliva);
+  --pie-fondo: #3F4728;
+  --pie-texto: var(--lino);
+  --barra-fondo: rgb(246 239 230 / .96);
+  --sombra-hover: 0 18px 40px -24px rgb(var(--oliva-rgb) / .45);
+}
+
 /* Breakpoints: 640px (sm), 1024px (md), 1280px (lg). */
 @media (min-width: 640px) {
   :root { --margen: 32px; }

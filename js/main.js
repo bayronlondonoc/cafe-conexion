@@ -28,6 +28,7 @@
 
   CC.esc = esc;
   CC.listo = listo;
+  CC.plantilla = plantilla; // js/talleres.js arma con esto el mensaje de reserva
   CC.reduce = !!(w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches);
   CC.camara = '<svg class="ph__icono" aria-hidden="true"><use href="#i-camara"/></svg>';
 
@@ -306,27 +307,8 @@
     listo(sec);
   }
 
-  /* ---------- Eventos, preguntas frecuentes y créditos ---------- */
-  var ESTADO_EVENTO = { proximo: 'Próximo', agotado: 'Agotado', finalizado: 'Finalizado' };
-
-  function eventos() {
-    var s = (SITE.secciones || {}).eventos || {}, items = s.items || [], ul = $('#eventos-lista');
-    if (!s.publicar || !items.length) return; // sin agenda: todo sigue solo en vista previa
-    if (ul) {
-      ul.innerHTML = items.map(function (ev) {
-        return '<li class="evento">' +
-          (ev.cover ? '<img class="evento__cover" src="' + esc(ev.cover) + '" alt="' + esc(ev.titulo) + '" width="800" height="1000" loading="lazy" decoding="async">' : '') +
-          '<div class="evento__cuerpo"><p class="evento__fecha">' + esc(ev.fecha || '') + (ev.hora ? ' · ' + esc(ev.hora) : '') + '</p>' +
-          '<h3 class="evento__titulo">' + esc(ev.titulo) + '</h3>' +
-          (ev.detalle ? '<p class="evento__detalle">' + esc(ev.detalle) + '</p>' : '') +
-          (ESTADO_EVENTO[ev.estado] ? '<span class="evento__estado evento__estado--' + esc(ev.estado) + '">' + ESTADO_EVENTO[ev.estado] + '</span>' : '') +
-          '</div></li>';
-      }).join('');
-      listo(ul);
-    }
-    $$('[data-enlace-eventos], [data-seccion-eventos]').forEach(function (el) { el.classList.remove('solo-preview'); });
-  }
-
+  /* ---------- Preguntas frecuentes y créditos ----------
+     (Los talleres, que reemplazaron a «Eventos», están en js/talleres.js.) */
   function preguntas() {
     var cont = $('#preguntas-lista'), s = (SITE.secciones || {}).preguntas || {}, items = s.items || [];
     if (!cont || !items.length) return;
@@ -571,7 +553,6 @@
     practicos();
     nosotros();
     resenas();
-    eventos();
     preguntas();
     creditos();
     mapa();

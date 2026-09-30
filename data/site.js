@@ -25,6 +25,9 @@ window.CC_SITE = {
       "menu": "Hola, Café Conexión. Tengo una pregunta sobre el menú.",
       "cafe": "Hola, Café Conexión. Tengo una pregunta sobre sus cafés.",
       "fit": "Hola, Café Conexión. Quiero pedir de la línea Fit.",
+      "taller": "{saludo} Vi en {web} el taller «{taller}» del {cuando}. Quiero reservar {cupos}. Mi nombre es {nombre}. {nota}",
+      "sesion": "{saludo} Vi en {web} la sesión «{taller}». Quiero agendarla para el {fecha}, {franja}. Mi nombre es {nombre}. {nota}",
+      "taller_propuesta": "Hola, Café Conexión. Quiero proponer un taller en el café.",
       "reserva": "Hola, Café Conexión. Quiero reservar para {personas} el {fecha} a las {hora}. Mi nombre es {nombre}. {nota}",
       "contacto": "Hola, Café Conexión. Soy {nombre}. {mensaje}"
     },
@@ -57,7 +60,6 @@ window.CC_SITE = {
     "nosotros": { "publicar": false, "foto": null, "capitulos": [], "cita": null },
     "resenas": { "publicar": false, "items": [] },
     // Eventos: { "titulo", "fecha", "hora", "detalle", "cover", "estado": "proximo" | "agotado" | "finalizado" }
-    "eventos": { "publicar": false, "items": [] },
     "preguntas": {
       "publicar": false,
       "items": [

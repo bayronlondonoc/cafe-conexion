@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="es-CO" data-mode="produccion">
+<html lang="es-CO" data-mode="produccion" data-tema="talleres">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eventos | Café Conexión</title>
-<meta name="description" content="Planes, brindis y encuentros en Café Conexión, sector Estadio, Medellín.">
+<title>Talleres | Café Conexión</title>
+<meta name="description" content="Talleres, charlas y sesiones en Café Conexión, sector Estadio, Medellín: fechas, horarios, precios y reserva de cupos por WhatsApp.">
 <!-- Vista previa: la página no se indexa. Al pasar a producción se borra esta línea (README.md). -->
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#FCF6F0">
+<meta name="theme-color" content="#F6EFE6">
 
 <meta property="og:locale" content="es_CO">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Café Conexión">
-<meta property="og:title" content="Eventos | Café Conexión">
-<meta property="og:description" content="Planes, brindis y encuentros en Café Conexión, sector Estadio, Medellín.">
+<meta property="og:title" content="Talleres | Café Conexión">
+<meta property="og:description" content="Talleres, charlas y sesiones en Café Conexión, sector Estadio, Medellín: fechas, horarios, precios y reserva de cupos por WhatsApp.">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
@@ -29,10 +29,12 @@ document.documentElement.classList.add('js');
 <link rel="stylesheet" href="css/styles.css">
 
 <script src="data/site.js" defer></script>
+<script src="data/talleres.js" defer></script>
 <script src="data/creditos.js" defer></script>
 <script src="js/main.js" defer></script>
+<script src="js/talleres.js" defer></script>
 </head>
-<body data-pagina="eventos">
+<body data-pagina="talleres">
 
 <svg class="sprite" aria-hidden="true" focusable="false">
   <symbol id="i-camara" viewBox="0 0 24 24"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.3l1.4-2.2h7.6L17.2 7h2.3A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.6"/></symbol>
@@ -46,6 +48,7 @@ document.documentElement.classList.add('js');
   <symbol id="i-hoja" viewBox="0 0 24 24"><path d="M5 19C5 10.5 10.5 5 19.5 5c0 9-5.5 14.5-14.5 14z"/><path d="M5 19c3.2-4.3 6.4-7.2 10.3-9.5"/></symbol>
   <symbol id="i-gota" viewBox="0 0 24 24"><path d="M12 3.5s6 6.3 6 10.4a6 6 0 0 1-12 0c0-4.1 6-10.4 6-10.4z"/><path d="M4.5 4.5l15 15"/></symbol>
   <symbol id="i-pesa" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><rect x="1.5" y="9" width="2.5" height="6" rx="1"/><rect x="4.5" y="5.5" width="3.5" height="13" rx="1.4"/><rect x="8" y="10.9" width="8" height="2.2" rx="1.1"/><rect x="16" y="5.5" width="3.5" height="13" rx="1.4"/><rect x="20" y="9" width="2.5" height="6" rx="1"/></g></symbol>
+  <symbol id="i-taller" viewBox="0 0 24 24"><path d="M12 2.6v1.9"/><rect x="3" y="4.5" width="18" height="11" rx="1.6"/><path d="M8.3 21l2.4-5.5M15.7 21l-2.4-5.5M6.8 12.3l3-3 2.6 2.1 4.8-4.4"/></symbol>
   <symbol id="i-grano" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6.4" ry="9.2" transform="rotate(35 12 12)"/><path d="M7.4 18.5C9 16.4 11.3 16 11.8 12.4S14.9 7.8 16.6 5.5"/></symbol>
 </svg>
 
@@ -58,9 +61,9 @@ document.documentElement.classList.add('js');
       <ul class="nav__lista">
         <li class="nav__cafe"><a href="cafe.html"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
         <li class="nav__fit"><a href="fit.html"><svg class="icono icono--pesa" aria-hidden="true"><use href="#i-pesa"/></svg>Fit</a></li>
+        <li class="nav__talleres"><a href="talleres.html" aria-current="page"><svg class="icono icono--taller" aria-hidden="true"><use href="#i-taller"/></svg>Talleres</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="espacio.html">El espacio</a></li>
-        <li class="solo-preview" data-enlace-eventos><a href="eventos.html" aria-current="page">Eventos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
@@ -78,9 +81,9 @@ document.documentElement.classList.add('js');
       <li><a href="index.html">Inicio</a></li>
       <li class="menu-movil__cafe"><a href="cafe.html"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
       <li class="menu-movil__fit"><a href="fit.html"><svg class="icono icono--pesa" aria-hidden="true"><use href="#i-pesa"/></svg>Fit</a></li>
+      <li class="menu-movil__talleres"><a href="talleres.html" aria-current="page"><svg class="icono icono--taller" aria-hidden="true"><use href="#i-taller"/></svg>Talleres</a></li>
       <li><a href="nosotros.html">Nosotros</a></li>
       <li><a href="espacio.html">El espacio</a></li>
-      <li class="solo-preview" data-enlace-eventos><a href="eventos.html" aria-current="page">Eventos</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
     <div class="menu-movil__botones">
@@ -91,47 +94,65 @@ document.documentElement.classList.add('js');
 </div>
 
 <main id="contenido" tabindex="-1">
-<section class="pagina-cabeza" aria-labelledby="pagina-titulo">
+<section class="pagina-cabeza talleres-cabeza" aria-labelledby="pagina-titulo">
     <div class="contenedor pagina-cabeza__grid">
       <div class="pagina-cabeza__texto">
-        <p class="sobretitulo">Eventos</p>
-        <h1 id="pagina-titulo">Planes para ir acompañado.</h1>
-        <p class="pagina-cabeza__intro">Encuentros, brindis y planes en Conexión.</p>
-        
+        <p class="sobretitulo">Talleres</p>
+        <h1 id="pagina-titulo">Talleres y encuentros en Conexión.</h1>
+        <p class="pagina-cabeza__intro">Charlas, talleres y sesiones en el café, con cupos limitados. Reservar tu cupo toma un minuto:</p>
+        <ol class="pasos-reserva" role="list">
+          <li><span aria-hidden="true">1</span>Escoge el taller.</li>
+          <li><span aria-hidden="true">2</span>Toca «Reservar mi cupo» y escribe tu nombre.</li>
+          <li><span aria-hidden="true">3</span>Envía el mensaje por WhatsApp y espera la confirmación.</li>
+        </ol>
+        <a class="boton boton--primario boton--grande" href="#proximos">Ver los próximos talleres<svg class="flecha" aria-hidden="true"><use href="#i-flecha"/></svg></a>
       </div>
-      <figure class="pagina-cabeza__foto">
-        <img src="assets/img/mimosa.webp" alt="Copas de mimosa listas para brindar" width="760" height="570" fetchpriority="high" decoding="async">
+      <figure class="pagina-cabeza__foto" id="taller-destacado">
+        <img src="assets/img/espacio.webp" alt="Barra con bancos altos junto a una ventana" width="760" height="570" fetchpriority="high" decoding="async">
       </figure>
     </div>
   </section>
 
-  <section class="seccion" data-seccion-eventos aria-labelledby="agenda-titulo">
+  <!-- Próximos: los talleres con fecha que no han terminado (data/talleres.js) -->
+  <section class="seccion" id="proximos" aria-labelledby="proximos-titulo">
     <div class="contenedor">
-      <header class="seccion__cabeza">
-        <p class="sobretitulo">Agenda</p>
-        <h2 id="agenda-titulo">Lo que viene.</h2>
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Próximos talleres</p>
+        <h2 id="proximos-titulo">Lo que viene.</h2>
       </header>
-      <ul class="eventos pendiente" id="eventos-lista" data-pendiente="agenda: un formato fijo de eventos que la dueña pueda sostener" role="list"></ul>
+      <div class="talleres" id="talleres-proximos"></div>
     </div>
   </section>
 
-  <section class="seccion seccion--alterna pendiente" aria-labelledby="celebra-titulo" data-pendiente="celebraciones privadas: confirmar si se reciben">
+  <!-- Con cita: las sesiones sin fecha fija ("tipo": "sesion") -->
+  <section class="seccion seccion--alterna" id="con-cita" aria-labelledby="cita-titulo">
     <div class="contenedor">
-      <p class="sobretitulo">Celebraciones</p>
-      <h2 id="celebra-titulo">Cumpleaños y reuniones en Conexión.</h2>
-      <p class="seccion__intro">Cuéntanos qué quieres celebrar y cuántas personas vienen.</p>
-      <a class="boton boton--primario" href="contacto.html" data-wa="general" data-ubicacion="eventos"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos</a>
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Sesiones con cita</p>
+        <h2 id="cita-titulo">Cuando te sirva.</h2>
+        <p class="seccion__intro">Sesiones personales en el café: escoges el día y el horario, y te confirman por WhatsApp.</p>
+      </header>
+      <div class="talleres" id="talleres-cita"></div>
     </div>
   </section>
 
-  
-  <section class="seccion seccion--superficie cta-final" id="contacto" aria-labelledby="cierre-titulo">
+  <!-- Ya pasaron: los talleres con fecha que terminaron. Solo información, sin reserva. -->
+  <section class="seccion" id="pasados" aria-labelledby="pasados-titulo">
+    <div class="contenedor">
+      <header class="seccion__cabeza" data-reveal>
+        <p class="sobretitulo">Ya pasaron</p>
+        <h2 id="pasados-titulo">Ya pasaron por Conexión.</h2>
+      </header>
+      <ul class="talleres-pasados" id="talleres-pasados" role="list"></ul>
+    </div>
+  </section>
+
+  <section class="seccion seccion--superficie cta-final" aria-labelledby="cierre-titulo">
     <div class="contenedor" data-reveal>
-      <h2 id="cierre-titulo">¿Nos vemos en Conexión?</h2>
-      <p class="cta-final__texto">Escríbenos por WhatsApp. Te esperamos.</p>
+      <h2 id="cierre-titulo">¿Quieres hacer tu taller en Conexión?</h2>
+      <p class="cta-final__texto">Cuéntanos tu idea por WhatsApp.</p>
       <div class="cta-final__botones">
-        <a class="boton boton--primario boton--grande" href="contacto.html" data-wa="general" data-ubicacion="cta_final"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escribir por WhatsApp</a>
-        <a class="boton boton--primario boton--grande boton--claro" href="index.html#favoritos" data-menu data-ubicacion="cta_final">Ver menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+        <a class="boton boton--primario boton--grande" href="contacto.html" data-wa="taller_propuesta" data-ubicacion="talleres_cierre"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escribir por WhatsApp</a>
       </div>
     </div>
   </section>
@@ -149,10 +170,10 @@ document.documentElement.classList.add('js');
         <li><a class="pie__enlace" href="index.html">Inicio</a></li>
         <li><a class="pie__enlace" href="cafe.html">Café</a></li>
         <li><a class="pie__enlace" href="fit.html">Fit</a></li>
+        <li><a class="pie__enlace" href="talleres.html">Talleres</a></li>
         <li><a class="pie__enlace" href="nosotros.html">Nosotros</a></li>
         <li><a class="pie__enlace" href="espacio.html">El espacio</a></li>
         <li><a class="pie__enlace" href="index.html#favoritos" data-menu data-ubicacion="footer">Menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a></li>
-        <li class="solo-preview" data-enlace-eventos><a class="pie__enlace" href="eventos.html">Eventos</a></li>
         <li><a class="pie__enlace" href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
