@@ -192,6 +192,45 @@
   --sombra-hover: 0 18px 40px -24px rgb(var(--fit-rgb) / .45);
 }
 
+/* ---------- Tema del inicio (index.html: <html data-tema="inicio">) ----------
+   Los colores de la marca, los de los afiches del colibrí, en su versión más suave: lino, arena,
+   oliva y malva, con la salvia de la dueña en las ramitas. La portada no cambia. */
+[data-tema="inicio"] {
+  --lino-suave: #F8F3EC;
+  --arena-suave: #F0E8DC;
+  --arena-media: #E9DFCF;
+  --oliva-suave: #58643F;
+  --oliva-suave-honda: #465032;
+  --malva-suave: #7E525C;
+  --cacao-suave: #3A302A;
+  --cacao-suave-2: #6B5D53;
+  --oliva-suave-rgb: 88 100 63;
+  --cacao-suave-rgb: 58 48 42;
+
+  --fondo: var(--lino-suave);
+  --fondo-alterno: var(--arena-suave);
+  --superficie: var(--arena-media);
+  --tarjeta-fondo: #FFFCF7;
+  --texto: var(--cacao-suave);
+  --texto-2: var(--cacao-suave-2);
+  --primario: var(--oliva-suave);
+  --primario-hover: var(--oliva-suave-honda);
+  --primario-texto: #FFFCF7;
+  --enlace: var(--oliva-suave);
+  --acento: var(--malva-suave);
+  --borde: #E4D8C6;
+  --linea: rgb(var(--cacao-suave-rgb) / .12);
+  --hover: rgb(var(--oliva-suave-rgb) / .08);
+  --placeholder: var(--arena-suave);
+  --hero-fondo: #4F5A3A;
+  --pie-fondo: #3F4630;
+  --pie-texto: var(--lino-suave);
+  --barra-fondo: rgb(248 243 236 / .96);
+  --sombra-hover: 0 18px 40px -24px rgb(var(--oliva-suave-rgb) / .4);
+  --pie-luz-calida: 138 92 102;
+  --pie-luz-fria: 157 182 160;
+}
+
 /* ---------- Tema de la página de talleres (talleres.html: <html data-tema="talleres">) ----------
    Lino, oliva y malva, como los afiches de los talleres del café. */
 [data-tema="talleres"] {
