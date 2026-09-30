@@ -74,10 +74,13 @@
     return '<img class="' + clase + '" src="' + esc(t.cartel) + '" alt="' + esc(t.alt || t.titulo) + '" width="' + (t.cartel_ancho || 720) +
       '" height="' + (t.cartel_alto || 1080) + '" loading="' + (carga || 'lazy') + '" decoding="async">';
   }
-  function botonReserva(t, clases) {
+  // corto: «Reservar» en vez de «Reservar mi cupo», para la sección del inicio y el anuncio.
+  function botonReserva(t, clases, corto) {
     if (t.agotado) return '<span class="taller__agotado">Cupos agotados</span>';
+    var sesion = t.tipo === 'sesion';
     return '<button class="boton boton--primario ' + (clases || '') + '" type="button" data-reservar="' + esc(t.id) + '">' + ICONO_WA +
-      (t.tipo === 'sesion' ? 'Agendar mi sesión' : 'Reservar mi cupo') + '</button>';
+      (corto ? (sesion ? 'Agendar' : 'Reservar') : (sesion ? 'Agendar mi sesión' : 'Reservar mi cupo')) +
+      (corto ? '<span class="visually-hidden"> cupo en ' + esc(t.titulo) + '</span>' : '') + '</button>';
   }
 
   /* ---------- talleres.html ---------- */
@@ -168,7 +171,7 @@
         fechaCorta(t.fecha) + ' · ' + esc(horario(t)) + '</p>' +
         '<h3 class="taller-mini__titulo"><a href="talleres.html#' + esc(t.id) + '">' + esc(t.titulo) + '</a></h3>' +
         '<p class="taller-mini__precio">' + esc(t.precio_nombre || 'Valor') + ': ' + precio(t.precio) + '</p>' +
-        botonReserva(t, 'boton--chico') + '</div></li>';
+        botonReserva(t, 'boton--chico', true) + '</div></li>';
     }).join('');
     sec.hidden = false;
   }
@@ -189,7 +192,7 @@
       return {
         id: t.id, img: t.cartel, enlace: 'talleres.html#' + t.id, etiqueta: 'Taller · ' + relativo(t) + ' · ' + fechaCorta(t.fecha),
         titulo: t.titulo, detalle: horario(t) + ' · ' + precio(t.precio),
-        acciones: botonReserva(t, 'boton--chico') + '<a class="aviso__enlace" href="talleres.html#' + esc(t.id) + '">Ver taller</a>'
+        acciones: botonReserva(t, 'boton--chico', true) + '<a class="aviso__enlace" href="talleres.html#' + esc(t.id) + '">Ver taller</a>'
       };
     });
     (T.promos || []).forEach(function (p) {

@@ -97,7 +97,7 @@
 
 <header class="cabecera" id="cabecera">
   <div class="cabecera__inner contenedor">
-    <a class="marca" href="index.html" aria-current="page">Café Conexión</a>
+    <a class="marca" href="index.html" aria-current="page"><img class="marca__colibri" src="assets/brand/colibri.jpg" alt="" width="184" height="184" decoding="async"><span class="marca__texto">Café Conexión</span></a>
     <nav class="nav" aria-label="Principal">
       <ul class="nav__lista">
         <li class="nav__cafe"><a href="cafe.html"><svg class="icono icono--grano" aria-hidden="true"><use href="#i-grano"/></svg>Café</a></li>
@@ -390,45 +390,43 @@
 </main>
 
 <footer class="pie">
-  <div class="contenedor pie__grid">
-    <div class="pie__marca-bloque">
-      <p class="pie__marca">Café Conexión</p>
-      <p class="pie__frase">Hecho para encontrarnos.</p>
-    </div>
-    <nav class="pie__bloque" aria-label="Explorar">
-      <p class="pie__titulo">Explorar</p>
+  <div class="contenedor pie__centro">
+    <a class="pie__marca" href="index.html">
+      <img class="pie__colibri" src="assets/brand/colibri.jpg" alt="" width="184" height="184" loading="lazy" decoding="async">
+      <span class="pie__nombre">Café Conexión</span>
+    </a>
+    <p class="pie__frase">Hecho para encontrarnos.</p>
+
+    <nav aria-label="Explorar">
       <ul class="pie__nav" role="list">
-        <li><a class="pie__enlace" href="index.html">Inicio</a></li>
-        <li><a class="pie__enlace" href="cafe.html">Café</a></li>
-        <li><a class="pie__enlace" href="fit.html">Fit</a></li>
-        <li><a class="pie__enlace" href="talleres.html">Talleres</a></li>
-        <li><a class="pie__enlace" href="nosotros.html">Nosotros</a></li>
-        <li><a class="pie__enlace" href="espacio.html">El espacio</a></li>
-        <li><a class="pie__enlace" href="index.html#favoritos" data-menu data-ubicacion="footer">Menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a></li>
-        <li><a class="pie__enlace" href="contacto.html">Contacto</a></li>
+        <li><a href="cafe.html">Café</a></li>
+        <li><a href="fit.html">Fit</a></li>
+        <li><a href="talleres.html">Talleres</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="espacio.html">El espacio</a></li>
+        <li><a href="index.html#favoritos" data-menu data-ubicacion="footer">Menú<svg class="flecha-ext" aria-hidden="true"><use href="#i-externo"/></svg><span class="visually-hidden"> (se abre en otra pestaña)</span></a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
-    <div class="pie__bloque">
-      <p class="pie__titulo">Visítanos</p>
-      <p data-dato="direccion-completa"></p>
-      <a class="pie__enlace" href="espacio.html" data-maps data-ubicacion="footer"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
+
+    <p class="pie__contacto">
+      <a href="contacto.html" data-wa="general" data-ubicacion="footer"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp <span data-dato="whatsapp-visible"></span></a>
+      <span class="pie__punto" aria-hidden="true">·</span>
+      <a href="espacio.html" data-maps data-ubicacion="footer"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
+    </p>
+    <ul class="pie__redes pendiente" data-redes data-pendiente="redes: Instagram y TikTok del relanzamiento" role="list"></ul>
+
+    <div class="pie__legal">
+      <p>© 2026 Café Conexión <span class="pie__punto" aria-hidden="true">·</span> <span data-dato="direccion-completa">Medellín, Colombia</span></p>
+      <details class="creditos">
+        <summary>Créditos de las imágenes</summary>
+        <div class="creditos__cuerpo">
+          <p class="creditos__nota">Fotos provisionales de bancos libres: no son del local y se reemplazan por fotos propias. Se recortaron y comprimieron para la web.</p>
+          <ol class="creditos__lista" id="creditos-lista"></ol>
+        </div>
+      </details>
+      <p class="pie__credito pendiente" data-credito data-pendiente="crédito de desarrollo (opcional)"></p>
     </div>
-    <div class="pie__bloque">
-      <p class="pie__titulo">Escríbenos</p>
-      <a class="pie__enlace" href="contacto.html" data-wa="general" data-ubicacion="footer"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-dato="whatsapp-visible">WhatsApp</span></a>
-      <ul class="pie__redes pendiente" data-redes data-pendiente="redes: Instagram y TikTok del relanzamiento" role="list"></ul>
-    </div>
-  </div>
-  <div class="contenedor pie__legal">
-    <p>© 2026 Café Conexión</p>
-    <p class="pie__credito pendiente" data-credito data-pendiente="crédito de desarrollo (opcional)"></p>
-  </div>
-  <div class="contenedor">
-    <details class="creditos">
-      <summary>Créditos de las imágenes</summary>
-      <p class="creditos__nota">Fotos provisionales de bancos libres: no son del local y se reemplazan por fotos propias. Se recortaron y comprimieron para la web.</p>
-      <ol class="creditos__lista" id="creditos-lista"></ol>
-    </details>
   </div>
 </footer>
 

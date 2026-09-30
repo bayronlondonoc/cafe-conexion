@@ -44,6 +44,8 @@
   --pie-texto: var(--crema);
   --marca-pendiente: #97502F;          /* solo vista previa: marco y etiqueta PENDIENTE */
   --barra-fondo: rgb(var(--crema-rgb) / .96);   /* barra inferior del celular */
+  --pie-luz-calida: 151 80 47;         /* luces suaves del footer (canales RGB) */
+  --pie-luz-fria: 157 182 160;
 
   /* ---------- Tipografía ---------- */
   --fuente-display: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -135,6 +137,8 @@
   --pie-fondo: #0E0A08;
   --pie-texto: var(--crema-leche);
   --barra-fondo: rgb(var(--cafe-rgb) / .96);
+  --pie-luz-calida: 227 165 90;
+  --pie-luz-fria: 222 128 82;
 
   /* Capas de las tazas dibujadas */
   --capa-espresso: #4A2B1C;
@@ -183,6 +187,8 @@
   --pie-fondo: #1F4F48;
   --pie-texto: var(--menta);
   --barra-fondo: rgb(243 248 245 / .96);
+  --pie-luz-calida: 122 91 166;
+  --pie-luz-fria: 157 182 160;
   --sombra-hover: 0 18px 40px -24px rgb(var(--fit-rgb) / .45);
 }
 
@@ -219,6 +225,8 @@
   --pie-fondo: #3F4728;
   --pie-texto: var(--lino);
   --barra-fondo: rgb(246 239 230 / .96);
+  --pie-luz-calida: 142 90 103;
+  --pie-luz-fria: 201 186 140;
   --sombra-hover: 0 18px 40px -24px rgb(var(--oliva-rgb) / .45);
 }
 
