@@ -1095,7 +1095,7 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
   .nav__lista { gap: 22px; }
 }
 
-/* ---------- Talleres (talleres.html, y la sección y el anuncio del inicio) ----------
+/* ---------- Talleres (talleres.html y la sección «Próximos talleres» del inicio) ----------
    talleres.html usa el tema de tokens.css ([data-tema="talleres"]): lino, oliva y malva. */
 
 .pasos-reserva { display: grid; gap: 10px; margin: 22px 0 28px; padding: 0; list-style: none; }
@@ -1162,7 +1162,7 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
 .taller-pasado__fecha { font-size: .8rem; color: var(--texto-2); }
 .taller-pasado__titulo { font-weight: 700; line-height: 1.3; }
 /* Títulos largos («incondicionalmente») en columnas angostas: se parten en vez de salirse. */
-.taller__titulo, .taller-pasado__titulo, .taller-mini__titulo, .aviso__titulo, .reserva__titulo { overflow-wrap: anywhere; hyphens: auto; }
+.taller__titulo, .taller-pasado__titulo, .taller-mini__titulo, .reserva__titulo { overflow-wrap: anywhere; hyphens: auto; }
 .taller-pasado__quien { font-size: .85rem; color: var(--texto-2); }
 
 /* Inicio: «Próximos talleres» */
@@ -1182,45 +1182,6 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
 @media (max-width: 379px) {
   .taller-mini { grid-template-columns: 72px minmax(0, 1fr); gap: 12px; padding: 12px; }
   .taller-mini__img { width: 72px; height: 96px; }
-}
-
-/* Inicio: el anuncio. Pequeño, abajo a la izquierda en el computador y encima de la barra en el
-   celular; entra suave y se cierra con la ×. */
-.aviso {
-  position: fixed; z-index: 44; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
-  display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px; align-items: start;
-  max-width: 420px; margin-inline: auto; padding: 14px 46px 14px 14px;
-  border: 1px solid var(--borde); border-radius: var(--radio-md); background: var(--tarjeta-fondo); color: var(--texto);
-  box-shadow: 0 24px 48px -20px rgb(var(--tinta-rgb) / .35), 0 2px 6px rgb(var(--tinta-rgb) / .08);
-  opacity: 0; visibility: hidden; transform: translateY(16px);
-  transition: opacity var(--t-ui) var(--ease-out), transform var(--t-ui) var(--ease-out), bottom var(--t-ui) var(--ease-out), visibility 0s linear var(--t-ui);
-}
-.aviso--visible { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
-.pasado-hero .aviso { bottom: calc(var(--alto-barra-movil) + 12px + env(safe-area-inset-bottom)); }
-.menu-abierto .aviso { display: none; }
-.aviso__img { width: 64px; height: 84px; object-fit: cover; object-position: top; border-radius: 10px; }
-.aviso__cuerpo { display: grid; gap: 4px; }
-.aviso__etiqueta { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--acento); }
-.aviso__titulo { font-family: var(--fuente-display); font-variation-settings: var(--display-ajustes); font-size: 1.1rem; line-height: 1.2; font-weight: 560; }
-.aviso__detalle { font-size: .85rem; color: var(--texto-2); }
-.aviso__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 6px; }
-.aviso__enlace, .aviso__mas { font-size: .88rem; font-weight: 600; color: var(--enlace); }
-.aviso__mas { display: inline-flex; align-items: center; gap: 6px; }
-.aviso__cerrar {
-  position: absolute; top: 2px; right: 2px; width: 44px; height: 44px; display: grid; place-items: center;
-  border-radius: 50%; font-size: 1.6rem; line-height: 1; color: var(--texto-2);
-}
-.aviso__cerrar:hover { background: var(--hover); color: var(--texto); }
-.aviso__titulo a { color: inherit; text-decoration: none; }
-.aviso__titulo a:hover { text-decoration: underline; }
-@media (max-width: 599px) {
-  .aviso { gap: 12px; padding: 12px 44px 12px 12px; }
-  .aviso__img { width: 56px; height: 74px; }
-  .aviso__enlace, .aviso__mas { display: none; }
-}
-@media (min-width: 1024px) {
-  .aviso { left: 28px; right: auto; bottom: 28px; width: 380px; margin: 0; }
-  .pasado-hero .aviso { bottom: 28px; }
 }
 
 /* La ventana para reservar: centrada en el computador, desde abajo en el celular. */
@@ -1249,7 +1210,6 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .aviso { transform: none; }
   .reserva[open] { animation: fundir 150ms linear; }
   .destacado__enlace { transform: none; }
 }

@@ -1,7 +1,7 @@
 /* Café Conexión · talleres
    - talleres.html: el próximo taller en la cabecera, los próximos talleres, las sesiones con cita
      y los que ya pasaron.
-   - Inicio: la sección «Próximos talleres» y un anuncio pequeño que se cierra con la ×.
+   - Inicio: la sección «Próximos talleres».
    - Reservas: una ventana con un formulario corto que abre WhatsApp con el mensaje listo, al
      número del taller o, si no tiene, al del café.
    Todo se calcula con la hora de Colombia: lo que ya terminó no se anuncia ni se reserva.
@@ -61,7 +61,6 @@
   lista.forEach(function (t) { porId[t.id] = t; });
 
   var ICONO_WA = '<svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>';
-  var FLECHA = '<svg class="flecha" aria-hidden="true"><use href="#i-flecha"/></svg>';
 
   function quienOrienta(t) {
     if (!t.instagram || !t.instagram.length) return esc(t.orienta || '');
@@ -74,7 +73,7 @@
     return '<img class="' + clase + '" src="' + esc(t.cartel) + '" alt="' + esc(t.alt || t.titulo) + '" width="' + (t.cartel_ancho || 720) +
       '" height="' + (t.cartel_alto || 1080) + '" loading="' + (carga || 'lazy') + '" decoding="async">';
   }
-  // corto: «Reservar» en vez de «Reservar mi cupo», para la sección del inicio y el anuncio.
+  // corto: «Reservar» en vez de «Reservar mi cupo», para la sección del inicio.
   function botonReserva(t, clases, corto) {
     if (t.agotado) return '<span class="taller__agotado">Cupos agotados</span>';
     var sesion = t.tipo === 'sesion';
@@ -176,79 +175,6 @@
     sec.hidden = false;
   }
 
-  /* ---------- Inicio: el anuncio ----------
-     Sale una vez por visita, cuando la persona ya bajó más allá de la portada (nunca encima de
-     ella ni de la animación del colibrí). Se cierra con la ×, con Esc o reservando; si lo
-     cierran, ese anuncio no vuelve a salir. */
-  function guardado(clave) { try { return w.localStorage.getItem(clave); } catch (e) { return null; } }
-  function guardar(clave, valor) { try { w.localStorage.setItem(clave, valor); } catch (e) {} }
-
-  function anuncio() {
-    if (d.body.getAttribute('data-pagina') !== 'inicio') return;
-    try { if (w.sessionStorage.getItem('cc_anuncio_visto')) return; } catch (e) {}
-
-    var dia = new Date(Date.now() - 5 * 3600e3).getUTCDay();
-    var avisos = proximos.filter(function (t) { return !t.agotado && !guardado('cc_anuncio_cerrado_' + t.id); }).map(function (t) {
-      return {
-        id: t.id, img: t.cartel, enlace: 'talleres.html#' + t.id, etiqueta: 'Taller · ' + relativo(t) + ' · ' + fechaCorta(t.fecha),
-        titulo: t.titulo, detalle: horario(t) + ' · ' + precio(t.precio),
-        acciones: botonReserva(t, 'boton--chico', true) + '<a class="aviso__enlace" href="talleres.html#' + esc(t.id) + '">Ver taller</a>'
-      };
-    });
-    (T.promos || []).forEach(function (p) {
-      var cerrado = +guardado('cc_anuncio_cerrado_' + p.id) || 0;
-      if ((p.dias || []).indexOf(dia) === -1 || Date.now() - cerrado < 6 * 864e5) return;
-      avisos.push({
-        id: p.id, img: p.imagen, etiqueta: 'Promo · ' + (dia === 6 ? 'Hoy sábado' : p.cuando),
-        titulo: p.titulo, detalle: p.texto,
-        acciones: N.menu_url ? '<a class="boton boton--primario boton--chico" href="' + esc(N.menu_url) + '" target="_blank" rel="noopener">Ver menú<span class="visually-hidden"> (se abre en otra pestaña)</span></a>' : ''
-      });
-    });
-    if (!avisos.length) return;
-
-    var a = avisos[0], mas = proximos.filter(function (t) { return t.id !== a.id; }).length;
-    var el = d.createElement('aside');
-    el.className = 'aviso';
-    el.setAttribute('aria-label', 'Anuncio');
-    el.innerHTML = (a.img ? '<img class="aviso__img" src="' + esc(a.img) + '" alt="" width="72" height="96" decoding="async">' : '') +
-      '<div class="aviso__cuerpo"><p class="aviso__etiqueta">' + esc(a.etiqueta) + '</p>' +
-      '<p class="aviso__titulo">' + (a.enlace ? '<a href="' + esc(a.enlace) + '">' + esc(a.titulo) + '</a>' : esc(a.titulo)) + '</p>' +
-      '<p class="aviso__detalle">' + esc(a.detalle) + '</p>' +
-      '<div class="aviso__acciones">' + a.acciones + '</div>' +
-      (mas > 0 ? '<a class="aviso__mas" href="talleres.html">' + (mas === 1 ? 'Y 1 taller más' : 'Y ' + mas + ' talleres más') + FLECHA + '</a>' : '') +
-      '</div><button class="aviso__cerrar" type="button" aria-label="Cerrar anuncio"><span aria-hidden="true">×</span></button>';
-    d.body.appendChild(el);
-
-    var visto = false, esperando = false;
-    function mostrar() {
-      if (visto) return;
-      visto = true;
-      try { w.sessionStorage.setItem('cc_anuncio_visto', '1'); } catch (e) {}
-      el.classList.add('aviso--visible');
-      CC.track && CC.track('ver_anuncio', { id: a.id });
-    }
-    function cerrar(motivo) {
-      guardar('cc_anuncio_cerrado_' + a.id, String(Date.now()));
-      el.classList.remove('aviso--visible');
-      setTimeout(function () { el.remove(); }, 400);
-      CC.track && CC.track('cerrar_anuncio', { id: a.id, motivo: motivo });
-    }
-    // main.js pone la clase pasado-hero en <html> cuando la portada sale de la pantalla.
-    var raiz = d.documentElement;
-    function alPasar() {
-      if (esperando || !raiz.classList.contains('pasado-hero')) return;
-      esperando = true;
-      if (vigia) vigia.disconnect();
-      setTimeout(mostrar, 700);
-    }
-    var vigia = 'MutationObserver' in w ? new MutationObserver(alPasar) : null;
-    if (vigia) vigia.observe(raiz, { attributes: true, attributeFilter: ['class'] });
-    else w.addEventListener('scroll', alPasar, { passive: true });
-    el.querySelector('.aviso__cerrar').addEventListener('click', function () { cerrar('x'); });
-    el.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar('esc'); });
-    el.addEventListener('click', function (e) { if (e.target.closest('[data-reservar]')) cerrar('reservar'); });
-  }
-
   /* ---------- Reservas por WhatsApp ---------- */
   var ventana = null;
   function numeroDe(t) { return String(t.whatsapp || (N.whatsapp && N.whatsapp.numero) || ''); }
@@ -332,6 +258,4 @@
 
   pagina();
   seccionInicio();
-  if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', anuncio);
-  else anuncio();
 })();

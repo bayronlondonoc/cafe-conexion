@@ -1,6 +1,6 @@
-/* Café Conexión · talleres (talleres.html, y la sección y el anuncio del inicio)
+/* Café Conexión · talleres (talleres.html y la sección «Próximos talleres» del inicio)
    Cómo funciona:
-   - Un taller con fecha sale en «Próximos talleres» y en el anuncio del inicio hasta que termina.
+   - Un taller con fecha sale en «Próximos talleres» (aquí y en el inicio) hasta que termina.
      Después pasa solo a «Ya pasaron», sin botón de reserva. No hay que borrarlo.
    - Una sesión con cita ("tipo": "sesion") no tiene fecha: sale siempre en «Sesiones con cita».
    - "fecha": AAAA-MM-DD. "inicio" y "fin": hora de 24 h ("16:00"), hora de Colombia.
@@ -85,19 +85,6 @@ window.CC_TALLERES = {
       "cartel_ancho": 200,
       "cartel_alto": 300,
       "alt": "Afiche de la meditación ¿Qué es amar incondicionalmente?"
-    }
-  ],
-
-  // Promociones que también salen en el anuncio del inicio, solo los días de "dias"
-  // (0 domingo, 1 lunes … 6 sábado). No salen en la página de talleres.
-  "promos": [
-    {
-      "id": "promo-sabado",
-      "titulo": "Promo del sábado",
-      "texto": "2 hamburguesas + 1 porción de papas por $35.000. 2 cócteles por $29.000.",
-      "cuando": "Todos los sábados",
-      "dias": [4, 5, 6],
-      "imagen": "assets/talleres/promo-sabado.jpg"
     }
   ]
 };
