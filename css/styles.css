@@ -670,9 +670,11 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
 
 /* «Café» en el menú de todas las páginas: con un grano y, en escritorio, como botón de borde. */
 .icono--grano { width: 1em; height: 1em; }
-.nav__cafe a { display: inline-flex; align-items: center; gap: 7px; }
-.menu-movil__cafe a { display: flex; align-items: center; gap: 12px; }
-.menu-movil__cafe .icono--grano { width: .8em; height: .8em; color: var(--acento); }
+/* «Fit» lleva una mancuerna, el símbolo más conocido del fitness. */
+.icono--pesa { width: 1.2em; height: 1.2em; }
+.nav__cafe a, .nav__fit a { display: inline-flex; align-items: center; gap: 7px; }
+.menu-movil__cafe a, .menu-movil__fit a { display: flex; align-items: center; gap: 12px; }
+.menu-movil__cafe .icono--grano, .menu-movil__fit .icono--pesa { width: .8em; height: .8em; color: var(--acento); }
 @media (min-width: 1024px) {
   .nav__lista { align-items: center; }
   .nav__lista .nav__cafe a {
