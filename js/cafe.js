@@ -179,8 +179,7 @@
   }
 
   /* Videos: se prenden solos cuando data/cafe.js trae la ruta. Sin movimiento reducido ni ahorro de datos.
-     Si hay versión «_vertical», se usa en pantallas más altas que anchas. Con data-video-pausa, el
-     video corre solo mientras se ve y lleva un botón para pausarlo. */
+     Si hay versión «_vertical», se usa en pantallas más altas que anchas. */
   var ahorro = w.navigator.connection && w.navigator.connection.saveData;
   var alta = w.matchMedia && w.matchMedia('(max-aspect-ratio: 1/1)').matches;
   Array.prototype.forEach.call(d.querySelectorAll('[data-video]'), function (ranura) {
@@ -188,36 +187,12 @@
     var src = (alta && videos[nombre + '_vertical']) || videos[nombre];
     if (!src || CC.reduce || ahorro) return;
     var v = d.createElement('video');
-    v.muted = true; v.loop = true; v.playsInline = true;
+    v.muted = true; v.loop = true; v.playsInline = true; v.autoplay = true;
     v.preload = 'metadata';
     v.setAttribute('aria-hidden', 'true');
     v.src = src;
     ranura.appendChild(v);
-    function reproducir() {
-      var intento = v.play();
-      if (intento && intento.catch) intento.catch(function () {});
-    }
-    if (!ranura.hasAttribute('data-video-pausa') || !('IntersectionObserver' in w)) {
-      v.autoplay = true;
-      reproducir();
-      return;
-    }
-
-    var pausado = false, visible = false;
-    var boton = d.createElement('button');
-    boton.type = 'button';
-    boton.className = 'video-pausa';
-    boton.innerHTML =
-      '<svg class="video-pausa__pausa" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5h2.6v11H4zM9.4 2.5H12v11H9.4z"/></svg>' +
-      '<svg class="video-pausa__seguir" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.2 13 8l-8.5 5.8z"/></svg>';
-    function actualizar() {
-      boton.setAttribute('aria-pressed', pausado ? 'true' : 'false');
-      boton.setAttribute('aria-label', pausado ? 'Reproducir el video' : 'Pausar el video');
-      if (visible && !pausado) reproducir(); else v.pause();
-    }
-    boton.addEventListener('click', function () { pausado = !pausado; actualizar(); });
-    ranura.parentNode.appendChild(boton);
-    actualizar();
-    new IntersectionObserver(function (e) { visible = e[0].isIntersecting; actualizar(); }, { threshold: 0.35 }).observe(ranura);
+    var intento = v.play();
+    if (intento && intento.catch) intento.catch(function () {});
   });
 })();

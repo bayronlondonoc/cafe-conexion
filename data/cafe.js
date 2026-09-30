@@ -64,11 +64,9 @@ window.CC_CAFE = {
   // Videos (por ejemplo, hechos con Higgsfield). Mientras estén en null, se ve la foto.
   // Formato y dónde guardarlos: README.md → «Videos». Prompts sugeridos: PENDIENTES.md → 6.
   // «_vertical» es opcional: se usa en pantallas más altas que anchas (celular).
-  // «recorrido» es el reel «Del cafetal a tu taza», en su propia sección bajo la portada.
   "videos": {
-    "portada": null,
-    "metodos": null,
-    "recorrido": "assets/video/cafe-recorrido.mp4",
-    "recorrido_vertical": "assets/video/cafe-recorrido-vertical.mp4"
+    "portada": "assets/video/cafe-portada.mp4",
+    "portada_vertical": "assets/video/cafe-portada-vertical.mp4",
+    "metodos": null
   }
 };
