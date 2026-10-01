@@ -11,7 +11,7 @@
 
 // El número de CACHE sube con cada diseño nuevo (igual que el ?v= de index.html):
 // al activarse, este archivo borra lo guardado con el número anterior.
-const CACHE = 'carta-v2';
+const CACHE = 'carta-v3';
 const FOTOS = 'carta-fotos-v1';
 const TOPE_FOTOS = 160; // cabe lo que alguien alcanza a mirar en una visita
 
@@ -20,7 +20,7 @@ const TOPE_FOTOS = 160; // cabe lo que alguien alcanza a mirar en una visita
 const BASE = [
   './',
   'index.html',
-  'assets/css/carta.css?v=2',
+  'assets/css/carta.css?v=3',
   'assets/js/carta.js?v=2',
   'data/menu.json',
   'assets/img/espacio.webp',
