@@ -3,8 +3,8 @@
    el colibrí (canvas) → los textos, los botones y las tarjetas. Los botones y los textos son los
    de siempre (styles.css); acá solo se acomodan alrededor del colibrí.
 
-   Sin JavaScript, con «reducir movimiento» o con la animación en pausa, el colibrí es una imagen
-   fija y todo se ve completo. Clases en <html>: .hc-motion (el head decidió que entra volando),
+   El colibrí vuela siempre. Sin JavaScript o con «reducir movimiento», es una imagen fija y todo
+   se ve completo. Clases en <html>: .hc-motion (el head decidió que entra volando),
    .hc-listo (js/hero-colibri.js cargó) y .hc-seguro (no cargó a tiempo: se muestra todo). */
 
 .hero--colibri {
@@ -121,25 +121,6 @@
   /* Los textos no se meten debajo de las tarjetas. */
   .hero--colibri .hero__seq { max-width: min(920px, 100% - 430px); }
 }
-
-/* ---------- Pausa ---------- */
-
-.colibri__pausa {
-  position: absolute; z-index: 3;
-  top: calc(var(--alto-cabecera) + 14px);
-  right: max(var(--margen), (100% - var(--contenedor)) / 2);
-  display: grid; place-items: center;
-  width: 44px; height: 44px;
-  border: 1px solid rgb(var(--crema-rgb) / .45); border-radius: 50%;
-  background: rgb(var(--tinta-rgb) / .3); color: var(--crema);
-  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-  transition: background-color var(--t-micro);
-}
-.colibri__pausa:hover { background: rgb(var(--tinta-rgb) / .55); }
-.colibri__pausa svg { width: 14px; height: 14px; fill: currentColor; }
-.colibri__pausa .colibri__icono-seguir,
-.colibri__pausa[aria-pressed="true"] .colibri__icono-pausa { display: none; }
-.colibri__pausa[aria-pressed="true"] .colibri__icono-seguir { display: block; }
 
 /* ---------- Celular y tablet: colibrí arriba, textos centrados abajo ---------- */
 

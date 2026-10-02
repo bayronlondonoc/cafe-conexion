@@ -25,8 +25,7 @@
     fps: 24,
     mirada: 1, // hacia dónde mira el colibrí en los fotogramas: 1 derecha, -1 izquierda
     miradaFinal: 1, // hacia dónde queda mirando al terminar la entrada (1 como en las referencias)
-    esperaIntro: 1.35, // s: con la intro «Conexión», el colibrí entra cuando la capa se abre
-    guardarPausa: 'cc_colibri_pausa'
+    esperaIntro: 1.35 // s: con la intro «Conexión», el colibrí entra cuando la capa se abre
   };
 
   // Recorridos por tamaño de pantalla. Las curvas son fracciones del ancho y del alto del hero,
@@ -58,7 +57,6 @@
     nombreIn: hero.querySelector('[data-colibri-nombre-in]'),
     ave: hero.querySelector('[data-colibri-ave]'),
     poster: hero.querySelector('[data-colibri-poster]'),
-    pausa: hero.querySelector('[data-colibri-pausa]'),
     textos: [].slice.call(hero.querySelectorAll('.hero__seq > *')),
     tarjetas: [].slice.call(hero.querySelectorAll('[data-colibri-tarjeta]')),
     suben: [].slice.call(hero.querySelectorAll('.hero__contenido, [data-colibri-tarjetas]'))
@@ -87,9 +85,6 @@
   // Bézier cúbica que sale de 0: p1 y p2 son de control, p3 es el final.
   function bezier(p1, p2, p3, t) { var u = 1 - t; return 3 * u * u * t * p1 + 3 * u * t * t * p2 + t * t * t * p3; }
 
-  function leerPausa() { try { return localStorage.getItem(CONFIG.guardarPausa) === '1'; } catch (e) { return false; } }
-  function guardarPausa(v) { try { localStorage.setItem(CONFIG.guardarPausa, v ? '1' : '0'); } catch (e) { /* sin almacenamiento */ } }
-
   /* ---------- Estado ---------- */
 
   var lienzo = d.createElement('canvas');
@@ -106,7 +101,6 @@
   var amp = { vaiven: 1, cursor: 0 };
   var cur = { x: 0, y: 0 }, par = { x: 0, y: 0 }, puntero = { activo: false, x: 0, y: 0 };
   var t = 0, antes = 0, corriendo = false, visible = true, enVuelo = false;
-  var pausado = leerPausa();
   var entradaLista = false, bloqueoMirada = false;
   var avance = 0, avanceMeta = 0, despues = 0, st = null;
   var xPrev = null, vx = 0, giro = 0, mirandoCursor = 0;
@@ -318,8 +312,9 @@
     }
   }
 
+  // Vuela siempre; solo descansa mientras la portada no se ve o la pestaña está oculta.
   function actualizar() {
-    var debe = visible && !pausado && enVuelo && !d.hidden;
+    var debe = visible && enVuelo && !d.hidden;
     if (debe === corriendo) return;
     corriendo = debe;
     if (debe) {
@@ -412,7 +407,7 @@
     programarDardo(1.6, 3.2);
   }
 
-  // Sin entrada (pausa guardada, seguro del head o ya se saltó): todo en su lugar.
+  // Sin entrada (el seguro del head ya mostró todo): el colibrí aparece en su lugar y sigue volando.
   function sinEntrada() {
     entrada.x = entrada.y = 0; entrada.s = 1;
     mirada.valor = mirada.desde = mirada.hacia = CONFIG.miradaFinal;
@@ -428,22 +423,8 @@
     hero.classList.add('en-vuelo');
     medir();
     antes = w.performance.now() / 1000 - 1 / 60;
-    paso(); // lo deja en su lugar aunque arranque en pausa
+    paso(); // lo deja en su lugar desde el primer cuadro
     cargarFotogramas();
-    actualizar();
-  }
-
-  /* ---------- Pausa ---------- */
-
-  function ponerPausa(si, guardar) {
-    pausado = si;
-    if (el.pausa) {
-      el.pausa.setAttribute('aria-pressed', si ? 'true' : 'false');
-      el.pausa.setAttribute('aria-label', si ? 'Reanudar la animación del colibrí' : 'Pausar la animación del colibrí');
-    }
-    if (si && intro && !entradaLista) intro.progress(1); // la entrada no se queda a medias
-    if (guardar) guardarPausa(si);
-    if (!si || html.classList.contains('hc-motion')) despegar(); // con la entrada ya armada, el poster está oculto
     actualizar();
   }
 
@@ -484,11 +465,6 @@
   function iniciar() {
     scroll();
 
-    if (el.pausa) {
-      el.pausa.hidden = false;
-      el.pausa.addEventListener('click', function () { ponerPausa(!pausado, true); });
-    }
-
     hero.addEventListener('pointermove', function (ev) {
       if (ev.pointerType === 'touch') return;
       var r = hero.getBoundingClientRect();
@@ -505,12 +481,12 @@
     if ('ResizeObserver' in w) new ResizeObserver(medir).observe(hero);
     w.addEventListener('load', function () { ST.refresh(); });
 
-    var conEntrada = html.classList.contains('hc-motion') && !html.classList.contains('hc-seguro') && !pausado;
+    var conEntrada = html.classList.contains('hc-motion') && !html.classList.contains('hc-seguro');
     medir();
 
     if (!conEntrada) {
       sinEntrada();
-      if (pausado) ponerPausa(true, false); else despegar();
+      despegar();
       return;
     }
 

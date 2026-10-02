@@ -36,12 +36,12 @@
 })(document.documentElement);
 </script>
 <script>
-/* Colibrí de la portada: antes de pintar, decide si entra volando (nunca con movimiento reducido
-   ni si la persona lo dejó en pausa). Si js/hero-colibri.js no carga en 5 s, se muestra todo quieto. */
+/* Colibrí de la portada: antes de pintar, decide si entra volando (siempre, menos con movimiento
+   reducido). Si js/hero-colibri.js no carga en 5 s, se muestra todo quieto. */
 (function (h) {
   try {
     var quieto = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!quieto && localStorage.getItem('cc_colibri_pausa') !== '1') h.classList.add('hc-motion');
+    if (!quieto) h.classList.add('hc-motion');
   } catch (e) {}
   setTimeout(function () { if (!h.classList.contains('hc-listo')) h.classList.add('hc-seguro'); }, 5000);
 })(document.documentElement);
@@ -49,7 +49,7 @@
 
 <link rel="stylesheet" href="css/tokens.css?v=20260930-8">
 <link rel="stylesheet" href="css/styles.css?v=20260930-8">
-<link rel="stylesheet" href="css/hero-colibri.css">
+<link rel="stylesheet" href="css/hero-colibri.css?v=20261002-1">
 
 <script src="data/site.js?v=20260930-8" defer></script>
 <script src="data/menu.js?v=20260930-8" defer></script>
@@ -60,7 +60,7 @@
 <script src="js/talleres.js?v=20260930-8" defer></script>
 <script src="js/vendor/gsap.min.js" defer></script>
 <script src="js/vendor/ScrollTrigger.min.js" defer></script>
-<script src="js/hero-colibri.js" defer></script>
+<script src="js/hero-colibri.js?v=20261002-1" defer></script>
 </head>
 <body data-pagina="inicio">
 
@@ -191,11 +191,6 @@
         <p class="colibri__cifra-texto">maneras de pedir un espresso</p>
       </div>
     </aside>
-
-    <button class="colibri__pausa" type="button" aria-pressed="false" aria-label="Pausar la animación del colibrí" data-colibri-pausa hidden>
-      <svg class="colibri__icono-pausa" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5h2.6v11H4zM9.4 2.5H12v11H9.4z"/></svg>
-      <svg class="colibri__icono-seguir" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.2 13 8l-8.5 5.8z"/></svg>
-    </button>
   </section>
 
   <!-- 2b · Próximos talleres: desde data/talleres.js (js/talleres.js). Sin talleres próximos, no se ve. -->
