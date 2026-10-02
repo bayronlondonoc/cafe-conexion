@@ -747,7 +747,9 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
 
 /* Portada */
 .hero--cafe .hero__velo { background: linear-gradient(to bottom, rgb(var(--cafe-rgb) / .45), rgb(var(--cafe-rgb) / .55) 45%, rgb(var(--cafe-rgb) / .96)); }
-.hero--cafe .hero__titulo { font-size: clamp(3rem, 1.4rem + 6.4vw, 6.6rem); line-height: .96; letter-spacing: -.03em; }
+.hero--cafe .hero__titulo { font-size: min(clamp(3rem, 1.4rem + 6.4vw, 6.6rem), 11vh); line-height: .96; letter-spacing: -.03em; }
+/* Los textos van más abajo (y el título se ajusta a la altura) para que arriba se vea el video. */
+.hero--cafe .hero__contenido { padding-bottom: clamp(24px, 4.5vh, 48px); }
 .hero--cafe .sobretitulo { color: var(--caramelo); }
 .hero--cafe .boton--primario { background: var(--caramelo); color: var(--espresso); }
 .hero--cafe .boton--primario:hover { background: var(--caramelo-claro); }
