@@ -9,25 +9,19 @@ llevan CC BY o CC BY-SA **exigen crédito al autor**: mientras estén publicadas
 este archivo es el crédito y tiene que poder consultarse. No se admiten licencias
 ND (prohíben el recorte) ni GFDL (obliga a publicar el texto de la licencia).
 
+## Fotos hechas con IA
+
+No son fotos de los productos de Café Conexión: son imágenes de referencia hechas con
+ChatGPT (cuenta de Bayron), con la colorimetría de las piezas de redes del café. No llevan
+crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
+
+- **Bebidas calientes** (2026-10-21): `tinto.jpg`, `espresso.jpg`, `americano.jpg`, `periquito-cortado.jpg`, `macchiato.jpg`, `latte.jpg`, `capuchino.jpg`, `mocha.jpg`, `cafe-bombon.jpg`, `chocolate-en-agua.jpg`, `chocolate-en-leche.jpg`, `milo.jpg`, `chocolate-conexion.jpg`, `capuchino-conexion.jpg`, `capuchino-con-licor.jpg`, `carajillo.jpg`, `cafe-irlandes.jpg`.
+
+## Fotos prestadas de bancos libres
+
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| tinto.webp | Americano Coffee | Mark Morgan Trinidad B | CC BY 2.0 | https://www.flickr.com/photos/46102325@N06/16608533770 |
-| espresso.webp | Espresso - Evan Swigart | Evan Swigart from Chicago, USA | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AEspresso%20-%20Evan%20Swigart.jpg |
-| americano.webp | Americano Coffee + Cake (45523282251) | Vee Satayamas from Bangkok, Thailand | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AAmericano%20Coffee%20%2B%20Cake%20(45523282251).jpg |
-| periquito-cortado.webp | Caffe Lattes - Sonoma Bakery AUD3 - by Julia | avlxyz | CC BY-SA 2.0 | https://www.flickr.com/photos/10559879@N00/3566017727 |
-| macchiato.webp | Almond Croissant, Piccolo Caffe Latte, Bonsoy Soy Caffe Latte -  | avlxyz | CC BY-SA 2.0 | https://www.flickr.com/photos/10559879@N00/3911020041 |
-| latte.webp | Cappuccino with latte art on Coffee Right in Brno, Brno-City District | Frettie | CC BY 3.0 | https://commons.wikimedia.org/wiki/File%3ACappuccino%20with%20latte%20art%20on%20Coffee%20Right%20in%20Brno%2C%20Brno-City%20District.jpg |
-| capuchino.webp | Free cappuccino cups cinnamon stick | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/5915197/image-public-domain-coffee-chocolate |
-| capuchino-2.webp | Formal Morning Cappuccino Coffee In Warm and Cool Shades, Tones, | Chic Bee | CC BY 2.0 | https://www.flickr.com/photos/80454089@N00/51214020257 |
-| mocha.webp | Hot mocha coffee latte art | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/6026205/photo-image-public-domain-coffee-chocolate |
-| cafe-bombon.webp | Ca phe - coffee a la Vietnam | ZoeShuttleworth | CC BY | https://www.flickr.com/photos/32746416@N04/4369415493 |
-| milo.webp | Chocolate shake | WILLPOWER STUDIOS | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AChocolate%20shake.png |
-| capuchino-conexion.webp | Proper cappuccino. #italy #cappuccino #coffee #cupofcoffee with  | todoleo | CC BY-SA 2.0 | https://www.flickr.com/photos/95808812@N00/12851081313 |
-| capuchino-con-licor.webp | A person holds a cup of cappuccino featuring intricate latte art, sitting at a café table | Shixart1985 | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AA%20person%20holds%20a%20cup%20of%20cappuccino%20featuring%20intricate%20latte%20art%2C%20sitting%20at%20a%20caf%C3%A9%20table.jpg |
-| carajillo.webp | Cremaet en preparación para elaborar carajillos o cremaeta (Torreblanca, Castellón) | Juan Emilio Prades Bel | Dominio público / CC0 | https://commons.wikimedia.org/wiki/File%3ACremaet%20en%20preparaci%C3%B3n%20para%20elaborar%20carajillos%20o%20cremaeta%20(Torreblanca%2C%20Castell%C3%B3n).jpg |
-| cafe-irlandes.webp | Irish Coffee 2025 | David Jackmanson | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AIrish%20Coffee%202025.jpg |
-| cafe-irlandes-2.webp | Irish coffee and a cherry-infused whisky cocktail | Neil T | CC BY-SA 2.0 | https://www.flickr.com/photos/41894148532@N01/14219420334 |
 | frutos-deshidratados.webp | A glass of hibiscus tea 01 | claralieu | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AA%20glass%20of%20hibiscus%20tea%2001.jpg |
 | infusiones-ancestrales.webp | A glass of hibiscus tea 04 | claralieu | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AA%20glass%20of%20hibiscus%20tea%2004.jpg |
 | leche-dorada-en-leche.webp | Turmeric Latte (43134398655) | Ella Olsson from Stockholm, Sweden | CC BY 2.0 | https://commons.wikimedia.org/w/index.php?curid=83080936 |
