@@ -1,153 +1,625 @@
 {
   "_about": "English translations only. Prices, badges, modifiers, destacado and agotado live ONLY in menu.json — never here. Anything missing from this file falls back to Spanish automatically.",
-
   "config": {
     "tagline": "Come for the coffee, stay for the connection"
   },
-
   "espacio": {
     "direccion": "Cl. 49 #78a-21, Estadio area, Medellín"
   },
-
   "categorias": {
-    "calientes": { "nombre": "Hot" },
-    "metodos": { "nombre": "Pour-over methods", "nota": "Filter · 2 cups" },
-    "frios": { "nombre": "Cold" },
-    "con-licor": { "nombre": "With spirits" },
-    "te-y-matcha": { "nombre": "Tea and matcha" },
-    "cerveza-y-vino": { "nombre": "Beer and wine" },
-    "cocteles": { "nombre": "Cocktails" },
-    "para-picar": { "nombre": "To share" },
-    "desayuno-y-brunch": { "nombre": "Breakfast and brunch" },
-    "ensaladas-y-sandwiches": { "nombre": "Salads and sandwiches" },
-    "hamburguesas": { "nombre": "Burgers" },
-    "pizzas": { "nombre": "Pizzas", "nota": "Personal size" },
-    "del-horno": { "nombre": "From the oven" },
-    "combos": { "nombre": "Combos" },
-    "postres": { "nombre": "Desserts" }
+    "calientes": {
+      "nombre": "Hot drinks",
+      "nota": "With almond milk: +$3.000"
+    },
+    "infusiones-y-matcha": {
+      "nombre": "Infusions and matcha",
+      "nota": "With almond milk: +$3.000"
+    },
+    "frias": {
+      "nombre": "Cold drinks",
+      "nota": "With almond milk: +$3.000"
+    },
+    "smoothies": {
+      "nombre": "Smoothies"
+    },
+    "limonadas": {
+      "nombre": "Lemonades"
+    },
+    "jugos-y-gaseosas": {
+      "nombre": "Juices, water and sodas"
+    },
+    "cervezas-y-vino": {
+      "nombre": "Beer and wine",
+      "nota": "Any beer as a michelada: +$3.000"
+    },
+    "cocteles": {
+      "nombre": "Cocktails"
+    },
+    "para-compartir": {
+      "nombre": "To share"
+    },
+    "brunch": {
+      "nombre": "Brunch"
+    },
+    "platos-fuertes": {
+      "nombre": "Main dishes"
+    },
+    "pizzas": {
+      "nombre": "Pizzas",
+      "nota": "Personal size, sourdough"
+    },
+    "hojaldrados": {
+      "nombre": "Puff pastries"
+    },
+    "gustos-dulces": {
+      "nombre": "Sweet treats"
+    }
   },
-
   "opciones": {
-    "leche": { "titulo": "Change the milk", "items": ["Whole", "Lactose-free", "Almond", "Oat"] },
-    "tamano-cafe": { "titulo": "Size", "items": ["8 oz", "12 oz"] },
-    "licor-carajillo": { "titulo": "Choose the spirit", "items": ["Brandy", "Aguardiente"] },
-    "licor-crema": { "titulo": "Choose the liqueur", "items": ["Amaretto", "Baileys"] },
-    "sabor-soda": { "titulo": "Choose the flavour", "items": ["Passion fruit", "Red berries", "Green mango"] },
-    "sabor-limonada": { "titulo": "Choose the flavour", "items": ["Cherry", "Mint"] },
-    "sabor-infusion": { "titulo": "Choose the fruit", "items": ["Red berries", "Yellow fruits"] },
-    "sabor-mimosa": { "titulo": "Choose the juice", "items": ["Orange", "Red berries", "Yellow fruits"] },
-    "tipo-vino": { "titulo": "Choose the wine", "items": ["Red", "White", "Rosé"] },
-    "marca-importada": { "titulo": "Choose the beer", "items": ["Corona", "Stella Artois"] },
-    "marca-nacional": { "titulo": "Choose the beer", "items": ["Águila Light", "Poker", "Águila Original"] },
-    "marca-premium": { "titulo": "Choose the beer", "items": ["Club Colombia Dorada", "Club Colombia Roja", "Club Colombia Negra"] },
-    "punto-huevo": { "titulo": "How would you like them", "items": ["Scrambled", "Omelet"] },
-    "toppings-huevo": { "titulo": "Choose 2 sides", "items": ["Sofrito", "Corn", "Mozzarella", "Ham", "Bacon", "Broccoli"] },
-    "base-huevo": { "titulo": "On the side", "items": ["Arepa", "Sourdough toast"] },
-    "relleno-croissant": { "titulo": "Choose the filling", "items": ["Chicken", "Vegetables"] },
-    "base-bowl": { "titulo": "Choose the base", "items": ["Greek yogurt", "Kefir"] },
-    "sabor-torta": { "titulo": "Choose the cake", "items": ["Carrot", "Red velvet", "Chocolate"] }
+    "sabor-frutos": {
+      "titulo": "Choose the flavour",
+      "items": [
+        "Red berries",
+        "Green fruits",
+        "Yellow fruits",
+        "Hibiscus flower"
+      ]
+    },
+    "mezcla-ancestral": {
+      "titulo": "Choose the blend",
+      "items": [
+        "Jardín Mágico",
+        "Alma Verde",
+        "Danza Frutal",
+        "Bosque Sagrado"
+      ]
+    },
+    "sabor-cold-brew": {
+      "titulo": "Choose the flavour",
+      "items": [
+        "Orange",
+        "Lemon",
+        "Guandolo"
+      ]
+    },
+    "sabor-malteada": {
+      "titulo": "Choose the flavour",
+      "items": [
+        "Oreo",
+        "Coffee",
+        "Cosette",
+        "Malt and Milo",
+        "Nutella",
+        "Red berries",
+        "Arequipe"
+      ]
+    },
+    "sabor-soda": {
+      "titulo": "Choose the flavour",
+      "items": [
+        "Yellow fruits",
+        "Red berries",
+        "Watermelon and kiwi",
+        "Lychee",
+        "Green mango"
+      ]
+    },
+    "tipo-artesanal": {
+      "titulo": "Choose the beer",
+      "items": [
+        "Stout",
+        "Amber Ale",
+        "Blond Ale",
+        "Hazy IPA",
+        "Seasonal",
+        "Cannabeer"
+      ]
+    },
+    "vino-sangria": {
+      "titulo": "Choose the wine",
+      "items": [
+        "Red wine",
+        "Rosé wine"
+      ]
+    },
+    "toppings-2": {
+      "titulo": "Choose 2 toppings",
+      "items": [
+        "Hogao",
+        "Corn",
+        "Cheese",
+        "Mozzarella",
+        "Ham",
+        "Bacon",
+        "Spinach",
+        "Broccoli"
+      ]
+    },
+    "toppings-3": {
+      "titulo": "Choose 3 toppings",
+      "items": [
+        "Hogao",
+        "Corn",
+        "Cheese",
+        "Mozzarella",
+        "Ham",
+        "Bacon",
+        "Spinach",
+        "Broccoli"
+      ]
+    },
+    "acompanante": {
+      "titulo": "On the side",
+      "items": [
+        "Arepa",
+        "Sourdough bread"
+      ]
+    },
+    "huevos-americano": {
+      "titulo": "The eggs",
+      "items": [
+        "Baked",
+        "Scrambled"
+      ]
+    },
+    "pan-cubano": {
+      "titulo": "Choose the bread",
+      "items": [
+        "Cuban bread",
+        "Baguette"
+      ]
+    },
+    "pasta-tipo": {
+      "titulo": "Choose the pasta",
+      "items": [
+        "Spaghetti",
+        "Penne"
+      ]
+    },
+    "pasta-salsa": {
+      "titulo": "Choose the sauce",
+      "items": [
+        "Homemade Neapolitan",
+        "Creamy Alfredo",
+        "Basil pesto"
+      ]
+    },
+    "pasta-proteina": {
+      "titulo": "Choose the protein",
+      "items": [
+        "Grilled chicken",
+        "Salmon"
+      ]
+    },
+    "salsa-waffle": {
+      "titulo": "Choose the sauce",
+      "items": [
+        "Chocolate",
+        "Arequipe",
+        "Red berries"
+      ]
+    }
   },
-
   "productos": {
-    "cal-01": { "nombre": "Espresso", "descripcion": "A single shot of concentrated coffee, extracted under pressure." },
-    "cal-02": { "nombre": "Americano", "descripcion": "Espresso with hot water. Softer and longer." },
-    "cal-03": { "nombre": "Latte", "descripcion": "Espresso with steamed milk and a thin layer of foam." },
-    "cal-04": { "nombre": "Cappuccino", "descripcion": "Espresso with steamed milk and dense foam." },
-    "cal-05": { "nombre": "Almond latte", "descripcion": "Espresso with steamed almond drink." },
-    "cal-06": { "nombre": "Mocha", "descripcion": "Espresso with melted dark chocolate and creamy milk." },
-
-    "met-01": { "nombre": "French press", "descripcion": "Full immersion. Heavy body, silky texture and coffee oils in the cup." },
-    "met-02": { "nombre": "V60", "descripcion": "Spiral pour. Clear aromas, sweetness and balanced acidity." },
-    "met-03": { "nombre": "Japanese siphon", "descripcion": "Steam and vacuum extraction. Clean, aromatic, light-bodied cup." },
-    "met-04": { "nombre": "Origami", "descripcion": "Fast filter. Clean, bright cup with a delicate profile." },
-    "met-05": { "nombre": "Chemex", "descripcion": "Slow filter through thick paper. Clean, soft cup with floral notes." },
-
-    "fri-01": { "nombre": "Affogato", "descripcion": "Vanilla ice cream with a hot espresso shot poured over." },
-    "fri-02": { "nombre": "Cold brew", "descripcion": "Coarse-ground coffee steeped cold for 24 hours." },
-    "fri-03": { "nombre": "Coffee frappé", "descripcion": "Coffee, chocolate sauce, caramel and whipped cream, blended with ice." },
-    "fri-04": { "nombre": "Coffee lemonade", "descripcion": "Espresso with lime juice and cane sugar, served cold." },
-    "fri-05": { "nombre": "Iced mocha", "descripcion": "Espresso, milk and chocolate over ice, with whipped cream." },
-    "fri-06": { "nombre": "Coffee and orange", "descripcion": "Espresso with orange juice, served over ice." },
-    "fri-07": { "nombre": "Oreo milkshake", "descripcion": "Ice cream, milk and Oreo cookie." },
-    "fri-08": { "nombre": "Coffee milkshake", "descripcion": "Ice cream, milk and our house roast." },
-    "fri-09": { "nombre": "Milo milkshake", "descripcion": "Ice cream, milk, Milo and malt." },
-    "fri-10": { "nombre": "Fruit soda", "descripcion": "Soda with passion fruit, red berry or green mango pulp." },
-    "fri-11": { "nombre": "Coconut lemonade", "descripcion": "Lime, coconut milk and ice." },
-    "fri-12": { "nombre": "Fresh lemonade", "descripcion": "Lime, water and sugar." },
-    "fri-13": { "nombre": "Cherry or mint lemonade", "descripcion": "Fresh lemonade with cherry syrup or fresh mint." },
-
-    "lic-01": { "nombre": "Irish coffee", "descripcion": "Long espresso, whiskey, cream and whipped cream." },
-    "lic-02": { "nombre": "Carajillo", "descripcion": "Espresso with brandy or aguardiente." },
-    "lic-03": { "nombre": "Frappuccino with liqueur", "descripcion": "Coffee, milk, cream and chocolate with amaretto or Baileys." },
-    "lic-04": { "nombre": "Café bombón", "descripcion": "Long espresso over condensed milk, in two layers." },
-    "lic-05": { "nombre": "Cappuccino with liqueur", "descripcion": "Espresso, steamed milk, cinnamon and amaretto or Baileys." },
-
-    "te-01": { "nombre": "Matcha latte", "descripcion": "Ceremonial matcha with steamed milk." },
-    "te-02": { "nombre": "Golden milk tea", "descripcion": "Hot milk with turmeric, ginger and black pepper." },
-    "te-03": { "nombre": "Pu-erh tea", "descripcion": "Green and red tea with ginger and horsetail." },
-    "te-04": { "nombre": "Herbal tea", "descripcion": "A blend of red and green tea." },
-    "te-05": { "nombre": "Hibiscus tea", "descripcion": "Hibiscus flower infusion. Tart, floral, ruby coloured." },
-    "te-06": { "nombre": "Red or yellow fruit infusion", "descripcion": "Dried fruit slowly infused in hot water." },
-
-    "cer-01": { "nombre": "Michelada", "descripcion": "Beer with lime and salt." },
-    "cer-02": { "nombre": "Glass of wine", "descripcion": "House selection: red, white or rosé." },
-    "cer-03": { "nombre": "Imported beer", "descripcion": "Corona or Stella Artois." },
-    "cer-04": { "nombre": "Domestic beer", "descripcion": "Águila Light, Poker or Águila Original." },
-    "cer-05": { "nombre": "Premium domestic beer", "descripcion": "Club Colombia Dorada, Roja or Negra." },
-    "cer-06": { "nombre": "Glass of sangria", "descripcion": "Red wine with fruit and ice." },
-    "cer-07": { "nombre": "Pitcher of sangria", "descripcion": "Red wine with fruit and ice, to share." },
-    "cer-08": { "nombre": "Soft drink", "descripcion": "350 ml bottle." },
-
-    "coc-01": { "nombre": "Mojito", "descripcion": "White rum, mint, lime, sugar and soda." },
-    "coc-02": { "nombre": "Margarita", "descripcion": "Tequila, orange liqueur, lime and a salted rim." },
-    "coc-03": { "nombre": "Moscow Mule", "descripcion": "Vodka, ginger beer and lime." },
-    "coc-04": { "nombre": "Espresso Martini", "descripcion": "Vodka, coffee liqueur and a shot of espresso." },
-    "coc-05": { "nombre": "Mimosa", "descripcion": "Sparkling wine with orange, red berry or yellow fruit juice." },
-
-    "pic-01": { "nombre": "Sourdough bread", "descripcion": "Five pieces with cream cheese, roasted tomato, basil, balsamic reduction and sea salt." },
-    "pic-02": { "nombre": "Patacones", "descripcion": "Five pieces with lime and cilantro guacamole, and hogao." },
-    "pic-03": { "nombre": "Nachos", "descripcion": "400 g with guacamole, sour cream, pickled onion, refried beans and hot sauce." },
-
-    "bru-01": { "nombre": "Waffles with bacon", "descripcion": "Waffles with cream cheese, crisp bacon and maple syrup." },
-    "bru-02": { "nombre": "Two-ham croissant", "descripcion": "Turkey ham, smoked ham, buffalo cheese, roasted tomato, avocado and balsamic reduction." },
-    "bru-03": { "nombre": "Filled croissant", "descripcion": "Chicken or vegetables, lettuce, bacon, pepper sauce and melted mozzarella." },
-    "bru-04": { "nombre": "Eggs your way", "descripcion": "Scrambled or omelet, with two sides and arepa or sourdough toast." },
-    "bru-05": { "nombre": "Avocado toast", "descripcion": "Sourdough bread, avocado, scrambled eggs, bacon and leek." },
-    "bru-06": { "nombre": "Yogurt bowl", "descripcion": "Greek yogurt or kefir, granola, blueberries, strawberry and honey." },
-    "bru-07": { "nombre": "Tomato and pesto toast", "descripcion": "Sourdough bread, roasted tomato, scrambled eggs, buffalo cheese and pesto." },
-
-    "ens-01": { "nombre": "Teriyaki chicken bowl", "descripcion": "Mixed lettuce, cherry tomato, mushrooms, mango, caramelised leek, crisp lentils and teriyaki chicken." },
-    "ens-02": { "nombre": "Caesar salad", "descripcion": "Lettuce, chicken breast, parmesan, Caesar dressing, cherry tomato and herb croutons." },
-    "ens-03": { "nombre": "Sushi-style salmon salad", "descripcion": "Marinated salmon, surimi, avocado, cucumber and nori over vinegared rice, with teriyaki reduction." },
-    "ens-04": { "nombre": "Vegetarian sandwich", "descripcion": "Croissant with lettuce, roasted tomato, caramelised onion, broccoli and mushrooms." },
-
-    "ham-01": { "nombre": "House burger", "descripcion": "150 g patty, cheddar, bacon, caramelised onion, baby gem lettuce and house sauce on brioche." },
-    "ham-02": { "nombre": "Tropical burger", "descripcion": "Handmade patty, bacon, caramelised leek, grilling cheese and grilled pineapple with tajín on brioche." },
-    "ham-03": { "nombre": "Lentil burger", "descripcion": "Lentil patty, light mozzarella, roasted tomato, mixed lettuce and pepper-honey reduction on sourdough." },
-
-    "piz-01": { "nombre": "American pizza", "descripcion": "Pepperoni, tomato sauce and mozzarella." },
-    "piz-02": { "nombre": "Hawaiian pizza", "descripcion": "Glazed pineapple, ham, tomato sauce and mozzarella." },
-    "piz-03": { "nombre": "Iberian pizza", "descripcion": "Spanish chorizo, dates, olives, tomato sauce and mozzarella." },
-    "piz-04": { "nombre": "Tuscan pizza", "descripcion": "Caramelised apple, blue cheese, almonds, pesto and mozzarella." },
-    "piz-05": { "nombre": "Catalan pizza", "descripcion": "Pepperoni, salami, cábano sausage, tomato sauce and mozzarella." },
-    "piz-06": { "nombre": "Neapolitan pizza", "descripcion": "Sun-dried tomatoes, buffalo cheese, basil, tomato sauce and mozzarella." },
-
-    "hor-01": { "nombre": "Argentinian empanada", "descripcion": "Beef seasoned with herbs and sofrito, in baked pastry." },
-    "hor-02": { "nombre": "Arequipe and cheese pastry", "descripcion": "Melted fresh cheese and artisan arequipe in baked pastry." },
-    "hor-03": { "nombre": "Chicken and vegetable pastry", "descripcion": "Pulled chicken, carrot, peas and mild spices in baked pastry." },
-    "hor-04": { "nombre": "Three-cheese pastry", "descripcion": "Creamy cheese filling in baked artisan pastry." },
-    "hor-05": { "nombre": "Spinach empanada", "descripcion": "Fresh spinach with mild cheese, in baked pastry." },
-    "hor-06": { "nombre": "Ham and cheese pastry", "descripcion": "Ham and cheese in baked artisan pastry." },
-    "hor-07": { "nombre": "Cinnamon roll", "descripcion": "Baked dough filled with cinnamon and sugar." },
-    "hor-08": { "nombre": "Baked today", "descripcion": "Changes daily. Ask at the counter." },
-
-    "com-01": { "nombre": "House burger + fries + soft drink", "descripcion": "Our house burger with fries and a soft drink." },
-    "com-02": { "nombre": "Two glasses of wine + native potatoes", "descripcion": "Two glasses of the house selection with a portion of native potatoes." },
-    "com-03": { "nombre": "House burger + Club Colombia beer", "descripcion": "Our house burger with a Club Colombia." },
-    "com-04": { "nombre": "Americano + ham and cheese croissant", "descripcion": "An americano with a ham and cheese croissant." },
-
-    "pos-01": { "nombre": "Cake of the day", "descripcion": "Carrot, red velvet or chocolate. Artisan sponge, moist and aromatic." },
-    "pos-02": { "nombre": "Waffle with ice cream", "descripcion": "Waffles with vanilla ice cream, arequipe sauce, red berries and Nutella." },
-    "pos-03": { "nombre": "Tres leches", "descripcion": "Sponge soaked in three milks, topped with light cream." }
+    "cal-01": {
+      "nombre": "Tinto",
+      "descripcion": "Colombian filter coffee, served black."
+    },
+    "cal-02": {
+      "nombre": "Espresso",
+      "descripcion": "A single shot of concentrated coffee, extracted under pressure."
+    },
+    "cal-03": {
+      "nombre": "Americano",
+      "descripcion": "Espresso with hot water. Softer and longer."
+    },
+    "cal-04": {
+      "nombre": "Periquito / Cortado",
+      "descripcion": "Coffee with a dash of milk."
+    },
+    "cal-05": {
+      "nombre": "Macchiato",
+      "descripcion": "Espresso marked with milk foam."
+    },
+    "cal-06": {
+      "nombre": "Latte",
+      "descripcion": "Espresso with steamed milk and a thin layer of foam."
+    },
+    "cal-07": {
+      "nombre": "Cappuccino",
+      "descripcion": "Espresso with steamed milk and dense foam."
+    },
+    "cal-08": {
+      "nombre": "Mocha",
+      "descripcion": "Espresso with chocolate and steamed milk."
+    },
+    "cal-09": {
+      "nombre": "Café bombón",
+      "descripcion": "Espresso over condensed milk, in two layers."
+    },
+    "cal-10": {
+      "nombre": "Hot chocolate (water)"
+    },
+    "cal-11": {
+      "nombre": "Hot chocolate (milk)"
+    },
+    "cal-12": {
+      "nombre": "Milo",
+      "descripcion": "Milo with hot milk."
+    },
+    "cal-13": {
+      "nombre": "Chocolate Conexión"
+    },
+    "cal-14": {
+      "nombre": "Cappuccino Conexión"
+    },
+    "cal-15": {
+      "nombre": "Cappuccino with liqueur",
+      "descripcion": "Cappuccino with a touch of liqueur."
+    },
+    "cal-16": {
+      "nombre": "Carajillo",
+      "descripcion": "Espresso with liquor."
+    },
+    "cal-17": {
+      "nombre": "Irish coffee",
+      "descripcion": "Coffee with whiskey, sugar and cream."
+    },
+    "inf-01": {
+      "nombre": "Dried fruit infusion",
+      "descripcion": "An infusion of dried fruits."
+    },
+    "inf-02": {
+      "nombre": "Ancestral infusions",
+      "descripcion": "Jardín Mágico: strawberry, blackberry, mortiño, rose petals and mint. Alma Verde: guava, green apple, pear and cardamom. Danza Frutal: tree tomato, pineapple, mango, goldenberry, papaya, lemongrass and hibiscus. Bosque Sagrado: blackberry, strawberry, grape skin, blueberries, mint, hibiscus and lemon verbena."
+    },
+    "inf-03": {
+      "nombre": "Golden milk (milk)",
+      "descripcion": "Turmeric and spices in hot milk."
+    },
+    "inf-04": {
+      "nombre": "Golden milk (water)",
+      "descripcion": "Turmeric and spices in hot water."
+    },
+    "inf-05": {
+      "nombre": "Golden milk (orange)",
+      "descripcion": "Turmeric and spices in orange juice."
+    },
+    "inf-06": {
+      "nombre": "Matcha latte",
+      "descripcion": "Matcha with steamed milk."
+    },
+    "inf-07": {
+      "nombre": "Matcha tea",
+      "descripcion": "Matcha whisked in water."
+    },
+    "inf-08": {
+      "nombre": "Matcha frappé Conexión",
+      "descripcion": "Matcha blended with ice."
+    },
+    "inf-09": {
+      "nombre": "Matcha with red berry jam"
+    },
+    "inf-10": {
+      "nombre": "Cinnamon, clove and anise"
+    },
+    "inf-11": {
+      "nombre": "Turmeric and ginger",
+      "descripcion": "With pepper, garlic, lemon, honey and panela."
+    },
+    "inf-12": {
+      "nombre": "Chamomile, calendula and honey"
+    },
+    "fri-01": {
+      "nombre": "Iced americano",
+      "descripcion": "Espresso with cold water and ice."
+    },
+    "fri-02": {
+      "nombre": "Iced latte",
+      "descripcion": "Espresso with cold milk and ice."
+    },
+    "fri-03": {
+      "nombre": "Iced cappuccino",
+      "descripcion": "Espresso, cold milk and foam over ice."
+    },
+    "fri-04": {
+      "nombre": "Classic cold brew",
+      "descripcion": "Coarse-ground coffee steeped cold for 24 hours."
+    },
+    "fri-05": {
+      "nombre": "Flavoured cold brew",
+      "descripcion": "With orange, lemon or guandolo (panela water)."
+    },
+    "fri-06": {
+      "nombre": "Classic affogato",
+      "descripcion": "Vanilla ice cream and espresso."
+    },
+    "fri-07": {
+      "nombre": "Affogato Conexión",
+      "descripcion": "Vanilla ice cream, Nutella and peanuts."
+    },
+    "fri-08": {
+      "nombre": "Coffee frappé",
+      "descripcion": "Coffee blended with ice."
+    },
+    "fri-09": {
+      "nombre": "Mocha frappé",
+      "descripcion": "Coffee and chocolate blended with ice."
+    },
+    "fri-10": {
+      "nombre": "Frappé with liqueur",
+      "descripcion": "Coffee blended with ice and liqueur."
+    },
+    "fri-11": {
+      "nombre": "Frappé Conexión",
+      "descripcion": "Coffee frappé with homemade red berry jam."
+    },
+    "fri-12": {
+      "nombre": "Milk caramel latte",
+      "descripcion": "Espresso, milk and caramel over ice."
+    },
+    "fri-13": {
+      "nombre": "Iced mocha",
+      "descripcion": "Espresso, chocolate and milk over ice."
+    },
+    "fri-14": {
+      "nombre": "Milkshake",
+      "descripcion": "Ice cream and milk, blended."
+    },
+    "fri-15": {
+      "nombre": "Coffee lemonade",
+      "descripcion": "Espresso with lemon juice and panela, served cold."
+    },
+    "fri-16": {
+      "nombre": "Orange coffee",
+      "descripcion": "Espresso with orange juice over ice."
+    },
+    "fri-17": {
+      "nombre": "Flavoured soda",
+      "descripcion": "Fruit-flavoured soda."
+    },
+    "smo-01": {
+      "nombre": "Strawberry and banana"
+    },
+    "smo-02": {
+      "nombre": "Maracumango",
+      "descripcion": "Passion fruit and mango."
+    },
+    "smo-03": {
+      "nombre": "Piña colada"
+    },
+    "smo-04": {
+      "nombre": "Avocado"
+    },
+    "lim-01": {
+      "nombre": "Classic lemonade",
+      "descripcion": "Lime, water and sugar."
+    },
+    "lim-02": {
+      "nombre": "Coconut lemonade",
+      "descripcion": "Lime, coconut milk and ice."
+    },
+    "lim-03": {
+      "nombre": "Cherry lemonade"
+    },
+    "lim-04": {
+      "nombre": "Mint lemonade"
+    },
+    "lim-05": {
+      "nombre": "Lychee lemonade"
+    },
+    "jug-01": {
+      "nombre": "Fresh juice (water)"
+    },
+    "jug-02": {
+      "nombre": "Fresh juice (milk)"
+    },
+    "jug-03": {
+      "nombre": "Bottled water",
+      "descripcion": "Sparkling or still."
+    },
+    "jug-04": {
+      "nombre": "Bretaña",
+      "descripcion": "Club soda."
+    },
+    "jug-05": {
+      "nombre": "Soft drink",
+      "descripcion": "350 ml bottle."
+    },
+    "cer-01": {
+      "nombre": "Local beer"
+    },
+    "cer-02": {
+      "nombre": "Premium local beer"
+    },
+    "cer-03": {
+      "nombre": "Imported beer"
+    },
+    "cer-04": {
+      "nombre": "Craft beer",
+      "descripcion": "Stout, Amber Ale, Blond Ale, Hazy IPA, seasonal or Cannabeer."
+    },
+    "cer-05": {
+      "nombre": "Sangria, single serving",
+      "descripcion": "Red or rosé wine."
+    },
+    "cer-06": {
+      "nombre": "Sangria pitcher",
+      "descripcion": "Serves four. Red or rosé wine."
+    },
+    "cer-07": {
+      "nombre": "Glass of wine (chilled)"
+    },
+    "cer-08": {
+      "nombre": "Mulled wine"
+    },
+    "coc-01": {
+      "nombre": "Bacardí cocktail",
+      "descripcion": "White rum, lime juice, grenadine and ice."
+    },
+    "coc-02": {
+      "nombre": "Espresso martini",
+      "descripcion": "Vodka, coffee liqueur, coffee and ice."
+    },
+    "coc-03": {
+      "nombre": "Margarita Conexión",
+      "descripcion": "Tamarind Smirnoff, triple sec, lime juice, tamarind, salt and ice."
+    },
+    "coc-04": {
+      "nombre": "Margarita",
+      "descripcion": "Tequila, triple sec, lime juice, salt and ice."
+    },
+    "coc-05": {
+      "nombre": "Baileys pasión",
+      "descripcion": "Baileys, coconut rum, amaretto and ice."
+    },
+    "coc-06": {
+      "nombre": "Mojito",
+      "descripcion": "White rum, mint, lime juice, sugar and soda."
+    },
+    "coc-07": {
+      "nombre": "Piña colada",
+      "descripcion": "Pineapple, coconut, lime, condensed milk and cream."
+    },
+    "com-01": {
+      "nombre": "Patacones",
+      "descripcion": "Five fried plantain rounds with shredded beef, guacamole and hogao."
+    },
+    "com-02": {
+      "nombre": "Nachos",
+      "descripcion": "Guacamole, sour cream, pico de gallo and shredded beef."
+    },
+    "com-03": {
+      "nombre": "Loaded fries",
+      "descripcion": "With shredded beef, guacamole and pico de gallo."
+    },
+    "com-04": {
+      "nombre": "Paisa sharing platter",
+      "descripcion": "Chorizo, pork crackling, mini empanadas and fried plantain."
+    },
+    "com-05": {
+      "nombre": "Pan de origen",
+      "descripcion": "Six pieces of sourdough bread with cream cheese, roasted tomato and balsamic reduction."
+    },
+    "com-06": {
+      "nombre": "Buñuelos",
+      "descripcion": "Creole potato and shredded chicken fritters, with BBQ and homemade garlic sauce."
+    },
+    "com-07": {
+      "nombre": "Pork crackling ceviche",
+      "descripcion": "150 g pork crackling, onion, fried plantain, bell pepper and cilantro."
+    },
+    "bru-01": {
+      "nombre": "Eggs your way",
+      "descripcion": "Eggs with two toppings, arepa or sourdough bread, and fruit of the day."
+    },
+    "bru-02": {
+      "nombre": "American breakfast",
+      "descripcion": "Two pancakes, bacon, baked or scrambled eggs and maple syrup."
+    },
+    "bru-03": {
+      "nombre": "Avocado toast",
+      "descripcion": "Sourdough bread, mashed avocado, eggs, bacon and leek."
+    },
+    "bru-04": {
+      "nombre": "Yogurt bowl",
+      "descripcion": "Greek yogurt, granola, blueberries and strawberry, with honey."
+    },
+    "bru-05": {
+      "nombre": "Omelette",
+      "descripcion": "With three toppings, avocado and sourdough bread or arepa."
+    },
+    "bru-06": {
+      "nombre": "French toast Conexión",
+      "descripcion": "Sourdough soaked in a tiramisu mix: chocolate, specialty coffee and cream."
+    },
+    "bru-07": {
+      "nombre": "Toast Conexión",
+      "descripcion": "Roasted tomatoes, buffalo cheese, poached eggs, pesto and bacon."
+    },
+    "bru-08": {
+      "nombre": "Neapolitan baked eggs",
+      "descripcion": "Neapolitan sauce, baked eggs, sourdough bread and parmesan."
+    },
+    "bru-09": {
+      "nombre": "Pan de yuca waffle",
+      "descripcion": "With avocado and eggs."
+    },
+    "pla-01": {
+      "nombre": "Pork rib burger",
+      "descripcion": "150 g pork rib slow-cooked for 8 hours in a sweet BBQ reduction, with lettuce, tomato, caramelized onion and house sauce."
+    },
+    "pla-02": {
+      "nombre": "Chicken burrito",
+      "descripcion": "Chicken with sautéed vegetables and bacon sauce."
+    },
+    "pla-03": {
+      "nombre": "Bolognese lasagna"
+    },
+    "pla-04": {
+      "nombre": "Chicken and mushroom lasagna"
+    },
+    "pla-05": {
+      "nombre": "Tuna sandwich",
+      "descripcion": "Tuna, boiled egg, lettuce, fresh tomato and caramelized onion."
+    },
+    "pla-06": {
+      "nombre": "Cuban sandwich with ropa vieja",
+      "descripcion": "Ropa vieja (shredded beef), pork ham, mozzarella, sweet pickle, mustard and garlic sauce. Combo with fries and a soft drink."
+    },
+    "pla-07": {
+      "nombre": "Pasta your way",
+      "descripcion": "Spaghetti or penne; homemade Neapolitan, Alfredo or pesto sauce; grilled chicken or salmon. With a lettuce and cherry tomato salad. With salmon, $40.000."
+    },
+    "piz-01": {
+      "nombre": "Super pepperoni",
+      "descripcion": "Pepperoni and mozzarella."
+    },
+    "piz-02": {
+      "nombre": "Margherita Napoli",
+      "descripcion": "Herb-spiced sliced tomatoes, mozzarella and fresh basil."
+    },
+    "piz-03": {
+      "nombre": "Smoked ham and cheese",
+      "descripcion": "Smoked ham and mozzarella."
+    },
+    "piz-04": {
+      "nombre": "Chicken and fresh mushroom",
+      "descripcion": "Fresh mushrooms, marinated chicken and mozzarella."
+    },
+    "piz-05": {
+      "nombre": "Tropical Hawaiian",
+      "descripcion": "Smoked ham, caramelized pineapple and mozzarella."
+    },
+    "piz-06": {
+      "nombre": "Terrace garden",
+      "descripcion": "Fresh vegetables, onion, zucchini, squash, roasted peppers, mushrooms and mozzarella."
+    },
+    "hoj-01": {
+      "nombre": "Puff pastries and empanadas"
+    },
+    "hoj-02": {
+      "nombre": "Cheese stick"
+    },
+    "dul-01": {
+      "nombre": "Truffle"
+    },
+    "dul-02": {
+      "nombre": "Slice of cake"
+    },
+    "dul-03": {
+      "nombre": "Mini dessert"
+    },
+    "dul-04": {
+      "nombre": "Individual dessert"
+    },
+    "dul-05": {
+      "nombre": "Waffle with ice cream, Nutella and banana",
+      "descripcion": "With whipped cream."
+    },
+    "dul-06": {
+      "nombre": "Waffle with ice cream and strawberries",
+      "descripcion": "With chocolate, arequipe or red berry sauce."
+    }
   }
 }

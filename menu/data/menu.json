@@ -1,14 +1,12 @@
 {
   "_como_editar": "Para cambiar un precio busca el producto y edita el numero de 'precio': se escribe sin puntos y sin signo de pesos (24900). Para agotar algo pon 'agotado': true. Para subirlo a la fila de arriba pon 'destacado': true. Para poner una foto, guarda el archivo en la carpeta assets/img/ y escribe su nombre en 'foto', por ejemplo \"foto\": \"capuchino.webp\". Si quieres que al abrir el producto se vean mas fotos, guardalas tambien y escribelas en \"fotos\": [\"capuchino-2.webp\", \"capuchino-3.webp\"]. Guarda y listo. Instrucciones completas en README.md, en esta misma carpeta.",
-
   "config": {
     "nombre": "Café Conexión",
     "tagline": "Ven por el café y quédate por la conexión",
     "whatsapp": "573186545916",
     "instagram": "cafeconexion8",
     "moneda": "COP",
-    "actualizado": "2026-09-10",
-
+    "actualizado": "2026-10-21",
     "_como_llenar_el_cafe": "Este es el café que se usa en todas las bebidas marcadas con \"especialidad\". Llena lo que sepas y deja vacío lo demás: lo que quede vacío sencillamente no se muestra. Cuando cambies de lote, cambias acá y cambia en toda la carta.",
     "cafe": {
       "origen": "",
@@ -22,7 +20,6 @@
       "nota_revisar": "Sin llenar. Mientras esté vacío, la ficha del café no aparece en ningún producto."
     }
   },
-
   "espacio": {
     "direccion": "Cl. 49 #78a-21, sector Estadio, Medellín",
     "maps": "https://www.google.com/maps/search/?api=1&query=Cl.+49+%2378a-21%2C+Medell%C3%ADn",
@@ -32,196 +29,442 @@
     "revisar": true,
     "nota_revisar": "Falta el horario de atención. No estaba en el brief ni en la carta actual. Mientras esté vacío, el bloque El espacio no muestra horarios."
   },
-
   "categorias": [
-    { "slug": "calientes", "nombre": "Calientes", "nota": "" },
-    { "slug": "metodos", "nombre": "Métodos manuales", "nota": "Filtrados · 2 tazas" },
-    { "slug": "frios", "nombre": "Fríos", "nota": "" },
-    { "slug": "con-licor", "nombre": "Con licor", "nota": "" },
-    { "slug": "te-y-matcha", "nombre": "Té y matcha", "nota": "" },
-    { "slug": "cerveza-y-vino", "nombre": "Cerveza y vino", "nota": "" },
-    { "slug": "cocteles", "nombre": "Cócteles", "nota": "" },
-    { "slug": "para-picar", "nombre": "Para picar", "nota": "" },
-    { "slug": "desayuno-y-brunch", "nombre": "Desayuno y brunch", "nota": "" },
-    { "slug": "ensaladas-y-sandwiches", "nombre": "Ensaladas y sándwiches", "nota": "" },
-    { "slug": "hamburguesas", "nombre": "Hamburguesas", "nota": "" },
-    { "slug": "pizzas", "nombre": "Pizzas", "nota": "Porción personal" },
-    { "slug": "del-horno", "nombre": "Del horno", "nota": "" },
-    { "slug": "combos", "nombre": "Combos", "nota": "" },
-    { "slug": "postres", "nombre": "Postres", "nota": "" }
+    {
+      "slug": "calientes",
+      "nombre": "Bebidas calientes",
+      "nota": "Con leche de almendras: +$3.000"
+    },
+    {
+      "slug": "infusiones-y-matcha",
+      "nombre": "Infusiones y matcha",
+      "nota": "Con leche de almendras: +$3.000"
+    },
+    {
+      "slug": "frias",
+      "nombre": "Bebidas frías",
+      "nota": "Con leche de almendras: +$3.000"
+    },
+    {
+      "slug": "smoothies",
+      "nombre": "Smoothies",
+      "nota": ""
+    },
+    {
+      "slug": "limonadas",
+      "nombre": "Limonadas",
+      "nota": ""
+    },
+    {
+      "slug": "jugos-y-gaseosas",
+      "nombre": "Jugos, agua y gaseosas",
+      "nota": ""
+    },
+    {
+      "slug": "cervezas-y-vino",
+      "nombre": "Cervezas y vino",
+      "nota": "Cualquier cerveza michelada: +$3.000"
+    },
+    {
+      "slug": "cocteles",
+      "nombre": "Cócteles",
+      "nota": ""
+    },
+    {
+      "slug": "para-compartir",
+      "nombre": "Para compartir",
+      "nota": ""
+    },
+    {
+      "slug": "brunch",
+      "nombre": "Brunch",
+      "nota": ""
+    },
+    {
+      "slug": "platos-fuertes",
+      "nombre": "Platos fuertes",
+      "nota": ""
+    },
+    {
+      "slug": "pizzas",
+      "nombre": "Pizzas",
+      "nota": "Personales, de masa madre"
+    },
+    {
+      "slug": "hojaldrados",
+      "nombre": "Hojaldrados",
+      "nota": ""
+    },
+    {
+      "slug": "gustos-dulces",
+      "nombre": "Gustos dulces",
+      "nota": ""
+    }
   ],
-
   "opciones": {
-    "leche": {
-      "titulo": "Cambia la leche",
+    "sabor-frutos": {
+      "titulo": "Elige el sabor",
       "elige": 1,
       "items": [
-        { "nombre": "Entera", "extra": 0 },
-        { "nombre": "Deslactosada", "extra": 0 },
-        { "nombre": "Almendras", "extra": 0, "revisar": true },
-        { "nombre": "Avena", "extra": 0, "revisar": true }
+        {
+          "nombre": "Frutos rojos",
+          "extra": 0
+        },
+        {
+          "nombre": "Frutos verdes",
+          "extra": 0
+        },
+        {
+          "nombre": "Frutos amarillos",
+          "extra": 0
+        },
+        {
+          "nombre": "Flor de Jamaica",
+          "extra": 0
+        }
       ]
     },
-    "tamano-cafe": {
-      "titulo": "Tamaño",
+    "mezcla-ancestral": {
+      "titulo": "Elige la mezcla",
       "elige": 1,
       "items": [
-        { "nombre": "8 oz", "extra": 0 },
-        { "nombre": "12 oz", "extra": 0, "revisar": true }
+        {
+          "nombre": "Jardín Mágico",
+          "extra": 0
+        },
+        {
+          "nombre": "Alma Verde",
+          "extra": 0
+        },
+        {
+          "nombre": "Danza Frutal",
+          "extra": 0
+        },
+        {
+          "nombre": "Bosque Sagrado",
+          "extra": 0
+        }
       ]
     },
-    "licor-carajillo": {
-      "titulo": "Elige el licor",
+    "sabor-cold-brew": {
+      "titulo": "Elige el sabor",
       "elige": 1,
       "items": [
-        { "nombre": "Brandy", "extra": 0 },
-        { "nombre": "Aguardiente", "extra": 0 }
+        {
+          "nombre": "Naranja",
+          "extra": 0
+        },
+        {
+          "nombre": "Limón",
+          "extra": 0
+        },
+        {
+          "nombre": "Guandolo",
+          "extra": 0
+        }
       ]
     },
-    "licor-crema": {
-      "titulo": "Elige el licor",
+    "sabor-malteada": {
+      "titulo": "Elige el sabor",
       "elige": 1,
       "items": [
-        { "nombre": "Amaretto", "extra": 0 },
-        { "nombre": "Baileys", "extra": 0 }
+        {
+          "nombre": "Oreo",
+          "extra": 0
+        },
+        {
+          "nombre": "Café",
+          "extra": 0
+        },
+        {
+          "nombre": "Cosette",
+          "extra": 0
+        },
+        {
+          "nombre": "Malta y Milo",
+          "extra": 0
+        },
+        {
+          "nombre": "Nutella",
+          "extra": 0
+        },
+        {
+          "nombre": "Frutos rojos",
+          "extra": 0
+        },
+        {
+          "nombre": "Arequipe",
+          "extra": 0
+        }
       ]
     },
     "sabor-soda": {
       "titulo": "Elige el sabor",
       "elige": 1,
       "items": [
-        { "nombre": "Maracuyá", "extra": 0 },
-        { "nombre": "Frutos rojos", "extra": 0 },
-        { "nombre": "Mango biche", "extra": 0 }
+        {
+          "nombre": "Frutos amarillos",
+          "extra": 0
+        },
+        {
+          "nombre": "Frutos rojos",
+          "extra": 0
+        },
+        {
+          "nombre": "Sandía y kiwi",
+          "extra": 0
+        },
+        {
+          "nombre": "Lychee",
+          "extra": 0
+        },
+        {
+          "nombre": "Mango biche",
+          "extra": 0
+        }
       ]
     },
-    "sabor-limonada": {
-      "titulo": "Elige el sabor",
+    "tipo-artesanal": {
+      "titulo": "Elige la cerveza",
       "elige": 1,
       "items": [
-        { "nombre": "Cereza", "extra": 0 },
-        { "nombre": "Hierbabuena", "extra": 0 }
+        {
+          "nombre": "Stout",
+          "extra": 0
+        },
+        {
+          "nombre": "Amber Ale",
+          "extra": 0
+        },
+        {
+          "nombre": "Blond Ale",
+          "extra": 0
+        },
+        {
+          "nombre": "Hazy IPA",
+          "extra": 0
+        },
+        {
+          "nombre": "De temporada",
+          "extra": 0
+        },
+        {
+          "nombre": "Cannabeer",
+          "extra": 0
+        }
       ]
     },
-    "sabor-infusion": {
-      "titulo": "Elige la fruta",
-      "elige": 1,
-      "items": [
-        { "nombre": "Frutos rojos", "extra": 0 },
-        { "nombre": "Frutos amarillos", "extra": 0 }
-      ]
-    },
-    "sabor-mimosa": {
-      "titulo": "Elige el jugo",
-      "elige": 1,
-      "items": [
-        { "nombre": "Naranja", "extra": 0 },
-        { "nombre": "Frutos rojos", "extra": 0 },
-        { "nombre": "Frutos amarillos", "extra": 0 }
-      ]
-    },
-    "tipo-vino": {
+    "vino-sangria": {
       "titulo": "Elige el vino",
       "elige": 1,
       "items": [
-        { "nombre": "Tinto", "extra": 0 },
-        { "nombre": "Blanco", "extra": 0 },
-        { "nombre": "Rosado", "extra": 0 }
+        {
+          "nombre": "Vino tinto",
+          "extra": 0
+        },
+        {
+          "nombre": "Vino rosado",
+          "extra": 0
+        }
       ]
     },
-    "marca-importada": {
-      "titulo": "Elige la cerveza",
-      "elige": 1,
-      "items": [
-        { "nombre": "Corona", "extra": 0 },
-        { "nombre": "Stella Artois", "extra": 0 }
-      ]
-    },
-    "marca-nacional": {
-      "titulo": "Elige la cerveza",
-      "elige": 1,
-      "items": [
-        { "nombre": "Águila Light", "extra": 0 },
-        { "nombre": "Poker", "extra": 0 },
-        { "nombre": "Águila Original", "extra": 0 }
-      ]
-    },
-    "marca-premium": {
-      "titulo": "Elige la cerveza",
-      "elige": 1,
-      "items": [
-        { "nombre": "Club Colombia Dorada", "extra": 0 },
-        { "nombre": "Club Colombia Roja", "extra": 0 },
-        { "nombre": "Club Colombia Negra", "extra": 0 }
-      ]
-    },
-    "punto-huevo": {
-      "titulo": "Cómo los quieres",
-      "elige": 1,
-      "items": [
-        { "nombre": "Revueltos", "extra": 0 },
-        { "nombre": "En omelet", "extra": 0 }
-      ]
-    },
-    "toppings-huevo": {
-      "titulo": "Elige 2 acompañamientos",
+    "toppings-2": {
+      "titulo": "Elige 2 toppings",
       "elige": 2,
       "items": [
-        { "nombre": "Sofrito", "extra": 0 },
-        { "nombre": "Maicitos", "extra": 0 },
-        { "nombre": "Queso mozzarella", "extra": 0 },
-        { "nombre": "Jamón", "extra": 0 },
-        { "nombre": "Tocineta", "extra": 0 },
-        { "nombre": "Brócoli", "extra": 0 }
+        {
+          "nombre": "Hogao",
+          "extra": 0
+        },
+        {
+          "nombre": "Maicitos",
+          "extra": 0
+        },
+        {
+          "nombre": "Queso",
+          "extra": 0
+        },
+        {
+          "nombre": "Mozzarella",
+          "extra": 0
+        },
+        {
+          "nombre": "Jamón",
+          "extra": 0
+        },
+        {
+          "nombre": "Tocineta",
+          "extra": 0
+        },
+        {
+          "nombre": "Espinaca",
+          "extra": 0
+        },
+        {
+          "nombre": "Brócoli",
+          "extra": 0
+        }
       ]
     },
-    "base-huevo": {
+    "toppings-3": {
+      "titulo": "Elige 3 toppings",
+      "elige": 3,
+      "items": [
+        {
+          "nombre": "Hogao",
+          "extra": 0
+        },
+        {
+          "nombre": "Maicitos",
+          "extra": 0
+        },
+        {
+          "nombre": "Queso",
+          "extra": 0
+        },
+        {
+          "nombre": "Mozzarella",
+          "extra": 0
+        },
+        {
+          "nombre": "Jamón",
+          "extra": 0
+        },
+        {
+          "nombre": "Tocineta",
+          "extra": 0
+        },
+        {
+          "nombre": "Espinaca",
+          "extra": 0
+        },
+        {
+          "nombre": "Brócoli",
+          "extra": 0
+        }
+      ]
+    },
+    "acompanante": {
       "titulo": "Para acompañar",
       "elige": 1,
       "items": [
-        { "nombre": "Arepa", "extra": 0 },
-        { "nombre": "Tostada de masa madre", "extra": 0 }
+        {
+          "nombre": "Arepa",
+          "extra": 0
+        },
+        {
+          "nombre": "Pan de masa madre",
+          "extra": 0
+        }
       ]
     },
-    "relleno-croissant": {
-      "titulo": "Elige el relleno",
+    "huevos-americano": {
+      "titulo": "Los huevos",
       "elige": 1,
       "items": [
-        { "nombre": "Pollo", "extra": 0 },
-        { "nombre": "Vegetales", "extra": 0 }
+        {
+          "nombre": "En cacerola",
+          "extra": 0
+        },
+        {
+          "nombre": "Revueltos",
+          "extra": 0
+        }
       ]
     },
-    "base-bowl": {
-      "titulo": "Elige la base",
+    "pan-cubano": {
+      "titulo": "Elige el pan",
       "elige": 1,
       "items": [
-        { "nombre": "Yogur griego", "extra": 0 },
-        { "nombre": "Kéfir", "extra": 0 }
+        {
+          "nombre": "Pan cubano",
+          "extra": 0
+        },
+        {
+          "nombre": "Pan tipo baguette",
+          "extra": 0
+        }
       ]
     },
-    "sabor-torta": {
-      "titulo": "Elige la torta",
+    "pasta-tipo": {
+      "titulo": "Elige la pasta",
       "elige": 1,
       "items": [
-        { "nombre": "Zanahoria", "extra": 0 },
-        { "nombre": "Red velvet", "extra": 0 },
-        { "nombre": "Chocolate", "extra": 0 }
+        {
+          "nombre": "Spaghetti",
+          "extra": 0
+        },
+        {
+          "nombre": "Penne",
+          "extra": 0
+        }
+      ]
+    },
+    "pasta-salsa": {
+      "titulo": "Elige la salsa",
+      "elige": 1,
+      "items": [
+        {
+          "nombre": "Napolitana casera",
+          "extra": 0
+        },
+        {
+          "nombre": "Alfredo cremosa",
+          "extra": 0
+        },
+        {
+          "nombre": "Pesto de albahaca",
+          "extra": 0
+        }
+      ]
+    },
+    "pasta-proteina": {
+      "titulo": "Elige la proteína",
+      "elige": 1,
+      "items": [
+        {
+          "nombre": "Pollo a la plancha",
+          "extra": 0
+        },
+        {
+          "nombre": "Salmón",
+          "extra": 10000
+        }
+      ]
+    },
+    "salsa-waffle": {
+      "titulo": "Elige la salsa",
+      "elige": 1,
+      "items": [
+        {
+          "nombre": "Chocolate",
+          "extra": 0
+        },
+        {
+          "nombre": "Arequipe",
+          "extra": 0
+        },
+        {
+          "nombre": "Frutos rojos",
+          "extra": 0
+        }
       ]
     }
   },
-
   "productos": [
     {
       "id": "cal-01",
-      "slug": "espresso",
+      "slug": "tinto",
       "categoria": "calientes",
       "especialidad": true,
-      "nombre": "Espresso",
-      "descripcion": "Un shot de café concentrado, extraído bajo presión.",
-      "precio": 5000,
-      "foto": "espresso.webp",
-      "fotos": ["espresso-2.webp","espresso-3.webp"],
-      "badges": ["vegano"],
+      "nombre": "Tinto",
+      "descripcion": "Café filtrado, servido negro.",
+      "precio": 3000,
+      "foto": "tinto.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -229,177 +472,494 @@
     },
     {
       "id": "cal-02",
-      "slug": "americano",
+      "slug": "espresso",
       "categoria": "calientes",
       "especialidad": true,
-      "nombre": "Americano",
-      "descripcion": "Espresso con agua caliente. Más suave y más largo.",
-      "precio": 5000,
-      "foto": "americano.webp",
-      "fotos": ["americano-2.webp","americano-3.webp"],
-      "badges": ["vegano"],
-      "modificadores": ["tamano-cafe"],
+      "nombre": "Espresso",
+      "descripcion": "Un shot de café concentrado, extraído bajo presión.",
+      "precio": 6000,
+      "foto": "espresso.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "cal-03",
-      "slug": "latte",
+      "slug": "americano",
       "categoria": "calientes",
       "especialidad": true,
-      "nombre": "Latte",
-      "descripcion": "Espresso con leche vaporizada y una capa fina de espuma.",
-      "precio": 6500,
-      "foto": "latte.webp",
-      "fotos": ["latte-2.webp","latte-3.webp"],
-      "badges": [],
-      "modificadores": ["leche", "tamano-cafe"],
+      "nombre": "Americano",
+      "descripcion": "Espresso con agua caliente. Más suave y más largo.",
+      "precio": 6000,
+      "foto": "americano.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "cal-04",
-      "slug": "capuchino",
+      "slug": "periquito-cortado",
       "categoria": "calientes",
       "especialidad": true,
-      "nombre": "Capuchino",
-      "descripcion": "Espresso con leche vaporizada y espuma densa.",
-      "precio": 7500,
-      "foto": "capuchino.webp",
-      "fotos": ["capuchino-2.webp","capuchino-3.webp"],
+      "nombre": "Periquito / Cortado",
+      "descripcion": "Café con un poco de leche.",
+      "precio": 6000,
+      "foto": "periquito-cortado.webp",
+      "fotos": [],
       "badges": [],
-      "modificadores": ["leche", "tamano-cafe"],
-      "destacado": true,
+      "modificadores": [],
+      "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "cal-05",
-      "slug": "latte-de-almendras",
+      "slug": "macchiato",
       "categoria": "calientes",
       "especialidad": true,
-      "nombre": "Latte de almendras",
-      "descripcion": "Espresso con bebida de almendras vaporizada.",
-      "precio": 11000,
-      "foto": "latte-de-almendras.webp",
-      "fotos": ["latte-de-almendras-2.webp","latte-de-almendras-3.webp"],
-      "badges": ["vegano"],
-      "modificadores": ["tamano-cafe"],
+      "nombre": "Macchiato",
+      "descripcion": "Espresso manchado con espuma de leche.",
+      "precio": 6000,
+      "foto": "macchiato.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "cal-06",
-      "slug": "moccachino",
+      "slug": "latte",
       "categoria": "calientes",
       "especialidad": true,
-      "nombre": "Moccachino",
-      "descripcion": "Espresso con chocolate oscuro fundido y leche cremosa.",
-      "precio": 9000,
-      "foto": "moccachino.webp",
-      "fotos": ["moccachino-2.webp","moccachino-3.webp"],
+      "nombre": "Latte",
+      "descripcion": "Espresso con leche vaporizada y una capa fina de espuma.",
+      "precio": 8500,
+      "foto": "latte.webp",
+      "fotos": [],
       "badges": [],
-      "modificadores": ["leche", "tamano-cafe"],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-
-    {
-      "id": "met-01",
-      "slug": "prensa-francesa",
-      "categoria": "metodos",
-      "especialidad": true,
-      "nombre": "Prensa francesa",
-      "descripcion": "Inmersión completa. Cuerpo alto, textura sedosa y aceites del café en taza.",
-      "precio": 15800,
-      "foto": "prensa-francesa.webp",
-      "fotos": ["prensa-francesa-2.webp","prensa-francesa-3.webp"],
-      "badges": ["vegano"],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
-      "id": "met-02",
-      "slug": "v60",
-      "categoria": "metodos",
+      "id": "cal-07",
+      "slug": "capuchino",
+      "categoria": "calientes",
       "especialidad": true,
-      "nombre": "V60",
-      "descripcion": "Vertido en espiral. Aromas nítidos, dulzor y acidez equilibrada.",
-      "precio": 15800,
-      "foto": "v60.webp",
-      "fotos": ["v60-2.webp","v60-3.webp"],
-      "badges": ["vegano"],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "met-03",
-      "slug": "sifon-japones",
-      "categoria": "metodos",
-      "especialidad": true,
-      "nombre": "Sifón japonés",
-      "descripcion": "Extracción por vapor y vacío. Taza limpia, aromática y de cuerpo ligero.",
-      "precio": 15800,
-      "foto": "sifon-japones.webp",
-      "fotos": ["sifon-japones-2.webp","sifon-japones-3.webp"],
-      "badges": ["vegano"],
+      "nombre": "Capuchino",
+      "descripcion": "Espresso con leche vaporizada y espuma densa.",
+      "precio": 8500,
+      "foto": "capuchino.webp",
+      "fotos": [
+        "capuchino-2.webp"
+      ],
+      "badges": [],
       "modificadores": [],
       "destacado": true,
       "agotado": false,
       "revisar": false
     },
     {
-      "id": "met-04",
-      "slug": "origami",
-      "categoria": "metodos",
+      "id": "cal-08",
+      "slug": "mocha",
+      "categoria": "calientes",
       "especialidad": true,
-      "nombre": "Origami",
-      "descripcion": "Filtrado rápido. Taza limpia y luminosa, de perfil delicado.",
-      "precio": 15800,
-      "foto": "origami.webp",
-      "fotos": ["origami-2.webp","origami-3.webp"],
-      "badges": ["vegano"],
+      "nombre": "Mocha",
+      "descripcion": "Espresso con chocolate y leche vaporizada.",
+      "precio": 10000,
+      "foto": "mocha.webp",
+      "fotos": [],
+      "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
-      "id": "met-05",
-      "slug": "chemex",
-      "categoria": "metodos",
+      "id": "cal-09",
+      "slug": "cafe-bombon",
+      "categoria": "calientes",
       "especialidad": true,
-      "nombre": "Chemex",
-      "descripcion": "Filtrado lento en papel grueso. Taza limpia, suave, con notas florales.",
-      "precio": 15800,
-      "foto": "chemex.webp",
-      "fotos": ["chemex-2.webp","chemex-3.webp"],
-      "badges": ["vegano"],
+      "nombre": "Café bombón",
+      "descripcion": "Espresso sobre leche condensada, en dos capas.",
+      "precio": 10000,
+      "foto": "cafe-bombon.webp",
+      "fotos": [],
+      "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
-
+    {
+      "id": "cal-10",
+      "slug": "chocolate-en-agua",
+      "categoria": "calientes",
+      "especialidad": false,
+      "nombre": "Chocolate en agua",
+      "descripcion": "",
+      "precio": 8500,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "cal-11",
+      "slug": "chocolate-en-leche",
+      "categoria": "calientes",
+      "especialidad": false,
+      "nombre": "Chocolate en leche",
+      "descripcion": "",
+      "precio": 10000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "cal-12",
+      "slug": "milo",
+      "categoria": "calientes",
+      "especialidad": false,
+      "nombre": "Milo",
+      "descripcion": "Milo en leche caliente.",
+      "precio": 10000,
+      "foto": "milo.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "cal-13",
+      "slug": "chocolate-conexion",
+      "categoria": "calientes",
+      "especialidad": false,
+      "nombre": "Chocolate Conexión",
+      "descripcion": "",
+      "precio": 14000,
+      "foto": "",
+      "fotos": [],
+      "badges": [
+        "de-la-casa"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": true,
+      "nota_revisar": "Sin descripción: ¿qué lleva?"
+    },
+    {
+      "id": "cal-14",
+      "slug": "capuchino-conexion",
+      "categoria": "calientes",
+      "especialidad": true,
+      "nombre": "Capuchino Conexión",
+      "descripcion": "",
+      "precio": 14000,
+      "foto": "capuchino-conexion.webp",
+      "fotos": [],
+      "badges": [
+        "de-la-casa"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": true,
+      "nota_revisar": "Sin descripción: ¿qué lleva?"
+    },
+    {
+      "id": "cal-15",
+      "slug": "capuchino-con-licor",
+      "categoria": "calientes",
+      "especialidad": true,
+      "nombre": "Capuchino con licor",
+      "descripcion": "Capuchino con un toque de licor.",
+      "precio": 11500,
+      "foto": "capuchino-con-licor.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "cal-16",
+      "slug": "carajillo",
+      "categoria": "calientes",
+      "especialidad": true,
+      "nombre": "Carajillo",
+      "descripcion": "Espresso con licor.",
+      "precio": 8500,
+      "foto": "carajillo.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "cal-17",
+      "slug": "cafe-irlandes",
+      "categoria": "calientes",
+      "especialidad": true,
+      "nombre": "Café irlandés",
+      "descripcion": "Café con whisky, azúcar y crema.",
+      "precio": 12500,
+      "foto": "cafe-irlandes.webp",
+      "fotos": [
+        "cafe-irlandes-2.webp"
+      ],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-01",
+      "slug": "frutos-deshidratados",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Frutos deshidratados",
+      "descripcion": "Infusión de frutos deshidratados.",
+      "precio": 8000,
+      "foto": "frutos-deshidratados.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [
+        "sabor-frutos"
+      ],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-02",
+      "slug": "infusiones-ancestrales",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Infusiones ancestrales",
+      "descripcion": "Jardín Mágico: fresa, mora, mortiño, pétalos de rosa y menta. Alma Verde: guayaba, manzana verde, pera y cardamomo. Danza Frutal: tomate de árbol, piña, mango, uchuva, papaya, limoncillo y flor de Jamaica. Bosque Sagrado: mora, fresa, cáscara de uva, arándanos, hierbabuena, flor de Jamaica y cidrón.",
+      "precio": 8000,
+      "foto": "infusiones-ancestrales.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [
+        "mezcla-ancestral"
+      ],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-03",
+      "slug": "leche-dorada-en-leche",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Leche dorada en leche",
+      "descripcion": "Cúrcuma y especias en leche caliente.",
+      "precio": 14000,
+      "foto": "leche-dorada-en-leche.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-04",
+      "slug": "leche-dorada-en-agua",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Leche dorada en agua",
+      "descripcion": "Cúrcuma y especias en agua caliente.",
+      "precio": 13000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-05",
+      "slug": "leche-dorada-en-naranja",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Leche dorada en naranja",
+      "descripcion": "Cúrcuma y especias en jugo de naranja.",
+      "precio": 14000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-06",
+      "slug": "latte-matcha",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Latte matcha",
+      "descripcion": "Matcha con leche vaporizada.",
+      "precio": 16000,
+      "foto": "latte-matcha.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": true,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-07",
+      "slug": "te-matcha",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Té matcha",
+      "descripcion": "Matcha batido en agua.",
+      "precio": 13000,
+      "foto": "te-matcha.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-08",
+      "slug": "frappe-matcha-conexion",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Frappé matcha Conexión",
+      "descripcion": "Matcha batido con hielo.",
+      "precio": 20000,
+      "foto": "",
+      "fotos": [],
+      "badges": [
+        "de-la-casa"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-09",
+      "slug": "matcha-con-mermelada-de-frutos-rojos",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Matcha con mermelada de frutos rojos",
+      "descripcion": "",
+      "precio": 22000,
+      "foto": "matcha-con-mermelada-de-frutos-rojos.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "inf-10",
+      "slug": "canela-clavos-y-anis",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Canela, clavos y anís",
+      "descripcion": "",
+      "precio": 8000,
+      "foto": "canela-clavos-y-anis.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": true,
+      "nota_revisar": "La carta de la dueña dice «Especial para regular el azúcar, calmar cólicos y desinflamar». No se publica: es una promesa de salud."
+    },
+    {
+      "id": "inf-11",
+      "slug": "curcuma-y-jengibre",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Cúrcuma y jengibre",
+      "descripcion": "Con pimienta, ajo, limón, miel y panela.",
+      "precio": 10000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": true,
+      "nota_revisar": "La carta de la dueña dice «Especial para las gripas». No se publica: es una promesa de salud. El nombre completo era «Cúrcuma, jengibre, pimienta, ajo, limón, miel y panela»."
+    },
+    {
+      "id": "inf-12",
+      "slug": "manzanilla-calendula-y-miel",
+      "categoria": "infusiones-y-matcha",
+      "especialidad": false,
+      "nombre": "Manzanilla, caléndula y miel",
+      "descripcion": "",
+      "precio": 8000,
+      "foto": "manzanilla-calendula-y-miel.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": true,
+      "nota_revisar": "La carta de la dueña dice «Especial para desinflamar, ayuda a calmar la gastritis». No se publica: es una promesa de salud."
+    },
     {
       "id": "fri-01",
-      "slug": "affogato",
-      "categoria": "frios",
+      "slug": "americano-frio",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Affogato",
-      "descripcion": "Helado de vainilla con un shot de espresso caliente encima.",
-      "precio": 12000,
-      "foto": "affogato.webp",
-      "fotos": ["affogato-2.webp","affogato-3.webp"],
-      "badges": [],
+      "nombre": "Americano frío",
+      "descripcion": "Espresso con agua fría y hielo.",
+      "precio": 7000,
+      "foto": "americano-frio.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -407,30 +967,30 @@
     },
     {
       "id": "fri-02",
-      "slug": "cold-brew",
-      "categoria": "frios",
+      "slug": "latte-frio",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Cold brew",
-      "descripcion": "Café de molienda gruesa infusionado en frío durante 24 horas.",
-      "precio": 10800,
-      "foto": "cold-brew.webp",
-      "fotos": ["cold-brew-2.webp","cold-brew-3.webp"],
-      "badges": ["vegano"],
+      "nombre": "Latte frío",
+      "descripcion": "Espresso con leche fría y hielo.",
+      "precio": 10000,
+      "foto": "latte-frio.webp",
+      "fotos": [],
+      "badges": [],
       "modificadores": [],
-      "destacado": true,
+      "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "fri-03",
-      "slug": "frappe-de-cafe",
-      "categoria": "frios",
+      "slug": "capuchino-frio",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Frappé de café",
-      "descripcion": "Café, salsa de chocolate, caramelo y crema chantilly, batidos con hielo.",
-      "precio": 13500,
-      "foto": "frappe-de-cafe.webp",
-      "fotos": ["frappe-de-cafe-2.webp","frappe-de-cafe-3.webp"],
+      "nombre": "Capuchino frío",
+      "descripcion": "Espresso, leche fría y espuma, sobre hielo.",
+      "precio": 10000,
+      "foto": "capuchino-frio.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -439,47 +999,55 @@
     },
     {
       "id": "fri-04",
-      "slug": "limonada-de-cafe",
-      "categoria": "frios",
+      "slug": "cold-brew-tradicional",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Limonada de café",
-      "descripcion": "Espresso con jugo de limón y panela, servido frío.",
-      "precio": 11500,
-      "foto": "limonada-de-cafe.webp",
-      "fotos": ["limonada-de-cafe-2.webp","limonada-de-cafe-3.webp"],
-      "badges": ["vegano"],
+      "nombre": "Cold brew tradicional",
+      "descripcion": "Café de molienda gruesa infusionado en frío durante 24 horas.",
+      "precio": 11000,
+      "foto": "cold-brew-tradicional.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
       "modificadores": [],
-      "destacado": false,
+      "destacado": true,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "fri-05",
-      "slug": "moka-frio",
-      "categoria": "frios",
+      "slug": "cold-brew-con-sabor",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Moka frío",
-      "descripcion": "Espresso, leche y chocolate sobre hielo, con chantilly.",
-      "precio": 13900,
-      "foto": "moka-frio.webp",
-      "fotos": ["moka-frio-2.webp","moka-frio-3.webp"],
-      "badges": [],
-      "modificadores": [],
+      "nombre": "Cold brew con sabor",
+      "descripcion": "Con naranja, limón o guandolo.",
+      "precio": 13500,
+      "foto": "",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [
+        "sabor-cold-brew"
+      ],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "fri-06",
-      "slug": "cafe-con-naranja",
-      "categoria": "frios",
+      "slug": "affogato-tradicional",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Café con naranja",
-      "descripcion": "Espresso con jugo de naranja, servido sobre hielo.",
-      "precio": 13000,
-      "foto": "cafe-con-naranja.webp",
-      "fotos": ["cafe-con-naranja-2.webp","cafe-con-naranja-3.webp"],
-      "badges": ["vegano"],
+      "nombre": "Affogato tradicional",
+      "descripcion": "Helado de vainilla y espresso.",
+      "precio": 12000,
+      "foto": "affogato-tradicional.webp",
+      "fotos": [
+        "affogato-tradicional-2.webp"
+      ],
+      "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -487,14 +1055,17 @@
     },
     {
       "id": "fri-07",
-      "slug": "malteada-de-oreo",
-      "categoria": "frios",
-      "nombre": "Malteada de Oreo",
-      "descripcion": "Helado, leche y galleta Oreo.",
-      "precio": 16900,
-      "foto": "malteada-de-oreo.webp",
-      "fotos": ["malteada-de-oreo-2.webp","malteada-de-oreo-3.webp"],
-      "badges": [],
+      "slug": "affogato-conexion",
+      "categoria": "frias",
+      "especialidad": true,
+      "nombre": "Affogato Conexión",
+      "descripcion": "Helado de vainilla, Nutella y maní.",
+      "precio": 15000,
+      "foto": "affogato-conexion.webp",
+      "fotos": [],
+      "badges": [
+        "de-la-casa"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -502,14 +1073,14 @@
     },
     {
       "id": "fri-08",
-      "slug": "malteada-de-cafe",
-      "categoria": "frios",
+      "slug": "frappe-de-cafe",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Malteada de café",
-      "descripcion": "Helado, leche y café tostado de la casa.",
-      "precio": 16900,
-      "foto": "malteada-de-cafe.webp",
-      "fotos": ["malteada-de-cafe-2.webp","malteada-de-cafe-3.webp"],
+      "nombre": "Frappé de café",
+      "descripcion": "Café batido con hielo.",
+      "precio": 14000,
+      "foto": "frappe-de-cafe.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -518,13 +1089,14 @@
     },
     {
       "id": "fri-09",
-      "slug": "malteada-de-milo",
-      "categoria": "frios",
-      "nombre": "Malteada de Milo",
-      "descripcion": "Helado, leche, Milo y malta.",
-      "precio": 16900,
-      "foto": "malteada-de-milo.webp",
-      "fotos": ["malteada-de-milo-2.webp","malteada-de-milo-3.webp"],
+      "slug": "frappe-de-mocha",
+      "categoria": "frias",
+      "especialidad": true,
+      "nombre": "Frappé de mocha",
+      "descripcion": "Café y chocolate batidos con hielo.",
+      "precio": 16000,
+      "foto": "frappe-de-mocha.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -533,29 +1105,33 @@
     },
     {
       "id": "fri-10",
-      "slug": "soda-de-fruta",
-      "categoria": "frios",
-      "nombre": "Soda de fruta",
-      "descripcion": "Soda con pulpa de maracuyá, frutos rojos o mango biche.",
-      "precio": 13900,
-      "foto": "soda-de-fruta.webp",
-      "fotos": ["soda-de-fruta-2.webp","soda-de-fruta-3.webp"],
-      "badges": ["vegano"],
-      "modificadores": ["sabor-soda"],
+      "slug": "frappe-con-licor",
+      "categoria": "frias",
+      "especialidad": true,
+      "nombre": "Frappé con licor",
+      "descripcion": "Café batido con hielo y licor.",
+      "precio": 17000,
+      "foto": "frappe-con-licor.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "fri-11",
-      "slug": "limonada-de-coco",
-      "categoria": "frios",
-      "nombre": "Limonada de coco",
-      "descripcion": "Limón, leche de coco y hielo.",
-      "precio": 13900,
-      "foto": "limonada-de-coco.webp",
-      "fotos": ["limonada-de-coco-2.webp","limonada-de-coco-3.webp"],
-      "badges": ["vegano"],
+      "slug": "frappe-conexion",
+      "categoria": "frias",
+      "especialidad": true,
+      "nombre": "Frappé Conexión",
+      "descripcion": "Frappé de café con mermelada artesanal de frutos rojos.",
+      "precio": 16000,
+      "foto": "frappe-conexion.webp",
+      "fotos": [],
+      "badges": [
+        "de-la-casa"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -563,14 +1139,15 @@
     },
     {
       "id": "fri-12",
-      "slug": "limonada-natural",
-      "categoria": "frios",
-      "nombre": "Limonada natural",
-      "descripcion": "Limón, agua y azúcar.",
-      "precio": 9900,
-      "foto": "limonada-natural.webp",
-      "fotos": ["limonada-natural-2.webp","limonada-natural-3.webp"],
-      "badges": ["vegano"],
+      "slug": "milk-caramel-latte",
+      "categoria": "frias",
+      "especialidad": true,
+      "nombre": "Milk caramel latte",
+      "descripcion": "Espresso, leche y caramelo, sobre hielo.",
+      "precio": 14000,
+      "foto": "milk-caramel-latte.webp",
+      "fotos": [],
+      "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -578,30 +1155,14 @@
     },
     {
       "id": "fri-13",
-      "slug": "limonada-de-cereza-o-hierbabuena",
-      "categoria": "frios",
-      "nombre": "Limonada de cereza o hierbabuena",
-      "descripcion": "Limonada natural con jarabe de cereza o con hierbabuena fresca.",
-      "precio": 11900,
-      "foto": "limonada-de-cereza-o-hierbabuena.webp",
-      "fotos": ["limonada-de-cereza-o-hierbabuena-2.webp","limonada-de-cereza-o-hierbabuena-3.webp"],
-      "badges": ["vegano"],
-      "modificadores": ["sabor-limonada"],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-
-    {
-      "id": "lic-01",
-      "slug": "cafe-irlandes",
-      "categoria": "con-licor",
+      "slug": "mocha-frio",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Café irlandés",
-      "descripcion": "Espresso largo, whisky, crema de leche y chantilly.",
-      "precio": 11500,
-      "foto": "cafe-irlandes.webp",
-      "fotos": ["cafe-irlandes-2.webp","cafe-irlandes-3.webp"],
+      "nombre": "Mocha frío",
+      "descripcion": "Espresso, chocolate y leche sobre hielo.",
+      "precio": 13000,
+      "foto": "mocha-frio.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -609,172 +1170,323 @@
       "revisar": false
     },
     {
-      "id": "lic-02",
-      "slug": "carajillo",
-      "categoria": "con-licor",
+      "id": "fri-14",
+      "slug": "malteada",
+      "categoria": "frias",
+      "especialidad": false,
+      "nombre": "Malteada",
+      "descripcion": "Helado y leche, batidos.",
+      "precio": 17000,
+      "foto": "malteada.webp",
+      "fotos": [
+        "malteada-2.webp"
+      ],
+      "badges": [],
+      "modificadores": [
+        "sabor-malteada"
+      ],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "fri-15",
+      "slug": "limonada-de-cafe",
+      "categoria": "frias",
       "especialidad": true,
-      "nombre": "Carajillo",
-      "descripcion": "Espresso con brandy o aguardiente.",
-      "precio": 7500,
-      "foto": "carajillo.webp",
-      "fotos": ["carajillo-2.webp","carajillo-3.webp"],
-      "badges": [],
-      "modificadores": ["licor-carajillo"],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "lic-03",
-      "slug": "frappuccino-con-licor",
-      "categoria": "con-licor",
-      "especialidad": true,
-      "nombre": "Frappuccino con licor",
-      "descripcion": "Café, leche, crema y chocolate con amaretto o Baileys.",
-      "precio": 16000,
-      "foto": "frappuccino-con-licor.webp",
-      "fotos": ["frappuccino-con-licor-2.webp","frappuccino-con-licor-3.webp"],
-      "badges": [],
-      "modificadores": ["licor-crema"],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "lic-04",
-      "slug": "cafe-bombon",
-      "categoria": "con-licor",
-      "especialidad": true,
-      "nombre": "Café bombón",
-      "descripcion": "Espresso largo sobre leche condensada, en dos capas.",
-      "precio": 9500,
-      "foto": "cafe-bombon.webp",
-      "fotos": ["cafe-bombon-2.webp","cafe-bombon-3.webp"],
-      "badges": [],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": true,
-      "nota_revisar": "En la carta actual está en el capítulo de bebidas con licor, pero la descripción no menciona ningún licor. Confirmar si lleva o si va en Calientes."
-    },
-    {
-      "id": "lic-05",
-      "slug": "capuchino-con-licor",
-      "categoria": "con-licor",
-      "especialidad": true,
-      "nombre": "Capuchino con licor",
-      "descripcion": "Espresso, leche vaporizada, canela y amaretto o Baileys.",
-      "precio": 10500,
-      "foto": "capuchino-con-licor.webp",
-      "fotos": ["capuchino-con-licor-2.webp","capuchino-con-licor-3.webp"],
-      "badges": [],
-      "modificadores": ["licor-crema"],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-
-    {
-      "id": "te-01",
-      "slug": "latte-de-matcha",
-      "categoria": "te-y-matcha",
-      "nombre": "Latte de matcha",
-      "descripcion": "Matcha ceremonial con leche vaporizada.",
-      "precio": 15800,
-      "foto": "latte-de-matcha.webp",
-      "fotos": ["latte-de-matcha-2.webp","latte-de-matcha-3.webp"],
-      "badges": [],
-      "modificadores": ["leche"],
-      "destacado": true,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "te-02",
-      "slug": "te-de-leche-dorada",
-      "categoria": "te-y-matcha",
-      "nombre": "Té de leche dorada",
-      "descripcion": "Leche caliente con cúrcuma, jengibre y pimienta negra.",
-      "precio": 13800,
-      "foto": "te-de-leche-dorada.webp",
-      "fotos": ["te-de-leche-dorada-2.webp","te-de-leche-dorada-3.webp"],
-      "badges": [],
-      "modificadores": ["leche"],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "te-03",
-      "slug": "te-pu-erh",
-      "categoria": "te-y-matcha",
-      "nombre": "Té pu-erh",
-      "descripcion": "Té verde y té rojo con jengibre y cola de caballo.",
-      "precio": 9800,
-      "foto": "te-pu-erh.webp",
-      "fotos": ["te-pu-erh-2.webp","te-pu-erh-3.webp"],
-      "badges": ["vegano"],
+      "nombre": "Limonada de café",
+      "descripcion": "Espresso con jugo de limón y panela, servido frío.",
+      "precio": 12500,
+      "foto": "limonada-de-cafe.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
-      "id": "te-04",
-      "slug": "te-herbal",
-      "categoria": "te-y-matcha",
-      "nombre": "Té herbal",
-      "descripcion": "Mezcla de té rojo y té verde.",
-      "precio": 7000,
-      "foto": "te-herbal.webp",
-      "fotos": ["te-herbal-2.webp","te-herbal-3.webp"],
-      "badges": ["vegano"],
+      "id": "fri-16",
+      "slug": "orange-coffee",
+      "categoria": "frias",
+      "especialidad": true,
+      "nombre": "Orange coffee",
+      "descripcion": "Espresso con jugo de naranja, sobre hielo.",
+      "precio": 13000,
+      "foto": "orange-coffee.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
-      "id": "te-05",
-      "slug": "te-de-flor-de-jamaica",
-      "categoria": "te-y-matcha",
-      "nombre": "Té de flor de Jamaica",
-      "descripcion": "Infusión de flor de jamaica. Ácida, floral, color rubí.",
-      "precio": 7000,
-      "foto": "te-de-flor-de-jamaica.webp",
-      "fotos": ["te-de-flor-de-jamaica-2.webp","te-de-flor-de-jamaica-3.webp"],
-      "badges": ["vegano"],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": true,
-      "nota_revisar": "La carta actual solo lo describía por beneficios de salud (diurético, antioxidante, baja la presión, mejora la digestión). Al eliminarlos no queda información de preparación: confirmar si se sirve caliente, frío o ambos."
-    },
-    {
-      "id": "te-06",
-      "slug": "infusion-de-frutos",
-      "categoria": "te-y-matcha",
-      "nombre": "Infusión de frutos rojos o amarillos",
-      "descripcion": "Frutos deshidratados infusionados lentamente en agua caliente.",
-      "precio": 7000,
-      "foto": "infusion-de-frutos.webp",
-      "fotos": ["infusion-de-frutos-2.webp","infusion-de-frutos-3.webp"],
-      "badges": ["vegano"],
-      "modificadores": ["sabor-infusion"],
+      "id": "fri-17",
+      "slug": "soda-saborizada",
+      "categoria": "frias",
+      "especialidad": false,
+      "nombre": "Soda saborizada",
+      "descripcion": "Soda con sabor a fruta.",
+      "precio": 14000,
+      "foto": "soda-saborizada.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [
+        "sabor-soda"
+      ],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
-
+    {
+      "id": "smo-01",
+      "slug": "fresa-y-banano",
+      "categoria": "smoothies",
+      "especialidad": false,
+      "nombre": "Fresa y banano",
+      "descripcion": "",
+      "precio": 15000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "smo-02",
+      "slug": "maracumango",
+      "categoria": "smoothies",
+      "especialidad": false,
+      "nombre": "Maracumango",
+      "descripcion": "Maracuyá y mango.",
+      "precio": 15000,
+      "foto": "maracumango.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "smo-03",
+      "slug": "smoothie-pina-colada",
+      "categoria": "smoothies",
+      "especialidad": false,
+      "nombre": "Piña colada",
+      "descripcion": "",
+      "precio": 15000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "smo-04",
+      "slug": "smoothie-de-aguacate",
+      "categoria": "smoothies",
+      "especialidad": false,
+      "nombre": "Aguacate",
+      "descripcion": "",
+      "precio": 20000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "lim-01",
+      "slug": "limonada-natural",
+      "categoria": "limonadas",
+      "especialidad": false,
+      "nombre": "Limonada natural",
+      "descripcion": "Limón, agua y azúcar.",
+      "precio": 10000,
+      "foto": "limonada-natural.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "lim-02",
+      "slug": "limonada-de-coco",
+      "categoria": "limonadas",
+      "especialidad": false,
+      "nombre": "Limonada de coco",
+      "descripcion": "Limón, leche de coco y hielo.",
+      "precio": 14000,
+      "foto": "limonada-de-coco.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "lim-03",
+      "slug": "limonada-de-cereza",
+      "categoria": "limonadas",
+      "especialidad": false,
+      "nombre": "Limonada de cereza",
+      "descripcion": "",
+      "precio": 12000,
+      "foto": "limonada-de-cereza.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "lim-04",
+      "slug": "limonada-de-hierbabuena",
+      "categoria": "limonadas",
+      "especialidad": false,
+      "nombre": "Limonada de hierbabuena",
+      "descripcion": "",
+      "precio": 12000,
+      "foto": "limonada-de-hierbabuena.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "lim-05",
+      "slug": "limonada-de-lychee",
+      "categoria": "limonadas",
+      "especialidad": false,
+      "nombre": "Limonada de lychee",
+      "descripcion": "",
+      "precio": 12000,
+      "foto": "limonada-de-lychee.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "jug-01",
+      "slug": "jugo-natural-en-agua",
+      "categoria": "jugos-y-gaseosas",
+      "especialidad": false,
+      "nombre": "Jugo natural en agua",
+      "descripcion": "",
+      "precio": 9000,
+      "foto": "jugo-natural-en-agua.webp",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "jug-02",
+      "slug": "jugo-natural-en-leche",
+      "categoria": "jugos-y-gaseosas",
+      "especialidad": false,
+      "nombre": "Jugo natural en leche",
+      "descripcion": "",
+      "precio": 10000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "jug-03",
+      "slug": "botella-de-agua",
+      "categoria": "jugos-y-gaseosas",
+      "especialidad": false,
+      "nombre": "Botella de agua",
+      "descripcion": "Con gas o natural.",
+      "precio": 4000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "jug-04",
+      "slug": "bretana",
+      "categoria": "jugos-y-gaseosas",
+      "especialidad": false,
+      "nombre": "Bretaña",
+      "descripcion": "Agua con gas.",
+      "precio": 5000,
+      "foto": "bretana.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "jug-05",
+      "slug": "gaseosa",
+      "categoria": "jugos-y-gaseosas",
+      "especialidad": false,
+      "nombre": "Gaseosa",
+      "descripcion": "Botella de 350 ml.",
+      "precio": 5000,
+      "foto": "gaseosa.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
     {
       "id": "cer-01",
-      "slug": "michelada",
-      "categoria": "cerveza-y-vino",
-      "nombre": "Michelada",
-      "descripcion": "Cerveza con limón y sal.",
-      "precio": 8000,
-      "foto": "michelada.webp",
-      "fotos": ["michelada-2.webp","michelada-3.webp"],
+      "slug": "cerveza-nacional-tradicional",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
+      "nombre": "Cerveza nacional tradicional",
+      "descripcion": "",
+      "precio": 5000,
+      "foto": "cerveza-nacional-tradicional.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -783,15 +1495,16 @@
     },
     {
       "id": "cer-02",
-      "slug": "copa-de-vino",
-      "categoria": "cerveza-y-vino",
-      "nombre": "Copa de vino",
-      "descripcion": "Selección de la casa: tinto, blanco o rosado.",
-      "precio": 14000,
-      "foto": "copa-de-vino.webp",
-      "fotos": ["copa-de-vino-2.webp","copa-de-vino-3.webp"],
+      "slug": "cerveza-nacional-premium",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
+      "nombre": "Cerveza nacional premium",
+      "descripcion": "",
+      "precio": 7500,
+      "foto": "cerveza-nacional-premium.webp",
+      "fotos": [],
       "badges": [],
-      "modificadores": ["tipo-vino"],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
@@ -799,57 +1512,86 @@
     {
       "id": "cer-03",
       "slug": "cerveza-importada",
-      "categoria": "cerveza-y-vino",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
       "nombre": "Cerveza importada",
-      "descripcion": "Corona o Stella Artois.",
+      "descripcion": "",
       "precio": 9000,
       "foto": "cerveza-importada.webp",
-      "fotos": ["cerveza-importada-2.webp","cerveza-importada-3.webp"],
+      "fotos": [],
       "badges": [],
-      "modificadores": ["marca-importada"],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "cer-04",
-      "slug": "cerveza-nacional",
-      "categoria": "cerveza-y-vino",
-      "nombre": "Cerveza nacional",
-      "descripcion": "Águila Light, Poker o Águila Original.",
-      "precio": 5000,
-      "foto": "cerveza-nacional.webp",
-      "fotos": ["cerveza-nacional-2.webp","cerveza-nacional-3.webp"],
+      "slug": "cerveza-artesanal",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
+      "nombre": "Cerveza artesanal",
+      "descripcion": "Stout, Amber Ale, Blond Ale, Hazy IPA, de temporada o Cannabeer.",
+      "precio": 22000,
+      "foto": "",
+      "fotos": [],
       "badges": [],
-      "modificadores": ["marca-nacional"],
+      "modificadores": [
+        "tipo-artesanal"
+      ],
       "destacado": false,
       "agotado": false,
-      "revisar": false
+      "revisar": true,
+      "nota_revisar": "$22.000 por una cerveza artesanal es alto: confirmar si es botella grande o si el precio es otro."
     },
     {
       "id": "cer-05",
-      "slug": "cerveza-premium-nacional",
-      "categoria": "cerveza-y-vino",
-      "nombre": "Cerveza premium nacional",
-      "descripcion": "Club Colombia Dorada, Roja o Negra.",
-      "precio": 7500,
-      "foto": "cerveza-premium-nacional.webp",
-      "fotos": ["cerveza-premium-nacional-2.webp","cerveza-premium-nacional-3.webp"],
+      "slug": "sangria-personal",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
+      "nombre": "Sangría personal",
+      "descripcion": "De vino tinto o rosado.",
+      "precio": 19000,
+      "foto": "sangria-personal.webp",
+      "fotos": [],
       "badges": [],
-      "modificadores": ["marca-premium"],
+      "modificadores": [
+        "vino-sangria"
+      ],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "cer-06",
-      "slug": "copa-de-sangria",
-      "categoria": "cerveza-y-vino",
-      "nombre": "Copa de sangría",
-      "descripcion": "Vino tinto con fruta y hielo.",
+      "slug": "jarra-de-sangria",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
+      "nombre": "Jarra de sangría",
+      "descripcion": "Para cuatro personas. De vino tinto o rosado.",
+      "precio": 100000,
+      "foto": "jarra-de-sangria.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [
+        "vino-sangria"
+      ],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "cer-07",
+      "slug": "copa-de-vino-frio",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
+      "nombre": "Copa de vino frío",
+      "descripcion": "",
       "precio": 18000,
-      "foto": "copa-de-sangria.webp",
-      "fotos": ["copa-de-sangria-2.webp","copa-de-sangria-3.webp"],
+      "foto": "copa-de-vino-frio.webp",
+      "fotos": [
+        "copa-de-vino-frio-2.webp"
+      ],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -857,47 +1599,31 @@
       "revisar": false
     },
     {
-      "id": "cer-07",
-      "slug": "jarra-de-sangria",
-      "categoria": "cerveza-y-vino",
-      "nombre": "Jarra de sangría",
-      "descripcion": "Vino tinto con fruta y hielo, para compartir.",
-      "precio": 100000,
-      "foto": "jarra-de-sangria.webp",
-      "fotos": ["jarra-de-sangria-2.webp","jarra-de-sangria-3.webp"],
+      "id": "cer-08",
+      "slug": "copa-de-vino-caliente",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
+      "nombre": "Copa de vino caliente",
+      "descripcion": "",
+      "precio": 20000,
+      "foto": "",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Precio raro: la jarra cuesta 5,5 veces la copa ($18.000). Confirmar si son $100.000 o si hubo un cero de más. Falta también cuántas copas rinde."
+      "revisar": false
     },
-    {
-      "id": "cer-08",
-      "slug": "gaseosa",
-      "categoria": "cerveza-y-vino",
-      "nombre": "Gaseosa",
-      "descripcion": "Botella de 350 ml.",
-      "precio": 5000,
-      "foto": "gaseosa.webp",
-      "fotos": ["gaseosa-2.webp","gaseosa-3.webp"],
-      "badges": ["vegano"],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Queda en Cerveza y vino porque es el único lugar donde aparece en la carta actual. Encaja mejor en Fríos. Falta saber qué marcas y sabores hay."
-    },
-
     {
       "id": "coc-01",
-      "slug": "mojito",
+      "slug": "bacardi-cocktail",
       "categoria": "cocteles",
-      "nombre": "Mojito",
-      "descripcion": "Ron blanco, hierbabuena, lima, azúcar y soda.",
+      "especialidad": false,
+      "nombre": "Bacardí cocktail",
+      "descripcion": "Ron blanco, jugo de limón, granadina y hielo.",
       "precio": 25000,
-      "foto": "mojito.webp",
-      "fotos": ["mojito-2.webp","mojito-3.webp"],
+      "foto": "",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -906,29 +1632,35 @@
     },
     {
       "id": "coc-02",
-      "slug": "margarita",
+      "slug": "espresso-martini",
       "categoria": "cocteles",
-      "nombre": "Margarita",
-      "descripcion": "Tequila, licor de naranja, limón y borde de sal.",
+      "especialidad": false,
+      "nombre": "Espresso martini",
+      "descripcion": "Vodka, licor de café, café y hielo.",
       "precio": 25000,
-      "foto": "margarita.webp",
-      "fotos": ["margarita-2.webp","margarita-3.webp"],
+      "foto": "espresso-martini.webp",
+      "fotos": [
+        "espresso-martini-2.webp"
+      ],
       "badges": [],
       "modificadores": [],
-      "destacado": false,
+      "destacado": true,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "coc-03",
-      "slug": "moscow-mule",
+      "slug": "margarita-conexion",
       "categoria": "cocteles",
-      "nombre": "Moscow Mule",
-      "descripcion": "Vodka, cerveza de jengibre y limón.",
-      "precio": 25000,
-      "foto": "moscow-mule.webp",
-      "fotos": ["moscow-mule-2.webp","moscow-mule-3.webp"],
-      "badges": [],
+      "especialidad": false,
+      "nombre": "Margarita Conexión",
+      "descripcion": "Smirnoff de tamarindo, triple sec, jugo de limón, tamarindo, sal y hielo.",
+      "precio": 28000,
+      "foto": "margarita-conexion.webp",
+      "fotos": [],
+      "badges": [
+        "de-la-casa"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -936,308 +1668,492 @@
     },
     {
       "id": "coc-04",
-      "slug": "espresso-martini",
+      "slug": "margarita",
       "categoria": "cocteles",
-      "nombre": "Espresso Martini",
-      "descripcion": "Vodka, licor de café y un shot de espresso.",
+      "especialidad": false,
+      "nombre": "Margarita",
+      "descripcion": "Tequila, triple sec, jugo de limón, sal y hielo.",
       "precio": 25000,
-      "foto": "espresso-martini.webp",
-      "fotos": ["espresso-martini-2.webp","espresso-martini-3.webp"],
+      "foto": "margarita.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
-      "destacado": true,
+      "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "coc-05",
-      "slug": "mimosa",
+      "slug": "baileys-pasion",
       "categoria": "cocteles",
-      "nombre": "Mimosa",
-      "descripcion": "Espumante con jugo de naranja, frutos rojos o amarillos.",
-      "precio": 19900,
-      "foto": "mimosa.webp",
-      "fotos": ["mimosa-2.webp","mimosa-3.webp"],
+      "especialidad": false,
+      "nombre": "Baileys pasión",
+      "descripcion": "Baileys, ron de coco, amaretto y hielo.",
+      "precio": 25000,
+      "foto": "baileys-pasion.webp",
+      "fotos": [],
       "badges": [],
-      "modificadores": ["sabor-mimosa"],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
-
     {
-      "id": "pic-01",
-      "slug": "pan-de-masa-madre",
-      "categoria": "para-picar",
-      "nombre": "Pan de masa madre",
-      "descripcion": "Cinco porciones con queso crema, tomate asado, albahaca, reducción de balsámico y sal marina.",
-      "precio": 12000,
-      "foto": "pan-de-masa-madre.webp",
-      "fotos": ["pan-de-masa-madre-2.webp","pan-de-masa-madre-3.webp"],
-      "badges": ["vegetariano"],
+      "id": "coc-06",
+      "slug": "mojito",
+      "categoria": "cocteles",
+      "especialidad": false,
+      "nombre": "Mojito",
+      "descripcion": "Ron blanco, hierbabuena, jugo de limón, azúcar y soda.",
+      "precio": 25000,
+      "foto": "mojito.webp",
+      "fotos": [
+        "mojito-2.webp"
+      ],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "coc-07",
+      "slug": "pina-colada",
+      "categoria": "cocteles",
+      "especialidad": false,
+      "nombre": "Piña colada",
+      "descripcion": "Piña, coco, limón, lecherita y crema de leche.",
+      "precio": 28000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": true,
+      "nota_revisar": "La descripción de la dueña no menciona ron. ¿Lleva licor?"
+    },
+    {
+      "id": "com-01",
+      "slug": "patacones",
+      "categoria": "para-compartir",
+      "especialidad": false,
+      "nombre": "Patacones",
+      "descripcion": "Cinco patacones con carne desmechada, guacamole y hogao.",
+      "precio": 22000,
+      "foto": "patacones.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "com-02",
+      "slug": "nachos",
+      "categoria": "para-compartir",
+      "especialidad": false,
+      "nombre": "Nachos",
+      "descripcion": "Guacamole, sour cream, pico de gallo y carne desmechada.",
+      "precio": 25000,
+      "foto": "nachos.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "com-03",
+      "slug": "papas",
+      "categoria": "para-compartir",
+      "especialidad": false,
+      "nombre": "Papas",
+      "descripcion": "Con carne desmechada, guacamole y pico de gallo.",
+      "precio": 30000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "com-04",
+      "slug": "compartir-paisa",
+      "categoria": "para-compartir",
+      "especialidad": false,
+      "nombre": "Compartir paisa",
+      "descripcion": "Chorizo, chicharrón, empanaditas y patacones.",
+      "precio": 40000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "com-05",
+      "slug": "pan-de-origen",
+      "categoria": "para-compartir",
+      "especialidad": false,
+      "nombre": "Pan de origen",
+      "descripcion": "Seis porciones de pan de masa madre con queso crema, tomate asado y reducción de balsámico.",
+      "precio": 16000,
+      "foto": "pan-de-origen.webp",
+      "fotos": [],
+      "badges": [
+        "vegetariano"
+      ],
       "modificadores": [],
       "destacado": true,
       "agotado": false,
       "revisar": false
     },
     {
-      "id": "pic-02",
-      "slug": "patacones",
-      "categoria": "para-picar",
-      "nombre": "Patacones",
-      "descripcion": "Cinco porciones con guacamole de limón y cilantro, y hogao.",
-      "precio": 15000,
-      "foto": "patacones.webp",
-      "fotos": ["patacones-2.webp","patacones-3.webp"],
+      "id": "com-06",
+      "slug": "bunuelos",
+      "categoria": "para-compartir",
+      "especialidad": false,
+      "nombre": "Buñuelos",
+      "descripcion": "De papa criolla y pollo desmenuzado, con BBQ y salsa de ajo artesanal.",
+      "precio": 20000,
+      "foto": "",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Sin badge por ahora. Para marcarlo vegano hay que confirmar que el hogao no lleve caldo ni manteca animal y que los patacones no se frían en la misma grasa de la carne."
+      "revisar": false
     },
     {
-      "id": "pic-03",
-      "slug": "nachos",
-      "categoria": "para-picar",
-      "nombre": "Nachos",
-      "descripcion": "400 g con guacamole, crema agria, cebolla encurtida, fríjol refrito y salsa picante.",
-      "precio": 18000,
-      "foto": "nachos.webp",
-      "fotos": ["nachos-2.webp","nachos-3.webp"],
-      "badges": ["vegetariano", "picante"],
+      "id": "com-07",
+      "slug": "ceviche-de-chicharron",
+      "categoria": "para-compartir",
+      "especialidad": false,
+      "nombre": "Ceviche de chicharrón",
+      "descripcion": "Chicharrón de 150 g, cebolla, plátano frito, pimentón y cilantro.",
+      "precio": 25000,
+      "foto": "ceviche-de-chicharron.webp",
+      "fotos": [],
+      "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Marcado vegetariano asumiendo que el fríjol refrito no lleva tocino ni manteca. Confirmar en cocina."
+      "revisar": false
     },
-
     {
       "id": "bru-01",
-      "slug": "waffles-con-tocineta",
-      "categoria": "desayuno-y-brunch",
-      "nombre": "Waffles con tocineta",
-      "descripcion": "Waffles con queso crema, tocineta crujiente y miel de maple.",
-      "precio": 26000,
-      "foto": "waffles-con-tocineta.webp",
-      "fotos": ["waffles-con-tocineta-2.webp","waffles-con-tocineta-3.webp"],
-      "badges": [],
-      "modificadores": [],
-      "destacado": true,
+      "slug": "huevos-al-gusto",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Huevos al gusto",
+      "nombre_casa": "Bendición Ancestral",
+      "descripcion": "Huevos con dos toppings, arepa o pan de masa madre, y fruta del día.",
+      "precio": 16000,
+      "foto": "huevos-al-gusto.webp",
+      "fotos": [],
+      "badges": [
+        "de-la-casa"
+      ],
+      "modificadores": [
+        "toppings-2",
+        "acompanante"
+      ],
+      "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "bru-02",
-      "slug": "croissant-de-jamones",
-      "categoria": "desayuno-y-brunch",
-      "nombre": "Croissant de jamones",
-      "descripcion": "Jamón de pavo, jamón ahumado, queso de búfala, tomate asado, aguacate y reducción de balsámico.",
-      "precio": 22000,
-      "foto": "croissant-de-jamones.webp",
-      "fotos": ["croissant-de-jamones-2.webp","croissant-de-jamones-3.webp"],
+      "slug": "desayuno-americano",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Desayuno americano",
+      "descripcion": "Dos pancakes, tocineta, huevos en cacerola o revueltos y sirope de maple.",
+      "precio": 20000,
+      "foto": "desayuno-americano.webp",
+      "fotos": [],
       "badges": [],
-      "modificadores": [],
+      "modificadores": [
+        "huevos-americano"
+      ],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "bru-03",
-      "slug": "croissant-relleno",
-      "categoria": "desayuno-y-brunch",
-      "nombre": "Croissant relleno",
-      "descripcion": "Pollo o vegetales, lechuga, tocineta, salsa de pimientos y mozzarella gratinada.",
-      "precio": 26000,
-      "foto": "croissant-relleno.webp",
-      "fotos": ["croissant-relleno-2.webp","croissant-relleno-3.webp"],
+      "slug": "tostada-de-aguacate",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Tostada de aguacate",
+      "descripcion": "Pan de masa madre, puré de aguacate, huevos, tocineta y cebolla puerro.",
+      "precio": 18000,
+      "foto": "tostada-de-aguacate.webp",
+      "fotos": [
+        "tostada-de-aguacate-2.webp"
+      ],
       "badges": [],
-      "modificadores": ["relleno-croissant"],
-      "destacado": false,
+      "modificadores": [],
+      "destacado": true,
       "agotado": false,
-      "revisar": true,
-      "nota_revisar": "La versión con vegetales igual lleva tocineta en la descripción actual. Confirmar si al pedirlo vegetal se retira la tocineta; si se retira, puede llevar badge vegetariano."
+      "revisar": false
     },
     {
       "id": "bru-04",
-      "slug": "huevos-al-gusto",
-      "categoria": "desayuno-y-brunch",
-      "nombre": "Huevos al gusto",
-      "descripcion": "Revueltos o en omelet, con dos acompañamientos y arepa o tostada de masa madre.",
-      "precio": 15900,
-      "foto": "huevos-al-gusto.webp",
-      "fotos": ["huevos-al-gusto-2.webp","huevos-al-gusto-3.webp"],
-      "badges": [],
-      "modificadores": ["punto-huevo", "toppings-huevo", "base-huevo"],
+      "slug": "bowl-saludable",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Bowl saludable",
+      "descripcion": "Yogur griego, granola, arándanos y fresa, con miel natural.",
+      "precio": 18000,
+      "foto": "bowl-saludable.webp",
+      "fotos": [
+        "bowl-saludable-2.webp"
+      ],
+      "badges": [
+        "vegetariano"
+      ],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "bru-05",
-      "slug": "tostada-de-aguacate",
-      "categoria": "desayuno-y-brunch",
-      "nombre": "Tostada de aguacate",
-      "descripcion": "Pan de masa madre, aguacate, huevos revueltos, tocineta y cebolla puerro.",
-      "precio": 18000,
-      "foto": "tostada-de-aguacate.webp",
-      "fotos": ["tostada-de-aguacate-2.webp","tostada-de-aguacate-3.webp"],
+      "slug": "omelet",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Omelet",
+      "descripcion": "Con tres toppings, aguacate y pan de masa madre o arepa.",
+      "precio": 20000,
+      "foto": "omelet.webp",
+      "fotos": [],
       "badges": [],
-      "modificadores": [],
-      "destacado": true,
+      "modificadores": [
+        "toppings-3",
+        "acompanante"
+      ],
+      "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "bru-06",
-      "slug": "bowl-de-yogur",
-      "categoria": "desayuno-y-brunch",
-      "nombre": "Bowl de yogur",
-      "descripcion": "Yogur griego o kéfir, granola, arándanos, fresa y miel.",
-      "precio": 18000,
-      "foto": "bowl-de-yogur.webp",
-      "fotos": ["bowl-de-yogur-2.webp","bowl-de-yogur-3.webp"],
-      "badges": ["vegetariano"],
-      "modificadores": ["base-bowl"],
+      "slug": "tostadas-francesas-conexion",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Tostadas francesas Conexión",
+      "descripcion": "Pan de masa madre remojado en mezcla de tiramisú: chocolate, café de especialidad y crema de leche.",
+      "precio": 20000,
+      "foto": "",
+      "fotos": [],
+      "badges": [
+        "vegetariano",
+        "de-la-casa"
+      ],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
       "id": "bru-07",
-      "slug": "tostada-de-tomate-y-pesto",
-      "categoria": "desayuno-y-brunch",
-      "nombre": "Tostada de tomate y pesto",
-      "descripcion": "Pan de masa madre, tomate asado, huevos revueltos, queso de búfala y pesto.",
-      "precio": 20000,
-      "foto": "tostada-de-tomate-y-pesto.webp",
-      "fotos": ["tostada-de-tomate-y-pesto-2.webp","tostada-de-tomate-y-pesto-3.webp"],
-      "badges": ["vegetariano"],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-
-    {
-      "id": "ens-01",
-      "slug": "bowl-de-pollo-teriyaki",
-      "categoria": "ensaladas-y-sandwiches",
-      "nombre": "Bowl de pollo teriyaki",
-      "descripcion": "Mix de lechugas, tomate cherry, champiñones, mango, puerro caramelizado, lentejas crocantes y pollo teriyaki.",
-      "precio": 36000,
-      "foto": "bowl-de-pollo-teriyaki.webp",
-      "fotos": ["bowl-de-pollo-teriyaki-2.webp","bowl-de-pollo-teriyaki-3.webp"],
-      "badges": [],
+      "slug": "tostada-conexion",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Tostada Conexión",
+      "descripcion": "Base de tomates asados, queso búfala, huevos pochados, pesto y tocineta.",
+      "precio": 23000,
+      "foto": "tostada-conexion.webp",
+      "fotos": [
+        "tostada-conexion-2.webp"
+      ],
+      "badges": [
+        "de-la-casa"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
-      "id": "ens-02",
-      "slug": "ensalada-cesar",
-      "categoria": "ensaladas-y-sandwiches",
-      "nombre": "Ensalada César",
-      "descripcion": "Lechugas, pechuga de pollo, parmesano, aderezo César, tomate cherry y crotones a las finas hierbas.",
+      "id": "bru-08",
+      "slug": "cacerola-napolitana",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Cacerola napolitana",
+      "descripcion": "Salsa napolitana, huevos en cacerola, pan de masa madre y parmesano.",
+      "precio": 25000,
+      "foto": "",
+      "fotos": [],
+      "badges": [
+        "vegetariano"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "bru-09",
+      "slug": "waffle-de-pan-de-yuca",
+      "categoria": "brunch",
+      "especialidad": false,
+      "nombre": "Waffle de pan de yuca",
+      "descripcion": "Con aguacate y huevos.",
       "precio": 26000,
-      "foto": "ensalada-cesar.webp",
-      "fotos": ["ensalada-cesar-2.webp","ensalada-cesar-3.webp"],
-      "badges": [],
-      "modificadores": [],
-      "destacado": true,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "ens-03",
-      "slug": "ensalada-de-salmon-estilo-sushi",
-      "categoria": "ensaladas-y-sandwiches",
-      "nombre": "Ensalada de salmón estilo sushi",
-      "descripcion": "Salmón marinado, surimi, aguacate, pepino y alga nori sobre arroz avinagrado, con reducción de teriyaki.",
-      "precio": 40000,
-      "foto": "ensalada-de-salmon-estilo-sushi.webp",
-      "fotos": ["ensalada-de-salmon-estilo-sushi-2.webp","ensalada-de-salmon-estilo-sushi-3.webp"],
-      "badges": [],
-      "modificadores": [],
-      "destacado": true,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "ens-04",
-      "slug": "sandwich-vegetariano",
-      "categoria": "ensaladas-y-sandwiches",
-      "nombre": "Sándwich vegetariano",
-      "descripcion": "Croissant con lechuga, tomate asado, cebolla caramelizada, brócoli y champiñones.",
-      "precio": 20000,
-      "foto": "sandwich-vegetariano.webp",
-      "fotos": ["sandwich-vegetariano-2.webp","sandwich-vegetariano-3.webp"],
-      "badges": ["vegetariano"],
+      "foto": "waffle-de-pan-de-yuca.webp",
+      "fotos": [],
+      "badges": [
+        "vegetariano"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
-
     {
-      "id": "ham-01",
-      "slug": "hamburguesa-de-la-casa",
-      "categoria": "hamburguesas",
-      "nombre": "Hamburguesa de la casa",
-      "nombre_casa": "Burger Conexión",
-      "descripcion": "Carne de 150 g, cheddar, tocineta, cebolla caramelizada, lechuga cogollo y salsa de la casa en pan brioche.",
-      "precio": 24900,
-      "foto": "hamburguesa-de-la-casa.webp",
-      "fotos": ["hamburguesa-de-la-casa-2.webp","hamburguesa-de-la-casa-3.webp"],
-      "badges": ["de-la-casa"],
-      "modificadores": [],
-      "destacado": true,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "ham-02",
-      "slug": "hamburguesa-tropical",
-      "categoria": "hamburguesas",
-      "nombre": "Hamburguesa tropical",
-      "descripcion": "Carne artesanal, tocineta, puerro caramelizado, queso para asar y piña asada con tajín en pan brioche.",
+      "id": "pla-01",
+      "slug": "hamburguesa-de-costilla-de-cerdo",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Hamburguesa de costilla de cerdo",
+      "descripcion": "Costilla de cerdo de 150 g cocinada 8 horas en reducción de BBQ dulce, con lechuga, tomate, cebolla caramelizada y salsa de la casa.",
       "precio": 35000,
-      "foto": "hamburguesa-tropical.webp",
-      "fotos": ["hamburguesa-tropical-2.webp","hamburguesa-tropical-3.webp"],
+      "foto": "hamburguesa-de-costilla-de-cerdo.webp",
+      "fotos": [
+        "hamburguesa-de-costilla-de-cerdo-2.webp"
+      ],
       "badges": [],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Precio raro: al bajar la de lentejas a $24.900, esta queda 40% por encima de las otras dos, que valen lo mismo. Confirmar si el precio es correcto."
-    },
-    {
-      "id": "ham-03",
-      "slug": "hamburguesa-de-lentejas",
-      "categoria": "hamburguesas",
-      "nombre": "Hamburguesa de lentejas",
-      "descripcion": "Carne de lentejas, mozzarella light, tomate asado, mix de lechugas y reducción de pimentón con miel, en masa madre.",
-      "precio": 24900,
-      "foto": "hamburguesa-de-lentejas.webp",
-      "fotos": ["hamburguesa-de-lentejas-2.webp","hamburguesa-de-lentejas-3.webp"],
-      "badges": ["vegetariano"],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
-
+    {
+      "id": "pla-02",
+      "slug": "burro-de-pollo",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Burro de pollo",
+      "descripcion": "Pollo con vegetales salteados y salsa de tocineta.",
+      "precio": 28000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "pla-03",
+      "slug": "lasana-bolonesa",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Lasaña boloñesa",
+      "descripcion": "",
+      "precio": 30000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "pla-04",
+      "slug": "lasana-de-pollo-con-champinones",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Lasaña de pollo con champiñones",
+      "descripcion": "",
+      "precio": 30000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "pla-05",
+      "slug": "sanduche-de-atun",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Sánduche de atún",
+      "descripcion": "Atún, huevo cocido, lechuga, tomate fresco y cebolla caramelizada.",
+      "precio": 28000,
+      "foto": "sanduche-de-atun.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "pla-06",
+      "slug": "sanduche-cubano-de-ropa-vieja",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Sánduche cubano de ropa vieja",
+      "descripcion": "Ropa vieja, jamón de cerdo, mozzarella, pepino dulce, mostaza y salsa de ajo. En combo con papas y gaseosa.",
+      "precio": 38000,
+      "foto": "sanduche-cubano-de-ropa-vieja.webp",
+      "fotos": [
+        "sanduche-cubano-de-ropa-vieja-2.webp"
+      ],
+      "badges": [],
+      "modificadores": [
+        "pan-cubano"
+      ],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "pla-07",
+      "slug": "pasta-a-tu-gusto",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Pasta a tu gusto",
+      "nombre_casa": "Arma tu plato",
+      "descripcion": "Spaghetti o penne; salsa napolitana casera, Alfredo o pesto; pollo a la plancha o salmón. Con ensalada de lechuga y tomate cherry. Con salmón, $40.000.",
+      "precio": 30000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [
+        "pasta-tipo",
+        "pasta-salsa",
+        "pasta-proteina"
+      ],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
     {
       "id": "piz-01",
-      "slug": "pizza-americana",
+      "slug": "super-pepperoni",
       "categoria": "pizzas",
-      "nombre": "Pizza americana",
-      "descripcion": "Pepperoni, salsa napolitana y mozzarella.",
-      "precio": 24000,
-      "foto": "pizza-americana.webp",
-      "fotos": ["pizza-americana-2.webp","pizza-americana-3.webp"],
+      "especialidad": false,
+      "nombre": "Súper pepperoni",
+      "descripcion": "Pepperoni y queso mozzarella.",
+      "precio": 30000,
+      "foto": "super-pepperoni.webp",
+      "fotos": [
+        "super-pepperoni-2.webp"
+      ],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -1246,14 +2162,17 @@
     },
     {
       "id": "piz-02",
-      "slug": "pizza-hawaiana",
+      "slug": "margarita-napoles",
       "categoria": "pizzas",
-      "nombre": "Pizza hawaiana",
-      "descripcion": "Piña calada, jamón, salsa napolitana y mozzarella.",
-      "precio": 24000,
-      "foto": "pizza-hawaiana.webp",
-      "fotos": ["pizza-hawaiana-2.webp","pizza-hawaiana-3.webp"],
-      "badges": [],
+      "especialidad": false,
+      "nombre": "Margarita Nápoles",
+      "descripcion": "Tomates especiados con finas hierbas, mozzarella y albahaca fresca.",
+      "precio": 30000,
+      "foto": "margarita-napoles.webp",
+      "fotos": [],
+      "badges": [
+        "vegetariano"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -1261,13 +2180,14 @@
     },
     {
       "id": "piz-03",
-      "slug": "pizza-iberica",
+      "slug": "jamon-ahumado-y-queso",
       "categoria": "pizzas",
-      "nombre": "Pizza ibérica",
-      "descripcion": "Chorizo español, dátiles, aceitunas, salsa napolitana y mozzarella.",
-      "precio": 24000,
-      "foto": "pizza-iberica.webp",
-      "fotos": ["pizza-iberica-2.webp","pizza-iberica-3.webp"],
+      "especialidad": false,
+      "nombre": "Jamón ahumado y queso",
+      "descripcion": "Jamón ahumado y queso mozzarella.",
+      "precio": 30000,
+      "foto": "jamon-ahumado-y-queso.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -1276,14 +2196,15 @@
     },
     {
       "id": "piz-04",
-      "slug": "pizza-toscana",
+      "slug": "pollo-y-champinon-fresco",
       "categoria": "pizzas",
-      "nombre": "Pizza toscana",
-      "descripcion": "Manzana caramelizada, queso azul, almendras, pesto y mozzarella.",
-      "precio": 24000,
-      "foto": "pizza-toscana.webp",
-      "fotos": ["pizza-toscana-2.webp","pizza-toscana-3.webp"],
-      "badges": ["vegetariano"],
+      "especialidad": false,
+      "nombre": "Pollo y champiñón fresco",
+      "descripcion": "Champiñones frescos, pollo marinado y queso mozzarella.",
+      "precio": 30000,
+      "foto": "pollo-y-champinon-fresco.webp",
+      "fotos": [],
+      "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
@@ -1291,13 +2212,14 @@
     },
     {
       "id": "piz-05",
-      "slug": "pizza-catalana",
+      "slug": "tropical-hawaiana",
       "categoria": "pizzas",
-      "nombre": "Pizza catalana",
-      "descripcion": "Pepperoni, salami, cábano, salsa napolitana y mozzarella.",
-      "precio": 24000,
-      "foto": "pizza-catalana.webp",
-      "fotos": ["pizza-catalana-2.webp","pizza-catalana-3.webp"],
+      "especialidad": false,
+      "nombre": "Tropical hawaiana",
+      "descripcion": "Jamón ahumado, piña caramelizada y queso mozzarella.",
+      "precio": 30000,
+      "foto": "tropical-hawaiana.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -1306,29 +2228,37 @@
     },
     {
       "id": "piz-06",
-      "slug": "pizza-napolitana",
+      "slug": "huerta-en-la-terraza",
       "categoria": "pizzas",
-      "nombre": "Pizza napolitana",
-      "descripcion": "Tomates secos, queso de búfala, albahaca, salsa napolitana y mozzarella.",
-      "precio": 24000,
-      "foto": "pizza-napolitana.webp",
-      "fotos": ["pizza-napolitana-2.webp","pizza-napolitana-3.webp"],
-      "badges": ["vegetariano"],
+      "especialidad": false,
+      "nombre": "Huerta en la terraza",
+      "descripcion": "Vegetales frescos, cebolla, zucchini, calabacín, pimentones escalivados, champiñones y mozzarella.",
+      "precio": 30000,
+      "foto": "huerta-en-la-terraza.webp",
+      "fotos": [
+        "huerta-en-la-terraza-2.webp"
+      ],
+      "badges": [
+        "vegetariano"
+      ],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
-
     {
-      "id": "hor-01",
-      "slug": "empanada-argentina",
-      "categoria": "del-horno",
-      "nombre": "Empanada argentina",
-      "descripcion": "Carne sazonada con hierbas y sofrito, en masa horneada.",
+      "id": "hoj-01",
+      "slug": "pasteles-y-empanadas",
+      "categoria": "hojaldrados",
+      "especialidad": false,
+      "nombre": "Pasteles y empanadas",
+      "descripcion": "",
       "precio": 8500,
-      "foto": "empanada-argentina.webp",
-      "fotos": ["empanada-argentina-2.webp","empanada-argentina-3.webp"],
+      "foto": "pasteles-y-empanadas.webp",
+      "fotos": [
+        "pasteles-y-empanadas-2.webp",
+        "pasteles-y-empanadas-3.webp"
+      ],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -1336,29 +2266,15 @@
       "revisar": false
     },
     {
-      "id": "hor-02",
-      "slug": "pastel-de-arequipe-y-queso",
-      "categoria": "del-horno",
-      "nombre": "Pastel de arequipe y queso",
-      "descripcion": "Queso fresco fundido y arequipe artesanal en masa horneada.",
-      "precio": 8500,
-      "foto": "pastel-de-arequipe-y-queso.webp",
-      "fotos": ["pastel-de-arequipe-y-queso-2.webp","pastel-de-arequipe-y-queso-3.webp"],
-      "badges": ["vegetariano"],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "hor-03",
-      "slug": "pastel-de-pollo-con-verduras",
-      "categoria": "del-horno",
-      "nombre": "Pastel de pollo con verduras",
-      "descripcion": "Pollo desmechado, zanahoria, arvejas y especias suaves en masa horneada.",
-      "precio": 8500,
-      "foto": "pastel-de-pollo-con-verduras.webp",
-      "fotos": ["pastel-de-pollo-con-verduras-2.webp","pastel-de-pollo-con-verduras-3.webp"],
+      "id": "hoj-02",
+      "slug": "palito-de-queso",
+      "categoria": "hojaldrados",
+      "especialidad": false,
+      "nombre": "Palito de queso",
+      "descripcion": "",
+      "precio": 6500,
+      "foto": "palito-de-queso.webp",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -1366,45 +2282,15 @@
       "revisar": false
     },
     {
-      "id": "hor-04",
-      "slug": "pastel-de-tres-quesos",
-      "categoria": "del-horno",
-      "nombre": "Pastel de tres quesos",
-      "descripcion": "Relleno cremoso de quesos, en masa artesanal horneada.",
-      "precio": 8500,
-      "foto": "pastel-de-tres-quesos.webp",
-      "fotos": ["pastel-de-tres-quesos-2.webp","pastel-de-tres-quesos-3.webp"],
-      "badges": [],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Contradicción en la carta actual: se llama tres quesos, la descripción dice que lleva tocineta y la frase final lo llama opción vegetal. Confirmar si lleva tocineta. Si no lleva, va badge vegetariano."
-    },
-    {
-      "id": "hor-05",
-      "slug": "empanada-de-espinaca",
-      "categoria": "del-horno",
-      "nombre": "Empanada de espinaca",
-      "descripcion": "Espinaca fresca con queso suave, en masa horneada.",
-      "precio": 8500,
-      "foto": "empanada-de-espinaca.webp",
-      "fotos": ["empanada-de-espinaca-2.webp","empanada-de-espinaca-3.webp"],
-      "badges": ["vegetariano"],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "hor-06",
-      "slug": "pastel-de-jamon-y-queso",
-      "categoria": "del-horno",
-      "nombre": "Pastel de jamón y queso",
-      "descripcion": "Jamón y queso en masa artesanal horneada.",
-      "precio": 8500,
-      "foto": "pastel-de-jamon-y-queso.webp",
-      "fotos": ["pastel-de-jamon-y-queso-2.webp","pastel-de-jamon-y-queso-3.webp"],
+      "id": "dul-01",
+      "slug": "trufa",
+      "categoria": "gustos-dulces",
+      "especialidad": false,
+      "nombre": "Trufa",
+      "descripcion": "",
+      "precio": 5000,
+      "foto": "",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -1412,150 +2298,88 @@
       "revisar": false
     },
     {
-      "id": "hor-07",
-      "slug": "rollo-de-canela",
-      "categoria": "del-horno",
-      "nombre": "Rollo de canela",
-      "descripcion": "Masa horneada rellena de canela y azúcar.",
-      "precio": 4000,
-      "foto": "rollo-de-canela.webp",
-      "fotos": ["rollo-de-canela-2.webp","rollo-de-canela-3.webp"],
-      "badges": ["vegetariano"],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "hor-08",
-      "slug": "horneado-del-dia",
-      "categoria": "del-horno",
-      "nombre": "Horneado del día",
-      "descripcion": "Varía según el día. Pregunta en caja.",
-      "precio": 6000,
-      "foto": "horneado-del-dia.webp",
-      "fotos": ["horneado-del-dia-2.webp","horneado-del-dia-3.webp"],
+      "id": "dul-02",
+      "slug": "porcion-de-torta",
+      "categoria": "gustos-dulces",
+      "especialidad": false,
+      "nombre": "Porción de torta",
+      "descripcion": "",
+      "precio": 14000,
+      "foto": "porcion-de-torta.webp",
+      "fotos": [
+        "porcion-de-torta-2.webp"
+      ],
       "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
-      "revisar": true,
-      "nota_revisar": "En la carta actual aparece como Pasteles y horneados, variedad del día, $6.000. No es lo mismo que el palito de queso que estaba a $6.000 en el PDF. Confirmar que este producto sigue existiendo."
-    },
-
-    {
-      "id": "com-01",
-      "slug": "combo-hamburguesa-papas-gaseosa",
-      "categoria": "combos",
-      "nombre": "Hamburguesa de la casa + papas + gaseosa",
-      "nombre_casa": "El completo",
-      "descripcion": "La hamburguesa de la casa con papas y gaseosa.",
-      "precio": 30900,
-      "foto": "combo-hamburguesa-papas-gaseosa.webp",
-      "fotos": ["combo-hamburguesa-papas-gaseosa-2.webp","combo-hamburguesa-papas-gaseosa-3.webp"],
-      "badges": ["de-la-casa"],
-      "modificadores": [],
-      "destacado": false,
-      "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Nombre de casa propuesto: El completo. Reemplaza el nombre anterior. Confirmar o cambiar. Ver REVISAR.md."
-    },
-    {
-      "id": "com-02",
-      "slug": "combo-vino-papas",
-      "categoria": "combos",
-      "nombre": "Dos copas de vino + papas nativas",
-      "nombre_casa": "El de la tarde",
-      "descripcion": "Dos copas de la selección de la casa con una porción de papas nativas.",
-      "precio": 40000,
-      "foto": "combo-vino-papas.webp",
-      "fotos": ["combo-vino-papas-2.webp","combo-vino-papas-3.webp"],
-      "badges": ["de-la-casa"],
-      "modificadores": ["tipo-vino"],
-      "destacado": false,
-      "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Nombre de casa propuesto: El de la tarde. Reemplaza el nombre anterior. Confirmar o cambiar. Ver REVISAR.md."
-    },
-    {
-      "id": "com-03",
-      "slug": "combo-hamburguesa-cerveza",
-      "categoria": "combos",
-      "nombre": "Hamburguesa de la casa + cerveza Club Colombia",
-      "nombre_casa": "La dupla",
-      "descripcion": "La hamburguesa de la casa con una Club Colombia.",
-      "precio": 35000,
-      "foto": "combo-hamburguesa-cerveza.webp",
-      "fotos": ["combo-hamburguesa-cerveza-2.webp","combo-hamburguesa-cerveza-3.webp"],
-      "badges": ["de-la-casa"],
-      "modificadores": ["marca-premium"],
-      "destacado": false,
-      "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Nombre de casa propuesto: La dupla. Reemplaza el nombre anterior. Confirmar o cambiar. Ver REVISAR.md."
-    },
-    {
-      "id": "com-04",
-      "slug": "combo-americano-croissant",
-      "categoria": "combos",
-      "nombre": "Café americano + croissant de jamón y queso",
-      "nombre_casa": "El de la mañana",
-      "descripcion": "Un americano con croissant de jamón y queso.",
-      "precio": 12500,
-      "foto": "combo-americano-croissant.webp",
-      "fotos": ["combo-americano-croissant-2.webp","combo-americano-croissant-3.webp"],
-      "badges": ["de-la-casa"],
-      "modificadores": [],
-      "destacado": true,
-      "agotado": false,
       "revisar": false
     },
-
     {
-      "id": "pos-01",
-      "slug": "torta-del-dia",
-      "categoria": "postres",
-      "nombre": "Torta del día",
-      "descripcion": "Zanahoria, red velvet o chocolate. Bizcocho artesanal, húmedo y aromático.",
-      "precio": 10000,
-      "foto": "torta-del-dia.webp",
-      "fotos": ["torta-del-dia-2.webp","torta-del-dia-3.webp"],
-      "badges": ["vegetariano"],
-      "modificadores": ["sabor-torta"],
+      "id": "dul-03",
+      "slug": "postre-mini",
+      "categoria": "gustos-dulces",
+      "especialidad": false,
+      "nombre": "Postre mini",
+      "descripcion": "",
+      "precio": 5000,
+      "foto": "postre-mini.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
     },
     {
-      "id": "pos-02",
-      "slug": "waffle-con-helado",
-      "categoria": "postres",
-      "nombre": "Waffle con helado",
-      "descripcion": "Waffles con helado de vainilla, salsa de arequipe, frutos rojos y Nutella.",
-      "precio": 16000,
-      "foto": "waffle-con-helado.webp",
-      "fotos": ["waffle-con-helado-2.webp","waffle-con-helado-3.webp"],
-      "badges": ["vegetariano"],
-      "modificadores": [],
-      "destacado": true,
-      "agotado": false,
-      "revisar": false
-    },
-    {
-      "id": "pos-03",
-      "slug": "tres-leches",
-      "categoria": "postres",
-      "nombre": "Tres leches",
-      "descripcion": "Bizcocho bañado en tres leches, coronado con crema ligera.",
+      "id": "dul-04",
+      "slug": "postre-personal",
+      "categoria": "gustos-dulces",
+      "especialidad": false,
+      "nombre": "Postre personal",
+      "descripcion": "",
       "precio": 12000,
-      "foto": "tres-leches.webp",
-      "fotos": ["tres-leches-2.webp","tres-leches-3.webp"],
-      "badges": ["vegetariano"],
+      "foto": "postre-personal.webp",
+      "fotos": [],
+      "badges": [],
       "modificadores": [],
       "destacado": false,
       "agotado": false,
-      "revisar": true,
-      "nota_revisar": "Conflicto entre fuentes: el PDF lo titula Arroz con Leche y la web lo titula Arroz con leche / Tres leches, pero las dos describen un tres leches. Confirmar si son uno o dos postres distintos."
+      "revisar": false
+    },
+    {
+      "id": "dul-05",
+      "slug": "waffle-con-helado-nutella-y-banano",
+      "categoria": "gustos-dulces",
+      "especialidad": false,
+      "nombre": "Waffle con helado, Nutella y banano",
+      "descripcion": "Con crema chantilly.",
+      "precio": 22000,
+      "foto": "waffle-con-helado-nutella-y-banano.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": true,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "dul-06",
+      "slug": "waffle-con-helado-y-fresas",
+      "categoria": "gustos-dulces",
+      "especialidad": false,
+      "nombre": "Waffle con helado y fresas",
+      "descripcion": "Con salsa de chocolate, arequipe o frutos rojos.",
+      "precio": 18000,
+      "foto": "waffle-con-helado-y-fresas.webp",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [
+        "salsa-waffle"
+      ],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
     }
   ]
 }
