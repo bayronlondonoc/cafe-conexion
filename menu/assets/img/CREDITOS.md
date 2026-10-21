@@ -16,20 +16,13 @@ ChatGPT (cuenta de Bayron), con la colorimetría de las piezas de redes del caf�
 crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 
 - **Bebidas calientes** (2026-10-21): `tinto.jpg`, `espresso.jpg`, `americano.jpg`, `periquito-cortado.jpg`, `macchiato.jpg`, `latte.jpg`, `capuchino.jpg`, `mocha.jpg`, `cafe-bombon.jpg`, `chocolate-en-agua.jpg`, `chocolate-en-leche.jpg`, `milo.jpg`, `chocolate-conexion.jpg`, `capuchino-conexion.jpg`, `capuchino-con-licor.jpg`, `carajillo.jpg`, `cafe-irlandes.jpg`.
+- **Infusiones y matcha** (2026-10-21): `frutos-deshidratados.jpg`, `infusiones-ancestrales.jpg`, `leche-dorada-en-leche.jpg`, `leche-dorada-en-agua.jpg`, `leche-dorada-en-naranja.jpg`, `latte-matcha.jpg`, `te-matcha.jpg`, `frappe-matcha-conexion.jpg`, `matcha-con-mermelada-de-frutos-rojos.jpg`, `canela-clavos-y-anis.jpg`, `curcuma-y-jengibre.jpg`, `manzanilla-calendula-y-miel.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| frutos-deshidratados.webp | A glass of hibiscus tea 01 | claralieu | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AA%20glass%20of%20hibiscus%20tea%2001.jpg |
-| infusiones-ancestrales.webp | A glass of hibiscus tea 04 | claralieu | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AA%20glass%20of%20hibiscus%20tea%2004.jpg |
-| leche-dorada-en-leche.webp | Turmeric Latte (43134398655) | Ella Olsson from Stockholm, Sweden | CC BY 2.0 | https://commons.wikimedia.org/w/index.php?curid=83080936 |
-| latte-matcha.webp | Matcha Latte - Matcha Green Tea Latte and Green Tea Ice Cream Set - Cocoro Cafe, QVM AUD8 set | avlxyz | CC BY-SA | https://www.flickr.com/photos/10559879@N00/3122544172 |
-| te-matcha.webp | Have you tried our matcha yet? It's great in a latte too! 😍🍵☕️ | tukanuk | CC BY 2.0 | https://www.flickr.com/photos/10863444@N00/24484064535 |
-| matcha-con-mermelada-de-frutos-rojos.webp | Matcha Latte | Kirinohana | CC BY 2.0 | https://www.flickr.com/photos/94085795@N08/9600173692 |
-| canela-clavos-y-anis.webp | Tea Time | miheco | CC BY-SA 2.0 | https://www.flickr.com/photos/88164721@N00/8828961430 |
-| manzanilla-calendula-y-miel.webp | White Tea | Forban300 | CC BY | https://www.flickr.com/photos/64277901@N08/5872068364 |
 | americano-frio.webp | ice coffee | Kanko* | CC BY 2.0 | https://www.flickr.com/photos/29282750@N00/121670712 |
 | latte-frio.webp | iced juice on table - Credit to https://myfriendscoffee.com/ | John Beans | CC BY 2.0 | https://www.flickr.com/photos/147592390@N06/46665008225 |
 | capuchino-frio.webp | Iced Latte @ Toast | mcmurrak | CC BY 2.0 | https://www.flickr.com/photos/15679785@N00/6290762275 |
