@@ -1,7 +1,7 @@
 /* Café Conexión · la página del café
    Arma los dos cafés, los métodos con su guía, el mapa de sabor, las bebidas con su taza
    dibujada, el café frío y el café con licor. Datos: data/cafe.js (CC_CAFE) y data/menu.js
-   (CC_MENU, de donde salen nombres, descripciones, fotos y precios). */
+   (CC_MENU, de donde salen nombres, descripciones y fotos). Sin precios: viven solo en la carta. */
 
 (function () {
   'use strict';
@@ -11,7 +11,6 @@
 
   var esc = CC.esc || function (s) { return String(s); };
   function $(id) { return d.getElementById(id); }
-  function precio(it) { return (it.desde ? 'desde ' : '') + '$' + Number(it.precio).toLocaleString('es-CO'); }
   function seccion(grupo, nombre) {
     var g = M.grupos.filter(function (x) { return x.id === grupo; })[0];
     return g ? g.secciones.filter(function (s) { return s.nombre === nombre; })[0] : null;
@@ -74,8 +73,7 @@
       var g = guia[it.nombre] || {};
       return '<article class="metodo-cafe" data-reveal>' +
         (it.foto ? '<img class="metodo-cafe__foto" src="' + esc(it.foto) + '" alt="' + esc(it.nombre) + '" width="760" height="570" loading="lazy" decoding="async">' : '') +
-        '<div class="metodo-cafe__cuerpo"><div class="metodo-cafe__cab"><h3>' + esc(it.nombre) + '</h3>' +
-        '<span class="metodo-cafe__precio">' + precio(it) + '</span></div>' +
+        '<div class="metodo-cafe__cuerpo"><div class="metodo-cafe__cab"><h3>' + esc(it.nombre) + '</h3></div>' +
         '<p class="metodo-cafe__desc">' + esc(it.descripcion) + '</p>' +
         (g.para ? '<p class="metodo-cafe__para">' + esc(g.para) + '</p>' : '') +
         '<dl class="ficha"><div><dt>Molienda</dt><dd>' + esc(g.molienda || '—') + '</dd></div>' +
@@ -108,7 +106,7 @@
         (capas.length ? '<div class="taza" role="img" aria-label="' + esc(it.nombre) + ': ' + descripcionTaza + '"><div class="taza__vaso">' +
           capas.map(function (c) { return '<span class="capa capa--' + c[0] + '" style="--h:' + c[1] + '%"></span>'; }).join('') +
           '</div><span class="taza__asa"></span><span class="taza__plato"></span></div>' : '') +
-        '<div class="bebida__cuerpo"><div class="bebida__cab"><h3>' + esc(it.nombre) + '</h3><span class="bebida__precio">' + precio(it) + '</span></div>' +
+        '<div class="bebida__cuerpo"><div class="bebida__cab"><h3>' + esc(it.nombre) + '</h3></div>' +
         '<p class="bebida__desc">' + esc(it.descripcion) + '</p>' +
         (capas.length ? '<ul class="leyenda" role="list">' + capas.map(function (c) {
           return '<li><span class="leyenda__muestra capa--' + c[0] + '"></span>' + (NOMBRE_CAPA[c[0]] || c[0]) + '</li>';
@@ -117,13 +115,12 @@
     }).join('');
   }
 
-  /* Café frío y café con licor: listas con precio. */
+  /* Café frío y café con licor: listas sin precio (cada sección lleva a la carta). */
   function lista(id, items) {
     var el = $(id);
     if (!el || !items.length) return;
     el.innerHTML = items.map(function (it) {
-      return '<li class="plato"><div class="plato__cab"><span class="plato__nombre">' + esc(it.nombre) + '</span>' +
-        '<span class="plato__precio">' + precio(it) + '</span></div>' +
+      return '<li class="plato"><div class="plato__cab"><span class="plato__nombre">' + esc(it.nombre) + '</span></div>' +
         (it.descripcion ? '<p class="plato__desc">' + esc(it.descripcion) + '</p>' : '') + '</li>';
     }).join('');
   }

@@ -72,7 +72,9 @@
     // «Ver menú»: la carta vive en su propia página y se abre en otra pestaña.
     $$('[data-menu]').forEach(function (a) {
       if (!N.menu_url) return;
-      a.href = N.menu_url;
+      // Con data-capitulo="frias" la carta abre en ese capítulo (#/categoria/frias).
+      var capitulo = a.getAttribute('data-capitulo');
+      a.href = N.menu_url + (capitulo ? '#/categoria/' + capitulo : '');
       a.target = '_blank';
       a.rel = 'noopener';
       a.addEventListener('click', function () {

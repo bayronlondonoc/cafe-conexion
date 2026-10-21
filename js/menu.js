@@ -1,6 +1,7 @@
 /* Café Conexión · la carta en el inicio
    Los métodos manuales, los favoritos y la barra salen de data/menu.js (window.CC_MENU).
-   La carta completa vive en su propia página: negocio.menu_url en data/site.js. */
+   Sin precios (Bayron, 21-oct-2026): viven solo en la carta (menu/), para que no se
+   descuadren; los botones de cada sección llevan allá (negocio.menu_url en data/site.js). */
 
 (function () {
   'use strict';
@@ -10,9 +11,6 @@
 
   var esc = CC.esc || function (s) { return String(s); };
 
-  function precio(it) {
-    return (it.desde ? 'desde ' : '') + '$' + Number(it.precio).toLocaleString('es-CO');
-  }
   function seccion(grupo, nombre) {
     var g = M.grupos.filter(function (x) { return x.id === grupo; })[0];
     return g ? g.secciones.filter(function (s) { return s.nombre === nombre; })[0] : null;
@@ -24,8 +22,7 @@
         '<figcaption>' + esc(it.nombre) + '</figcaption></figure>';
   }
   function plato(it) {
-    return '<li class="plato"><div class="plato__cab"><span class="plato__nombre">' + esc(it.nombre) + '</span>' +
-      '<span class="plato__precio">' + precio(it) + '</span></div>' +
+    return '<li class="plato"><div class="plato__cab"><span class="plato__nombre">' + esc(it.nombre) + '</span></div>' +
       (it.descripcion ? '<p class="plato__desc">' + esc(it.descripcion) + '</p>' : '') + '</li>';
   }
 
@@ -35,8 +32,7 @@
     metodos.innerHTML = sm.items.map(function (it) {
       return '<li class="metodo" data-reveal>' + foto(it, 'metodo__foto') +
         '<div class="metodo__cuerpo"><h3 class="metodo__nombre">' + esc(it.nombre) + '</h3>' +
-        '<p class="metodo__desc">' + esc(it.descripcion) + '</p>' +
-        '<p class="metodo__precio">' + precio(it) + (sm.nota ? ' · ' + esc(sm.nota.toLowerCase()) : '') + '</p></div></li>';
+        '<p class="metodo__desc">' + esc(it.descripcion) + '</p></div></li>';
     }).join('');
   }
 
@@ -52,8 +48,7 @@
     favoritos.innerHTML = lista.map(function (it) {
       return '<li class="favorito" data-reveal>' + foto(it, 'favorito__foto') +
         '<div class="favorito__cuerpo"><h3 class="favorito__nombre">' + esc(it.nombre) + '</h3>' +
-        (it.descripcion ? '<p class="favorito__desc">' + esc(it.descripcion) + '</p>' : '') +
-        '<p class="favorito__precio">' + precio(it) + '</p></div></li>';
+        (it.descripcion ? '<p class="favorito__desc">' + esc(it.descripcion) + '</p>' : '') + '</div></li>';
     }).join('');
   }
 

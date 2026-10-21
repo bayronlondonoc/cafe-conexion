@@ -1,7 +1,7 @@
-/* Café Conexión · la carta
-   Un plato por línea. Para cambiar un precio, se cambia el número de "precio":
-   sin puntos, sin signo de pesos y sin comillas (24900, no "$24.900").
-   "desde": true muestra "desde $7.500". "destacado": true lo sube a Favoritos de la casa.
+/* Café Conexión · los platos que muestra la web (inicio y página del café)
+   Desde el 21-oct-2026 la web NO muestra precios: viven solo en la carta del QR,
+   menu/data/menu.json. Los "precio" de acá ya no se ven: cambiarlos no cambia nada.
+   "destacado": true lo sube a Favoritos de la casa.
    "foto": ruta de la foto del favorito (ej. "assets/img/capuchino-cafe-conexion.webp"); null = pendiente.
    Instrucciones completas en README.md. */
 
