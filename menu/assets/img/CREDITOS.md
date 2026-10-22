@@ -25,17 +25,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Cócteles** (2026-10-21): `bacardi-cocktail.jpg`, `espresso-martini.jpg`, `margarita-conexion.jpg`, `margarita.jpg`, `baileys-pasion.jpg`, `mojito.jpg`, `pina-colada.jpg`.
 - **Para compartir** (2026-10-21): `patacones.jpg`, `nachos.jpg`, `papas.jpg`, `compartir-paisa.jpg`, `pan-de-origen.jpg`, `bunuelos.jpg`, `ceviche-de-chicharron.jpg`.
 - **Brunch** (2026-10-21): `huevos-al-gusto.jpg`, `desayuno-americano.jpg`, `tostada-de-aguacate.jpg`, `bowl-saludable.jpg`, `omelet.jpg`, `tostadas-francesas-conexion.jpg`, `tostada-conexion.jpg`, `cacerola-napolitana.jpg`, `waffle-de-pan-de-yuca.jpg`.
+- **Platos fuertes** (2026-10-21): `hamburguesa-de-costilla-de-cerdo.jpg`, `burro-de-pollo.jpg`, `lasana-bolonesa.jpg`, `lasana-de-pollo-con-champinones.jpg`, `sanduche-de-atun.jpg`, `sanduche-cubano-de-ropa-vieja.jpg`, `pasta-a-tu-gusto.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| hamburguesa-de-costilla-de-cerdo.webp | Spicy Smokehouse Burger | Cole Kennedy | Dominio público / CC0 | https://www.flickr.com/photos/123529748@N03/17069308693 |
-| hamburguesa-de-costilla-de-cerdo-2.webp | Burger and chips at Speakeasy | ultrakml | CC BY 2.0 | https://www.flickr.com/photos/34948727@N00/7990826101 |
-| sanduche-de-atun.webp | Day 240: Something Healthy | SodanieChea | CC BY 2.0 | https://www.flickr.com/photos/41942551@N02/8024982062 |
-| sanduche-cubano-de-ropa-vieja.webp | Homemade burger with french fries on wooden board (49106185363) | Nenad Stojkovic from Srbija | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AHomemade%20burger%20with%20french%20fries%20on%20wooden%20board%20(49106185363).jpg |
-| sanduche-cubano-de-ropa-vieja-2.webp | Handmade Bread for Kebab with Sourdough - IMG_3214 | Nicola since 1972 | CC BY 2.0 | https://www.flickr.com/photos/15216811@N06/7304112900 |
 | super-pepperoni.webp | Pizza | Smith6612 | Dominio público / CC0 | https://www.flickr.com/photos/91355143@N05/27505724630 |
 | super-pepperoni-2.webp | Cheese and Pepperoni Pizza (4825046245) | Pink Sherbet Photography from USA | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ACheese%20and%20Pepperoni%20Pizza%20(4825046245).jpg |
 | margarita-napoles.webp | Pizza Bufalina | AlexanderVanLoon | CC BY-SA 2.0 | https://www.flickr.com/photos/94609149@N05/10842122416 |

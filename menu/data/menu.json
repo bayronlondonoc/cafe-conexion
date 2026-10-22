@@ -2007,10 +2007,8 @@
       "nombre": "Hamburguesa de costilla de cerdo",
       "descripcion": "Costilla de cerdo de 150 g cocinada 8 horas en reducción de BBQ dulce, con lechuga, tomate, cebolla caramelizada y salsa de la casa.",
       "precio": 35000,
-      "foto": "hamburguesa-de-costilla-de-cerdo.webp",
-      "fotos": [
-        "hamburguesa-de-costilla-de-cerdo-2.webp"
-      ],
+      "foto": "hamburguesa-de-costilla-de-cerdo.jpg",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -2025,7 +2023,7 @@
       "nombre": "Burro de pollo",
       "descripcion": "Pollo con vegetales salteados y salsa de tocineta.",
       "precio": 28000,
-      "foto": "",
+      "foto": "burro-de-pollo.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -2041,7 +2039,7 @@
       "nombre": "Lasaña boloñesa",
       "descripcion": "",
       "precio": 30000,
-      "foto": "",
+      "foto": "lasana-bolonesa.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -2057,7 +2055,7 @@
       "nombre": "Lasaña de pollo con champiñones",
       "descripcion": "",
       "precio": 30000,
-      "foto": "",
+      "foto": "lasana-de-pollo-con-champinones.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -2073,7 +2071,7 @@
       "nombre": "Sánduche de atún",
       "descripcion": "Atún, huevo cocido, lechuga, tomate fresco y cebolla caramelizada.",
       "precio": 28000,
-      "foto": "sanduche-de-atun.webp",
+      "foto": "sanduche-de-atun.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -2089,10 +2087,8 @@
       "nombre": "Sánduche cubano de ropa vieja",
       "descripcion": "Ropa vieja, jamón de cerdo, mozzarella, pepino dulce, mostaza y salsa de ajo. En combo con papas y gaseosa.",
       "precio": 38000,
-      "foto": "sanduche-cubano-de-ropa-vieja.webp",
-      "fotos": [
-        "sanduche-cubano-de-ropa-vieja-2.webp"
-      ],
+      "foto": "sanduche-cubano-de-ropa-vieja.jpg",
+      "fotos": [],
       "badges": [],
       "modificadores": [
         "pan-cubano"
@@ -2110,7 +2106,7 @@
       "nombre_casa": "Arma tu plato",
       "descripcion": "Spaghetti o penne; salsa napolitana casera, Alfredo o pesto; pollo a la plancha o salmón. Con ensalada de lechuga y tomate cherry. Con salmón, $40.000.",
       "precio": 30000,
-      "foto": "",
+      "foto": "pasta-a-tu-gusto.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [
