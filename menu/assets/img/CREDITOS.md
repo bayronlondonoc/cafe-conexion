@@ -21,19 +21,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Smoothies** (2026-10-21): `fresa-y-banano.jpg`, `maracumango.jpg`, `smoothie-pina-colada.jpg`, `smoothie-de-aguacate.jpg`.
 - **Limonadas** (2026-10-21): `limonada-natural.jpg`, `limonada-de-coco.jpg`, `limonada-de-cereza.jpg`, `limonada-de-hierbabuena.jpg`, `limonada-de-lychee.jpg`.
 - **Jugos, agua y gaseosas** (2026-10-21): `jugo-natural-en-agua.jpg`, `jugo-natural-en-leche.jpg`, `botella-de-agua.jpg`, `bretana.jpg`, `gaseosa.jpg`.
+- **Cervezas y vino** (2026-10-21): `cerveza-nacional-tradicional.jpg`, `cerveza-nacional-premium.jpg`, `cerveza-importada.jpg`, `cerveza-artesanal.jpg`, `sangria-personal.jpg`, `jarra-de-sangria.jpg`, `copa-de-vino-frio.jpg`, `copa-de-vino-caliente.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| cerveza-nacional-tradicional.webp | "a gscheits Bier" in Dillingen. - panoramio | More pics than views… | CC BY 3.0 | https://commons.wikimedia.org/wiki/File%3A%22a%20gscheits%20Bier%22%20in%20Dillingen.%20-%20panoramio.jpg |
-| cerveza-nacional-premium.webp | Woman hand with glass of beer | Artem Beliaikin | Dominio público / CC0 | https://www.flickr.com/photos/157635012@N07/48943369497 |
-| cerveza-importada.webp | Glass Cup of Beer | Image Catalog | Dominio público / CC0 | https://www.flickr.com/photos/132795455@N08/22305696820 |
-| sangria-personal.webp | Sangria (3918621551) | Divya Thakur | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File%3ASangria%20(3918621551).jpg |
-| jarra-de-sangria.webp | Glass of Sangria - Tinto Taperia 2026-05-17 | Andy Li | Dominio público / CC0 | https://commons.wikimedia.org/wiki/File%3AGlass%20of%20Sangria%20-%20Tinto%20Taperia%202026-05-17.jpg |
-| copa-de-vino-frio.webp | Wine Glass with Red Wine | Image Catalog | Dominio público / CC0 | https://www.flickr.com/photos/132795455@N08/21911441615 |
-| copa-de-vino-frio-2.webp | Last sip of wine | paulaloe | CC BY 2.0 | https://www.flickr.com/photos/26993489@N00/148138443 |
 | espresso-martini.webp | Espresso Martini, cocktail with coffee and vodka | Wine Dharma | Dominio público / CC0 | https://www.flickr.com/photos/31027007@N08/35207943440 |
 | espresso-martini-2.webp | Espresso Martini Cocktail | ccnull.de Bilddatenbank | CC BY 2.0 | https://www.flickr.com/photos/115225894@N07/54369105722 |
 | margarita-conexion.webp | #smokie (#lagavulin #whiskey based) and #frozen #margarita. #coc | bulgarus | CC BY 2.0 | https://www.flickr.com/photos/58530661@N04/40407929080 |
