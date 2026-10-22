@@ -17,30 +17,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 
 - **Bebidas calientes** (2026-10-21): `tinto.jpg`, `espresso.jpg`, `americano.jpg`, `periquito-cortado.jpg`, `macchiato.jpg`, `latte.jpg`, `capuchino.jpg`, `mocha.jpg`, `cafe-bombon.jpg`, `chocolate-en-agua.jpg`, `chocolate-en-leche.jpg`, `milo.jpg`, `chocolate-conexion.jpg`, `capuchino-conexion.jpg`, `capuchino-con-licor.jpg`, `carajillo.jpg`, `cafe-irlandes.jpg`.
 - **Infusiones y matcha** (2026-10-21): `frutos-deshidratados.jpg`, `infusiones-ancestrales.jpg`, `leche-dorada-en-leche.jpg`, `leche-dorada-en-agua.jpg`, `leche-dorada-en-naranja.jpg`, `latte-matcha.jpg`, `te-matcha.jpg`, `frappe-matcha-conexion.jpg`, `matcha-con-mermelada-de-frutos-rojos.jpg`, `canela-clavos-y-anis.jpg`, `curcuma-y-jengibre.jpg`, `manzanilla-calendula-y-miel.jpg`.
+- **Bebidas frías** (2026-10-21): `americano-frio.jpg`, `latte-frio.jpg`, `capuchino-frio.jpg`, `cold-brew-tradicional.jpg`, `cold-brew-con-sabor.jpg`, `affogato-tradicional.jpg`, `affogato-conexion.jpg`, `frappe-de-cafe.jpg`, `frappe-de-mocha.jpg`, `frappe-con-licor.jpg`, `frappe-conexion.jpg`, `milk-caramel-latte.jpg`, `mocha-frio.jpg`, `malteada.jpg`, `limonada-de-cafe.jpg`, `orange-coffee.jpg`, `soda-saborizada.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| americano-frio.webp | ice coffee | Kanko* | CC BY 2.0 | https://www.flickr.com/photos/29282750@N00/121670712 |
-| latte-frio.webp | iced juice on table - Credit to https://myfriendscoffee.com/ | John Beans | CC BY 2.0 | https://www.flickr.com/photos/147592390@N06/46665008225 |
-| capuchino-frio.webp | Iced Latte @ Toast | mcmurrak | CC BY 2.0 | https://www.flickr.com/photos/15679785@N00/6290762275 |
-| cold-brew-tradicional.webp | Cold brew | Rahim Packir Saibo | CC BY 2.0 | https://www.flickr.com/photos/16679609@N00/14264497057 |
-| affogato-tradicional.webp | GT-Affogato-al-caffe | Deryck Chan | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AGT-Affogato-al-caffe.jpg |
-| affogato-tradicional-2.webp | Affogato | karen_neoh | CC BY 2.0 | https://www.flickr.com/photos/50266725@N02/6146277986 |
-| affogato-conexion.webp | Ice cream cup coffee hot | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3283469/free-photo-image-ice-cream-icecream-food-photography |
-| frappe-de-cafe.webp | Gingerbread latte | freestocks.org | Dominio público / CC0 | https://www.flickr.com/photos/135396164@N05/25350959259 |
-| frappe-de-mocha.webp | Frappe (4547117210) | Klearchos Kapoutsis from Santorini, Greece | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AFrappe%20(4547117210).jpg |
-| frappe-con-licor.webp | The Making of Harry Potter 29-05-2012 | Karen Roe | CC BY | https://www.flickr.com/photos/28752865@N08/7472381512 |
-| frappe-conexion.webp | New coffee cocktails | ecodallaluna | CC BY-SA 2.0 | https://www.flickr.com/photos/12364718@N00/18005590705 |
-| milk-caramel-latte.webp | Caffe Latte - The French Quarter | avlxyz | CC BY-SA | https://www.flickr.com/photos/10559879@N00/2752627617 |
-| mocha-frio.webp | Mocha coffee | Ernst Vikne | CC BY-SA 2.0 | https://commons.wikimedia.org/w/index.php?curid=16874906 |
-| malteada.webp | Oreo Milkshake | Prerna Jaddwani | CC BY-SA 4.0 | https://commons.wikimedia.org/w/index.php?curid=40940264 |
-| malteada-2.webp | Frappe - coffee milkshake with whipped cream and chocolate (KETO, LCHF, Low Carb, Gluten free, FIT) - 52774791604 | Ewelina Podrez-Siama | CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AFrappe%20-%20coffee%20milkshake%20with%20whipped%20cream%20and%20chocolate%20(KETO%2C%20LCHF%2C%20Low%20Carb%2C%20Gluten%20free%2C%20FIT)%20-%2052774791604.jpg |
-| limonada-de-cafe.webp | Maple Cream Cold Brew - Trading Post Coffee Roasters 2026-07-16 | Andy Li | Dominio público / CC0 | https://commons.wikimedia.org/wiki/File%3AMaple%20Cream%20Cold%20Brew%20-%20Trading%20Post%20Coffee%20Roasters%202026-07-16.jpg |
-| orange-coffee.webp | cold-brewed iced coffee | thebittenword.com | CC BY | https://www.flickr.com/photos/22198928@N00/688642298 |
-| soda-saborizada.webp | Raspberry lemonade on a wooden table. Iced summer drink. | Artem Beliaikin | Dominio público / CC0 | https://www.flickr.com/photos/157635012@N07/44414516194 |
 | maracumango.webp | Iced coffee | neil conway | CC BY 2.0 | https://www.flickr.com/photos/30934989@N06/5578400240 |
 | limonada-natural.webp | Sorbettino Lemon | The hills are alive* | CC BY 2.0 | https://www.flickr.com/photos/20466740@N00/6052007820 |
 | limonada-de-coco.webp | Coconut Drink, Ubud, Bali, 20220822 1345 0126 | Jakub Hałun | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ACoconut%20Drink%2C%20Ubud%2C%20Bali%2C%2020220822%201345%200126.jpg |

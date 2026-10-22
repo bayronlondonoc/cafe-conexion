@@ -951,7 +951,7 @@
       "nombre": "Americano frío",
       "descripcion": "Espresso con agua fría y hielo.",
       "precio": 7000,
-      "foto": "americano-frio.webp",
+      "foto": "americano-frio.jpg",
       "fotos": [],
       "badges": [
         "vegano"
@@ -969,7 +969,7 @@
       "nombre": "Latte frío",
       "descripcion": "Espresso con leche fría y hielo.",
       "precio": 10000,
-      "foto": "latte-frio.webp",
+      "foto": "latte-frio.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -985,7 +985,7 @@
       "nombre": "Capuchino frío",
       "descripcion": "Espresso, leche fría y espuma, sobre hielo.",
       "precio": 10000,
-      "foto": "capuchino-frio.webp",
+      "foto": "capuchino-frio.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -1001,7 +1001,7 @@
       "nombre": "Cold brew tradicional",
       "descripcion": "Café de molienda gruesa infusionado en frío durante 24 horas.",
       "precio": 11000,
-      "foto": "cold-brew-tradicional.webp",
+      "foto": "cold-brew-tradicional.jpg",
       "fotos": [],
       "badges": [
         "vegano"
@@ -1019,7 +1019,7 @@
       "nombre": "Cold brew con sabor",
       "descripcion": "Con naranja, limón o guandolo.",
       "precio": 13500,
-      "foto": "",
+      "foto": "cold-brew-con-sabor.jpg",
       "fotos": [],
       "badges": [
         "vegano"
@@ -1039,10 +1039,8 @@
       "nombre": "Affogato tradicional",
       "descripcion": "Helado de vainilla y espresso.",
       "precio": 12000,
-      "foto": "affogato-tradicional.webp",
-      "fotos": [
-        "affogato-tradicional-2.webp"
-      ],
+      "foto": "affogato-tradicional.jpg",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -1057,7 +1055,7 @@
       "nombre": "Affogato Conexión",
       "descripcion": "Helado de vainilla, Nutella y maní.",
       "precio": 15000,
-      "foto": "affogato-conexion.webp",
+      "foto": "affogato-conexion.jpg",
       "fotos": [],
       "badges": [
         "de-la-casa"
@@ -1075,7 +1073,7 @@
       "nombre": "Frappé de café",
       "descripcion": "Café batido con hielo.",
       "precio": 14000,
-      "foto": "frappe-de-cafe.webp",
+      "foto": "frappe-de-cafe.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -1091,7 +1089,7 @@
       "nombre": "Frappé de mocha",
       "descripcion": "Café y chocolate batidos con hielo.",
       "precio": 16000,
-      "foto": "frappe-de-mocha.webp",
+      "foto": "frappe-de-mocha.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -1107,7 +1105,7 @@
       "nombre": "Frappé con licor",
       "descripcion": "Café batido con hielo y licor.",
       "precio": 17000,
-      "foto": "frappe-con-licor.webp",
+      "foto": "frappe-con-licor.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -1123,7 +1121,7 @@
       "nombre": "Frappé Conexión",
       "descripcion": "Frappé de café con mermelada artesanal de frutos rojos.",
       "precio": 16000,
-      "foto": "frappe-conexion.webp",
+      "foto": "frappe-conexion.jpg",
       "fotos": [],
       "badges": [
         "de-la-casa"
@@ -1141,7 +1139,7 @@
       "nombre": "Milk caramel latte",
       "descripcion": "Espresso, leche y caramelo, sobre hielo.",
       "precio": 14000,
-      "foto": "milk-caramel-latte.webp",
+      "foto": "milk-caramel-latte.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -1157,7 +1155,7 @@
       "nombre": "Mocha frío",
       "descripcion": "Espresso, chocolate y leche sobre hielo.",
       "precio": 13000,
-      "foto": "mocha-frio.webp",
+      "foto": "mocha-frio.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -1173,10 +1171,8 @@
       "nombre": "Malteada",
       "descripcion": "Helado y leche, batidos.",
       "precio": 17000,
-      "foto": "malteada.webp",
-      "fotos": [
-        "malteada-2.webp"
-      ],
+      "foto": "malteada.jpg",
+      "fotos": [],
       "badges": [],
       "modificadores": [
         "sabor-malteada"
@@ -1193,7 +1189,7 @@
       "nombre": "Limonada de café",
       "descripcion": "Espresso con jugo de limón y panela, servido frío.",
       "precio": 12500,
-      "foto": "limonada-de-cafe.webp",
+      "foto": "limonada-de-cafe.jpg",
       "fotos": [],
       "badges": [
         "vegano"
@@ -1211,7 +1207,7 @@
       "nombre": "Orange coffee",
       "descripcion": "Espresso con jugo de naranja, sobre hielo.",
       "precio": 13000,
-      "foto": "orange-coffee.webp",
+      "foto": "orange-coffee.jpg",
       "fotos": [],
       "badges": [
         "vegano"
@@ -1229,7 +1225,7 @@
       "nombre": "Soda saborizada",
       "descripcion": "Soda con sabor a fruta.",
       "precio": 14000,
-      "foto": "soda-saborizada.webp",
+      "foto": "soda-saborizada.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [
