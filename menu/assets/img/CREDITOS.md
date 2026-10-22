@@ -20,15 +20,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Bebidas frías** (2026-10-21): `americano-frio.jpg`, `latte-frio.jpg`, `capuchino-frio.jpg`, `cold-brew-tradicional.jpg`, `cold-brew-con-sabor.jpg`, `affogato-tradicional.jpg`, `affogato-conexion.jpg`, `frappe-de-cafe.jpg`, `frappe-de-mocha.jpg`, `frappe-con-licor.jpg`, `frappe-conexion.jpg`, `milk-caramel-latte.jpg`, `mocha-frio.jpg`, `malteada.jpg`, `limonada-de-cafe.jpg`, `orange-coffee.jpg`, `soda-saborizada.jpg`.
 - **Smoothies** (2026-10-21): `fresa-y-banano.jpg`, `maracumango.jpg`, `smoothie-pina-colada.jpg`, `smoothie-de-aguacate.jpg`.
 - **Limonadas** (2026-10-21): `limonada-natural.jpg`, `limonada-de-coco.jpg`, `limonada-de-cereza.jpg`, `limonada-de-hierbabuena.jpg`, `limonada-de-lychee.jpg`.
+- **Jugos, agua y gaseosas** (2026-10-21): `jugo-natural-en-agua.jpg`, `jugo-natural-en-leche.jpg`, `botella-de-agua.jpg`, `bretana.jpg`, `gaseosa.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| jugo-natural-en-agua.webp | Five Drinking Glasses | Didriks | CC BY 2.0 | https://www.flickr.com/photos/49889671@N03/14741495747 |
-| bretana.webp | Basic Bar Selection Soft Drink | Didriks | CC BY 2.0 | https://www.flickr.com/photos/49889671@N03/14741609228 |
-| gaseosa.webp | Godfather | StuartWebster | CC BY | https://www.flickr.com/photos/34883952@N02/4599786176 |
 | cerveza-nacional-tradicional.webp | "a gscheits Bier" in Dillingen. - panoramio | More pics than views… | CC BY 3.0 | https://commons.wikimedia.org/wiki/File%3A%22a%20gscheits%20Bier%22%20in%20Dillingen.%20-%20panoramio.jpg |
 | cerveza-nacional-premium.webp | Woman hand with glass of beer | Artem Beliaikin | Dominio público / CC0 | https://www.flickr.com/photos/157635012@N07/48943369497 |
 | cerveza-importada.webp | Glass Cup of Beer | Image Catalog | Dominio público / CC0 | https://www.flickr.com/photos/132795455@N08/22305696820 |
