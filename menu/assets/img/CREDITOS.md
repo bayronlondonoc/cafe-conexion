@@ -22,19 +22,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Limonadas** (2026-10-21): `limonada-natural.jpg`, `limonada-de-coco.jpg`, `limonada-de-cereza.jpg`, `limonada-de-hierbabuena.jpg`, `limonada-de-lychee.jpg`.
 - **Jugos, agua y gaseosas** (2026-10-21): `jugo-natural-en-agua.jpg`, `jugo-natural-en-leche.jpg`, `botella-de-agua.jpg`, `bretana.jpg`, `gaseosa.jpg`.
 - **Cervezas y vino** (2026-10-21): `cerveza-nacional-tradicional.jpg`, `cerveza-nacional-premium.jpg`, `cerveza-importada.jpg`, `cerveza-artesanal.jpg`, `sangria-personal.jpg`, `jarra-de-sangria.jpg`, `copa-de-vino-frio.jpg`, `copa-de-vino-caliente.jpg`.
+- **Cócteles** (2026-10-21): `bacardi-cocktail.jpg`, `espresso-martini.jpg`, `margarita-conexion.jpg`, `margarita.jpg`, `baileys-pasion.jpg`, `mojito.jpg`, `pina-colada.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| espresso-martini.webp | Espresso Martini, cocktail with coffee and vodka | Wine Dharma | Dominio público / CC0 | https://www.flickr.com/photos/31027007@N08/35207943440 |
-| espresso-martini-2.webp | Espresso Martini Cocktail | ccnull.de Bilddatenbank | CC BY 2.0 | https://www.flickr.com/photos/115225894@N07/54369105722 |
-| margarita-conexion.webp | #smokie (#lagavulin #whiskey based) and #frozen #margarita. #coc | bulgarus | CC BY 2.0 | https://www.flickr.com/photos/58530661@N04/40407929080 |
-| margarita.webp | Nothing better than Mom Night Out and a margarita. #margarita #c | thejennyevolution | CC BY-SA 2.0 | https://www.flickr.com/photos/99593999@N07/9795382963 |
-| baileys-pasion.webp | Espresso Martini Cocktail | ccnull.de Bilddatenbank | CC BY 2.0 | https://www.flickr.com/photos/115225894@N07/53504232699 |
-| mojito.webp | Fresh Mojito Premium | Rjcastillo | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AFresh%20Mojito%20Premium.jpg |
-| mojito-2.webp | Mojito Cocktail | Dave Meier | Dominio público / CC0 | https://stocksnap.io/photo/mojito-cocktail-4178415E1A |
 | patacones.webp | Patacones, Ecuador | Rinaldo Wurglitsch | CC BY 2.0 | https://www.flickr.com/photos/16448758@N03/2283840399 |
 | nachos.webp | Green Pepper Nachos (using green bell pepper slices in the place | eye-shuh | CC BY-SA 2.0 | https://www.flickr.com/photos/76520716@N04/8625522681 |
 | pan-de-origen.webp | 2009/365/105 Greatest Thing Since Sliced (Homemade) Bread | cogdogblog | Dominio público / CC0 | https://www.flickr.com/photos/37996646802@N01/3446051727 |
