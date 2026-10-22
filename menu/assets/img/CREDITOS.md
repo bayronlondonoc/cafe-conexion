@@ -19,17 +19,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Infusiones y matcha** (2026-10-21): `frutos-deshidratados.jpg`, `infusiones-ancestrales.jpg`, `leche-dorada-en-leche.jpg`, `leche-dorada-en-agua.jpg`, `leche-dorada-en-naranja.jpg`, `latte-matcha.jpg`, `te-matcha.jpg`, `frappe-matcha-conexion.jpg`, `matcha-con-mermelada-de-frutos-rojos.jpg`, `canela-clavos-y-anis.jpg`, `curcuma-y-jengibre.jpg`, `manzanilla-calendula-y-miel.jpg`.
 - **Bebidas frías** (2026-10-21): `americano-frio.jpg`, `latte-frio.jpg`, `capuchino-frio.jpg`, `cold-brew-tradicional.jpg`, `cold-brew-con-sabor.jpg`, `affogato-tradicional.jpg`, `affogato-conexion.jpg`, `frappe-de-cafe.jpg`, `frappe-de-mocha.jpg`, `frappe-con-licor.jpg`, `frappe-conexion.jpg`, `milk-caramel-latte.jpg`, `mocha-frio.jpg`, `malteada.jpg`, `limonada-de-cafe.jpg`, `orange-coffee.jpg`, `soda-saborizada.jpg`.
 - **Smoothies** (2026-10-21): `fresa-y-banano.jpg`, `maracumango.jpg`, `smoothie-pina-colada.jpg`, `smoothie-de-aguacate.jpg`.
+- **Limonadas** (2026-10-21): `limonada-natural.jpg`, `limonada-de-coco.jpg`, `limonada-de-cereza.jpg`, `limonada-de-hierbabuena.jpg`, `limonada-de-lychee.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| limonada-natural.webp | Sorbettino Lemon | The hills are alive* | CC BY 2.0 | https://www.flickr.com/photos/20466740@N00/6052007820 |
-| limonada-de-coco.webp | Coconut Drink, Ubud, Bali, 20220822 1345 0126 | Jakub Hałun | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ACoconut%20Drink%2C%20Ubud%2C%20Bali%2C%2020220822%201345%200126.jpg |
-| limonada-de-cereza.webp | Ameretto Sour | StuartWebster | CC BY | https://www.flickr.com/photos/34883952@N02/4242448204 |
-| limonada-de-hierbabuena.webp | Mojito cocktail recipe, cocktail with white rum mint and lime | Wine Dharma | CC BY 2.0 | https://www.flickr.com/photos/31027007@N08/30929683973 |
-| limonada-de-lychee.webp | Fruit lemonades | freestocks.org | Dominio público / CC0 | https://www.flickr.com/photos/135396164@N05/43522180855 |
 | jugo-natural-en-agua.webp | Five Drinking Glasses | Didriks | CC BY 2.0 | https://www.flickr.com/photos/49889671@N03/14741495747 |
 | bretana.webp | Basic Bar Selection Soft Drink | Didriks | CC BY 2.0 | https://www.flickr.com/photos/49889671@N03/14741609228 |
 | gaseosa.webp | Godfather | StuartWebster | CC BY | https://www.flickr.com/photos/34883952@N02/4599786176 |

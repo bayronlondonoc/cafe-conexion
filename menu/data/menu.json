@@ -1307,7 +1307,7 @@
       "nombre": "Limonada natural",
       "descripcion": "Limón, agua y azúcar.",
       "precio": 10000,
-      "foto": "limonada-natural.webp",
+      "foto": "limonada-natural.jpg",
       "fotos": [],
       "badges": [
         "vegano"
@@ -1325,7 +1325,7 @@
       "nombre": "Limonada de coco",
       "descripcion": "Limón, leche de coco y hielo.",
       "precio": 14000,
-      "foto": "limonada-de-coco.webp",
+      "foto": "limonada-de-coco.jpg",
       "fotos": [],
       "badges": [
         "vegano"
@@ -1343,7 +1343,7 @@
       "nombre": "Limonada de cereza",
       "descripcion": "",
       "precio": 12000,
-      "foto": "limonada-de-cereza.webp",
+      "foto": "limonada-de-cereza.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -1359,7 +1359,7 @@
       "nombre": "Limonada de hierbabuena",
       "descripcion": "",
       "precio": 12000,
-      "foto": "limonada-de-hierbabuena.webp",
+      "foto": "limonada-de-hierbabuena.jpg",
       "fotos": [],
       "badges": [
         "vegano"
@@ -1377,7 +1377,7 @@
       "nombre": "Limonada de lychee",
       "descripcion": "",
       "precio": 12000,
-      "foto": "limonada-de-lychee.webp",
+      "foto": "limonada-de-lychee.jpg",
       "fotos": [],
       "badges": [
         "vegano"
