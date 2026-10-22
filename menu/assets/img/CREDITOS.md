@@ -23,16 +23,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Jugos, agua y gaseosas** (2026-10-21): `jugo-natural-en-agua.jpg`, `jugo-natural-en-leche.jpg`, `botella-de-agua.jpg`, `bretana.jpg`, `gaseosa.jpg`.
 - **Cervezas y vino** (2026-10-21): `cerveza-nacional-tradicional.jpg`, `cerveza-nacional-premium.jpg`, `cerveza-importada.jpg`, `cerveza-artesanal.jpg`, `sangria-personal.jpg`, `jarra-de-sangria.jpg`, `copa-de-vino-frio.jpg`, `copa-de-vino-caliente.jpg`.
 - **Cócteles** (2026-10-21): `bacardi-cocktail.jpg`, `espresso-martini.jpg`, `margarita-conexion.jpg`, `margarita.jpg`, `baileys-pasion.jpg`, `mojito.jpg`, `pina-colada.jpg`.
+- **Para compartir** (2026-10-21): `patacones.jpg`, `nachos.jpg`, `papas.jpg`, `compartir-paisa.jpg`, `pan-de-origen.jpg`, `bunuelos.jpg`, `ceviche-de-chicharron.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| patacones.webp | Patacones, Ecuador | Rinaldo Wurglitsch | CC BY 2.0 | https://www.flickr.com/photos/16448758@N03/2283840399 |
-| nachos.webp | Green Pepper Nachos (using green bell pepper slices in the place | eye-shuh | CC BY-SA 2.0 | https://www.flickr.com/photos/76520716@N04/8625522681 |
-| pan-de-origen.webp | 2009/365/105 Greatest Thing Since Sliced (Homemade) Bread | cogdogblog | Dominio público / CC0 | https://www.flickr.com/photos/37996646802@N01/3446051727 |
-| ceviche-de-chicharron.webp | Tipico cartagenero - Typical Cartagena Food | Luz Adriana Villa A. | CC BY | https://www.flickr.com/photos/11599314@N00/2199373497 |
 | huevos-al-gusto.webp | Scrambled Eggs - The Commoner | avlxyz | CC BY-SA | https://www.flickr.com/photos/10559879@N00/2409085893 |
 | desayuno-americano.webp | Breakfasts | Avid Hills | CC BY 2.0 | https://www.flickr.com/photos/25690635@N03/3241926435 |
 | tostada-de-aguacate.webp | Time for Another Smashed Avocado Toast | cogdogblog | Dominio público / CC0 | https://www.flickr.com/photos/37996646802@N01/38541179866 |
