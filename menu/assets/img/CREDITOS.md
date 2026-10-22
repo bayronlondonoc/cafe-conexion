@@ -24,22 +24,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Cervezas y vino** (2026-10-21): `cerveza-nacional-tradicional.jpg`, `cerveza-nacional-premium.jpg`, `cerveza-importada.jpg`, `cerveza-artesanal.jpg`, `sangria-personal.jpg`, `jarra-de-sangria.jpg`, `copa-de-vino-frio.jpg`, `copa-de-vino-caliente.jpg`.
 - **Cócteles** (2026-10-21): `bacardi-cocktail.jpg`, `espresso-martini.jpg`, `margarita-conexion.jpg`, `margarita.jpg`, `baileys-pasion.jpg`, `mojito.jpg`, `pina-colada.jpg`.
 - **Para compartir** (2026-10-21): `patacones.jpg`, `nachos.jpg`, `papas.jpg`, `compartir-paisa.jpg`, `pan-de-origen.jpg`, `bunuelos.jpg`, `ceviche-de-chicharron.jpg`.
+- **Brunch** (2026-10-21): `huevos-al-gusto.jpg`, `desayuno-americano.jpg`, `tostada-de-aguacate.jpg`, `bowl-saludable.jpg`, `omelet.jpg`, `tostadas-francesas-conexion.jpg`, `tostada-conexion.jpg`, `cacerola-napolitana.jpg`, `waffle-de-pan-de-yuca.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| huevos-al-gusto.webp | Scrambled Eggs - The Commoner | avlxyz | CC BY-SA | https://www.flickr.com/photos/10559879@N00/2409085893 |
-| desayuno-americano.webp | Breakfasts | Avid Hills | CC BY 2.0 | https://www.flickr.com/photos/25690635@N03/3241926435 |
-| tostada-de-aguacate.webp | Time for Another Smashed Avocado Toast | cogdogblog | Dominio público / CC0 | https://www.flickr.com/photos/37996646802@N01/38541179866 |
-| tostada-de-aguacate-2.webp | Poached eggs and bacon on smashed avocado and corn on toast | ultrakml | CC BY 2.0 | https://www.flickr.com/photos/34948727@N00/8523648950 |
-| bowl-saludable.webp | Diamond Grains yogurt | PalidaPongmekin | CC BY-SA 4.0 | https://commons.wikimedia.org/w/index.php?curid=52256930 |
-| bowl-saludable-2.webp | Sin título | neil conway | CC BY 2.0 | https://www.flickr.com/photos/30934989@N06/3560852500 |
-| omelet.webp | ANA NH204 FRA to HND Business Class Breakfast | Jun Seita | CC BY 2.0 | https://www.flickr.com/photos/90454079@N00/6843974087 |
-| tostada-conexion.webp | Mmm... prosciutto wrapped baked eggs with pesto, asiago, and roa | jeffreyw | CC BY 2.0 | https://www.flickr.com/photos/7927684@N03/6298925930 |
-| tostada-conexion-2.webp | Tomato Bruschetta | Michael_Spencer | CC BY | https://www.flickr.com/photos/76135747@N00/2881896624 |
-| waffle-de-pan-de-yuca.webp | Waffles, Bacon and Scrambled Eggs | www.bluewaikiki.com | CC BY 2.0 | https://www.flickr.com/photos/85356407@N00/2222021793 |
 | hamburguesa-de-costilla-de-cerdo.webp | Spicy Smokehouse Burger | Cole Kennedy | Dominio público / CC0 | https://www.flickr.com/photos/123529748@N03/17069308693 |
 | hamburguesa-de-costilla-de-cerdo-2.webp | Burger and chips at Speakeasy | ultrakml | CC BY 2.0 | https://www.flickr.com/photos/34948727@N00/7990826101 |
 | sanduche-de-atun.webp | Day 240: Something Healthy | SodanieChea | CC BY 2.0 | https://www.flickr.com/photos/41942551@N02/8024982062 |

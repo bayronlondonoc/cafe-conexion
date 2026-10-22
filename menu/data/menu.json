@@ -1842,7 +1842,7 @@
       "nombre_casa": "Bendición Ancestral",
       "descripcion": "Huevos con dos toppings, arepa o pan de masa madre, y fruta del día.",
       "precio": 16000,
-      "foto": "huevos-al-gusto.webp",
+      "foto": "huevos-al-gusto.jpg",
       "fotos": [],
       "badges": [
         "de-la-casa"
@@ -1863,7 +1863,7 @@
       "nombre": "Desayuno americano",
       "descripcion": "Dos pancakes, tocineta, huevos en cacerola o revueltos y sirope de maple.",
       "precio": 20000,
-      "foto": "desayuno-americano.webp",
+      "foto": "desayuno-americano.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [
@@ -1881,10 +1881,8 @@
       "nombre": "Tostada de aguacate",
       "descripcion": "Pan de masa madre, puré de aguacate, huevos, tocineta y cebolla puerro.",
       "precio": 18000,
-      "foto": "tostada-de-aguacate.webp",
-      "fotos": [
-        "tostada-de-aguacate-2.webp"
-      ],
+      "foto": "tostada-de-aguacate.jpg",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": true,
@@ -1899,10 +1897,8 @@
       "nombre": "Bowl saludable",
       "descripcion": "Yogur griego, granola, arándanos y fresa, con miel natural.",
       "precio": 18000,
-      "foto": "bowl-saludable.webp",
-      "fotos": [
-        "bowl-saludable-2.webp"
-      ],
+      "foto": "bowl-saludable.jpg",
+      "fotos": [],
       "badges": [
         "vegetariano"
       ],
@@ -1919,7 +1915,7 @@
       "nombre": "Omelet",
       "descripcion": "Con tres toppings, aguacate y pan de masa madre o arepa.",
       "precio": 20000,
-      "foto": "omelet.webp",
+      "foto": "omelet.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [
@@ -1938,7 +1934,7 @@
       "nombre": "Tostadas francesas Conexión",
       "descripcion": "Pan de masa madre remojado en mezcla de tiramisú: chocolate, café de especialidad y crema de leche.",
       "precio": 20000,
-      "foto": "",
+      "foto": "tostadas-francesas-conexion.jpg",
       "fotos": [],
       "badges": [
         "vegetariano",
@@ -1957,10 +1953,8 @@
       "nombre": "Tostada Conexión",
       "descripcion": "Base de tomates asados, queso búfala, huevos pochados, pesto y tocineta.",
       "precio": 23000,
-      "foto": "tostada-conexion.webp",
-      "fotos": [
-        "tostada-conexion-2.webp"
-      ],
+      "foto": "tostada-conexion.jpg",
+      "fotos": [],
       "badges": [
         "de-la-casa"
       ],
@@ -1977,7 +1971,7 @@
       "nombre": "Cacerola napolitana",
       "descripcion": "Salsa napolitana, huevos en cacerola, pan de masa madre y parmesano.",
       "precio": 25000,
-      "foto": "",
+      "foto": "cacerola-napolitana.jpg",
       "fotos": [],
       "badges": [
         "vegetariano"
@@ -1995,7 +1989,7 @@
       "nombre": "Waffle de pan de yuca",
       "descripcion": "Con aguacate y huevos.",
       "precio": 26000,
-      "foto": "waffle-de-pan-de-yuca.webp",
+      "foto": "waffle-de-pan-de-yuca.jpg",
       "fotos": [],
       "badges": [
         "vegetariano"
