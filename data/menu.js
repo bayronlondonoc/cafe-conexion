@@ -32,11 +32,11 @@ window.CC_MENU = {
           "nombre": "Métodos manuales",
           "nota": "Para 2 tazas",
           "items": [
-            { "nombre": "Prensa francesa", "descripcion": "Inmersión: cuerpo intenso, textura sedosa y los aceites naturales del café.", "precio": 15800, "foto": "assets/img/prensa-francesa.webp" },
-            { "nombre": "V60", "descripcion": "Vertido circular: aromas vivos, notas dulces y acidez equilibrada.", "precio": 15800, "foto": "assets/img/v60.webp" },
-            { "nombre": "Sifón japonés", "descripcion": "Una taza limpia y brillante.", "precio": 15800, "foto": "assets/img/sifon-japones.webp" },
-            { "nombre": "Origami", "descripcion": "Taza limpia y luminosa, de perfil delicado.", "precio": 15800, "foto": "assets/img/origami.webp" },
-            { "nombre": "Chemex", "descripcion": "Filtrado lento: taza limpia y suave, con notas florales y acidez brillante.", "precio": 15800, "foto": "assets/img/chemex.webp" }
+            { "nombre": "Prensa francesa", "descripcion": "Inmersión: cuerpo intenso, textura sedosa y los aceites naturales del café.", "precio": 15800, "foto": "assets/img/prensa-francesa.jpg" },
+            { "nombre": "V60", "descripcion": "Vertido circular: aromas vivos, notas dulces y acidez equilibrada.", "precio": 15800, "foto": "assets/img/v60.jpg" },
+            { "nombre": "Sifón japonés", "descripcion": "Una taza limpia y brillante.", "precio": 15800, "foto": "assets/img/sifon-japones.jpg" },
+            { "nombre": "Origami", "descripcion": "Taza limpia y luminosa, de perfil delicado.", "precio": 15800, "foto": "assets/img/origami.jpg" },
+            { "nombre": "Chemex", "descripcion": "Filtrado lento: taza limpia y suave, con notas florales y acidez brillante.", "precio": 15800, "foto": "assets/img/chemex.jpg" }
           ]
         }
       ]
