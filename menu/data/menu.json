@@ -2126,10 +2126,8 @@
       "nombre": "Súper pepperoni",
       "descripcion": "Pepperoni y queso mozzarella.",
       "precio": 30000,
-      "foto": "super-pepperoni.webp",
-      "fotos": [
-        "super-pepperoni-2.webp"
-      ],
+      "foto": "super-pepperoni.jpg",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -2144,7 +2142,7 @@
       "nombre": "Margarita Nápoles",
       "descripcion": "Tomates especiados con finas hierbas, mozzarella y albahaca fresca.",
       "precio": 30000,
-      "foto": "margarita-napoles.webp",
+      "foto": "margarita-napoles.jpg",
       "fotos": [],
       "badges": [
         "vegetariano"
@@ -2162,7 +2160,7 @@
       "nombre": "Jamón ahumado y queso",
       "descripcion": "Jamón ahumado y queso mozzarella.",
       "precio": 30000,
-      "foto": "jamon-ahumado-y-queso.webp",
+      "foto": "jamon-ahumado-y-queso.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -2178,7 +2176,7 @@
       "nombre": "Pollo y champiñón fresco",
       "descripcion": "Champiñones frescos, pollo marinado y queso mozzarella.",
       "precio": 30000,
-      "foto": "pollo-y-champinon-fresco.webp",
+      "foto": "pollo-y-champinon-fresco.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -2194,7 +2192,7 @@
       "nombre": "Tropical hawaiana",
       "descripcion": "Jamón ahumado, piña caramelizada y queso mozzarella.",
       "precio": 30000,
-      "foto": "tropical-hawaiana.webp",
+      "foto": "tropical-hawaiana.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
@@ -2210,10 +2208,8 @@
       "nombre": "Huerta en la terraza",
       "descripcion": "Vegetales frescos, cebolla, zucchini, calabacín, pimentones escalivados, champiñones y mozzarella.",
       "precio": 30000,
-      "foto": "huerta-en-la-terraza.webp",
-      "fotos": [
-        "huerta-en-la-terraza-2.webp"
-      ],
+      "foto": "huerta-en-la-terraza.jpg",
+      "fotos": [],
       "badges": [
         "vegetariano"
       ],
