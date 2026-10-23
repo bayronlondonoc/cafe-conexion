@@ -27,16 +27,13 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Brunch** (2026-10-21): `huevos-al-gusto.jpg`, `desayuno-americano.jpg`, `tostada-de-aguacate.jpg`, `bowl-saludable.jpg`, `omelet.jpg`, `tostadas-francesas-conexion.jpg`, `tostada-conexion.jpg`, `cacerola-napolitana.jpg`, `waffle-de-pan-de-yuca.jpg`.
 - **Platos fuertes** (2026-10-21): `hamburguesa-de-costilla-de-cerdo.jpg`, `burro-de-pollo.jpg`, `lasana-bolonesa.jpg`, `lasana-de-pollo-con-champinones.jpg`, `sanduche-de-atun.jpg`, `sanduche-cubano-de-ropa-vieja.jpg`, `pasta-a-tu-gusto.jpg`.
 - **Pizzas** (2026-10-22): `super-pepperoni.jpg`, `margarita-napoles.jpg`, `jamon-ahumado-y-queso.jpg`, `pollo-y-champinon-fresco.jpg`, `tropical-hawaiana.jpg`, `huerta-en-la-terraza.jpg`.
+- **Hojaldrados** (2026-10-22): `pasteles-y-empanadas.jpg`, `palito-de-queso.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| pasteles-y-empanadas.webp | Insides - Wagyu Beef Pie - Jones The Grocer, Chadstone AUD8 | avlxyz | CC BY-SA | https://www.flickr.com/photos/10559879@N00/3106834290 |
-| pasteles-y-empanadas-2.webp | Mis ricas empanadas de jamón y queso | PABLO JAVIER MAILING | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File%3AMis%20ricas%20empanadas%20de%20jam%C3%B3n%20y%20queso.jpg |
-| pasteles-y-empanadas-3.webp | Spanakopita - Warehouse Deli | avlxyz | CC BY-SA | https://www.flickr.com/photos/10559879@N00/2362986739 |
-| palito-de-queso.webp | Spinach & Cheese Puff Pastry | goyumcha | CC BY-SA | https://www.flickr.com/photos/35714913@N07/3319570924 |
 | porcion-de-torta.webp | Flourless Chocolate Cake [98/366] | timsackton | CC BY-SA 2.0 | https://www.flickr.com/photos/43581314@N08/7063258707 |
 | porcion-de-torta-2.webp | 20150319-OC-LSC-0165 | USDAgov | Dominio público / CC0 | https://www.flickr.com/photos/41284017@N08/16683914279 |
 | postre-mini.webp | 2012-062 Chocolate Chip Cookie Dough Cupcakes | mrsdkrebs | CC BY 2.0 | https://www.flickr.com/photos/56041749@N02/6800496650 |

@@ -2226,11 +2226,8 @@
       "nombre": "Pasteles y empanadas",
       "descripcion": "",
       "precio": 8500,
-      "foto": "pasteles-y-empanadas.webp",
-      "fotos": [
-        "pasteles-y-empanadas-2.webp",
-        "pasteles-y-empanadas-3.webp"
-      ],
+      "foto": "pasteles-y-empanadas.jpg",
+      "fotos": [],
       "badges": [],
       "modificadores": [],
       "destacado": false,
@@ -2245,7 +2242,7 @@
       "nombre": "Palito de queso",
       "descripcion": "",
       "precio": 6500,
-      "foto": "palito-de-queso.webp",
+      "foto": "palito-de-queso.jpg",
       "fotos": [],
       "badges": [],
       "modificadores": [],
