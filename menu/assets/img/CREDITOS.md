@@ -1,10 +1,10 @@
 # Créditos de las fotos provisionales
 
-Estas **no son fotos de Café Conexión**. Son imágenes de bancos libres que se
-pusieron para que la carta no se viera vacía mientras se hace la sesión propia.
-Se reemplazan todas cuando lleguen las fotos reales: ver `LISTA.md`.
+Estas **no son fotos de Café Conexión**. Las de los 112 productos son imágenes de
+referencia hechas con IA y la portada es de un banco libre. Se reemplazan todas
+cuando lleguen las fotos reales: ver `LISTA.md`.
 
-Todas permiten uso comercial y obra derivada (se recortaron a 760×570). Las que
+Las de bancos libres permiten uso comercial y obra derivada (se recortaron). Las que
 llevan CC BY o CC BY-SA **exigen crédito al autor**: mientras estén publicadas,
 este archivo es el crédito y tiene que poder consultarse. No se admiten licencias
 ND (prohíben el recorte) ni GFDL (obliga a publicar el texto de la licencia).
@@ -28,15 +28,10 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Platos fuertes** (2026-10-21): `hamburguesa-de-costilla-de-cerdo.jpg`, `burro-de-pollo.jpg`, `lasana-bolonesa.jpg`, `lasana-de-pollo-con-champinones.jpg`, `sanduche-de-atun.jpg`, `sanduche-cubano-de-ropa-vieja.jpg`, `pasta-a-tu-gusto.jpg`.
 - **Pizzas** (2026-10-22): `super-pepperoni.jpg`, `margarita-napoles.jpg`, `jamon-ahumado-y-queso.jpg`, `pollo-y-champinon-fresco.jpg`, `tropical-hawaiana.jpg`, `huerta-en-la-terraza.jpg`.
 - **Hojaldrados** (2026-10-22): `pasteles-y-empanadas.jpg`, `palito-de-queso.jpg`.
+- **Gustos dulces** (2026-10-22): `trufa.jpg`, `porcion-de-torta.jpg`, `postre-mini.jpg`, `postre-personal.jpg`, `waffle-con-helado-nutella-y-banano.jpg`, `waffle-con-helado-y-fresas.jpg`.
 
 ## Fotos prestadas de bancos libres
 
 | Archivo | Obra | Autor | Licencia | Origen |
 |---|---|---|---|---|
 | espacio.webp | Bar stools counter blinded windows | Desconocido | Dominio público / CC0 | https://www.rawpixel.com/image/3303131/free-photo-image-window-shade-home-decoration-banister |
-| porcion-de-torta.webp | Flourless Chocolate Cake [98/366] | timsackton | CC BY-SA 2.0 | https://www.flickr.com/photos/43581314@N08/7063258707 |
-| porcion-de-torta-2.webp | 20150319-OC-LSC-0165 | USDAgov | Dominio público / CC0 | https://www.flickr.com/photos/41284017@N08/16683914279 |
-| postre-mini.webp | 2012-062 Chocolate Chip Cookie Dough Cupcakes | mrsdkrebs | CC BY 2.0 | https://www.flickr.com/photos/56041749@N02/6800496650 |
-| postre-personal.webp | tres leches @ El Malecon Restaurante | David Berkowitz | CC BY | https://www.flickr.com/photos/25897810@N00/8860129108 |
-| waffle-con-helado-nutella-y-banano.webp | ice cream sundae | stu_spivack | CC BY-SA 2.0 | https://www.flickr.com/photos/35034346243@N01/2573696107 |
-| waffle-con-helado-y-fresas.webp | Vanilla Bean Ice Cream with Berries | kimberlykv | CC BY 2.0 | https://www.flickr.com/photos/87542849@N00/3556633744 |
