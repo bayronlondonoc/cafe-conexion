@@ -11,7 +11,7 @@
 
 // El número de CACHE sube con cada diseño nuevo (igual que el ?v= de index.html):
 // al activarse, este archivo borra lo guardado con el número anterior.
-const CACHE = 'carta-v6'; // v6: logo nuevo (colibrí dorado) e íconos de la pestaña
+const CACHE = 'carta-v7'; // v7: el colibrí en la barra fija, lleva al principio
 const FOTOS = 'carta-fotos-v3'; // v3: fotos hechas con IA (21 y 22-oct); bota las prestadas guardadas
 const TOPE_FOTOS = 160; // cabe lo que alguien alcanza a mirar en una visita
 
@@ -20,8 +20,8 @@ const TOPE_FOTOS = 160; // cabe lo que alguien alcanza a mirar en una visita
 const BASE = [
   './',
   'index.html',
-  'assets/css/carta.css?v=4',
-  'assets/js/carta.js?v=2',
+  'assets/css/carta.css?v=5',
+  'assets/js/carta.js?v=3',
   'data/menu.json',
   'assets/img/espacio.webp',
   'assets/img/colibri.png'

@@ -609,7 +609,7 @@
     if (id === 'modal-cerrar') cerrarModal();
     else if (id === 'btn-espacio') $('#espacio').scrollIntoView({ behavior: 'smooth' });
     else if (id === 'btn-idioma') cambiarIdioma(S.lang === 'es' ? 'en' : 'es');
-    else if (id === 'btn-arriba') window.scrollTo({ top: 0, behavior: 'smooth' });
+    else if (id === 'btn-arriba' || ev.target.closest('#btn-logo')) window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   // Toda la tarjeta o la fila abre el detalle, no solo el nombre: en el

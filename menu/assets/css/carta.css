@@ -195,8 +195,28 @@ button { cursor: pointer; border: 0; background: none; }
   transition: background .18s ease, border-color .18s ease;
 }
 
-.buscador { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter) 10px; }
+.buscador {
+  max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter) 10px;
+  display: flex; align-items: center; gap: 10px;
+}
+
+/* El colibrí de la marca a la izquierda del buscador: sigue a la vista con la barra
+   y lleva de vuelta al principio de la carta. */
+.barra__logo {
+  flex: none; width: var(--tap); height: var(--tap); padding: 0;
+  border: 0; border-radius: 50%; background: none; cursor: pointer;
+  display: grid; place-items: center;
+}
+.barra__logo img {
+  width: 40px; height: 40px; border-radius: 50%; display: block;
+  box-shadow: 0 0 0 1px rgb(var(--resalte-rgb) / .95), 0 0 0 3px rgb(var(--texto-rgb) / .3);
+  transition: transform .18s ease;
+}
+.barra__logo:hover img { transform: rotate(-6deg); }
+@media (prefers-reduced-motion: reduce) { .barra__logo img { transition: none; } }
+
 .buscador input {
+  flex: 1; min-width: 0;
   width: 100%; min-height: var(--tap);
   padding: 10px 14px 10px 42px;
   border: 1px solid transparent; border-radius: 999px;

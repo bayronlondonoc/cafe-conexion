@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- ?v= cambia con cada diseño nuevo: así nadie ve el HTML nuevo con el estilo viejo guardado. -->
-<link rel="stylesheet" href="assets/css/carta.css?v=4">
+<link rel="stylesheet" href="assets/css/carta.css?v=5">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:wght@400;600;700&display=swap"></noscript>
 </head>
@@ -77,6 +77,8 @@
 
 <div class="barra" id="barra">
   <div class="buscador">
+    <button class="barra__logo" id="btn-logo" type="button" data-t-attr="aria-label:arriba"
+            aria-label="Volver arriba"><img src="assets/img/colibri.png" alt="" width="40" height="40" decoding="async"></button>
     <label class="skip" for="q" data-t="buscarLabel">Buscar en la carta</label>
     <input id="q" type="search" autocomplete="off" enterkeyhint="search"
            data-t-attr="placeholder:buscarPh" placeholder="Buscar un plato o un ingrediente">
@@ -107,6 +109,6 @@
   <div class="modal__cuerpo" id="modal-cuerpo"></div>
 </dialog>
 
-<script src="assets/js/carta.js?v=2" defer></script>
+<script src="assets/js/carta.js?v=3" defer></script>
 </body>
 </html>
