@@ -23,7 +23,7 @@ window.CC_MENU = {
             { "nombre": "Espresso", "descripcion": "Shot concentrado de café, extraído a presión.", "precio": 5000 },
             { "nombre": "Americano", "descripcion": "Espresso con agua caliente: una taza ligera y fluida.", "precio": 5000 },
             { "nombre": "Latte", "descripcion": "Espresso con leche vaporizada, suave y equilibrado.", "precio": 6500 },
-            { "nombre": "Capuchino", "descripcion": "Espresso con espuma de leche densa y sedosa.", "precio": 7500, "desde": true, "destacado": true, "foto": "assets/img/capuchino.webp" },
+            { "nombre": "Capuchino", "descripcion": "Espresso con leche vaporizada y espuma densa.", "precio": 7500, "desde": true, "destacado": true, "foto": "assets/img/capuchino.jpg" },
             { "nombre": "Moccachino", "descripcion": "Café con chocolate oscuro fundido en leche cremosa.", "precio": 9000 },
             { "nombre": "Café con leche de almendras", "descripcion": "Café con bebida vegetal de almendras.", "precio": 11000 }
           ]
@@ -49,7 +49,7 @@ window.CC_MENU = {
           "nombre": "Café frío",
           "items": [
             { "nombre": "Affogato", "descripcion": "Helado artesanal de vainilla con un shot de espresso caliente.", "precio": 12000 },
-            { "nombre": "Cold brew", "descripcion": "Café de molienda gruesa infusionado en frío durante 24 horas: suave y naturalmente dulce.", "precio": 10800 },
+            { "nombre": "Cold brew tradicional", "descripcion": "Café de molienda gruesa infusionado en frío durante 24 horas.", "precio": 10800, "destacado": true, "foto": "assets/img/cold-brew-tradicional.jpg" },
             { "nombre": "Frappé de café", "descripcion": "Café frappé con salsa de chocolate, caramelo y crema chantilly.", "precio": 13500 },
             { "nombre": "Limonada de café", "descripcion": "Espresso con jugo natural de limón y panela.", "precio": 11500 },
             { "nombre": "Moka frío", "descripcion": "Espresso, leche cremosa y chocolate, con chantilly.", "precio": 13900 },
@@ -82,7 +82,7 @@ window.CC_MENU = {
         {
           "nombre": "Té y matcha",
           "items": [
-            { "nombre": "Latte matcha", "descripcion": "Matcha ceremonial con leche vaporizada.", "precio": 15800, "desde": true, "destacado": true, "foto": "assets/img/latte-de-matcha.webp" },
+            { "nombre": "Latte matcha", "descripcion": "Matcha con leche vaporizada.", "precio": 15800, "desde": true, "destacado": true, "foto": "assets/img/latte-matcha.jpg" },
             { "nombre": "Té de leche dorada", "descripcion": "Leche con cúrcuma, jengibre y pimienta negra.", "precio": 13800 },
             { "nombre": "Té pu-erh", "descripcion": "Mezcla de té verde y rojo con jengibre y cola de caballo.", "precio": 9800 },
             { "nombre": "Té herbal", "descripcion": "Té rojo y té verde.", "precio": 7000 },
@@ -99,15 +99,15 @@ window.CC_MENU = {
         {
           "nombre": "Brunch",
           "items": [
-            { "nombre": "Wafles", "descripcion": "Queso crema, tocineta crujiente y miel de maple.", "precio": 26000, "desde": true, "destacado": true, "foto": "assets/img/waffles-con-tocineta.webp" },
+            { "nombre": "Wafles", "descripcion": "Queso crema, tocineta crujiente y miel de maple.", "precio": 26000, "desde": true },
             { "nombre": "Croissant", "descripcion": "Jamón de pavo, jamón ahumado de cerdo, queso búfala, tomate asado, aguacate y reducción de balsámico.", "precio": 22000 },
             { "nombre": "Croissant relleno", "descripcion": "Pollo o vegetales, lechuga, tocineta, salsa de pimientos y mozzarella.", "precio": 26000 },
             { "nombre": "Huevos al gusto", "descripcion": "Con 2 toppings (sofrito, maicitos, mozzarella, jamón, tocineta o brócoli) y arepa o tostada de masa madre.", "precio": 15900 },
-            { "nombre": "Tostada de aguacate", "descripcion": "Masa madre, puré de aguacate, huevos revueltos, tocineta y cebolla puerro.", "precio": 18000 },
+            { "nombre": "Tostada de aguacate", "descripcion": "Pan de masa madre, puré de aguacate, huevos, tocineta y cebolla puerro.", "precio": 18000, "destacado": true, "foto": "assets/img/tostada-de-aguacate.jpg" },
             { "nombre": "Bowl de yogur", "descripcion": "Yogur griego o kéfir, granola, arándanos, fresa y miel.", "precio": 18000 },
             { "nombre": "Tostada de masa madre", "descripcion": "Tomate asado o cherry, huevos revueltos, queso búfala y pesto.", "precio": 20000 },
             { "nombre": "Bowl salad", "descripcion": "Mix de lechugas, balsámico, tomate cherry, champiñones, mango, puerro caramelizado, lentejas crocantes y pollo teriyaki.", "precio": 36000 },
-            { "nombre": "Ensalada César", "descripcion": "Lechugas frescas, pechuga de pollo, parmesano, aderezo César, tomate cherry y crotones a las finas hierbas.", "precio": 26000, "desde": true, "destacado": true, "foto": "assets/img/ensalada-cesar.webp" }
+            { "nombre": "Ensalada César", "descripcion": "Lechugas frescas, pechuga de pollo, parmesano, aderezo César, tomate cherry y crotones a las finas hierbas.", "precio": 26000, "desde": true }
           ]
         }
       ]
@@ -119,7 +119,7 @@ window.CC_MENU = {
         {
           "nombre": "Entradas",
           "items": [
-            { "nombre": "Pan de masa madre", "descripcion": "Rebanadas de masa madre o tostadas con finas hierbas, queso crema, tomate asado, albahaca, reducción de balsámico y sal marina. 5 porciones.", "precio": 12000, "desde": true, "destacado": true, "foto": "assets/img/pan-de-masa-madre.webp" },
+            { "nombre": "Pan de origen", "descripcion": "Seis porciones de pan de masa madre con queso crema, tomate asado y reducción de balsámico.", "precio": 12000, "desde": true, "destacado": true, "foto": "assets/img/pan-de-origen.jpg" },
             { "nombre": "Patacones", "descripcion": "Patacón crocante con guacamole fresco y hogao. 5 porciones.", "precio": 15000 },
             { "nombre": "Nachos", "descripcion": "400 g con guacamole, salsa agria, cebolla encurtida, frijol refrito y salsa picante tatemada.", "precio": 18000 }
           ]
@@ -147,8 +147,8 @@ window.CC_MENU = {
         {
           "nombre": "Pastas y más",
           "items": [
-            { "nombre": "Ensalada tipo sushi", "descripcion": "Salmón marinado, surimi, aguacate y pepino sobre arroz avinagrado, alga nori, reducción de teriyaki con café y semillas de sésamo.", "precio": 40000, "desde": true, "destacado": true, "foto": "assets/img/ensalada-de-salmon-estilo-sushi.webp" },
-            { "nombre": "Pasta a tu gusto", "descripcion": "Spaghetti o penne, 2 proteínas. Salsa: napolitana casera, Alfredo o pesto de albahaca. Proteína: pollo a la plancha o salmón. Incluye ensalada de lechuga y tomate cherry.", "precio": 25000, "desde": true, "destacado": true, "foto": "assets/img/pasta-a-tu-gusto.jpg" },
+            { "nombre": "Ensalada tipo sushi", "descripcion": "Salmón marinado, surimi, aguacate y pepino sobre arroz avinagrado, alga nori, reducción de teriyaki con café y semillas de sésamo.", "precio": 40000, "desde": true },
+            { "nombre": "Pasta a tu gusto", "descripcion": "Spaghetti o penne, 2 proteínas. Salsa: napolitana casera, Alfredo o pesto de albahaca. Proteína: pollo a la plancha o salmón. Incluye ensalada de lechuga y tomate cherry.", "precio": 25000, "desde": true, "foto": "assets/img/pasta-a-tu-gusto.jpg" },
             { "nombre": "Sándwich vegano", "descripcion": "Croissant con lechuga, tomates asados, cebolla caramelizada, brócoli y champiñones.", "precio": 20000 }
           ]
         },
@@ -184,7 +184,7 @@ window.CC_MENU = {
           "nombre": "Postres",
           "items": [
             { "nombre": "Tortas", "descripcion": "Zanahoria, red velvet o chocolate.", "precio": 10000 },
-            { "nombre": "Waffle con helado", "descripcion": "Helado de vainilla, salsa de arequipe, frutos rojos y Nutella.", "precio": 16000 },
+            { "nombre": "Waffle con helado, Nutella y banano", "descripcion": "Con crema chantilly.", "precio": 16000, "destacado": true, "foto": "assets/img/waffle-con-helado-nutella-y-banano.jpg" },
             { "nombre": "Arroz con leche o tres leches", "descripcion": "El tres leches se sirve bañado en mezcla de tres leches y crema ligera.", "precio": 12000 }
           ]
         }
@@ -211,7 +211,7 @@ window.CC_MENU = {
             { "nombre": "Mojito", "descripcion": "Ron blanco, hierbabuena fresca y lima.", "precio": 25000 },
             { "nombre": "Margarita", "descripcion": "Tequila, licor de naranja y borde de sal marina.", "precio": 25000 },
             { "nombre": "Moscow mule", "descripcion": "Vodka, cerveza de jengibre artesanal y limón.", "precio": 25000 },
-            { "nombre": "Espresso martini", "descripcion": "Vodka, licor de café y un shot de espresso recién extraído.", "precio": 25000 },
+            { "nombre": "Espresso martini", "descripcion": "Vodka, licor de café, café y hielo.", "precio": 25000, "destacado": true, "foto": "assets/img/espresso-martini.jpg" },
             { "nombre": "Mimosa", "descripcion": "Espumante con jugo de naranja, frutos rojos o amarillos.", "precio": 19900 }
           ]
         },
