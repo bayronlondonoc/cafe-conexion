@@ -24,8 +24,8 @@ window.CC_FIT = {
         { "nombre": "Frutos rojos", "color": "#9E2A4B" }
       ],
       "precio": 18000,
-      "foto": "assets/img/fit-malteadas.jpg",
-      "alt": "Malteada de fresa en un vaso de vidrio, con una fresa y hojas de menta"
+      "foto": "assets/img/fit-malteada.jpg",
+      "alt": "Tres malteadas proteicas: fresa, avellana con chocolate y canela"
     },
     {
       "id": "soda",
@@ -40,8 +40,8 @@ window.CC_FIT = {
         { "nombre": "Mango biche con Tajín", "color": "#D9B52C" }
       ],
       "precio": 15000,
-      "foto": "assets/img/fit-sodas.jpg",
-      "alt": "Soda con limón, hierbabuena y hielo en un vaso de vidrio"
+      "foto": "assets/img/fit-soda.jpg",
+      "alt": "Tres sodas con hielo: limón, mandarina y mango biche con borde de sal y chile"
     },
     {
       "id": "waffle-dulce",
@@ -56,8 +56,8 @@ window.CC_FIT = {
       ],
       "nota": "Con fruta y chantilly",
       "precio": 22000,
-      "foto": "assets/img/fit-waffles-dulces.jpg",
-      "alt": "Waffles cortados en triángulos con fresas y hojas de menta, en un plato blanco"
+      "foto": "assets/img/fit-waffle-dulce.jpg",
+      "alt": "Waffle con fresas, arándanos y banano, crema chantilly y canela"
     },
     {
       "id": "bono-salado",
@@ -67,8 +67,8 @@ window.CC_FIT = {
       "corto": "Waffle bono salado",
       "descripcion": "Sándwich de jamón serrano y queso.",
       "precio": 25000,
-      "foto": "assets/img/fit-waffle-bono-salado.jpg",
-      "alt": "Sándwich de waffle con queso, acompañado de ensalada"
+      "foto": "assets/img/fit-bono-salado.jpg",
+      "alt": "Sándwich de waffle de jamón serrano y queso, partido por la mitad"
     },
     {
       "id": "bono-dulce",
@@ -78,8 +78,8 @@ window.CC_FIT = {
       "corto": "Waffle bono dulce",
       "descripcion": "Con salsa de arequipe.",
       "precio": 20000,
-      "foto": "assets/img/fit-waffle-bono-dulce.jpg",
-      "alt": "Salsa dorada cayendo sobre un waffle, de cerca"
+      "foto": "assets/img/fit-bono-dulce.jpg",
+      "alt": "Waffle con salsa de arequipe"
     }
   ],
 
