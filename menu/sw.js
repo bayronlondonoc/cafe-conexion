@@ -11,8 +11,8 @@
 
 // El número de CACHE sube con cada diseño nuevo (igual que el ?v= de index.html):
 // al activarse, este archivo borra lo guardado con el número anterior.
-const CACHE = 'carta-v5';
-const FOTOS = 'carta-fotos-v2'; // v2: fotos nuevas con el menú del 21-oct
+const CACHE = 'carta-v6'; // v6: logo nuevo (colibrí dorado) e íconos de la pestaña
+const FOTOS = 'carta-fotos-v3'; // v3: fotos hechas con IA (21 y 22-oct); bota las prestadas guardadas
 const TOPE_FOTOS = 160; // cabe lo que alguien alcanza a mirar en una visita
 
 // Lo mínimo para que la carta abra sola: la página, el estilo, el programa y
