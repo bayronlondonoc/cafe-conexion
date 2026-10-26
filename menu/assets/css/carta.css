@@ -91,7 +91,13 @@ body::before {
 h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.2; margin: 0; }
 
 button, input, select { font: inherit; color: inherit; }
-button { cursor: pointer; border: 0; background: none; }
+button { border: 0; background: none; }
+
+/* Cursor: el colibrí de la web, en toda la carta, también sobre platos y botones (por eso
+   ninguna regla usa cursor: pointer). La punta del pico es la del clic (2 2). En el buscador
+   queda la barra para escribir. Sin mouse, como en el celular, no se ve. */
+* { cursor: url("../img/cursor-colibri.svg") 2 2, auto; }
+input:not([type="checkbox"], [type="radio"], [type="range"], [type="button"], [type="submit"]), textarea { cursor: text; }
 
 .skip {
   position: absolute; left: -9999px;
@@ -204,7 +210,7 @@ button { cursor: pointer; border: 0; background: none; }
    y lleva de vuelta al principio de la carta. */
 .barra__logo {
   flex: none; width: var(--tap); height: var(--tap); padding: 0;
-  border: 0; border-radius: 50%; background: none; cursor: pointer;
+  border: 0; border-radius: 50%; background: none;
   display: grid; place-items: center;
 }
 .barra__logo img {
@@ -332,7 +338,6 @@ main { position: relative; z-index: 2; padding-bottom: 8px; }
   column-gap: 14px;
   padding: 16px 0;
   border-top: 1px solid rgb(var(--acento-rgb) / .18);
-  cursor: pointer;
 }
 @media (min-width: 700px) { .plato { grid-template-columns: 72px minmax(0, 1fr) auto; column-gap: 16px; padding: 18px 0; } }
 @media (max-width: 359px) { .plato { grid-template-columns: 54px minmax(0, 1fr) auto; column-gap: 12px; } }
@@ -464,7 +469,6 @@ main { position: relative; z-index: 2; padding-bottom: 8px; }
   border-radius: var(--r-md);
   overflow: hidden;
   display: flex; flex-direction: column;
-  cursor: pointer;
   box-shadow: 0 1px 2px rgb(var(--texto-rgb) / .06), 0 8px 20px rgb(var(--texto-rgb) / .1);
   transition: transform .18s ease, border-color .18s ease;
 }
@@ -540,7 +544,7 @@ main { position: relative; z-index: 2; padding-bottom: 8px; }
 .grupo__items { display: flex; flex-wrap: wrap; gap: 6px; }
 
 .opcion { position: relative; }
-.opcion input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.opcion input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; }
 .opcion span {
   display: inline-flex; align-items: center; min-height: var(--tap);
   padding: 4px 14px; border-radius: 999px;

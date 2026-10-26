@@ -29,8 +29,15 @@ img { height: auto; }
 a { color: inherit; }
 h1, h2, h3, p, figure, blockquote, ul, ol, dl, dd { margin: 0; }
 ul[role="list"], ol.capitulos { list-style: none; padding: 0; }
-button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; }
 [hidden] { display: none !important; }
+
+/* ---------- Cursor: un colibrí ----------
+   En toda la página, también sobre enlaces y botones (por eso ninguna regla usa cursor: pointer).
+   La punta del pico es la del clic (2 2). En los campos de texto queda la barra para escribir.
+   Sin mouse, como en el celular, no se ve. */
+* { cursor: url("../assets/brand/cursor-colibri.svg") 2 2, auto; }
+input:not([type="checkbox"], [type="radio"], [type="range"], [type="button"], [type="submit"]), textarea { cursor: text; }
 
 /* ---------- Utilidades ---------- */
 
@@ -464,7 +471,7 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
 .pregunta { border-radius: var(--radio-md); background: var(--tarjeta-fondo); border: 1px solid var(--borde); }
 .pregunta summary {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  min-height: 56px; padding: 14px 20px; cursor: pointer; list-style: none;
+  min-height: 56px; padding: 14px 20px; list-style: none;
   font-weight: 600;
 }
 .pregunta summary::-webkit-details-marker { display: none; }
@@ -623,7 +630,7 @@ textarea.campo__control { resize: vertical; min-height: 96px; }
 /* Créditos de las imágenes: un enlace al lado del ©; al abrirlo, la lista ocupa todo el ancho. */
 .creditos { font-size: .85rem; }
 .creditos summary {
-  display: inline-flex; align-items: center; min-height: 44px; cursor: pointer; list-style: none;
+  display: inline-flex; align-items: center; min-height: 44px; list-style: none;
   text-decoration: underline; text-decoration-color: rgb(255 255 255 / .3); text-underline-offset: 6px;
 }
 .creditos summary::-webkit-details-marker { display: none; }
