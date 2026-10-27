@@ -93,10 +93,11 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.2; ma
 button, input, select { font: inherit; color: inherit; }
 button { border: 0; background: none; }
 
-/* Cursor: el colibrí de la web, en toda la carta, también sobre platos y botones (por eso
-   ninguna regla usa cursor: pointer). La punta del pico es la del clic (2 2). En el buscador
-   queda la barra para escribir. Sin mouse, como en el celular, no se ve. */
-* { cursor: url("../img/cursor-colibri.svg") 2 2, auto; }
+/* Cursor: la mazorca de cacao de la web, en toda la carta, también sobre platos y botones (por
+   eso ninguna regla usa cursor: pointer). La punta de la mazorca es la del clic (2 2). En el
+   buscador queda la barra para escribir. Sin mouse, como en el celular, no se ve. El colibrí
+   que la persigue es el de la web: ../js/colibri-cacao.js. */
+* { cursor: url("../img/cursor-cacao.svg") 2 2, auto; }
 input:not([type="checkbox"], [type="radio"], [type="range"], [type="button"], [type="submit"]), textarea { cursor: text; }
 
 .skip {

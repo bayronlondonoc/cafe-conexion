@@ -32,11 +32,11 @@ ul[role="list"], ol.capitulos { list-style: none; padding: 0; }
 button { font: inherit; color: inherit; background: none; border: 0; padding: 0; }
 [hidden] { display: none !important; }
 
-/* ---------- Cursor: un colibrí ----------
+/* ---------- Cursor: una mazorca de cacao ----------
    En toda la página, también sobre enlaces y botones (por eso ninguna regla usa cursor: pointer).
-   La punta del pico es la del clic (2 2). En los campos de texto queda la barra para escribir.
-   Sin mouse, como en el celular, no se ve. */
-* { cursor: url("../assets/brand/cursor-colibri.svg") 2 2, auto; }
+   La punta de la mazorca es la del clic (2 2). En los campos de texto queda la barra para escribir.
+   Sin mouse, como en el celular, no se ve. El colibrí que la persigue: js/colibri-cacao.js. */
+* { cursor: url("../assets/brand/cursor-cacao.svg") 2 2, auto; }
 input:not([type="checkbox"], [type="radio"], [type="range"], [type="button"], [type="submit"]), textarea { cursor: text; }
 
 /* ---------- Utilidades ---------- */
