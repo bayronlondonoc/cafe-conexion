@@ -11,7 +11,7 @@
 
 // El número de CACHE sube con cada diseño nuevo (igual que el ?v= de index.html):
 // al activarse, este archivo borra lo guardado con el número anterior.
-const CACHE = 'carta-v9'; // v9: el cursor es una mazorca de cacao
+const CACHE = 'carta-v10'; // v10: el colibrí que acompaña el scroll en el celular
 const FOTOS = 'carta-fotos-v3'; // v3: fotos hechas con IA (21 y 22-oct); bota las prestadas guardadas
 const TOPE_FOTOS = 160; // cabe lo que alguien alcanza a mirar en una visita
 
