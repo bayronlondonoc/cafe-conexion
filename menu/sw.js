@@ -12,7 +12,7 @@
 // El número de CACHE sube con cada diseño nuevo (igual que el ?v= de index.html):
 // al activarse, este archivo borra lo guardado con el número anterior.
 const CACHE = 'carta-v11'; // v11: el colibrí del celular huye al tocarlo, sin granito
-const FOTOS = 'carta-fotos-v5'; // v5: 20 fotos nuevas de Bayron (20-nov), mismo nombre de archivo
+const FOTOS = 'carta-fotos-v6'; // v6: fotos del Drive en su plato según los nombres nuevos (23-nov)
 const TOPE_FOTOS = 160; // cabe lo que alguien alcanza a mirar en una visita
 
 // Lo mínimo para que la carta abra sola: la página, el estilo, el programa y

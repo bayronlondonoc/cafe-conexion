@@ -1226,7 +1226,9 @@
       "descripcion": "Soda con sabor a fruta.",
       "precio": 14000,
       "foto": "soda-saborizada.jpg",
-      "fotos": [],
+      "fotos": [
+        "soda-saborizada-2.jpg"
+      ],
       "badges": [],
       "modificadores": [
         "sabor-soda"
@@ -1871,7 +1873,8 @@
       ],
       "destacado": false,
       "agotado": false,
-      "revisar": false
+      "revisar": true,
+      "nota_revisar": "La foto que mandó Bayron (Drive, «Desayuno Americano») muestra waffle, huevos fritos, tocineta, aguacate, tomate y queso; la descripción dice pancakes y huevos en cacerola o revueltos. ¿Cuál está al día?"
     },
     {
       "id": "bru-03",

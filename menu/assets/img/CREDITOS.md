@@ -13,9 +13,11 @@ ND (prohíben el recorte) ni GFDL (obliga a publicar el texto de la licencia).
 ## Fotos que mandó Bayron
 
 Fotos nuevas para la carta que mandó Bayron por Drive. Reemplazan la foto de IA de esos
-platos, con el mismo nombre de archivo. No llevan crédito de autor.
+platos, con el mismo nombre de archivo. No llevan crédito de autor. Cada una va en el plato
+que dice su nombre en el Drive (Bayron les cambió los nombres el 2026-11-23). La soda
+saborizada lleva dos: frutos amarillos y frutos rojos.
 
-- **2026-11-20** (20): `americano.jpg`, `bacardi-cocktail.jpg`, `bunuelos.jpg`, `cerveza-artesanal.jpg`, `compartir-paisa.jpg`, `infusiones-ancestrales.jpg`, `latte.jpg`, `limonada-natural.jpg`, `margarita.jpg`, `nachos.jpg`, `orange-coffee.jpg`, `palito-de-queso.jpg`, `pan-de-origen.jpg`, `pina-colada.jpg`, `porcion-de-torta.jpg`, `sanduche-de-atun.jpg`, `tostadas-francesas-conexion.jpg`, `waffle-con-helado-nutella-y-banano.jpg`, `waffle-de-pan-de-yuca.jpg`, `ceviche-de-chicharron.jpg`.
+- **2026-11-20** (21 fotos, 20 platos): `americano.jpg`, `capuchino.jpg`, `cerveza-artesanal.jpg`, `compartir-paisa.jpg`, `desayuno-americano.jpg`, `infusiones-ancestrales.jpg`, `limonada-natural.jpg`, `margarita.jpg`, `nachos.jpg`, `orange-coffee.jpg`, `palito-de-queso.jpg`, `pan-de-origen.jpg`, `patacones.jpg`, `pina-colada.jpg`, `porcion-de-torta.jpg`, `sanduche-de-atun.jpg`, `soda-saborizada.jpg`, `soda-saborizada-2.jpg`, `tostadas-francesas-conexion.jpg`, `waffle-con-helado-nutella-y-banano.jpg`, `ceviche-de-chicharron.jpg`.
 
 ## Fotos hechas con IA
 
@@ -23,16 +25,16 @@ No son fotos de los productos de Café Conexión: son imágenes de referencia he
 ChatGPT (cuenta de Bayron), con la colorimetría de las piezas de redes del café. No llevan
 crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 
-- **Bebidas calientes** (2026-10-21): `tinto.jpg`, `espresso.jpg`, `periquito-cortado.jpg`, `macchiato.jpg`, `capuchino.jpg`, `mocha.jpg`, `cafe-bombon.jpg`, `chocolate-en-agua.jpg`, `chocolate-en-leche.jpg`, `milo.jpg`, `chocolate-conexion.jpg`, `capuchino-conexion.jpg`, `capuchino-con-licor.jpg`, `carajillo.jpg`, `cafe-irlandes.jpg`.
+- **Bebidas calientes** (2026-10-21): `tinto.jpg`, `espresso.jpg`, `periquito-cortado.jpg`, `macchiato.jpg`, `latte.jpg`, `mocha.jpg`, `cafe-bombon.jpg`, `chocolate-en-agua.jpg`, `chocolate-en-leche.jpg`, `milo.jpg`, `chocolate-conexion.jpg`, `capuchino-conexion.jpg`, `capuchino-con-licor.jpg`, `carajillo.jpg`, `cafe-irlandes.jpg`.
 - **Infusiones y matcha** (2026-10-21): `frutos-deshidratados.jpg`, `leche-dorada-en-leche.jpg`, `leche-dorada-en-agua.jpg`, `leche-dorada-en-naranja.jpg`, `latte-matcha.jpg`, `te-matcha.jpg`, `frappe-matcha-conexion.jpg`, `matcha-con-mermelada-de-frutos-rojos.jpg`, `canela-clavos-y-anis.jpg`, `curcuma-y-jengibre.jpg`, `manzanilla-calendula-y-miel.jpg`.
-- **Bebidas frías** (2026-10-21): `americano-frio.jpg`, `latte-frio.jpg`, `capuchino-frio.jpg`, `cold-brew-tradicional.jpg`, `cold-brew-con-sabor.jpg`, `affogato-tradicional.jpg`, `affogato-conexion.jpg`, `frappe-de-cafe.jpg`, `frappe-de-mocha.jpg`, `frappe-con-licor.jpg`, `frappe-conexion.jpg`, `milk-caramel-latte.jpg`, `mocha-frio.jpg`, `malteada.jpg`, `limonada-de-cafe.jpg`, `soda-saborizada.jpg`.
+- **Bebidas frías** (2026-10-21): `americano-frio.jpg`, `latte-frio.jpg`, `capuchino-frio.jpg`, `cold-brew-tradicional.jpg`, `cold-brew-con-sabor.jpg`, `affogato-tradicional.jpg`, `affogato-conexion.jpg`, `frappe-de-cafe.jpg`, `frappe-de-mocha.jpg`, `frappe-con-licor.jpg`, `frappe-conexion.jpg`, `milk-caramel-latte.jpg`, `mocha-frio.jpg`, `malteada.jpg`, `limonada-de-cafe.jpg`.
 - **Smoothies** (2026-10-21): `fresa-y-banano.jpg`, `maracumango.jpg`, `smoothie-pina-colada.jpg`, `smoothie-de-aguacate.jpg`.
 - **Limonadas** (2026-10-21): `limonada-de-coco.jpg`, `limonada-de-cereza.jpg`, `limonada-de-hierbabuena.jpg`, `limonada-de-lychee.jpg`.
 - **Jugos, agua y gaseosas** (2026-10-21): `jugo-natural-en-agua.jpg`, `jugo-natural-en-leche.jpg`, `botella-de-agua.jpg`, `bretana.jpg`, `gaseosa.jpg`.
 - **Cervezas y vino** (2026-10-21): `cerveza-nacional-tradicional.jpg`, `cerveza-nacional-premium.jpg`, `cerveza-importada.jpg`, `sangria-personal.jpg`, `jarra-de-sangria.jpg`, `copa-de-vino-frio.jpg`, `copa-de-vino-caliente.jpg`.
-- **Cócteles** (2026-10-21): `espresso-martini.jpg`, `margarita-conexion.jpg`, `baileys-pasion.jpg`, `mojito.jpg`.
-- **Para compartir** (2026-10-21): `patacones.jpg`, `papas.jpg`.
-- **Brunch** (2026-10-21): `huevos-al-gusto.jpg`, `desayuno-americano.jpg`, `tostada-de-aguacate.jpg`, `bowl-saludable.jpg`, `omelet.jpg`, `tostada-conexion.jpg`, `cacerola-napolitana.jpg`.
+- **Cócteles** (2026-10-21): `bacardi-cocktail.jpg`, `espresso-martini.jpg`, `margarita-conexion.jpg`, `baileys-pasion.jpg`, `mojito.jpg`.
+- **Para compartir** (2026-10-21): `papas.jpg`, `bunuelos.jpg`.
+- **Brunch** (2026-10-21): `huevos-al-gusto.jpg`, `tostada-de-aguacate.jpg`, `bowl-saludable.jpg`, `omelet.jpg`, `tostada-conexion.jpg`, `cacerola-napolitana.jpg`, `waffle-de-pan-de-yuca.jpg`.
 - **Platos fuertes** (2026-10-21): `hamburguesa-de-costilla-de-cerdo.jpg`, `burro-de-pollo.jpg`, `lasana-bolonesa.jpg`, `lasana-de-pollo-con-champinones.jpg`, `sanduche-cubano-de-ropa-vieja.jpg`, `pasta-a-tu-gusto.jpg`.
 - **Pizzas** (2026-10-22): `super-pepperoni.jpg`, `margarita-napoles.jpg`, `jamon-ahumado-y-queso.jpg`, `pollo-y-champinon-fresco.jpg`, `tropical-hawaiana.jpg`, `huerta-en-la-terraza.jpg`.
 - **Hojaldrados** (2026-10-22): `pasteles-y-empanadas.jpg`.
