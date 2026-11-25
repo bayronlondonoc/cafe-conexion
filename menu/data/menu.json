@@ -6,7 +6,7 @@
     "whatsapp": "573186545916",
     "instagram": "cafeconexion8",
     "moneda": "COP",
-    "actualizado": "2026-10-21",
+    "actualizado": "2026-11-25",
     "_como_llenar_el_cafe": "Este es el café que se usa en todas las bebidas marcadas con \"especialidad\". Llena lo que sepas y deja vacío lo demás: lo que quede vacío sencillamente no se muestra. Cuando cambies de lote, cambias acá y cambia en toda la carta.",
     "cafe": {
       "origen": "",
@@ -1424,6 +1424,24 @@
       "revisar": false
     },
     {
+      "id": "jug-06",
+      "slug": "lulada",
+      "categoria": "jugos-y-gaseosas",
+      "especialidad": false,
+      "nombre": "Lulada",
+      "descripcion": "Lulo picado, limón, azúcar y hielo.",
+      "precio": 15000,
+      "foto": "",
+      "fotos": [],
+      "badges": [
+        "vegano"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
       "id": "jug-03",
       "slug": "botella-de-agua",
       "categoria": "jugos-y-gaseosas",
@@ -1607,6 +1625,22 @@
       "revisar": false
     },
     {
+      "id": "cer-09",
+      "slug": "vino-de-verano",
+      "categoria": "cervezas-y-vino",
+      "especialidad": false,
+      "nombre": "Vino de verano",
+      "descripcion": "Vino tinto con gaseosa de limón y hielo.",
+      "precio": 19000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
       "id": "coc-01",
       "slug": "bacardi-cocktail",
       "categoria": "cocteles",
@@ -1720,6 +1754,38 @@
       "agotado": false,
       "revisar": true,
       "nota_revisar": "La descripción de la dueña no menciona ron. ¿Lleva licor?"
+    },
+    {
+      "id": "coc-08",
+      "slug": "mimosa-clasica",
+      "categoria": "cocteles",
+      "especialidad": false,
+      "nombre": "Mimosa clásica",
+      "descripcion": "Espumante con jugo de naranja.",
+      "precio": 20000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "coc-09",
+      "slug": "mimosa-clasica-sin-licor",
+      "categoria": "cocteles",
+      "especialidad": false,
+      "nombre": "Mimosa clásica sin licor",
+      "descripcion": "",
+      "precio": 14000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
     },
     {
       "id": "com-01",
@@ -2003,13 +2069,47 @@
       "revisar": false
     },
     {
+      "id": "pla-08",
+      "slug": "hamburguesa-conexion",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Hamburguesa Conexión",
+      "descripcion": "Carne de 150 g, cheddar, tocineta, cebolla caramelizada, lechuga cogollo y salsa de la casa en pan brioche. Con papas. En combo con gaseosa: +$3.000.",
+      "precio": 30000,
+      "foto": "",
+      "fotos": [],
+      "badges": [
+        "de-la-casa"
+      ],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "pla-09",
+      "slug": "hamburguesa-tropical",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Hamburguesa tropical",
+      "descripcion": "Carne artesanal, tocineta, puerro caramelizado, queso para asar y piña asada con tajín en pan brioche. Con papas. En combo con gaseosa: +$3.000.",
+      "precio": 35000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
       "id": "pla-01",
       "slug": "hamburguesa-de-costilla-de-cerdo",
       "categoria": "platos-fuertes",
       "especialidad": false,
       "nombre": "Hamburguesa de costilla de cerdo",
-      "descripcion": "Costilla de cerdo de 150 g cocinada 8 horas en reducción de BBQ dulce, con lechuga, tomate, cebolla caramelizada y salsa de la casa.",
-      "precio": 35000,
+      "descripcion": "Costilla de cerdo de 150 g cocinada 8 horas en reducción de BBQ dulce, con lechuga, tomate, cebolla caramelizada y salsa de la casa. Con papas. En combo con gaseosa: +$3.000.",
+      "precio": 39000,
       "foto": "hamburguesa-de-costilla-de-cerdo.jpg",
       "fotos": [],
       "badges": [],
@@ -2117,6 +2217,22 @@
         "pasta-salsa",
         "pasta-proteina"
       ],
+      "destacado": false,
+      "agotado": false,
+      "revisar": false
+    },
+    {
+      "id": "pla-10",
+      "slug": "ensalada-cesar",
+      "categoria": "platos-fuertes",
+      "especialidad": false,
+      "nombre": "Ensalada César",
+      "descripcion": "Lechugas, pechuga de pollo, parmesano, aderezo César, tomate cherry y crotones a las finas hierbas.",
+      "precio": 26000,
+      "foto": "",
+      "fotos": [],
+      "badges": [],
+      "modificadores": [],
       "destacado": false,
       "agotado": false,
       "revisar": false
