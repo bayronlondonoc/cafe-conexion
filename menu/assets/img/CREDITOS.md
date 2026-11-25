@@ -1,6 +1,6 @@
 # Créditos de las fotos provisionales
 
-Estas **no son fotos de Café Conexión**. Las de 92 productos son imágenes de
+Estas **no son fotos de Café Conexión**. Las de 99 productos son imágenes de
 referencia hechas con IA, 20 son fotos que mandó Bayron (2026-11-20) y la
 portada es de un banco libre. Se reemplazan todas
 cuando lleguen las fotos reales: ver `LISTA.md`.
@@ -30,12 +30,12 @@ crédito de autor. Se cambian por fotos reales cuando se haga la sesión.
 - **Bebidas frías** (2026-10-21): `americano-frio.jpg`, `latte-frio.jpg`, `capuchino-frio.jpg`, `cold-brew-tradicional.jpg`, `cold-brew-con-sabor.jpg`, `affogato-tradicional.jpg`, `affogato-conexion.jpg`, `frappe-de-cafe.jpg`, `frappe-de-mocha.jpg`, `frappe-con-licor.jpg`, `frappe-conexion.jpg`, `milk-caramel-latte.jpg`, `mocha-frio.jpg`, `malteada.jpg`, `limonada-de-cafe.jpg`.
 - **Smoothies** (2026-10-21): `fresa-y-banano.jpg`, `maracumango.jpg`, `smoothie-pina-colada.jpg`, `smoothie-de-aguacate.jpg`.
 - **Limonadas** (2026-10-21): `limonada-de-coco.jpg`, `limonada-de-cereza.jpg`, `limonada-de-hierbabuena.jpg`, `limonada-de-lychee.jpg`.
-- **Jugos, agua y gaseosas** (2026-10-21): `jugo-natural-en-agua.jpg`, `jugo-natural-en-leche.jpg`, `botella-de-agua.jpg`, `bretana.jpg`, `gaseosa.jpg`.
-- **Cervezas y vino** (2026-10-21): `cerveza-nacional-tradicional.jpg`, `cerveza-nacional-premium.jpg`, `cerveza-importada.jpg`, `sangria-personal.jpg`, `jarra-de-sangria.jpg`, `copa-de-vino-frio.jpg`, `copa-de-vino-caliente.jpg`.
-- **Cócteles** (2026-10-21): `bacardi-cocktail.jpg`, `espresso-martini.jpg`, `margarita-conexion.jpg`, `baileys-pasion.jpg`, `mojito.jpg`.
+- **Jugos, agua y gaseosas** (2026-10-21): `jugo-natural-en-agua.jpg`, `jugo-natural-en-leche.jpg`, `botella-de-agua.jpg`, `bretana.jpg`, `gaseosa.jpg`; `lulada.jpg` (2026-11-25).
+- **Cervezas y vino** (2026-10-21): `cerveza-nacional-tradicional.jpg`, `cerveza-nacional-premium.jpg`, `cerveza-importada.jpg`, `sangria-personal.jpg`, `jarra-de-sangria.jpg`, `copa-de-vino-frio.jpg`, `copa-de-vino-caliente.jpg`; `vino-de-verano.jpg` (2026-11-25).
+- **Cócteles** (2026-10-21): `bacardi-cocktail.jpg`, `espresso-martini.jpg`, `margarita-conexion.jpg`, `baileys-pasion.jpg`, `mojito.jpg`; `mimosa-clasica.jpg` (2026-11-25, la usan la mimosa clásica y la sin licor).
 - **Para compartir** (2026-10-21): `papas.jpg`, `bunuelos.jpg`.
 - **Brunch** (2026-10-21): `huevos-al-gusto.jpg`, `tostada-de-aguacate.jpg`, `bowl-saludable.jpg`, `omelet.jpg`, `tostada-conexion.jpg`, `cacerola-napolitana.jpg`, `waffle-de-pan-de-yuca.jpg`.
-- **Platos fuertes** (2026-10-21): `hamburguesa-de-costilla-de-cerdo.jpg`, `burro-de-pollo.jpg`, `lasana-bolonesa.jpg`, `lasana-de-pollo-con-champinones.jpg`, `sanduche-cubano-de-ropa-vieja.jpg`, `pasta-a-tu-gusto.jpg`.
+- **Platos fuertes** (2026-10-21): `hamburguesa-de-costilla-de-cerdo.jpg`, `burro-de-pollo.jpg`, `lasana-bolonesa.jpg`, `lasana-de-pollo-con-champinones.jpg`, `sanduche-cubano-de-ropa-vieja.jpg`, `pasta-a-tu-gusto.jpg`; `hamburguesa-conexion.jpg`, `hamburguesa-tropical.jpg`, `ensalada-cesar.jpg` y otra vez `hamburguesa-de-costilla-de-cerdo.jpg`, ahora con papas (2026-11-25).
 - **Pizzas** (2026-10-22): `super-pepperoni.jpg`, `margarita-napoles.jpg`, `jamon-ahumado-y-queso.jpg`, `pollo-y-champinon-fresco.jpg`, `tropical-hawaiana.jpg`, `huerta-en-la-terraza.jpg`.
 - **Hojaldrados** (2026-10-22): `pasteles-y-empanadas.jpg`.
 - **Gustos dulces** (2026-10-22): `trufa.jpg`, `postre-mini.jpg`, `postre-personal.jpg`, `waffle-con-helado-y-fresas.jpg`.
